@@ -348,3 +348,94 @@ Arah ini konsisten dengan ambisi militer global, tetapi menuntut disiplin strate
 ### 8. Catatan tambahan (opsional)
 Tuliskan prinsip atau batasan khusus yang ingin kamu masukkan.
 
+
+
+---
+
+## Ronde 8 — Jawaban pengguna dan analisis (2026-11-09)
+
+### Jawaban yang dipilih
+
+1. Kebebasan berbicara dan pers: **A** — Sangat luas; pembatasan hanya untuk ancaman langsung yang spesifik, seperti hasutan kekerasan atau pengungkapan rahasia pertahanan yang sah.
+2. Hak oposisi politik: **B** — Oposisi diperbolehkan, tetapi partai yang dianggap mengancam persatuan nasional dapat dibatasi melalui proses hukum.
+3. Penegakan hukum dan kepolisian: **A** — Polisi sipil profesional dan terdesentralisasi sesuai federalisme; standar nasional, pengawasan independen, dan pengadilan mengawasi penyalahgunaan.
+4. Keadaan darurat: **A** — Presiden dapat menetapkan keadaan darurat sementara; parlemen harus menyetujui perpanjangan dalam waktu singkat dan pengadilan tetap berfungsi.
+5. Keamanan federal-negara bagian: **A** — Negara bagian memimpin kepolisian dan ketertiban sehari-hari; federal menangani kejahatan lintas negara bagian, terorisme, intelijen nasional, dan koordinasi krisis.
+6. Privasi dan pengawasan: **D** — Keamanan negara lebih diutamakan daripada privasi; pengawasan hampir tidak dibatasi.
+7. Penggunaan militer/Garda Nasional dalam krisis domestik: **C** — Militer dapat mengambil alih keamanan domestik ketika pemerintah menyatakan situasi tidak terkendali.
+8. Catatan tambahan: Tidak ada.
+
+### Analisis pilihan
+
+**Gambaran besar:** Ronde 8 menghasilkan negara dengan **kebebasan berekspresi yang sangat luas, polisi sipil federalistis, dan keadaan darurat yang secara formal dibatasi**, tetapi juga memiliki **pengawasan negara yang hampir tidak dibatasi dan kewenangan militer mengambil alih keamanan domestik**. Ini adalah kombinasi keamanan nasional yang sangat keras di balik kerangka kebebasan sipil.
+
+1. **Kebebasan pers dan berbicara (1A).** Ini perlindungan kuat bagi kritik pemerintah, jurnalisme investigatif, perdebatan publik, dan oposisi. Pembatasan hanya pada ancaman langsung yang spesifik mencegah istilah kabur seperti “anti-negara” atau “mengganggu stabilitas” dipakai untuk membungkam kritik. Rahasia pertahanan perlu didefinisikan secara hukum dan tidak boleh mencakup penyembunyian korupsi atau kegagalan pemerintah.
+2. **Oposisi politik (2B).** Oposisi boleh berkompetisi, tetapi partai yang dianggap mengancam persatuan nasional dapat dibatasi melalui proses hukum. Ini memberi negara alat menghadapi organisasi yang benar-benar berupaya menghancurkan tatanan konstitusional. Namun, frasa “mengancam persatuan” berbahaya jika tidak dirumuskan sempit. Partai separatis yang menggunakan kekerasan atau berusaha membatalkan pemilu secara paksa berbeda dari partai damai yang sekadar mengusulkan otonomi lebih luas. Pelarangan harus diputus pengadilan independen berdasarkan bukti tindakan nyata, dengan hak banding; pemerintah tidak boleh menjadi hakim atas lawan politiknya sendiri.
+3. **Kepolisian sipil federalistis (3A).** Ini konsisten dengan federalisme kuat. Polisi negara bagian menangani keamanan sehari-hari, sementara pemerintah federal fokus pada kejahatan lintas negara bagian, terorisme, intelijen nasional, dan koordinasi. Standar nasional, pengawasan independen, dan pengadilan membantu mencegah perbedaan kualitas dan penyalahgunaan antardaerah.
+4. **Keadaan darurat terbatas (4A).** Presiden dapat bertindak cepat saat krisis, tetapi perpanjangan memerlukan persetujuan parlemen dan pengadilan tetap berfungsi. Ini salah satu pagar konstitusional terpenting dalam rancangan negara. Aturan tambahan yang layak: definisi keadaan darurat, batas awal yang singkat, daftar kewenangan khusus yang boleh digunakan, kewajiban publikasi alasan, serta larangan menunda pemilu atau menghapus pengawasan yudisial tanpa prosedur konstitusional yang sangat ketat.
+5. **Pembagian keamanan federal-negara bagian (5A).** Negara bagian memimpin polisi dan ketertiban rutin; federal menangani ancaman lintas batas dan koordinasi nasional. Ini menjaga otonomi negara bagian tanpa membuat pemerintah pusat tidak berdaya menghadapi ancaman nasional.
+6. **Pengawasan hampir tanpa batas (6D).** Ini pilihan paling ekstrem dalam ronde ini dan berbenturan langsung dengan kebebasan sipil 1A. Negara dapat mengumpulkan data, memantau komunikasi, dan melacak aktivitas warga dengan batas yang sangat kecil. Hal ini dapat meningkatkan kemampuan intelijen, tetapi juga menciptakan risiko penyalahgunaan politik, pemerasan, diskriminasi, salah sasaran, kebocoran data, dan efek gentar yang membuat warga enggan berbicara bebas. Kebebasan pers tidak sungguh-sungguh aman jika sumber jurnalis dan komunikasi oposisi dapat dipantau tanpa batas. Pilihan ini juga bertentangan dengan pernyataan awal bahwa kebebasan sipil luas dan pembatasan keamanan dilakukan melalui proses hukum. Jika 6D dipertahankan, negara pada praktiknya memberi aparat keamanan kewenangan yang dapat menggerus hak-hak yang secara formal dijamin.
+7. **Militer mengambil alih keamanan domestik (7C).** Ini juga pilihan ekstrem. Ketika pemerintah menyatakan situasi tidak terkendali, militer dapat mengambil alih tugas keamanan dalam negeri. Keuntungan yang dicari adalah kapasitas komando, logistik, dan kekuatan yang besar saat kerusuhan atau ancaman berat. Namun, militer dilatih untuk menghadapi musuh dan memenangkan operasi, bukan menjadi polisi sehari-hari yang harus menggunakan kekuatan secara proporsional, mengumpulkan bukti, menjaga TKP, dan melindungi hak tersangka. Pengambilalihan tanpa batas dapat memicu eskalasi, korban sipil, politisasi militer, dan benturan dengan prinsip nonpartisan serta supremasi sipil pada Ronde 6. Aturan pelaksana perlu membatasi pengerahan pada kondisi objektif, tujuan dan durasi tertentu, di bawah komando sipil yang sah, dengan pencatatan operasi dan pemeriksaan independen setelahnya.
+
+### Benturan dengan keputusan ronde sebelumnya
+
+- **Kebebasan berbicara (1A) vs. pengawasan tanpa batas (6D):** jaminan bicara menjadi rapuh jika negara dapat mengawasi seluruh komunikasi tanpa kontrol.
+- **Polisi sipil (3A) vs. pengambilalihan militer (7C):** sistem polisi profesional federalistis dapat kehilangan fungsi jika ambang “situasi tidak terkendali” ditentukan sepihak oleh eksekutif.
+- **Supremasi sipil dan militer nonpartisan (Ronde 6) vs. peran keamanan domestik (7C):** militer dapat terseret ke konflik politik internal meskipun dilarang berpolitik.
+- **Kewenangan presiden mengerahkan pasukan (Ronde 6) vs. keadaan darurat terbatas (4A):** perlu dibedakan antara pengerahan militer ke luar negeri, bantuan darurat, dan operasi penegakan hukum domestik. Kewenangan satu kategori tidak otomatis memberi kewenangan untuk kategori lain.
+- **Oposisi yang dapat dibatasi (2B) vs. kebebasan pers (1A):** proses pelarangan partai harus independen agar pemerintah tidak menyebut oposisi damai sebagai ancaman.
+
+### Kesimpulan Ronde 8
+
+Negara ini masih mempertahankan pemilu kompetitif, kebebasan pers yang luas, kepolisian sipil, federalisme, dan batas formal keadaan darurat. Namun, pilihan **6D dan 7C** membentuk aparatur keamanan domestik yang sangat kuat dan berpotensi mengalahkan perlindungan hak sipil dalam praktik.
+
+Karakter akhirnya adalah **republik konstitusional dengan aparat keamanan internal berkuasa sangat besar**. Untuk menjaga agar negara tidak berubah menjadi negara pengawasan atau pemerintahan militer domestik, dua hal harus ditentukan secara ketat: standar objektif untuk pengawasan dan standar objektif kapan militer boleh mengambil alih keamanan. Jika tidak, jaminan kebebasan di atas kertas dapat kehilangan arti.
+
+## Ronde 9 — Sistem pemilu, partai politik, dan desain lembaga konstitusional
+
+**Status:** Kuesioner dibuka; menunggu jawaban pengguna.
+
+### 1. Bagaimana Electoral College memilih presiden?
+- **A.** Pemenang suara terbanyak di setiap negara bagian mengambil seluruh suara elektoral negara bagian tersebut.
+- **B.** Suara elektoral dibagi secara proporsional sesuai hasil suara di setiap negara bagian.
+- **C.** Sebagian suara elektoral ditentukan oleh pemenang distrik, sisanya oleh pemenang suara seluruh negara bagian.
+- **D.** Electoral College dipertahankan, tetapi para elektornya memilih berdasarkan pertimbangan sendiri dan tidak wajib mengikuti hasil suara rakyat negara bagian.
+
+### 2. Bagaimana sistem pemilihan anggota DPR?
+- **A.** Distrik satu wakil: setiap distrik memilih satu anggota dengan suara terbanyak.
+- **B.** Perwakilan proporsional: kursi dibagi sesuai persentase suara partai.
+- **C.** Sistem campuran: sebagian anggota dipilih dari distrik, sebagian melalui daftar proporsional.
+- **D.** Sistem dua putaran: kandidat harus mencapai ambang suara tertentu, atau mengikuti putaran kedua.
+
+### 3. Bagaimana sistem kepartaian negara?
+- **A.** Dua partai besar dominan; partai kecil boleh ikut pemilu tetapi sulit mendapat kursi.
+- **B.** Multipartai dengan ambang batas nasional untuk mencegah parlemen terlalu terfragmentasi.
+- **C.** Multipartai proporsional tanpa ambang batas tinggi; koalisi pemerintahan lazim.
+- **D.** Partai dibatasi menjadi beberapa organisasi nasional yang harus memenuhi syarat ideologi konstitusional.
+
+### 4. Seberapa kuat kewenangan Senat dibanding DPR?
+- **A.** Hampir setara dalam legislasi; Senat juga mengonfirmasi pejabat tinggi dan meratifikasi perjanjian.
+- **B.** DPR lebih dominan dalam legislasi dan anggaran; Senat fokus pada perwakilan negara bagian serta konfirmasi jabatan.
+- **C.** Senat lebih dominan dalam kebijakan strategis, pertahanan, dan hubungan luar negeri.
+- **D.** Senat dan DPR memiliki kewenangan berbeda secara ketat, dengan sedikit bidang yang memerlukan persetujuan bersama.
+
+### 5. Bagaimana hakim agung dan hakim federal diangkat?
+- **A.** Presiden mencalonkan, Senat mengonfirmasi; hakim menjabat seumur hidup selama berkelakuan baik.
+- **B.** Presiden mencalonkan, Senat mengonfirmasi; masa jabatan panjang tetapi terbatas, misalnya 15–20 tahun.
+- **C.** Komisi yudisial independen menyusun daftar kandidat; presiden memilih dari daftar dan Senat mengonfirmasi.
+- **D.** Hakim dipilih langsung oleh rakyat melalui pemilu.
+
+### 6. Bagaimana konstitusi dapat diamendemen?
+- **A.** Persetujuan dua pertiga DPR dan Senat, lalu ratifikasi tiga perempat negara bagian.
+- **B.** Persetujuan tiga perempat parlemen federal dan referendum nasional.
+- **C.** Persetujuan dua pertiga parlemen federal dan mayoritas negara bagian.
+- **D.** Proses relatif mudah melalui mayoritas sederhana parlemen dan referendum nasional.
+
+### 7. Bagaimana mencegah konflik kepentingan dan korupsi pejabat tinggi?
+- **A.** Deklarasi aset, aturan konflik kepentingan, audit independen, transparansi pendanaan politik, dan penegakan hukum tanpa kekebalan jabatan.
+- **B.** Pengawasan utama dilakukan komisi antikorupsi independen dengan kewenangan penyidikan luas.
+- **C.** Pengawasan internal eksekutif dan parlemen; sanksi politik melalui pemilu menjadi mekanisme utama.
+- **D.** Pengawasan ketat oleh badan keamanan dan intelijen negara terhadap pejabat serta keluarganya.
+
+### 8. Catatan tambahan (opsional)
+Tuliskan prinsip atau batasan khusus yang ingin kamu masukkan.
