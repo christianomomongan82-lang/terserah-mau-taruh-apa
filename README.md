@@ -124,3 +124,50 @@ Percakapan yang dibagikan pengguna:
 https://chatgpt.com/share/6af1a2af-b6ec-83ec-961d-adb40f0eab6a?ogimg=plain
 
 Terakhir diperbarui: 2026-11-09.
+
+
+---
+
+## Ronde 6 — Hubungan militer dengan pemerintahan sipil (kuesioner lanjutan)
+
+Pilihan di bawah disusun ulang dari tujuh topik Ronde 6 yang tercatat dalam percakapan lama. Belum ada jawaban pengguna untuk ronde ini.
+
+### 1. Bagaimana kedudukan formal militer dalam pemerintahan?
+- **A.** Seluruh angkatan bersenjata berada di bawah Kementerian Pertahanan yang dipimpin pejabat sipil; kepala staf bertanggung jawab melalui menteri.
+- **B.** Presiden adalah panglima tertinggi; Kementerian Pertahanan sipil mengendalikan kebijakan, anggaran, dan akuntabilitas, sedangkan pimpinan militer memberi nasihat profesional dan menjalankan operasi melalui rantai komando yang sah.
+- **C.** Militer memiliki staf umum yang relatif independen dan melapor langsung kepada presiden, sementara kementerian terutama mengurus administrasi dan pengadaan.
+
+### 2. Siapa yang berwenang mengerahkan pasukan dan memulai perang?
+- **A.** Presiden dapat mengerahkan pasukan; parlemen hanya mengesahkan anggaran dan deklarasi perang formal.
+- **B.** Presiden dapat mengambil tindakan pertahanan darurat, tetapi perang ofensif atau operasi berkepanjangan harus memperoleh persetujuan parlemen.
+- **C.** Semua operasi di luar pertahanan langsung wilayah nasional memerlukan persetujuan parlemen terlebih dahulu.
+
+### 3. Bagaimana promosi dan penunjukan perwira tinggi?
+- **A.** Promosi profesional dilakukan melalui dewan karier militer berdasarkan prestasi; pimpinan tertinggi ditunjuk presiden dan dikonfirmasi Senat.
+- **B.** Panglima tertinggi memiliki kewenangan utama memilih dan mempromosikan perwira; presiden hanya mengesahkan.
+- **C.** Presiden memiliki diskresi luas untuk memilih perwira tinggi, termasuk berdasarkan kepercayaan terhadap agenda pemerintah.
+
+### 4. Bagaimana mencegah militer menjadi kekuatan politik independen?
+- **A.** Militer aktif wajib nonpartisan; dilarang berkampanye atau memegang jabatan partai, tunduk pada audit anggaran, pengawasan parlemen, dan pengadilan.
+- **B.** Militer boleh menyampaikan sikap politik institusional selama tidak ikut pemilu atau mengambil alih pemerintahan.
+- **C.** Militer boleh menjadi penentu arah politik nasional dalam isu yang dianggap menyangkut keamanan negara.
+
+### 5. Apa peran militer di luar fungsi pertahanan?
+- **A.** Terbatas pada pertahanan; bantuan sipil hanya dalam keadaan darurat.
+- **B.** Mendukung penanggulangan bencana, pencarian dan penyelamatan, serta keadaan darurat infrastruktur; lembaga sipil tetap memimpin urusan sipil.
+- **C.** Militer juga mengelola program pembangunan, pendidikan, industri, dan layanan publik secara permanen.
+
+### 6. Bagaimana menyeimbangkan industri pertahanan domestik dengan efisiensi?
+- **A.** Membentuk perusahaan nasional utama yang hampir memonopoli produksi, dengan pembatasan impor sangat ketat.
+- **B.** Kapasitas domestik menjadi prioritas; perusahaan negara dan swasta bersaing, impor atau kerja sama asing diperbolehkan untuk menutup kesenjangan teknologi, dengan target mutu, biaya, dan kemandirian yang terukur.
+- **C.** Pengadaan dibuka penuh ke pasar internasional; produksi domestik hanya dilakukan bila terbukti lebih murah.
+
+### 7. Bagaimana memastikan modernisasi militer terus berjalan?
+- **A.** Rencana modernisasi multi-tahun dengan pendanaan bertahap, uji independen, prototipe yang saling bersaing, evaluasi berkala, dan penghentian program yang gagal.
+- **B.** Staf umum dan masing-masing matra menentukan kebutuhan serta pengadaan sendiri; pengawasan eksternal dibatasi.
+- **C.** Modernisasi dilakukan terutama ketika anggaran tersedia atau setelah muncul ancaman baru; tidak perlu siklus perencanaan tetap.
+
+**Catatan pengguna untuk Ronde 6:** Belum diisi.
+
+### Catatan pelaksanaan
+Kuesioner Ronde 6 ini adalah bagian dari balasan asisten tanggal 2026-11-09. Analisis pilihan pengguna dan rancangan ronde berikutnya akan ditambahkan setelah jawaban diterima.
