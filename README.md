@@ -256,3 +256,95 @@ Pilihan Ronde 6 memperkuat model republik pertahanan yang sudah dibangun, bukan 
 
 ### Catatan pencatatan
 Ronde 6 telah dianalisis dan disimpan. Ronde 7 adalah pertanyaan lanjutan yang disusun untuk menentukan bagaimana kekuatan global negara ini menggunakan diplomasi, perdagangan, aliansi, hukum internasional, dan kekuatan militer.
+
+
+---
+
+## Ronde 7 — Jawaban pengguna dan analisis (2026-11-09)
+
+### Jawaban yang dipilih
+
+1. Prinsip utama kebijakan luar negeri: **C** — Internasionalisme pragmatis; menjaga kepentingan nasional sambil aktif membentuk aturan dan lembaga internasional.
+2. Aliansi militer: **B** — Jaringan aliansi dan kemitraan fleksibel; komitmen disesuaikan dengan kawasan dan kepentingan.
+3. Penggunaan kekuatan militer di luar negeri: **C** — Bersedia melakukan intervensi untuk mengganti rezim yang dianggap mengancam tatanan internasional.
+4. Perdagangan dan investasi: **C** — Proteksionisme kuat; pasar domestik menjadi prioritas.
+5. Organisasi dan hukum internasional: **C** — Lembaga internasional digunakan secara selektif; kedaulatan nasional diutamakan.
+6. Menghadapi kekuatan besar: **C** — Persaingan strategis dan containment terhadap rival utama.
+7. Instrumen diplomasi dan pengaruh: **B** — Diplomasi, ekonomi, intelijen, dan militer digunakan secara terpadu.
+8. Catatan tambahan: Tidak ada.
+
+### Analisis pilihan
+
+**Gambaran besar:** Kebijakan luar negeri negara ini menjadi **internasionalisme pragmatis yang keras dan berorientasi kekuatan**. Negara ingin ikut membentuk tatanan internasional, tetapi tidak mau menyerahkan keputusan strategisnya kepada lembaga eksternal. Ia membangun jaringan mitra yang fleksibel, mempertahankan instrumen diplomatik dan ekonomi, serta bersedia memakai kekuatan militer untuk mengubah situasi politik di luar negeri.
+
+1. **Internasionalisme pragmatis (1C).** Negara tidak mengisolasi diri dan tidak sekadar mengikuti tatanan yang dibuat pihak lain. Ia ingin menjadi salah satu pembentuk aturan internasional, tetapi setiap keterlibatan tetap dinilai berdasarkan kepentingan nasional. Ini cocok dengan ambisi kekuatan global dan jaringan pangkalan/kemitraan yang telah dipilih.
+2. **Aliansi fleksibel (2B).** Kemitraan dapat disesuaikan dengan kawasan, ancaman, dan kepentingan. Model ini memberi keleluasaan lebih besar daripada aliansi permanen yang mengikat negara ke setiap konflik sekutu. Namun, negara tetap perlu beberapa perjanjian pertahanan yang jelas dengan mitra inti agar akses pangkalan, interoperabilitas, intelijen, dan dukungan logistik tidak bergantung pada kesepakatan ad hoc.
+3. **Intervensi untuk mengganti rezim (3C).** Ini adalah pilihan paling agresif dan paling menentukan dalam ronde ini. Negara tidak hanya ingin mencegah serangan atau melindungi jalur perdagangan; ia bersedia menggunakan kekuatan untuk mengubah pemerintahan negara lain. Itu memberinya daya paksa besar, tetapi juga membawa risiko perang berkepanjangan, kekosongan kekuasaan, pemberontakan, biaya pendudukan, dan hilangnya legitimasi. Frasa “mengancam tatanan internasional” harus didefinisikan dengan kriteria yang ketat; jika tidak, pemerintah dapat memakai label tersebut untuk membenarkan hampir semua intervensi. Sebelum operasi perubahan rezim, konstitusi dan undang-undang sebaiknya mewajibkan dasar ancaman yang dapat dibuktikan, tujuan politik pasca-intervensi, rencana keluar, estimasi biaya, dan pengawasan legislatif.
+4. **Proteksionisme kuat (4C).** Ini konsisten dengan prioritas membangun basis industri domestik dan kemandirian pertahanan. Namun, bila diterapkan luas dan permanen, proteksi dapat membuat perusahaan tidak efisien, menaikkan harga bagi konsumen dan industri, mengurangi tekanan inovasi, serta memicu pembalasan dagang. Karena Ronde 6 tetap membuka impor dan kerja sama asing untuk menutup kesenjangan teknologi, proteksionisme harus membedakan sektor strategis dari barang yang lebih efisien diperoleh melalui perdagangan. Perlindungan industri perlu memiliki target produktivitas, mutu, ekspor, dan evaluasi berkala.
+5. **Kedaulatan di atas keterikatan internasional (5C).** Negara tetap berpartisipasi dalam lembaga internasional, tetapi tidak menganggap keputusan lembaga tersebut otomatis mengikat ketika bertentangan dengan kepentingan nasional. Ini selaras dengan 1C. Konsekuensinya, negara harus konsisten mematuhi komitmen yang telah disetujuinya sendiri; selektivitas tidak boleh menjadi alasan untuk mengabaikan semua aturan saat tidak menguntungkan. Perjanjian harus diratifikasi secara sadar, dan mekanisme penarikan atau penolakan harus transparan.
+6. **Containment terhadap rival utama (6C).** Negara memilih persaingan strategis aktif, bukan sekadar menjaga hubungan pragmatis. Ini mengarahkan intelijen, diplomasi, teknologi, ekonomi, dan postur militer untuk membatasi kemampuan rival mendominasi kawasan penting. Strategi ini membutuhkan definisi yang jelas tentang siapa rival utama, tujuan containment yang terukur, dan batas eskalasi. Tanpa itu, persaingan dapat berubah menjadi konfrontasi permanen yang menguras anggaran dan mendorong perlombaan senjata.
+7. **Instrumen terpadu (7B).** Diplomasi, ekonomi, intelijen, dan militer dipakai sebagai satu perangkat kebijakan. Ini pilihan yang paling koheren dengan negara yang memiliki kemampuan global: kekuatan militer memberi deterrence, diplomasi membentuk koalisi, intelijen memberi pemahaman situasi, dan ekonomi menyediakan insentif maupun tekanan. Integrasi perlu dipimpin strategi nasional sipil, bukan membiarkan militer atau badan intelijen menentukan kebijakan luar negeri sendiri.
+
+### Ketegangan strategis yang muncul
+
+- **Membentuk tatanan vs. intervensi perubahan rezim:** negara ingin menjadi pembentuk aturan, tetapi intervensi sepihak untuk mengganti pemerintahan dapat merusak aturan kedaulatan yang juga ingin dipertahankan. Negara perlu menetapkan ambang intervensi dan dasar legitimasi yang konsisten.
+- **Aliansi fleksibel vs. operasi global:** fleksibilitas politik harus ditopang perjanjian akses, logistik, dan pertahanan yang cukup dapat diandalkan.
+- **Proteksionisme vs. kebutuhan teknologi asing:** proteksi luas berpotensi memperlambat akses pada komponen, modal, dan pengetahuan yang dibutuhkan industri pertahanan.
+- **Containment vs. diplomasi terpadu:** diplomasi masih harus membuka jalur komunikasi dan pengendalian krisis dengan rival, agar containment tidak otomatis menjadi perang.
+- **Kedaulatan vs. kredibilitas:** negara akan lebih dipercaya jika menghormati perjanjian yang telah disepakati dan menjelaskan secara terbuka alasan pengecualian atau penarikannya.
+
+### Kesimpulan Ronde 7
+
+Negara ini bukan negara netral atau pasifis. Ia adalah **kekuatan besar yang ingin membentuk tatanan internasional, mempertahankan kebebasan bertindak, membatasi rival strategis, melindungi industri domestik, dan tetap siap melakukan intervensi militer untuk perubahan rezim**. Pilihan 3C menjadikan kebijakan luar negerinya jauh lebih intervensionis daripada sekadar pertahanan global.
+
+Arah ini konsisten dengan ambisi militer global, tetapi menuntut disiplin strategi yang tinggi. Rekomendasi desain terpenting: definisikan ancaman dan tujuan intervensi secara sempit, wajibkan rencana pascaperang dan jalan keluar, serta buat pengawasan legislatif yang nyata untuk operasi berkepanjangan. Ini juga perlu diselaraskan dengan kewenangan presiden yang luas dalam Ronde 6.
+
+## Ronde 8 — Ketertiban dalam negeri, hak sipil, dan keadaan darurat
+
+**Status:** Kuesioner dibuka; menunggu jawaban pengguna.
+
+### 1. Seberapa luas kebebasan berbicara dan pers?
+- **A.** Sangat luas; pembatasan hanya untuk ancaman langsung yang spesifik, seperti hasutan kekerasan atau pengungkapan rahasia pertahanan yang sah.
+- **B.** Luas, tetapi negara dapat membatasi propaganda yang dianggap mengancam persatuan atau keamanan nasional melalui undang-undang.
+- **C.** Negara memiliki kewenangan luas mengatur media dan informasi demi stabilitas nasional.
+- **D.** Media strategis berada di bawah kendali negara.
+
+### 2. Bagaimana hak oposisi politik dan pergantian kekuasaan?
+- **A.** Oposisi damai dilindungi penuh; pergantian kekuasaan melalui pemilu kompetitif, dan militer serta birokrasi wajib netral.
+- **B.** Oposisi diperbolehkan, tetapi partai yang dianggap mengancam persatuan nasional dapat dibatasi melalui proses hukum.
+- **C.** Pemerintah dapat membatasi oposisi demi menjaga stabilitas dan kesinambungan kebijakan negara.
+- **D.** Sistem politik didominasi satu partai atau koalisi permanen.
+
+### 3. Bagaimana penegakan hukum dan kepolisian?
+- **A.** Polisi sipil profesional, terdesentralisasi sesuai federalisme; standar nasional, pengawasan independen, dan pengadilan mengawasi penyalahgunaan.
+- **B.** Kepolisian nasional terpusat dengan komando kuat dari pemerintah federal.
+- **C.** Garda Nasional dan militer dapat mengambil alih tugas kepolisian dalam keadaan keamanan yang luas.
+- **D.** Kepolisian terutama menjadi alat eksekutif untuk menjaga ketertiban politik.
+
+### 4. Siapa yang berwenang menetapkan keadaan darurat?
+- **A.** Presiden dapat menetapkan keadaan darurat sementara; parlemen harus menyetujui perpanjangan dalam waktu singkat dan pengadilan tetap berfungsi.
+- **B.** Presiden dapat menetapkan dan memperpanjang keadaan darurat selama menganggap ancaman masih ada, dengan laporan kepada parlemen.
+- **C.** Keadaan darurat harus disetujui parlemen sebelum diberlakukan, kecuali serangan mendadak.
+- **D.** Pemerintah federal dapat menetapkan keadaan darurat tanpa batas waktu selama keamanan nasional dijadikan alasan.
+
+### 5. Bagaimana pembagian kewenangan federal dan negara bagian dalam keamanan domestik?
+- **A.** Negara bagian memimpin kepolisian dan ketertiban sehari-hari; federal menangani kejahatan lintas negara bagian, terorisme, intelijen nasional, dan koordinasi krisis.
+- **B.** Federal menetapkan kebijakan dan standar utama; negara bagian menjalankan sebagian besar operasi.
+- **C.** Pemerintah federal mengendalikan hampir seluruh keamanan domestik.
+- **D.** Negara bagian memiliki kewenangan hampir penuh; federal hanya campur tangan atas permintaan.
+
+### 6. Seberapa kuat perlindungan privasi dan pengawasan negara?
+- **A.** Pengawasan membutuhkan dasar hukum dan, untuk tindakan intrusif, surat perintah pengadilan; pengumpulan data massal dibatasi.
+- **B.** Intelijen boleh melakukan pengawasan luas untuk keamanan nasional, dengan audit rahasia dan pengawasan pengadilan.
+- **C.** Negara dapat mengumpulkan data warga secara luas demi pencegahan ancaman.
+- **D.** Keamanan negara lebih diutamakan daripada privasi; pengawasan hampir tidak dibatasi.
+
+### 7. Bagaimana militer dan Garda Nasional boleh digunakan dalam krisis domestik?
+- **A.** Hanya atas permintaan otoritas sipil atau untuk keadaan darurat ekstrem; komando sipil tetap berlaku dan pengerahan dibatasi waktu serta tujuan.
+- **B.** Presiden dapat mengerahkan Garda Nasional secara federal untuk memulihkan ketertiban, dengan pemberitahuan kepada parlemen.
+- **C.** Militer dapat mengambil alih keamanan domestik ketika pemerintah menyatakan situasi tidak terkendali.
+- **D.** Militer memiliki kewenangan permanen membantu menjaga ketertiban dalam negeri.
+
+### 8. Catatan tambahan (opsional)
+Tuliskan prinsip atau batasan khusus yang ingin kamu masukkan.
+
