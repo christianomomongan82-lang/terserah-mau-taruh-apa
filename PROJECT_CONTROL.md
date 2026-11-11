@@ -7,19 +7,25 @@
 
 ## 1. Proyek yang terpisah
 
-### P-RENTAL — Bisnis rental / RentalOps
-- **Status fokus percakapan:** AKTIF.
-- **Tujuan yang tercatat:** distribusi software B2B/afiliasi untuk pemilik rental mobil dan motor; akuisisi calon pelanggan melalui kanal inbound.
-- **Nama kerja yang tercatat:** RentalOps.
-- **Website yang tercatat:** https://rentalops-site.usahalab-id.workers.dev
-- **Produk yang pernah dipertimbangkan:** CSHub.
-- **Checkpoint terakhir yang tersedia:** website pernah dinyatakan live; CTA pernah mengarah ke halaman resmi CSHub, bukan link referral pribadi. Kelayakan afiliasi dan link referral belum boleh dianggap aktif tanpa bukti terbaru.
-- **Bukti Cloudflare diperiksa 2026-11-12:** Worker bernama `rentalops-site` ada pada akun Cloudflare yang terhubung; `created_on` 2026-11-11T14:38:12Z, `modified_on` 2026-11-11T15:21:16Z, `last_deployed_from=api`. Ini membuktikan resource Worker ada, bukan bahwa halaman/CTA/referral saat ini benar atau berfungsi.
+### P-RENTAL — Distribusi software B2B untuk bisnis rental
+- **Status fokus percakapan:** AKTIF sebagai arah bisnis yang sedang dikerjakan; keputusan komersial final masih BELUM GO.
+- **Identitas proyek:** bisnis distribusi software B2B berbasis komisi/partner, bukan perusahaan jasa rental dan bukan sekadar website RentalOps.
+- **Arah jangka panjang:** membangun perusahaan distribusi software B2B dengan beberapa sumber komisi/vendor. Aset inti: saluran akuisisi pelanggan, konten informatif, alat bantu interaktif, dan sistem referral.
+- **Segmen yang sedang dievaluasi:** pemilik bisnis rental. Jangan anggap seluruh pemilik rental sebagai target yang cocok untuk setiap produk; segmentasi harus berdasarkan kebutuhan operasional dan percakapan pelanggan.
+- **Kandidat produk/vendor:
+  - **CSHub:** pilihan sementara saat pembahasan terakhir karena potensi komisi recurring. Harga acuan Rp300.000/bulan; komisi yang dipublikasikan 20% (ilustrasi Rp60.000/pelanggan aktif/bulan). Halaman afiliasi punya informasi bertentangan tentang tingkat/durasi komisi. Angka ini belum terverifikasi dan bukan pendapatan terjamin.
+  - **Wicom / SakuKapling:** kandidat pembanding; software developer kavling, harga acuan Rp1.200.000/tahun dan komisi terpublikasi 30% (ilustrasi Rp360.000/penjualan). Syarat usia juga belum terverifikasi.
+  - **MyRental:** telah dibandingkan dengan CSHub. Kesimpulan: jangan tawarkan CSHub kepada rental yang hanya perlu kalender kendaraan dan invoice; target CSHub harus benar-benar membutuhkan pengelolaan percakapan dan follow-up pelanggan.
+- **Aset akuisisi yang sudah dibuat menurut percakapan sumber (2026-11-11):** Kalkulator Potensi Booking Rental, file HTML mandiri untuk menghitung potensi keuntungan yang hilang akibat calon pelanggan tidak terlayani atau booking tidak ditindaklanjuti. File aktual/lokasinya belum dipetakan ke repo atau Worker.
+- **Kelayakan affiliate CSHub (BLOKIR GO):** email konfirmasi telah dibuat sebagai draft, BELUM DIKIRIM. Pertanyaan untuk vendor: (1) apakah usia 17 tahun diperbolehkan, (2) apakah persetujuan wali dapat digunakan, (3) apakah rekening pencairan harus atas nama affiliate, (4) apakah komisi 20% benar-benar recurring, (5) berapa lama komisi dibayarkan. Jangan mengklaim program bisa diikuti atau komisi dapat dicairkan sebelum ada jawaban resmi. Jangan memalsukan usia atau identitas.
+- **Keputusan bisnis terakhir yang terkunci:** BELUM GO untuk membangun website distribusi besar-besaran sebelum syarat komisi dan kelayakan peserta jelas. CSHub adalah pilihan sementara, bukan keputusan final. Langkah bernilai berikutnya: selesaikan kelayakan partner dan pilih segmen rental paling menguntungkan berdasarkan bukti.
+- **Pemantauan partner software:** percakapan sumber menyatakan monitor otomatis sudah aktif setiap Rabu pukul 09.00 WITA, maksimal tiga kandidat terbaik per laporan, mengevaluasi komisi, usia, pencairan, kompetisi, dan potensi laba; tidak berhenti hanya karena satu minggu tidak ada kandidat baru. Pemeriksaan pertama dijadwalkan 18 November 2026. Status automation aktual belum diperiksa; jangan klaim aktif berdasarkan ringkasan saja.
+- **Nama RentalOps / website:** https://rentalops-site.usahalab-id.workers.dev dan Worker rentalops-site pernah dibuat/dideploy, tetapi itu aset landing page yang terkait dengan jalur akuisisi, bukan definisi keseluruhan bisnis. Keberadaan Worker tidak membuktikan CTA, link referral, atau kelayakan affiliate aktif.
+- **Bukti Cloudflare diperiksa 2026-11-12:** Worker rentalops-site ada pada akun Cloudflare yang terhubung; created_on=2026-11-11T14:38:12Z, modified_on=2026-11-11T15:21:16Z, last_deployed_from=api. Ini membuktikan resource Worker ada, bukan bahwa halaman/CTA/referral saat ini benar atau berfungsi.
 - **Pemetaan sumber kode:** daftar repo GitHub dari akun yang terhubung tidak menampilkan repo bernama RentalOps. Repo sumber/deployment pipeline belum dipetakan; jangan menebak repo dari hasil pencarian publik.
-- **Status verifikasi 2026-11-12:** URL, isi live, CTA, eligibility CSHub, dan referral tetap BELUM DIVERIFIKASI. Jangan menyebutnya aktif sampai dicek langsung.
-- **Batas keras:** jangan mengubahnya menjadi SignageQuote atau SiapKirim. Jangan menyatakan produk/komisi/referral sudah aktif tanpa verifikasi. Jangan menggunakan nama pribadi pengguna pada nama brand, domain, website, atau salam.
-- **Sumber lanjutan:** percakapan dan repo/deployment RentalOps yang terkait; periksa sumber langsung sebelum mengklaim status teknis.
-
+- **Batas keras:** jangan mengubah proyek ini menjadi SignageQuote atau SiapKirim. Jangan menyatakan produk/komisi/referral sudah aktif tanpa verifikasi. Jangan menggunakan nama pribadi pengguna pada nama brand, domain, website, atau salam.
+- **Sumber pemulihan wajib:** percakapan share tanggal 2026-11-11 yang diberikan pengguna: https://chatgpt.com/share/6af49862-6ef4-83ec-b3ae-eb207ee75a9a?ogimg=plain. Isi pentingnya diringkas di bagian ini agar arah bisnis tetap pulih lintas chat.
+- **Status verifikasi 2026-11-12:** arah dan keputusan bisnis di atas dipulihkan dari percakapan share; kelayakan CSHub, email terkirim/tidak, file kalkulator, status automation, isi website live, CTA, dan referral tetap perlu diverifikasi dari sumber masing-masing sebelum tindakan.
 ### P-SIGNAGE — SignageQuote
 - **Status:** PROYEK TERPISAH; bukan proyek rental.
 - **Tujuan:** kalkulator/estimator penawaran untuk bengkel signage/reklame.
