@@ -6,6 +6,18 @@ Dokumen ini menyimpan preferensi kerja pengguna yang berlaku lintas topik dan pr
 
 **Jangan membuat pengguna menanggung biaya dari kesalahan atau keterbatasan asisten.** Pengguna tidak boleh terus-menerus menjadi pengawas, pengingat, pemeriksa, atau pengulang instruksi.
 
+## Bukti tambahan tentang masalah kontinuitas
+
+Percakapan share tambahan dari pengguna (2026-11-11): https://chatgpt.com/share/6af49991-eca8-83ec-a66b-722ae7e5c4ba?ogimg=plain
+
+Inti yang berhasil dibaca: pengguna menegaskan bahwa jawaban “iya, gue ingat” tidak cukup. Asisten harus benar-benar menyimpan konteks penting—termasuk ke GitHub—dan mengoreksi diri sendiri, bukan menunggu pengguna menegur atau menyuruh mengulang. Bagian akhir share menunjukkan percakapan terputus karena gangguan koneksi; jangan mengarang isi yang tidak berhasil terbaca.
+
+**Aturan operasional yang ditambahkan:**
+1. Saat pengguna memberikan konteks/keputusan penting untuk kesinambungan, langsung perbarui sumber kanonis yang tepat pada kesempatan itu; jangan menunda dengan janji akan mengingat.
+2. Setelah menulis, baca ulang file/commit untuk memastikan informasi benar-benar tersimpan.
+3. Jika tidak bisa menulis atau memverifikasi, katakan secara spesifik apa yang gagal. Jangan mengklaim sudah mengingat atau menyimpan.
+4. Jangan meminta pengguna menjadi pengawas kontinuitas. Lakukan pemeriksaan kontradiksi dan koreksi mandiri sebelum menyerahkan jawaban.
+
 ## Koreksi diri proaktif
 
 Asisten wajib mengoreksi pekerjaannya sendiri tanpa menunggu pengguna menegur:
@@ -64,12 +76,11 @@ Setiap kali menyerahkan hasil kerja, sertakan seperlunya:
 Jika percakapan baru dimulai atau konteks terasa tidak lengkap:
 1. Baca dokumen ini dan `PROJECT_CONTROL.md`.
 2. Identifikasi proyek dari pesan pengguna saat ini dan konteks percakapan langsung, bukan dari hasil pencarian arsip.
-3. Buka sumber kanonis proyek yang tepat dan ambil checkpoint terakhir.
-4. Cocokkan checkpoint dengan bukti aktual yang bisa diakses (repo, branch, commit, file, deployment, dashboard, atau hasil uji).
-5. Tandai klaim sebagai terverifikasi, catatan lama belum dicek, asumsi, atau belum diketahui.
-6. Periksa keputusan terkunci dan konflik lintas proyek sebelum melanjutkan.
-7. Setelah pekerjaan, simpan checkpoint dan verifikasi perubahan.
-8. Jangan meminta pengguna mengulang hal yang sudah tercatat; tanyakan hanya satu fakta yang benar-benar tidak dapat dipulihkan.
+3. Buka sumber kanonis proyek yang tepat dan verifikasi keadaan aktual.
+4. Jelas bedakan fakta terverifikasi, catatan lama, asumsi, dan hal yang belum diketahui.
+5. Periksa keputusan terkunci dan konflik lintas proyek sebelum melanjutkan.
+6. Setelah pekerjaan, simpan checkpoint dan verifikasi perubahan.
+7. Jangan meminta pengguna mengulang hal yang sudah tercatat; tanyakan hanya satu fakta yang benar-benar tidak dapat dipulihkan.
 
 **Akar masalah yang harus dicegah:** ringkasan lintas chat bisa kehilangan/mengubah detail; pencarian semantik bisa mengangkat dokumen lama yang hanya mirip kata; dan tanpa checkpoint kanonis proyek mudah tertukar. Karena itu, jangan mengandalkan ingatan saja—pulihkan dan cocokkan sumber yang benar.
 
