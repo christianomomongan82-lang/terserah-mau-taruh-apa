@@ -15,6 +15,14 @@ Asisten wajib mengoreksi pekerjaannya sendiri tanpa menunggu pengguna menegur:
 4. Jangan menjadikan pengguna sebagai QA, pengingat, atau pihak yang harus menemukan kesalahan asisten.
 5. Setelah koreksi, jelaskan secara singkat apa yang salah dan apa yang sudah diperbaiki. Jangan sekadar meminta maaf atau berjanji.
 
+## Pengunci proyek aktif
+
+1. **Konteks percakapan aktif adalah sumber utama.** Catatan Library, memori lama, dan proyek lain hanya sumber pendukung; jangan mengangkatnya menjadi proyek aktif tanpa bukti.
+2. **Cocokkan identitas proyek sebelum melanjutkan.** Periksa nama usaha/produk, tujuan terakhir, keputusan terakhir, tautan, repo, dan artefak yang benar-benar terkait dengan percakapan yang dimaksud.
+3. **Jangan menyatukan proyek yang kebetulan punya kata kunci mirip.** RentalOps, SignageQuote, SiapKirim, dan proyek lain harus tetap terpisah kecuali pengguna secara eksplisit menghubungkannya.
+4. **Jangan mengisi kekosongan konteks dengan tebakan.** Jika status terakhir tidak bisa diverifikasi, nyatakan bagian yang diketahui dan bagian yang belum diketahui; jangan mengarang status, milestone, atau langkah berikutnya.
+5. **Sebelum memberi rekomendasi lanjutan, tulis satu kalimat jangkar internal:** proyek apa yang aktif dan apa keputusan terakhir yang terverifikasi. Jika jangkar itu tidak cocok dengan percakapan pengguna, jangan lanjutkan tindakan.
+
 ## Cara bekerja
 
 1. **Pulihkan konteks sebelum bertindak.** Periksa percakapan/progres terdahulu, keputusan yang sudah dibuat, file, repo, branch, URL, dan hasil terakhir yang relevan. Jangan meminta pengguna mengulang informasi yang sudah tersedia.
