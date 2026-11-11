@@ -14,7 +14,9 @@
 - **Website yang tercatat:** https://rentalops-site.usahalab-id.workers.dev
 - **Produk yang pernah dipertimbangkan:** CSHub.
 - **Checkpoint terakhir yang tersedia:** website pernah dinyatakan live; CTA pernah mengarah ke halaman resmi CSHub, bukan link referral pribadi. Kelayakan afiliasi dan link referral belum boleh dianggap aktif tanpa bukti terbaru.
-- **Status verifikasi 2026-11-12:** BELUM DIREKONSILIASI dengan repo/deployment dan percakapan sumber paling akhir. URL, CTA, eligibility, dan keputusan produk harus dicek langsung sebelum tindakan.
+- **Bukti Cloudflare diperiksa 2026-11-12:** Worker bernama `rentalops-site` ada pada akun Cloudflare yang terhubung; `created_on` 2026-11-11T14:38:12Z, `modified_on` 2026-11-11T15:21:16Z, `last_deployed_from=api`. Ini membuktikan resource Worker ada, bukan bahwa halaman/CTA/referral saat ini benar atau berfungsi.
+- **Pemetaan sumber kode:** daftar repo GitHub dari akun yang terhubung tidak menampilkan repo bernama RentalOps. Repo sumber/deployment pipeline belum dipetakan; jangan menebak repo dari hasil pencarian publik.
+- **Status verifikasi 2026-11-12:** URL, isi live, CTA, eligibility CSHub, dan referral tetap BELUM DIVERIFIKASI. Jangan menyebutnya aktif sampai dicek langsung.
 - **Batas keras:** jangan mengubahnya menjadi SignageQuote atau SiapKirim. Jangan menyatakan produk/komisi/referral sudah aktif tanpa verifikasi. Jangan menggunakan nama pribadi pengguna pada nama brand, domain, website, atau salam.
 - **Sumber lanjutan:** percakapan dan repo/deployment RentalOps yang terkait; periksa sumber langsung sebelum mengklaim status teknis.
 
@@ -22,6 +24,7 @@
 - **Status:** PROYEK TERPISAH; bukan proyek rental.
 - **Tujuan:** kalkulator/estimator penawaran untuk bengkel signage/reklame.
 - **Website yang tercatat:** https://signagequote.usahalab-id.workers.dev
+- **Bukti Cloudflare diperiksa 2026-11-12:** Worker terpisah bernama `signagequote` ada; `created_on` 2026-11-07T01:39:04Z, `modified_on` 2026-11-11T16:00:30Z, `last_deployed_from=api`. Ini hanya identifikasi resource, bukan uji fungsional website.
 - **Artefak terkait yang pernah ada:** SignageQuote Offline Kit.
 - **Batas keras:** jangan gunakan kode, URL, keputusan, atau status SignageQuote untuk menyimpulkan keadaan RentalOps.
 
@@ -41,6 +44,14 @@
 - **Status:** PROYEK TERPISAH.
 - **Sumber utama:** README.md pada repo ini.
 - **Batas keras:** README.md adalah arsip proyek rancangan negara fiksi, bukan indeks bisnis dan bukan status RentalOps.
+
+## 1A. Pemetaan repositori dan deployment (diperiksa 2026-11-12)
+
+- Daftar repositori yang terlihat melalui koneksi GitHub akun pemilik saat pemeriksaan: `dinasti-medieval`, `dinasti-medieval-build`, `dinasti-medieval-work`, `tetod`, `scanner`, dan `terserah-mau-taruh-apa`.
+- Tidak ada repo RentalOps atau SignageQuote pada daftar tersebut. Ini **tidak** membuktikan source code tidak ada di tempat lain; artinya repo sumber belum berhasil dipetakan.
+- Daftar Worker Cloudflare menunjukkan dua script berbeda: `rentalops-site` dan `signagequote`. Karena keduanya dideploy melalui API menurut metadata daftar Worker, jangan otomatis menganggap keduanya tersambung ke repo GitHub tertentu.
+- Sebelum perubahan kode berikutnya, sumber deploy yang benar harus ditetapkan: repo sumber jika ada, atau Worker Cloudflare yang sedang berjalan jika memang dikelola langsung. Catat hubungan source → build/deploy → Worker untuk masing-masing proyek.
+
 
 ## 2. Urutan sumber kebenaran
 
