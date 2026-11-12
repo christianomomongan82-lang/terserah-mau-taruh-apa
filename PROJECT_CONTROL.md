@@ -19,6 +19,7 @@
 Bagian ini adalah checkpoint pemulihan terbaru. Jika ada paragraf lama di bawah yang menyatakan P-CONTENT atau P-DISTRO sebagai bisnis utama, anggap status itu sudah digantikan oleh bagian ini dan koreksi pada entri proyeknya.
 
 ### P-DIGITAL — RapiUsaha (PROYEK AKTIF)
+- **Preferensi bisnis eksplisit pengguna (2026-11-12):** pengguna TIDAK SUKA bisnis/produk/jasa yang berhubungan dengan pembuatan konten. Konten hanya boleh digunakan sebagai materi PROMOSI untuk menjual produk/bisnis utama. Jangan pernah menawarkan studio konten, jasa social-media management, copywriting/content production sebagai bisnis, atau menjual paket konten kecuali pengguna sendiri secara eksplisit meminta.
 
 - **Status:** ARAH KERJA AKTIF per 2026-11-12; brand akun Instagram **RapiUsaha** sudah dibuat pengguna. Handle persis dan kelengkapan profil belum diverifikasi.
 - **Model:** produk digital B2C untuk membantu UMKM/penjual kecil. Produk dibuat sekali, lalu dijual dan dikirim secara digital; bukan jasa mengelola akun atau membuat konten media sosial untuk klien.
