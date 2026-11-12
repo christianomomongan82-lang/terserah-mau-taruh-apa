@@ -1,5 +1,22 @@
 # Project Control — Sumber Kebenaran Lintas Percakapan
 
+## 0F. CHECKPOINT KANDIDAT PRODUK HOME DAYCARE — 2026-11-12
+
+**Status: HOME DAYCARE STARTER/ADMIN KIT MENJADI KANDIDAT VALIDASI TERATAS (ASSISTANT_PROPOSAL); BELUM PRODUK FINAL USER_CONFIRMED.**
+
+- **Bukti utama:** satu listing Etsy Home Daycare Starter Kit berstatus Bestseller, 20+ views/24h, harga promo US$9.99, memiliki **93 ulasan listing itu sendiri**, rating 4.8/5, dan 98% buyers recommend. Ini bukti pembelian item yang lebih kuat daripada kandidat terbaru lain yang dibandingkan.
+- **Koreksi metrik:** 82.3k sales dan 5.5k ratings adalah angka seluruh toko, bukan listing. 93 review dan 4.8/5 adalah angka item-level. Bestseller menunjukkan volume penjualan tinggi dalam enam bulan terakhir menurut Etsy; bukan jumlah transaksi pasti.
+- **Apa yang dijual pesaing:** 275 halaman Canva meliputi enrollment documents, parent handbook/policy, emergency plan, child intake, daily reports, attendance, menus, schedule, flyers, signs dan activity materials. Harga promo $9.99.
+- **Sinyal kebutuhan:** review item menyebut mudah di-download/edit, “it's what I have been searching for”, dan menghargai banyaknya materi yang termasuk.
+- **Calon pembeda (belum terbukti):** smaller, curated, phone-friendly, no-Canva, fillable/printable Parent Onboarding & Admin Pack. Listing pesaing menyatakan Canva phone app dapat glitchy dan merekomendasikan komputer; ini pernyataan penjual tentang produk sendiri, bukan bukti masalah universal.
+- **Hard competitor:** NestliCare menyatakan seluruh software daycare gratis selamanya, termasuk attendance, daily reports, meal tracking, billing, parent messaging, enrollment, documents/forms, staff management dan parent app. Jadi jangan membuat software/attendance/payment tracker yang menduplikasi fungsi tersebut.
+- **Batas produk yang direkomendasikan:** fokus pada printable/fillable onboarding dan komunikasi keluarga serta dokumen admin non-legal. Hindari kontrak mengikat, kebijakan lisensi/regulasi, emergency plans, medical/medication authorization, dan klaim legal compliance karena harus disesuaikan yurisdiksi serta memerlukan review profesional.
+- **Pembanding lain:** mobile detailing pre-inspection ($4.35, 12 item reviews 5.0) bersaing dengan aplikasi gratis DetailProof/Shine Route; embroidery pricing ($2.65, 37 item reviews) punya beberapa kalkulator gratis; candle costing (35 item reviews) berhadapan dengan BatchScale 23 free tools dan Stockria free up to 250 items. Laporan deep-dive: [research/RapiUsaha_daycare_candidate_deep_dive_2026-11-12.md](research/RapiUsaha_daycare_candidate_deep_dive_2026-11-12.md).
+- **Distribusi hard gate:** Etsy paling menarik untuk discovery file digital, tetapi pemilik akun harus 18+. Pengguna tidak menghendaki wali; usia pengguna belum memenuhi syarat hingga 25 Desember 2026. Kreavo hanya pilihan sementara yang perlu diuji untuk age 17+, checkout negara pembeli, rekening/KYC/payout; bukan diasumsikan ramai atau mampu menerima transaksi global.
+- **Keputusan produk:** RapiPO home bakery generic tetap NO-GO saat ini. Daycare kit menjadi kandidat riset berikutnya, bukan final. Segmen, produk, isi paket, harga dan marketplace tetap OPEN hingga ada persetujuan pengguna dan hard gate pembayaran lolos.
+- **Langkah berikutnya:** audit review negatif/fitur kekurangan home daycare listings lain, validasi apakah pembeli membutuhkan pack yang lebih kecil/no-Canva, hitung margin, dan pastikan checkout/payout dapat bekerja bagi pengguna. Jangan membuat produk full atau video launch sebelum gap dan jalur penjualan terbukti.
+
+
 ## 0E. CHECKPOINT AUDIT CELAH HOME BAKERY DAN PEMBANDING — 2026-11-12
 
 **Status: PUTARAN AUDIT SELESAI; BELUM ADA PRODUK FINAL YANG LAYAK DIKUNCI.**
