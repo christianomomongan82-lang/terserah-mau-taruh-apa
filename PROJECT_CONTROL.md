@@ -1,5 +1,25 @@
 # Project Control — Sumber Kebenaran Lintas Percakapan
 
+## 0P. UPWORK PROFILE KIT + TWO PORTFOLIO SAMPLES CREATED — 2026-11-12
+
+**Status: ASSISTANT_PREPARED package is complete for offline review. No Upwork account/profile was read or changed, no KTP was sent, and no public profile or proposal was published.**
+
+- User asked the assistant to complete the profile materials independently, without KTP/account onboarding.
+- Created profile title and English overview, Bahasa Indonesia translation, skill suggestions, rate recommendation, profile-field guidance, two portfolio descriptions within Upwork limits, and two proposal starters.
+- Created and visually verified 2 independent PDF work samples: product catalog data entry/QA and Indonesian headline annotation. Clearly marked as independent practice samples, not client work.
+- Created and formula-checked an editable XLSX containing five sheets: Start Here, Product Data Entry, Data Entry QA, Text Annotation, Annotation Guide.
+- Workbook verification: 30 fictional product rows; 0 duplicate SKU; 0 missing product names; 11 reorder flags; IDR 11,474,000 sample stock value; 30 synthetic headlines (13 Clickbait, 17 Non-clickbait); zero formula errors in scan. Dropdowns added for editable categories/labels.
+- Files delivered in current conversation:
+  - `Upwork_Profile_Kit_and_Proposal_Templates.pdf`
+  - `Portfolio_01_Product_Catalog_Data_Entry.pdf`
+  - `Portfolio_02_Indonesian_Text_Annotation.pdf`
+  - `Upwork_Portfolio_Work_Samples.xlsx`
+- Official Upwork help was checked for profile guidance, skills, portfolio title/description constraints, PDF portfolio upload, and minimum rates. Suggested rate is assistant proposal: USD 4/hour; not a market guarantee.
+- Remaining user-only items when eligible: real profile photo, education provider name if desired, actual availability selection, review of the final text, and selecting skills available in Upwork tag picker. Employment history and certifications remain blank rather than invented.
+- **Eligibility gate remains:** Upwork requires a freelancer account holder to be at least 18 (or older if age of majority requires it). This offline package does not authorize account creation/access/operation before eligibility. Do not use false age or another person's identity.
+- Full source draft and artifact inventory: [research/upwork_profile_portfolio_package_2026-11-12.md](research/upwork_profile_portfolio_package_2026-11-12.md).
+
+
 ## 0O. UPWORK CONNECTOR SUDAH MUNCUL — BATAS USIA TETAP BERLAKU — 2026-11-12
 
 **Status: USER_CONFIRMED menyatakan telah menghubungkan Upwork; toolset Upwork kini terlihat dalam runtime ChatGPT. Akun dan data privat belum diakses. Penggunaan akun freelancer ditahan karena Upwork mensyaratkan minimal 18 tahun.**
