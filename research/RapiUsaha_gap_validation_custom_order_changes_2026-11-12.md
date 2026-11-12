@@ -71,7 +71,7 @@ Belum ada bukti kuat.
 
 ### Short-term-rental / Airbnb turnover cleaning
 - Etsy memiliki berbagai digital turnover sheets: property/cleaner assignments, checklist, restock, linens, issue/maintenance, payout and unpaid-job tracking.
-- Salah satu listing Short Term Rental Turnover Tracker berharga $24.99 dengan 3 reviews (item-level review page showed 3? confirm via listing before citing exact count); satu listing baru Airbnb cleaning workbook memiliki no reviews/no seller sales on the item/shop snapshot, meski shop 32 sales overall. 
+- Salah satu listing Short Term Rental Turnover Tracker berharga $24.99 tetapi halaman item menyatakan belum ada ulasan item; toko penjual mempunyai 32 sales dan 4 ratings secara keseluruhan (bukan angka penjualan produk tersebut). Satu listing Airbnb cleaning workbook yang lain juga belum memiliki ulasan item; jangan menyamakan total sales toko dengan listing.  
 - Sumber: https://www.etsy.com/listing/4503251390/airbnb-cleaning-checklist-turnover-kit ; https://www.etsy.com/listing/4497110510/short-term-rental-cleaner-operations
 - Kesimpulan: problem dan pembeli potensial ada, tetapi banyak tracker serupa; perlu bukti item review lebih kuat dan masalah spesifik yang belum ditangani sebelum memilih.
 
