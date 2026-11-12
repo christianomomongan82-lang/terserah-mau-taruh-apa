@@ -18,6 +18,18 @@
 
 Bagian ini adalah checkpoint pemulihan terbaru. Jika ada paragraf lama di bawah yang menyatakan P-CONTENT atau P-DISTRO sebagai bisnis utama, anggap status itu sudah digantikan oleh bagian ini dan koreksi pada entri proyeknya.
 
+### P-DIGITAL — RapiUsaha (PROYEK AKTIF)
+
+- **Status:** ARAH KERJA AKTIF per 2026-11-12; brand akun Instagram **RapiUsaha** sudah dibuat pengguna. Handle persis dan kelengkapan profil belum diverifikasi.
+- **Model:** produk digital B2C untuk membantu UMKM/penjual kecil. Produk dibuat sekali, lalu dijual dan dikirim secara digital; bukan jasa mengelola akun atau membuat konten media sosial untuk klien.
+- **Konsep produk awal:** **Paket Operasional Jualan WhatsApp**. Komponen kandidat: lembar pencatatan pesanan/pembayaran, kalkulator harga dan margin, template katalog/daftar produk, template pesan untuk pelanggan, dan panduan penggunaan singkat.
+- **Status produk:** konsep MVP dari usulan asisten; belum selesai dibuat, belum diuji di HP pengguna, belum dipasarkan, belum ada penjualan. Jangan menyebutnya produk tervalidasi atau menganggap semua komponen final.
+- **Target awal untuk validasi:** penjual rumahan/UMKM yang menerima pesanan lewat WhatsApp. Pilih satu masalah yang paling menyakitkan dahulu; jangan mengembangkan paket besar sebelum diuji.
+- **Prinsip pengerjaan:** phone-first, modal serendah mungkin, gunakan alat gratis, file mudah dibuka di Android, minim langkah pelanggan, dan tidak mengandalkan langganan/iklan berbayar.
+- **Pemasaran:** akun Instagram RapiUsaha sebagai kanal awal; buat konten edukasi/demonstrasi untuk menjual produk digital sendiri. Scheduling otomatis boleh dipakai setelah akun terhubung; jangan klaim otomatisasi sudah aktif tanpa bukti.
+- **Batas:** jangan pivot menjadi jasa studio konten, affiliate software, rental, atau SaaS tanpa persetujuan eksplisit pengguna.
+- **Langkah berikutnya:** tentukan satu use-case MVP dan buat contoh produk yang benar-benar berfungsi di Android; setelah itu uji respons dan harga sebelum menambah fitur.
+
 ## 1. Proyek yang terpisah
 
 ### P-CONTENT — Studio batch konten siap-publikasi untuk UMKM (TIDAK AKTIF / TIDAK DISETUJUI)
