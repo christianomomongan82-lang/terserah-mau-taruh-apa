@@ -1,45 +1,31 @@
 # Projects.co.id — Interactive Portfolio — 13 November 2026
 
-**Status: LIVE and browser-tested.** Public interactive website is deployed. The Projects.co.id profile CTA is deliberately waiting for the user's exact public profile URL; it no longer points to the generic Projects.co.id homepage.
+**Status: LIVE, public, and mobile-browser-tested.** Standalone portfolio website is deployed. It is intended to be linked from the user's Projects.co.id portfolio listing; it does not link back to the marketplace.
 
 ## User-approved scope
-The user explicitly requested an interactive, more professional presentation for the existing general freelancer profile. Positioning is unchanged: **Data Entry & Pengolahan Data | Spreadsheet | Pemeriksaan Data | Anotasi Teks**. No service/business pivot.
+The user explicitly requested an interactive, more complete presentation for the existing general freelancer profile. Positioning remains **Data Entry & Pengolahan Data | Spreadsheet | Pemeriksaan Data | Anotasi Teks**. No service pivot.
 
 ## Public website
-- URL: https://portofolio-data.usahalab-id.workers.dev/
-- Cloudflare Worker: `portofolio-data` on the connected account's `usahalab-id.workers.dev` subdomain.
-- Worker subdomain is enabled. Health endpoint `/health` returned `ok`.
-- The root page was fetched live. Page title and Indonesian metadata were confirmed.
-- Source of the deployed HTML was committed at `portfolio/index.html` in this repository.
-- HTML is self-contained: mobile responsive, no external JavaScript/CSS/image dependencies, three example visuals embedded as WebP data URIs.
+- URL to place in the user's Projects.co.id portfolio `Link` field: https://portofolio-data.usahalab-id.workers.dev/
+- Cloudflare Worker: `portofolio-data` on `usahalab-id.workers.dev`.
+- Worker subdomain enabled. Health endpoint `/health` returns `ok`.
+- GitHub source: `portfolio/index.html`.
 
-## Website enhancements
-- Expanded service descriptions and scope/deliverables section.
-- More complete profile/about text with copyable full description and short summary.
-- Three polished, detailed visual examples embedded in the gallery.
-- Interactive demos for data entry, quality checks, and text annotation.
-- Clarified that examples use fictitious practice data; not client work or employment history.
-- Removed the useless generic `https://projects.co.id/` CTA. The profile CTA is disabled until the user's real public profile URL is supplied. This prevents visitors from being sent to an unrelated homepage.
-- Added social preview metadata (title and description). No false performance/accuracy claims or invented contact details.
+## Website contents
+- Service descriptions for data entry, data quality checking, and Bahasa Indonesia text annotation.
+- Scope/deliverables explainer, complete profile description with copy buttons, and three detailed visual sample cards.
+- Interactive demos for data entry, data quality checks, and text classification.
+- Responsive styling and embedded WebP sample visuals; no external image/CSS/JS dependencies.
+- The top navigation's "Lihat contoh kerja" link goes to the portfolio gallery.
+- Removed the entire Projects.co.id marketplace/profile CTA section, the disabled "menunggu tautan profil" button, all Projects.co.id references in site copy, and associated profile URL JavaScript. The website is now a standalone presentation; it does not ask the client to navigate back to the marketplace.
 
-## Browser verification
-A live mobile browser run completed successfully:
-1. Data-checking demo showed duplicate SKU PR-002, an empty category cell, and inconsistent price formatting.
-2. Text annotation demo produced Clickbait with the matched keyword reasons.
-3. Data-entry demo produced a three-row/five-column table with formatted prices.
-The public `/health` endpoint returned `ok`.
+## Verification
+- Mobile browser test before this change passed for all three demos.
+- JavaScript syntax checked with Node after removing the marketplace handler.
+- Latest source commit was fetched back from GitHub after update.
+- Post-deployment live fetch is required to verify absence of the removed CTA and the new navigation. Do not claim it until confirmed.
+- Samples are fictitious practice data. No client-work claims or performance guarantees.
 
-## Downloadable assets
-- `/mnt/data/Portofolio_Interaktif_Data.html` — standalone HTML snapshot.
-- `/mnt/data/Portfolio_Cover_Data_Interaktif.png` — general cover visual.
-- `/mnt/data/Portfolio_01_Input_dan_Penataan_Data_Detail.png`
-- `/mnt/data/Portfolio_02_Pemeriksaan_Kualitas_Data_Detail.png`
-- `/mnt/data/Portfolio_03_Anotasi_Teks_Bahasa_Indonesia_Detail.png`
-- `/mnt/data/Teks_Profil_Projects_co_id_Revisi.txt` — title, expanded description, skills, sample item descriptions, and live site link.
-- `/mnt/data/Paket_Portofolio_Projects_co_id.zip` — all above assets and a quick installation guide.
-
-## Remaining dependency
-- User has not supplied their exact public Projects.co.id profile URL. No connected account access exists to retrieve it automatically.
-- Once the exact URL is supplied, replace `PROJECTS_PROFILE_URL='' ` in `portfolio/index.html`, enable the CTA, redeploy Worker, and re-check the target.
-- The live website URL above is the one to paste into the Portfolio item's `Link` field. The separate PNGs are suitable for each item image.
-- No Projects.co.id profile edit, image upload, bid, message, or transaction has occurred.
+## Remaining work
+- User only needs to paste the public URL above into their Projects.co.id portfolio entry. No profile-specific URL is needed, and there are no buttons waiting for such a URL.
+- No Projects.co.id login/profile edit, portfolio upload, bid, message, or transaction occurred.
