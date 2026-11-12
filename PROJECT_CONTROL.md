@@ -1,5 +1,17 @@
 # Project Control — Sumber Kebenaran Lintas Percakapan
 
+## 0S. PROJECTS.CO.ID — SHORTLIST LIVE UNTUK PEMULA — 2026-11-12
+
+**Status: ASSISTANT_RESEARCHED; shortlist complete, no bids/messages sent.** User asked assistant to find worthwhile current projects.
+
+- Ranked first: Anotator Clickbait Judul Berita (3 slots, 300 labels each, Rp150,000/person, deadline 7 Dec 2026, around 85 bids; owner new/no rating). Existing independent 30-row practice sample is relevant.
+- Backup: Template Excel for packaging reject report (about 100 rows plus monthly category summary, Rp125k–150k, newer listing owner yruhiat769 has 0/10 and 0 projects, around 110–120 bids; older duplicate owner Ikaratna21 has 10/10 and 3 projects but ~224 bids).
+- Third: Input 50 data (title/description count mismatch; owner 10/10, 6 projects, ~501 bids).
+- Rejected: 1,000 Gmail contact extraction because new owner, 400+ bids, high volume and sensitive contact data; game-account data entry; old LinkedIn account transfers; outreach/sales; offline store photography; tester job because unclear per-tester pay and similar prior project is in arbitration. Survey work remains strictly rejected.
+- Full shortlist, evidence, links, criteria, and rules: `research/projects_co_id_beginner_job_shortlist_2026-11-12.md`.
+- No account access, bid, message, payment or transaction. Explicit user approval is still required before any bid/message.
+
+
 ## 0R. PROJECTS.CO.ID — INPUT 50 DATA (SCOPE CLARIFICATION) — 2026-11-12
 
 **Status: ASSISTANT_ASSESSMENT_AND_DRAFT; no bid or message sent.** User supplied the listing details and asked for an assessment and a good message.
