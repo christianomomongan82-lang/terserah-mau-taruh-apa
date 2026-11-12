@@ -1,5 +1,40 @@
 # Project Control — Sumber Kebenaran Lintas Percakapan
 
+## 0I. JALUR KERJA AI-DATA: 17 TAHUN SEKARANG, 18 TAHUN NANTI — 2026-11-12
+
+**Status: hasil riset aktual; tidak ada pekerjaan/task platform yang saat ini terverifikasi cocok untuk seluruh batasan usia 17 + Android-only + minim komunikasi. Jalur terbaik setelah usia 18 sudah ditemukan.**
+
+- Profil yang dipakai: pengguna berusia 17 tahun, memiliki e-KTP, Android-only, modal Rp0, memprioritaskan pekerjaan repetitif yang menghasilkan output (data labeling, anotasi, transkripsi, validasi/data entry), tidak mau survei, sales, referral, engagement palsu, cold-DM, atau membuat konten rutin.
+- **Tanggal akses usia 18:** catatan pengguna menyebut ulang tahun 25 Desember 2026. Pada tanggal riset 12 November 2026, tersisa 43 hari. Jangan menggunakan tanggal lahir palsu atau mengajukan aplikasi yang mensyaratkan 18+ sebelum tanggal tersebut.
+- **Pilihan utama setelah 18 tahun — Tasker (PT Literasi Digital Aksara):**
+  - Website resmi menyebut AI data work dari rumah: pelabelan gambar/video, anotasi teks, transkripsi dan pelabelan audio.
+  - Syarat: 18+, penutur asli Bahasa Indonesia, bahasa daerah menjadi nilai tambah, dan menerima laptop atau HP dengan internet stabil.
+  - Pendaftaran gratis, tidak meminta biaya/deposit, ada tes dan pelatihan sebelum proyek; bayaran hanya untuk hasil yang lolos quality check.
+  - Form aplikasi juga meminta kota/kabupaten, bahasa, jenis tugas, perangkat, CV PDF/DOCX; pengalaman bersifat opsional. Mereka secara eksplisit meminta calon kontributor **tidak mengirim foto KTP atau data rekening di tahap aplikasi awal**.
+  - Belum dipublikasikan: tarif tiap proyek, volume proyek per worker, jadwal pencairan dan rel pembayaran. Wajib tanyakan/konfirmasi setelah lolos tahap awal; jangan menjanjikan nominal.
+  - URL: https://tasker.co.id/
+- **Pilihan kedua setelah 18 tahun — Jwuma / Corpshore AI:**
+  - Official Indonesia page menyatakan pekerjaan remote aktif di Indonesia: anotasi teks/gambar, evaluasi model dan quality assurance. Sample task juga mencakup response ranking dan data entry.
+  - Bahasa yang mereka sebut memiliki permintaan di Indonesia: Bahasa Indonesia, Jawa, Sunda, Inggris. Jenis task yang terbuka bergantung bahasa dan assessment.
+  - Terms dated 22 Oct 2026: umur minimal 18; harus legally able to work di negara domisili; satu akun/orang. Tarif ditampilkan sebelum reservasi; tidak ada biaya daftar/kualifikasi/kerja/payout; pekerjaan yang diterima dibayar pada batch rutin.
+  - Halaman Indonesia menyebut payout mingguan via Wise, yang dapat meneruskan ke rekening bank atau DANA/GoPay/OVO/ShopeePay di Indonesia. Wise account sendiri tidak wajib.
+  - **Belum terverifikasi:** kecocokan penuh antarmuka/seluruh jenis task dengan HP saja; uji kompatibilitas dari Android harus dilakukan setelah memenuhi umur.
+  - URL: https://platform.corpshore.ai/id/indonesia ; Terms: https://platform.corpshore.ai/legal/terms
+- **Kandidat 17+ yang ditahan — NusaTalent SideJobs:**
+  - Google Play menyatakan SideJobs menerima usia 17+ dengan KTP, menyediakan misi dan reward yang dapat dicairkan ke bank/e-wallet; terdapat beberapa ulasan pengguna yang mengaku pernah mendapat uang dari misi.
+  - Namun deklarasi Google Play menyebut aplikasi dapat mengumpulkan informasi keuangan dan data tidak dienkripsi saat transit. Lebih serius, tautan situs resmi developer yang tercantum di Google Play (nusatalent.com) pada 12 Nov 2026 justru redirect ke domain judi kasino Polandia, bukan situs NusaTalent.
+  - **Keputusan keamanan: HOLD.** Jangan unggah KTP, rekening, atau data sensitif ke aplikasi sampai pengembang mengonfirmasi domain resmi dan penanganan data melalui kanal developer yang terverifikasi. Jangan anggap misi yang tidak diketahui sebagai pekerjaan cocok. Listing Play Store: https://play.google.com/store/apps/details?id=com.nusatalent.nusatalent
+- **KitaLulus: kanal pencarian, bukan bukti pekerjaan yang cocok.** Platformnya secara resmi menerima pelamar usia 17+ dengan KTP, tetapi lowongan remote/admin yang diperiksa menampilkan inkonsistensi: Ulina Studio terdaftar beralamat Medan sementara lowongan ditandai Jakarta Pusat; label part-time tetapi jam kerja Senin–Jumat 09.00–17.00; rincian gaji baru dijelaskan saat proses. Listing Pemeriksa Data Digital AKP Fashion Store punya pola jam yang sama dan minim detail. Jangan menganggap listing tersebut valid sebelum perusahaan dan recruiter diverifikasi langsung di platform.
+- **Dieliminasi:** Jwuma dan Tasker bukan pilihan sebelum 18; Visym Collector privacy policy menyebut tidak mengumpulkan data anak di bawah 18 dan terms mengatur data video/GPS serta lisensi dataset; Braintrust payout support list tidak mencantumkan Indonesia, sehingga jangan prioritaskan untuk rekening lokal. Flavetask/Jwuma/Tasker tidak boleh diakses dengan umur palsu.
+- **Urutan tindakan konkret:**
+  1. Sekarang: jangan buang waktu pada panel survei dan jangan unggah KTP ke NusaTalent sementara domain/keamanan belum jelas. Tidak ada microtask 17+ yang lolos semua bukti yang dikumpulkan.
+  2. Sebelum 25 Des: siapkan CV satu halaman dan latihan anotasi dasar Bahasa Indonesia; jangan bayar kursus/sertifikat atau mengirim data identitas ke pihak tak terverifikasi.
+  3. Mulai 25 Des 2026: ajukan Tasker dulu karena HP dinyatakan diterima secara eksplisit; kemudian ajukan Jwuma dan uji task/task UI dari Android. Cek tarif per task, minimum payout, serta apakah DANA/BRI tersedia sebelum menginvestasikan waktu besar.
+  4. Catat hasil qualification, project availability, accepted/rejected output, waktu kerja dan uang bersih. Stop bila tidak ada task atau rate tidak layak.
+- **Kesimpulan:** peluang yang paling mendekati preferensi pengguna adalah pekerjaan AI-data, bukan aplikasi survei. Jalur realistis yang diverifikasi kuat dimulai saat pengguna berusia 18: Tasker (HP jelas diterima) dan Jwuma (payout Indonesia transparan serta no-fee). Belum ada jaminan akan diterima atau mendapat volume kerja tertentu.
+- Laporan rinci: [research/online_work_ai_data_path_17_to_18_2026-11-12.md](research/online_work_ai_data_path_17_to_18_2026-11-12.md).
+
+
 ## 0H. KOREKSI ARAH KERJA ONLINE — TANPA SURVEI — 2026-11-12
 
 **Status: USER_CONFIRMED menolak jalur survei berbayar. Kandidat kerja repetitif harus menghasilkan output kerja; belum ada platform atau lowongan yang dipilih/dijalankan.**
