@@ -62,6 +62,15 @@ Dokumen ini dibuat agar Claude dapat memahami proyek tanpa konektor GitHub. Guna
 - RapiPO dan home bakery masih rekomendasi/proposal asisten; belum keputusan produk final eksplisit dari pengguna. Jangan menyatakan produk tervalidasi atau sudah diluncurkan.
 - Next: uji XLSX pada Google Sheets Android, tambah order notes/change tracking jika memang membantu, buat bahasa Indonesia dan buyer guide, lalu verifikasi checkout/payout Kreavo dan siapkan Etsy setelah usia/payout memenuhi syarat.
 
+## 2D. Filosofi bisnis dan standar memilih produk
+
+- Dokumen kerja: [RapiUsaha_DASAR_FILOSOFI_DAN_FILTER_PRODUK.md](RapiUsaha_DASAR_FILOSOFI_DAN_FILTER_PRODUK.md).
+- Gagasan utama: RapiUsaha menjual solusi yang layak dibayar; produk digital hanyalah kemasan dan distribusinya.
+- Standar: mulai dari masalah nyata; jual hasil bukan fitur; buktikan kualitas lewat penggunaan; fokus satu segmen dan satu pekerjaan penting; buat MVP kecil yang sangat berguna; harga terjangkau tapi margin sehat; produk dan distribusi dirancang bersama; trust adalah bagian dari produk; validasi sebelum scale; hitung unit economics dan beban support.
+- Bukti transaksi/repeat purchase paling kuat. Preorder/deposit/komitmen membayar kuat. Keluhan berulang/review/penjualan pesaing menengah. Likes, views, jumlah followers, dan hasil pencarian adalah sinyal lemah.
+- RapiPO home bakery tetap kandidat/prototipe asisten, belum produk final yang disetujui pengguna. Mobile-first adalah hipotesis diferensiasi yang harus dibuktikan.
+- Jangan terus mengembangkan RapiPO hanya karena sudah dibuat. Bandingkan alternatif dengan rubrik sebelum mengunci produk.
+
 ## 3. Batas usia dan pembayaran
 
 - Saat snapshot dibuat, pengguna berusia 17 tahun.
