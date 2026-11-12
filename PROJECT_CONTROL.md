@@ -1,5 +1,17 @@
 # Project Control — Sumber Kebenaran Lintas Percakapan
 
+## 0V. PROJECTS.CO.ID — INTERACTIVE PORTFOLIO — 2026-11-13
+
+**Status: ASSISTANT_PREPARED; standalone interactive HTML created; not hosted or uploaded.**
+
+- User explicitly approved upgrading the general freelancer portfolio into a more interactive presentation.
+- Created `Portofolio_Interaktif_Data.html`, a single-file, mobile-responsive portfolio with service overview, three interactive demos (data entry, quality checking, and text annotation), work-sample detail popups, workflow explanation, and copyable profile summary.
+- All sample data is fictitious. The text classification demo uses a simple keyword rule and is explicitly not presented as AI or as a definitive client annotation standard.
+- JavaScript syntax passed Node v22.16.0 `node --check`. Browser-based QA was blocked by the current execution environment; full visual/interaction QA is not claimed.
+- Artifact is available in the conversation download, not stored as a live public website. No hosting, Projects.co.id profile edit, portfolio upload, bid, message, or transaction occurred.
+- Detailed implementation checkpoint: [research/projects_co_id_interactive_portfolio_2026-11-13.md](research/projects_co_id_interactive_portfolio_2026-11-13.md).
+- Next step: after user reviews the HTML, publish it to a public static URL with approval, then attach that URL through Projects.co.id's portfolio link field. Keep the existing PNG/PDF samples as optional attachments.
+
 ## 0U. PROJECTS.CO.ID — GENERAL PROFILE & PORTFOLIO KIT — 2026-11-12
 
 **Status: ASSISTANT_PREPARED; general profile copy and three visual work samples created; no profile edits or uploads.**
