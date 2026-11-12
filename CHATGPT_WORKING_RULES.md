@@ -22,6 +22,13 @@ Dokumen ini menyimpan preferensi kerja pengguna yang berlaku lintas topik dan pr
 9. **Jika konektor GitHub tidak tersedia/gagal**, katakan dengan jelas bahwa status belum dapat diverifikasi. Jangan pura-pura sudah membaca repo dan jangan melanjutkan dengan menebak arah bisnis.
 10. Dalam jawaban pertama setelah pemulihan, beri ringkasan singkat: proyek aktif, keputusan terakhir yang benar-benar disetujui pengguna, status pekerjaan/artefak, dan langkah konkret berikutnya. Jangan membanjiri pengguna dengan seluruh sejarah.
 
+### Preferensi bisnis: konten hanya untuk promosi
+
+- Pengguna secara eksplisit tidak suka bisnis yang menjual konten, jasa pembuatan konten, studio konten, social-media management, atau paket desain/copywriting sebagai produk.
+- Konten (misalnya posting Instagram, video pendek, carousel, caption) boleh dibuat HANYA sebagai sarana promosi/akuisisi untuk bisnis dan produk utama yang sedang dikerjakan.
+- Jangan mengusulkan bisnis konten atau menafsirkan permintaan membuat materi promosi sebagai minat membangun bisnis jasa konten.
+- Preferensi ini berlaku lintas percakapan dan mengalahkan ide/commit lama yang menyarankan P-CONTENT.
+
 ### Aturan anti-pivot dan anti-kontradiksi
 
 - Jangan menyamakan nama brand, pembuatan akun, atau penerimaan satu usulan kecil dengan persetujuan atas seluruh model bisnis/produk.
