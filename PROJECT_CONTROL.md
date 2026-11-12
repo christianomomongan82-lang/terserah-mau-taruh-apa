@@ -1,5 +1,21 @@
 # Project Control — Sumber Kebenaran Lintas Percakapan
 
+## 0O. UPWORK CONNECTOR SUDAH MUNCUL — BATAS USIA TETAP BERLAKU — 2026-11-12
+
+**Status: USER_CONFIRMED menyatakan telah menghubungkan Upwork; toolset Upwork kini terlihat dalam runtime ChatGPT. Akun dan data privat belum diakses. Penggunaan akun freelancer ditahan karena Upwork mensyaratkan minimal 18 tahun.**
+
+- Pengguna menyatakan: “Oke, gw dah hubungkan.”
+- Pemeriksaan tool runtime setelah pesan tersebut menemukan Upwork MCP tools untuk freelancer dan client (job search, account listing, proposal, profile, messages, offers, contracts, milestone, financials). Ini mengonfirmasi toolset terdaftar/tersedia di ChatGPT; belum membuktikan akun freelancer telah ditarik/diperiksa karena tool tidak dipanggil.
+- Upwork Help Center yang diperiksa 12 Nov 2026 menyebut pengguna harus berusia 18 tahun atau usia mayoritas di negaranya (mana yang lebih tua). Legal Center juga mensyaratkan akun individual berusia 18+ dan mampu membuat kontrak mengikat. KTP dan rekening tidak menggantikan persyaratan usia.
+- **Keputusan aman:** karena pengguna saat ini 17, jangan panggil list_accounts, jangan baca profil privat, jangan cari/submit proposal melalui akun, jangan mengirim pesan, dan jangan lakukan tindakan akun sampai pengguna memenuhi eligibility. Jangan bantu mengakali batas usia atau memakai identitas/akun orang lain.
+- Fitur resmi Upwork di ChatGPT yang dapat dipakai setelah eligible: job search, save/hide jobs, proposal drafting/submission, invitations, profile, messages, offers, contracts, milestones, earnings/Connects. Tindakan submit proposal harus direview dan dikonfirmasi pengguna; tindakan uang/kontrak mengikat diselesaikan melalui Upwork.
+- Integrasi sudah tersedia secara teknis di runtime; **belum dilakukan account read atau tindakan apa pun**. Tidak ada job, proposal, kontrak, atau penghasilan yang telah diakses/dibuat.
+- Sementara itu, asisten masih dapat membantu menerjemahkan deskripsi pekerjaan yang pengguna bawa secara manual, menyiapkan profil/CV dan latihan proposal tanpa membuka akun Upwork.
+- Sumber resmi:
+  - https://support.upwork.com/hc/en-us/articles/48662546612883-How-to-use-Upwork-in-ChatGPT
+  - https://support.upwork.com/hc/en-us/articles/211067778-Who-s-eligible-to-join-and-use-Upwork
+  - https://www.upwork.com/legal
+
 ## 0N. UPWORK + CHATGPT: BANTUAN BAHASA DAN WORKFLOW — 2026-11-12
 
 **Status: USER_CONFIRMED — pengguna menyukai Upwork karena rating/review Google Play yang tinggi, tetapi kesulitan memahami bahasa Inggris dan menginginkan alur yang lebih otomatis. Assistant proposal: gunakan integrasi resmi Upwork di ChatGPT sebagai jalur utama setelah akun memenuhi syarat.**
@@ -10,7 +26,7 @@
   - Freelancer dapat mencari job melalui @Upwork, mendapat rekomendasi sesuai profil, save/hide jobs, mengajukan proposal, meninjau/menolak/meminta perubahan atas offer, membaca/merespons pesan kontrak, mengirim milestone yang selesai dan memeriksa earnings/Connects.
   - Proposal/messaging/job actions disiapkan untuk review pengguna sebelum dikirim; proposal submit memerlukan konfirmasi. Accepting offer adalah tindakan mengikat yang diselesaikan di Upwork.com; aksi terkait dana/pembayaran/milestone juga mengarah ke Upwork.com.
   - Upwork menyatakan integrasi tidak dikenakan biaya tambahan dan tersedia bagi ChatGPT users termasuk Free; tindakan yang menghabiskan Connects tetap menunjukkan biaya sebelum konfirmasi.
-  - Saat pemeriksaan tool runtime ini, tidak ada Upwork connector/action yang terekspos di ALL_TOOLS dan Plugin Management search tidak menampilkan Upwork, walaupun panduan resmi menyebut app tersedia pada Settings → Apps. Jadi arahkan pengguna memeriksa Apps directory di UI; jangan klaim koneksi sudah aktif. Bila tidak muncul, kemungkinan rollout/availability belum tersedia pada sesi pengguna.
+  - Koreksi 12 Nov 2026: setelah pengguna menghubungkan Upwork, toolset Upwork muncul di runtime. Namun karena pengguna masih berusia 17 dan Upwork mensyaratkan 18+, tidak ada account read atau operasi akun yang dijalankan sampai eligible.
   - Sumber: https://support.upwork.com/hc/en-us/articles/48662546612883-How-to-use-Upwork-in-ChatGPT
 - **Age gate:** Upwork Terms/eligibility menyatakan pengguna harus berumur 18 tahun atau usia mayoritas yang lebih tinggi. KTP/rekening tidak menggantikan umur minimum. Jangan membuat akun dengan tanggal lahir palsu atau memakai identitas/akun orang lain. Pengguna saat ini 17; Upwork account/proposal tidak digunakan sebelum 18.
   - Sumber: https://support.upwork.com/hc/en-us/articles/211067778-Who-s-eligible-to-join-and-use-Upwork ; https://www.upwork.com/legal
