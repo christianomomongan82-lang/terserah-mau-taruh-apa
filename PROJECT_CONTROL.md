@@ -5,6 +5,45 @@
 
 > Aturan utama: dokumen ini membantu menemukan sumber yang benar; ia tidak menggantikan bukti langsung dari repo, deployment, file, atau keputusan eksplisit terbaru pengguna. Status yang belum dicek ditandai apa adanya.
 
+## 0A. CHECKPOINT PROFIL P-DIGITAL / RapiUsaha — 2026-11-12
+
+**Status persetujuan: USER_CONFIRMED.** Pengguna menyetujui rangkuman profil bisnis secara eksplisit pada percakapan 2026-11-12. Catatan ini merekam preferensi dan batasan pengguna; bukan persetujuan atas produk tertentu.
+
+### Profil yang dikonfirmasi pengguna
+- **Model bisnis:** membuat produk digital sendiri dan menjualnya berulang kali.
+- **Target pelanggan:** belum ditentukan; pilih berdasarkan peluang pasar terbaik.
+- **Kategori/masalah produk:** belum ditentukan; riset dan pilih yang paling layak secara komersial.
+- **Format produk dan pasar geografis/bahasa:** bebas; pilih yang paling menguntungkan dan realistis.
+- **Saluran akuisisi yang diterima:** marketplace/toko digital; website/halaman penjualan dengan checkout otomatis; Google/SEO; Instagram/TikTok hanya sebagai promosi produk utama.
+- **Yang ingin dihindari:** telepon/video call pelanggan; cold-DM atau mengejar prospek satu per satu; banyak chat pelanggan setiap hari; teknologi rumit/tidak andal; pekerjaan manual berulang untuk setiap pelanggan.
+- **Dukungan pascapembelian:** minimal; produk harus self-service.
+- **Modal awal:** Rp0.
+- **Waktu kerja:** lebih dari 6 jam per hari.
+- **Target pemasukan pertama:** secepat mungkin, idealnya kurang dari 1 bulan.
+- **Gaya operasional:** bersedia bekerja keras pada tahap awal agar operasional dapat diotomatisasi kemudian.
+- **Target pendapatan 30 hari:** Rp100.000–Rp300.000.
+- **Target jangka panjang:** mengejar pendapatan bersih bulanan setinggi mungkin.
+- **Prioritas trade-off:** SEIMBANG — tetap mengejar pemasukan pertama dalam 30 hari tanpa mengorbankan potensi jangka panjang yang besar.
+- **Pembayaran/payout:** pengguna ingin mengelola sendiri dan tidak menghendaki keterlibatan orang tua/wali.
+- **Batas legal/operasional:** pengguna berusia 17 tahun pada saat pencatatan. Persyaratan usia, KYC, kepemilikan akun, rekening, dan payout wajib diperiksa berdasarkan ketentuan resmi setiap platform. Jangan menyarankan pemalsuan usia atau penggunaan identitas orang lain. Jika jalur mandiri tidak memenuhi syarat, jelaskan hambatan dan cari alternatif yang sah; jangan menganggap pengguna setuju melibatkan wali.
+
+### Status keputusan dan hal yang belum diputuskan
+- **USER_CONFIRMED:** model produk digital buatan sendiri, target pelanggan/jenis produk/format/pasar masih terbuka untuk riset, kanal akuisisi yang diterima, batas interaksi dan dukungan, modal/waktu, target pendapatan, prioritas seimbang, serta preferensi pengelolaan payout mandiri.
+- **OPEN:** produk spesifik, masalah pelanggan, segmen prioritas, harga, platform penjualan, metode checkout/payout yang memenuhi syarat usia, dan strategi distribusi final.
+- **ASSISTANT_PROPOSAL:** Paket Operasional Jualan WhatsApp dan komponen-komponennya tetap hipotesis awal saja; belum disetujui sebagai produk final.
+- **REJECTED/ARCHIVED:** bisnis jasa/studio konten dan bisnis yang menjual konten. Konten hanya boleh menjadi promosi produk utama.
+- **Bukan bukti validasi:** belum ada produk final, pelanggan berbayar, atau penjualan yang terverifikasi.
+
+### Checkpoint pekerjaan dan langkah berikutnya
+- **Tanggal:** 2026-11-12.
+- **Status:** profil kebutuhan dan batasan bisnis selesai dirangkum serta disetujui pengguna; riset pemilihan produk belum selesai.
+- **Tujuan saat ini:** memilih peluang produk digital B2C yang punya bukti permintaan dan kesediaan membayar, dapat dibuat dengan modal nol, minim dukungan manual, serta punya jalur pembayaran/payout yang legal untuk kondisi usia pengguna.
+- **Yang benar-benar berubah:** profil pengguna dicatat sebagai keputusan USER_CONFIRMED di checkpoint ini.
+- **Bukti persetujuan:** pesan pengguna, “Setuju. Simpan profil bisnis ini ke GitHub, lalu verifikasi hasilnya.” setelah menyetujui rangkuman profil.
+- **Belum diverifikasi:** kelayakan usia dan payout platform mana pun; permintaan pasar, willingness-to-pay, kompetisi, harga, serta produk yang paling layak.
+- **Langkah berikutnya:** riset komparatif peluang produk digital dengan sumber primer/terkini; evaluasi permintaan, kompetisi, biaya pembuatan, kecepatan menuju penjualan pertama, dukungan pelanggan, dan syarat usia/payout. Berikan satu rekomendasi utama beserta bukti dan alternatif sebelum membangun produk. Jangan mengunci produk atau segmen tanpa persetujuan eksplisit pengguna.
+- **Larangan/perangkap:** jangan mengubah RapiUsaha menjadi jasa konten, affiliate software, rental, atau SaaS; jangan menganggap konsep WhatsApp sebagai pilihan final; jangan menyarankan akun pembayaran dengan usia palsu atau rekening pihak lain tanpa dasar izin platform.
+
 ## 0. ARAH BISNIS AKTIF — STATUS TERKOREKSI 2026-11-12
 
 **Status sekarang: P-DIGITAL / RapiUsaha adalah arah kerja yang sedang dilanjutkan.**
