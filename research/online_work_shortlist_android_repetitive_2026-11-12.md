@@ -1,6 +1,6 @@
 # Shortlist Kerja Online — HP Android, Repetitif, Tanpa Modal
 
-> **ARSIP SUPERSEDED:** Rekomendasi survei di bawah ditolak pengguna. Jangan gunakan JAKPAT, Nusaresearch, atau SurveyKita sebagai rekomendasi. NusaTalent SideJobs juga ditolak pengguna karena ternyata survei. Rujuk shortlist marketplace freelance/proyek terbaru.
+ > **ARSIP SUPERSEDED:** Seluruh platform survei dalam dokumen ini ditolak pengguna. JAKPAT, Nusaresearch, SurveyKita, dan NusaTalent SideJobs (yang ternyata menyajikan survei) tidak boleh direkomendasikan sebagai kerja. Rujuk shortlist marketplace freelance/proyek terbaru.
 
 Tanggal pemeriksaan: 12 November 2026
 Status: rekomendasi asisten berdasarkan preferensi kerja yang dikonfirmasi pengguna; bukan jaminan pendapatan atau persetujuan mendaftar.
