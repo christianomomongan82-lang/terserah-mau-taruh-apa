@@ -1,5 +1,17 @@
 # Project Control — Sumber Kebenaran Lintas Percakapan
 
+## 0R. PROJECTS.CO.ID — INPUT 50 DATA (SCOPE CLARIFICATION) — 2026-11-12
+
+**Status: ASSISTANT_ASSESSMENT_AND_DRAFT; no bid or message sent.** User supplied the listing details and asked for an assessment and a good message.
+
+- Project: [Input 50 data](https://projects.co.id/public/browse_projects/view/d7651d/input-50-data), owner BisnisProposal.
+- Current public listing still shows Published; owner rating 10/10 with 6 projects; about 501 bids; budget Rp150,000–Rp300,000; Select Deadline 10 Dec 2026; finish days 7.
+- Scope discrepancy: title says 50 data, description says 100 food data. Source availability is also unspecified.
+- Assessment: reasonable fit and positive owner track record, but very high competition. Recommended to ask owner to clarify number of rows and whether source list is supplied before committing to a price or delivery time.
+- Draft and exact conditional price guidance: `research/projects_co_id_input_50_bid_advice_2026-11-12.md`.
+- **No account access, message, bid, or payment occurred.** User has not chosen a final bid amount or explicitly authorized a submission.
+
+
 ## 0Q. PROJECTS.CO.ID — LIVE OPPORTUNITY + BID DRAFT — 2026-11-12
 
 **Status: ASSISTANT_RESEARCHED; no user bid decision or account action yet.** Upwork remains blocked for account use until the user meets its age requirement. This checkpoint records a current, legally distinct Projects.co.id path that appears to meet the site's literal age wording.
