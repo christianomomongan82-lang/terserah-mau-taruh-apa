@@ -81,6 +81,17 @@ Dokumen ini dibuat agar Claude dapat memahami proyek tanpa konektor GitHub. Guna
 - Rekomendasi asisten: jangan menambah fitur pada RapiPO generik. Cari satu masalah/pekerjaan spesifik yang belum dipenuhi dengan baik dan buktikan willingness-to-pay. Order revision/version history dan weekly preorder capacity hanya ide riset, belum divalidasi.
 - Tidak ada produk/segmen/harga/marketplace final yang disetujui pengguna. RapiPO tetap proposal/prototipe asisten.
 
+## 2E. Audit gap terbaru: home bakery custom-order changes (2026-11-12)
+
+- Laporan terbaru: [research/RapiUsaha_gap_validation_custom_order_changes_2026-11-12.md](research/RapiUsaha_gap_validation_custom_order_changes_2026-11-12.md).
+- Masalah perubahan order custom nyata: perubahan tier/design/flavor/servings/dietary needs/delivery/rush fee dapat mengubah biaya, tenaga, jadwal dan pembelian bahan.
+- Namun solusi inti sudah tersedia: Orders App menangkap/update detail order dari WhatsApp/Instagram; GetTheOK memberi approval link dengan price impact, approve/request change/decline, timestamp, dan revision history (Free: 3 approvals/month; Starter $9/mo, Solo $19/mo, Pro $29/mo). Etsy search juga menampilkan Bakery Order Change & Pickup Kit seharga $2.49.
+- **NO-GO:** jangan membangun generic order-revision spreadsheet atau approval tracker bakery. Problem nyata tidak cukup menjadi alasan produk jika alternatif gratis menyelesaikan inti pekerjaan dan WTP untuk file baru belum terbukti.
+- RapiPO all-in-one generic juga NO-GO untuk ekspansi/peluncuran saat ini. Jangan menambah fitur hanya agar produk tampak lengkap.
+- Dog grooming/mobile pet grooming dan short-term-rental cleaning telah diperiksa sebagai segmen pembanding; masing-masing memiliki banyak template pesaing, sementara item-level paid evidence yang diperiksa belum cukup untuk mengalahkan home bakery.
+- Home bakery masih kandidat riset, bukan keputusan final; jangan langsung pivot. Perluas pencarian segmen lain dengan review/penjualan item-level yang dapat diverifikasi dan audit kompetitor gratis.
+- Belum ada produk final, harga, segmen, atau marketplace yang disetujui. Tidak ada video launch yang harus dibuat sebelum gap/value dibuktikan.
+
 ## 3. Batas usia dan pembayaran
 
 - Saat snapshot dibuat, pengguna berusia 17 tahun.
