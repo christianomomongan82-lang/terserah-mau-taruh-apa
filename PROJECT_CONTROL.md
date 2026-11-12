@@ -1,5 +1,18 @@
 # Project Control — Sumber Kebenaran Lintas Percakapan
 
+## 0T. PROJECTS.CO.ID — PORTFOLIO SAMPLE EXCEL REJECT PENGEMASAN — 2026-11-12
+
+**Status: ASSISTANT_PREPARED; local workbook created and QA-checked. No account actions or bids/messages.**
+
+- User asked for a concrete step to increase attractiveness to prospective clients. Prepared a targeted Excel portfolio sample for the backup listing "Template Excel — Laporan Data Reject Pengemas".
+- Workbook delivered in this conversation: `Portfolio_Template_Laporan_Reject_Pengemasan.xlsx`.
+- It includes 100 clearly labelled synthetic practice records plus 100 blank input rows, dropdown validation, per-row reject-rate formulas, a summary dashboard, monthly/category calculations, chart, reference lists, and usage instructions.
+- QA: 100 records; 3,044 reject units; 789,448 production units; overall reject rate approximately 0.39%; category counts sum to 100; formula-error scan returned 0 matches; dashboard and input layout visually inspected.
+- **This is only an independent demo using fictitious data.** It is not client work or evidence of employment, and must not be represented as such.
+- Detailed artifact specification and checks: `research/projects_co_id_portfolio_sample_excel_reject_2026-11-12.md`.
+- This does not alter the shortlist ranking: Indonesian headline annotation remains first priority; Excel reject-report template remains a backup. No Projects.co.id login, profile edit, upload, bid, message, payment, or transaction occurred.
+- Next step: use the workbook as a sample only if the user chooses to pursue an Excel listing and the platform permits attaching it. Keep price and delivery commitment conditional on confirmed scope.
+
 ## 0S. PROJECTS.CO.ID — SHORTLIST LIVE UNTUK PEMULA — 2026-11-12
 
 **Status: ASSISTANT_RESEARCHED; shortlist complete, no bids/messages sent.** User asked assistant to find worthwhile current projects.
