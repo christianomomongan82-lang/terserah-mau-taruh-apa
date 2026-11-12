@@ -1,5 +1,18 @@
 # Project Control — Sumber Kebenaran Lintas Percakapan
 
+## 0C. KERANGKA FILOSOFI BISNIS RAPIUSAHA — 2026-11-12
+
+**Status: kerangka evaluasi yang diminta pengguna untuk dilanjutkan; detail rubrik adalah USULAN ASISTEN, bukan perubahan model bisnis atau persetujuan produk.**
+
+- **Gagasan utama:** RapiUsaha bukan sekadar pembuat file digital; bisnis ini harus menghasilkan solusi yang layak dibayar. Produk digital adalah kemasan/distribusi solusi.
+- **Prinsip:** mulai dari masalah nyata; jual hasil bukan fitur; kualitas harus terbukti dalam penggunaan; fokus pada satu pembeli/pekerjaan penting; MVP kecil dan berguna; harga terjangkau tetapi sehat secara margin; rancang produk dan distribusi bersama; bangun kepercayaan; validasi sebelum skala; perhitungkan unit economics dan beban support; bangun reputasi/katalog dari kebutuhan yang terbukti.
+- **Hierarki bukti:** transaksi/repeat purchase paling kuat; preorder/deposit/komitmen membayar kuat; keluhan berulang + review/penjualan listing pesaing menengah; views/likes/followers/jumlah hasil pencarian lemah dan hanya membantu menentukan eksperimen.
+- **Rubrik pemilihan kandidat:** intensitas/frekuensi masalah; bukti pembayaran; ruang diferensiasi; demonstrasi video; kelayakan phone-first; dukungan mandiri; margin bersih setelah fee; kelayakan marketplace/usia/KYC/payout. Hard gate bila jalur pembayaran/pengiriman tidak sah atau produk tidak berfungsi pada perangkat sasaran.
+- **Penerapan pada RapiPO:** tetap kandidat eksperimen/prototipe, belum produk final USER_CONFIRMED. Mobile-first untuk home bakery merupakan hipotesis diferensiasi yang harus diuji, bukan fakta terbukti.
+- **Dokumen lengkap:** [RapiUsaha_DASAR_FILOSOFI_DAN_FILTER_PRODUK.md](RapiUsaha_DASAR_FILOSOFI_DAN_FILTER_PRODUK.md).
+- **Langkah berikutnya:** bandingkan beberapa segmen/produk menggunakan rubrik ini sebelum memperdalam RapiPO; jangan terus membangun RapiPO hanya karena prototipenya sudah dibuat.
+
+
 ## 0B. CHECKPOINT RISET MARKETPLACE RAPIUSAHA — 2026-11-12
 
 **Status: RISET KANAL SELESAI; REKOMENDASI ASISTEN, BELUM DIKUNCI PENGGUNA.**
