@@ -1,4 +1,7 @@
 # Kerja Online Berbasis Tugas — Koreksi Tanpa Survei
+
+> **KOREKSI TERBARU: Pengguna menegaskan NusaTalent SideJobs juga ternyata survei. NusaTalent SideJobs = REJECTED. Jangan masukkan sebagai opsi kerja. Semua survei/kuesioner dilarang sebagai rekomendasi.**
+
 Tanggal pemeriksaan: 12 November 2026
 Status: shortlist koreksi berdasarkan penolakan pengguna terhadap survei berbayar.
 
@@ -14,7 +17,7 @@ Pengguna meminta kerja online berulang yang menghasilkan output kerja, bukan pen
 
 ## Kandidat terdekat
 
-### 1. NusaTalent SideJobs — kandidat pertama untuk diperiksa, belum terbukti cocok
+### NusaTalent SideJobs — REJECTED (ternyata survei)
 - Listing Google Play resmi menyebut SideJobs menerima pengguna minimal 17 tahun yang memiliki KTP.
 - Misi menghasilkan reward/komisi yang dapat dicairkan ke rekening bank atau e-wallet.
 - Tidak ada rincian publik yang cukup tentang contoh misi aktif, jenis pekerjaan, rate, kuota, frekuensi, minimum payout, fee, atau bukti pencairan aktual dari pekerja.
