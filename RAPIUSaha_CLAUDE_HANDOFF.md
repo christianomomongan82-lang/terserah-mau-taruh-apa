@@ -71,6 +71,16 @@ Dokumen ini dibuat agar Claude dapat memahami proyek tanpa konektor GitHub. Guna
 - RapiPO home bakery tetap kandidat/prototipe asisten, belum produk final yang disetujui pengguna. Mobile-first adalah hipotesis diferensiasi yang harus dibuktikan.
 - Jangan terus mengembangkan RapiPO hanya karena sudah dibuat. Bandingkan alternatif dengan rubrik sebelum mengunci produk.
 
+## 2E. Hasil perbandingan produk dan audit kompetitor (2026-11-12)
+
+- Riset lengkap: [research/RapiUsaha_product_opportunity_comparison_2026-11-12.md](research/RapiUsaha_product_opportunity_comparison_2026-11-12.md).
+- Home bakery tetap memiliki bukti permintaan produk/listing paling kuat di antara kandidat yang diperiksa (termasuk listing Bestseller dan listing dengan 61 ulasan item 4.8/5).
+- **RapiPO generic all-in-one belum layak diluncurkan.** Kompetitor sudah menawarkan spreadsheet 11–14 tab dengan order/DP, recipe costing, inventory, CRM, expenses, dashboard, production planning, dan ada order form Google Forms yang auto-save ke Google Sheets.
+- Mobile-first/simple bukan pembeda yang sudah terbukti; beberapa produk pesaing sudah mengklaim/mendukung Google Sheets mobile.
+- Cleaning pricing calculators menawarkan harga/nilai problem lebih tinggi, tetapi bukti permintaan item-spesifik yang diperiksa masih lemah; nail tech kompetitif dan harga tertekan; photography lebih kompleks; sourdough microbakery sudah punya planner/preorder/fermentation competitors.
+- Rekomendasi asisten: jangan menambah fitur pada RapiPO generik. Cari satu masalah/pekerjaan spesifik yang belum dipenuhi dengan baik dan buktikan willingness-to-pay. Order revision/version history dan weekly preorder capacity hanya ide riset, belum divalidasi.
+- Tidak ada produk/segmen/harga/marketplace final yang disetujui pengguna. RapiPO tetap proposal/prototipe asisten.
+
 ## 3. Batas usia dan pembayaran
 
 - Saat snapshot dibuat, pengguna berusia 17 tahun.
