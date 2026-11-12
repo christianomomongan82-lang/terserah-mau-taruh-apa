@@ -1,5 +1,18 @@
 # Project Control — Sumber Kebenaran Lintas Percakapan
 
+## 0U. PROJECTS.CO.ID — GENERAL PROFILE & PORTFOLIO KIT — 2026-11-12
+
+**Status: ASSISTANT_PREPARED; general profile copy and three visual work samples created; no profile edits or uploads.**
+
+- User clarified that they want general profile material, not an Excel-only portfolio. Positioning: **Data Entry & Pengolahan Data | Spreadsheet | Pemeriksaan Data | Anotasi Teks**.
+- Created a consolidated 4-page PDF: `Portofolio_Umum_Pengolahan_Data.pdf`, plus three standalone images for separate platform portfolio entries: input/penataan data, pemeriksaan kualitas data, and anotasi teks Bahasa Indonesia.
+- Created copy-ready profile title/description, suggested skill tags, and portfolio item titles/descriptions in `Teks_Profil_Projects_co_id.txt`.
+- The PDF rendered to four pages and was visually inspected after layout correction. All sample data/headlines are fictitious; these are practice examples, not client work, employment claims, or formal qualifications.
+- Platform facts verified from official FAQ: edit profile through My Account > My Profile > Edit Profile; add portfolio through My Account > My Portfolio > Add New; each portfolio item asks for year, description, link, and image; maximum 10 items and 10 MB per file. Source: https://projects.co.id/public/pages/faq_umum
+- Exact local deliverables: `/mnt/data/Portofolio_Umum_Pengolahan_Data.pdf`, `/mnt/data/Portfolio_01_Input_dan_Penataan_Data.png`, `/mnt/data/Portfolio_02_Pemeriksaan_Kualitas_Data.png`, `/mnt/data/Portfolio_03_Anotasi_Teks_Bahasa_Indonesia.png`, `/mnt/data/Teks_Profil_Projects_co_id.txt`.
+- Prior Excel-specific workbook remains one additional sample, not the overall profile identity. Earlier shortlist ranking and project strategy are unchanged.
+- No Projects.co.id account access, profile edit, image upload, bid, message, payment, or transaction occurred. User must perform the profile edits manually.
+
 ## 0T. PROJECTS.CO.ID — PORTFOLIO SAMPLE EXCEL REJECT PENGEMASAN — 2026-11-12
 
 **Status: ASSISTANT_PREPARED; local workbook created and QA-checked. No account actions or bids/messages.**
