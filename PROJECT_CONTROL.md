@@ -1,5 +1,21 @@
 # Project Control — Sumber Kebenaran Lintas Percakapan
 
+## 0Q. PROJECTS.CO.ID — LIVE OPPORTUNITY + BID DRAFT — 2026-11-12
+
+**Status: ASSISTANT_RESEARCHED; no user bid decision or account action yet.** Upwork remains blocked for account use until the user meets its age requirement. This checkpoint records a current, legally distinct Projects.co.id path that appears to meet the site's literal age wording.
+
+- Live candidate selected for consideration: **Anotator Clickbait Judul Berita Berbahasa Indonesia untuk Penelitian Skripsi** — https://projects.co.id/public/browse_projects/view/41651d/anotator-clickbait-judul-berita-berbahasa-indonesia-untuk-penelitian-skripsi
+- Listing currently shows Published / bids still open, 3 annotator slots, 300 Indonesian headlines per annotator, written guideline, Google Sheets, plus validation discussion; honorarium stated Rp150,000/person; deadline 7 Dec 2026; estimated 8 days.
+- Latest observed indexed bid count 87 (some cached page snapshots show 80–85; counts fluctuate). Owner new / 0 previous projects / no rating, so reputation evidence is absent. Do not call this guaranteed or low-risk.
+- Projects.co.id Terms say individuals must be "berusia diatas 17 (tujuh belas) tahun"; their page also reserves discretion to accept/reject users. User is 17 years 10 months on 12 Nov 2026; literal wording appears to allow registration, but acceptance is not guaranteed.
+- Fee estimate if paid Rp150,000: 12% worker fee = Rp18,000; BRI transfer fee Rp7,500; estimated payout Rp124,500. Bidding is free. Never start until the platform confirms escrow is funded; keep all messages and payments inside Projects.co.id.
+- Another alternative assessed: "Input 50 data" (description says 100 food entries), Rp150,000–300,000, owner rated 10/10 with 6 projects, but ~500 bids and quantity mismatch. Lower priority due intense competition and scope ambiguity.
+- Created a new attachment for the annotation bid: `/mnt/data/Portfolio_Anotasi_Judul_Berita_30_Contoh.xlsx`. It contains 30 synthetic practice headlines, labels, rationales, confidence, review flags, guidance, and a formula summary; 15 Clickbait / 15 Non-clickbait; formula error scan returned zero. It is explicitly a practice sample, not client experience.
+- Draft bid text and detailed evidence/calculation are stored in `research/projects_co_id_live_shortlist_and_bid_draft_2026-11-12.md` (commit verified in this session).
+- **No account registration, profile edit, bid, message, or transaction has been performed.** User has not explicitly chosen or approved this job/bid.
+- Next step if user chooses to pursue it: user submits the prepared bid from their Projects.co.id account; assistant can then translate/respond to project-owner communication and help produce/QA the deliverable. Do not submit or represent user without their explicit approval.
+
+
 ## 0P. UPWORK PROFILE KIT + TWO PORTFOLIO SAMPLES CREATED — 2026-11-12
 
 **Status: ASSISTANT_PREPARED package is complete for offline review. No Upwork account/profile was read or changed, no KTP was sent, and no public profile or proposal was published.**
