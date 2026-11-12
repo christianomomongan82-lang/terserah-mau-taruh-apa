@@ -1,5 +1,24 @@
 # Project Control — Sumber Kebenaran Lintas Percakapan
 
+## 0B. CHECKPOINT RISET MARKETPLACE RAPIUSAHA — 2026-11-12
+
+**Status: RISET KANAL SELESAI; REKOMENDASI ASISTEN, BELUM DIKUNCI PENGGUNA.**
+
+- **Kebutuhan USER_CONFIRMED:** marketplace yang punya pembeli ramai; produk digital harga terjangkau dengan kualitas sebagai pembeda; TikTok dan Instagram menggunakan video visual; pengguna tidak mau mengedit video dan meminta asisten menghasilkan video promosi siap unggah.
+- **Rekomendasi kanal jangka panjang (ASSISTANT_PROPOSAL): Etsy.** Laporan resmi Etsy Q3 2026 menyebut sekitar 88 juta active buyers (TTM), GMS Etsy Marketplace US$2,6 miliar (+8,8% YoY). Etsy mendukung instant digital downloads dan Indonesia tersedia di Etsy Payments.
+- **Kendala usia:** pemilik akun Etsy minimal 18 tahun. Penjual usia 13–17 harus memakai akun serta informasi keuangan orang tua/wali dengan izin dan pengawasan langsung. Karena pengguna tidak menginginkan keterlibatan wali, Etsy belum bisa dibuka secara mandiri sampai pengguna memenuhi syarat usia.
+- **Shopee:** program resmi Penjualan Produk Digital yang ditemukan mendefinisikan barang sebagai e-voucher dari Partner yang disebut di lampiran, bukan jalur terbuka untuk file template biasa. Jangan menyamarkan download sebagai barang fisik atau mengirim file lewat metode di luar sistem.
+- **Tokopedia:** skala traffic besar, tetapi kebijakan/fitur penjualan file digital generik untuk seller biasa belum berhasil diverifikasi. Jangan asumsikan spreadsheet/PDF bisa di-list.
+- **Kreavo:** Terms mengizinkan pengguna minimal 17 tahun dan produk digital original, tetapi halaman publik yang diperiksa menunjukkan 0+ seller/produk dan 0 kreator/penjualan; belum ada bukti marketplace discovery ramai. Hanya opsi checkout/file delivery sementara yang diarahkan oleh traffic sendiri, setelah verifikasi payout.
+- **Tokoge:** mendukung file digital dan auto-delivery, Terms menyebut fee 3,5%, tetapi usia minimum dan basis pembeli aktif belum jelas. Belum layak jadi kanal utama.
+- **Kandidat produk untuk riset lanjutan (ASSISTANT_PROPOSAL):** sistem spreadsheet home bakery / cottage bakery. Hasil pencarian Etsy menampilkan 1.000+ item; satu listing digital bertanda Bestseller, lebih dari 20 views/24 jam, dan harga promo US$8,75; pesaing terdekat menawarkan sistem 14-tab. Shop penjual listing tersebut mempunyai 117,4 ribu penjualan keseluruhan toko—bukan angka penjualan listing itu. Ada pula banyak pesaing dengan harga promo sekitar US$3,50–US$15,94.
+- **Biaya Etsy Indonesia:** listing US$0,20; transaction fee 6,5%; payment processing 4,5% + Rp7.000/order; deposit minimum Rp28.000; bila deposit di bawah threshold Rp1.400.000 ada deposit fee Rp28.000. Setup fee satu kali dan currency conversion fee dapat berlaku sesuai kondisi. Harga produk tidak boleh terlalu murah karena biaya tetap.
+- **Sumber riset detail:** [research/RapiUsaha_marketplace_channel_2026-11-12.md](research/RapiUsaha_marketplace_channel_2026-11-12.md).
+- **Status produk:** belum ada produk final, listing, penjualan, atau video promosi selesai. Home bakery masih kandidat, bukan keputusan final pengguna.
+- **Langkah berikutnya:** bandingkan celah produk home bakery dengan segmen kandidat lain dan review pesaing; tentukan fitur pembeda yang benar-benar penting; bangun MVP phone-first; uji formula/flow; siapkan listing dan video promosi. Etsy baru digunakan ketika persyaratan usia/payout terpenuhi. Kreavo hanya opsi sementara bila akun 17+ dan payout BRI benar-benar eligible.
+- **Batas keras:** jangan klaim angka traffic sebagai jumlah pembeli unik; jangan samakan jumlah hasil pencarian Etsy dengan penjualan; jangan buat akun dengan usia palsu atau data wali; jangan anggap platform kecil ramai tanpa bukti.
+
+
 **Terakhir diperbarui:** 2026-11-12  
 **Fungsi:** indeks dan checkpoint lintas proyek. Dokumen ini mencegah proyek, keputusan, dan status dari percakapan berbeda tercampur.
 
