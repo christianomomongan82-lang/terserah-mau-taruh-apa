@@ -2,19 +2,16 @@
 
 ## 0V. PROJECTS.CO.ID — INTERACTIVE PORTFOLIO — 2026-11-13
 
-**Status: LIVE and browser-tested.** Public portfolio website deployed; exact Projects.co.id profile URL still needed before activating the profile CTA.
+**Status: LIVE, public, and mobile-browser-tested.** Standalone portfolio link is ready for the user's Projects.co.id portfolio listing.
 
-- User explicitly asked for a more interactive, complete freelancer portfolio for the existing general positioning: **Data Entry & Pengolahan Data | Spreadsheet | Pemeriksaan Data | Anotasi Teks**. No service pivot.
-- Live URL: https://portofolio-data.usahalab-id.workers.dev/
-- Cloudflare Worker `portofolio-data` deployed on the existing `usahalab-id.workers.dev` subdomain. Worker subdomain enabled; `/health` endpoint verified returning `ok`.
-- Website was fetched live and mobile browser automation successfully tested all three demos: structured data entry, quality findings (duplicate/blank/inconsistent price), and headline annotation.
-- Enhanced page includes expanded service descriptions, scope/deliverables section, fuller profile description, copy buttons, and three detailed embedded portfolio sample visuals. No external image/CSS/JS assets required.
-- Removed generic Projects.co.id homepage link. CTA remains intentionally disabled until the user provides their exact public Projects.co.id profile URL. Do not guess a username or build a fake profile destination.
-- All examples use fictitious practice data. The annotation demo uses a basic keyword rule and is explicitly not represented as an AI model or a definitive label guideline.
-- GitHub source: `portfolio/index.html`; detailed evidence: `research/projects_co_id_interactive_portfolio_2026-11-13.md`.
-- Conversation deliverables: `Portofolio_Interaktif_Data.html`, cover PNG, three detailed sample PNGs, revised profile copy text, and `Paket_Portofolio_Projects_co_id.zip`.
-- No Projects.co.id profile edit, portfolio upload, bid, message, payment, or transaction occurred.
-- Next action: user shares public Projects.co.id profile URL; wire CTA to that exact page and redeploy. For Projects.co.id portfolio entry, use the live website URL in the `Link` field and the matching sample PNG as image.
+- User clarified that the website itself should not send clients back to Projects.co.id; the public website URL is simply pasted into the user's marketplace portfolio entry so visitors can open the work samples directly.
+- Live public URL: https://portofolio-data.usahalab-id.workers.dev/
+- Cloudflare Worker `portofolio-data` deployed on `usahalab-id.workers.dev`; health endpoint `/health` returns `ok`.
+- Removed the full marketplace/contact CTA block, disabled "menunggu tautan profil" button, Projects.co.id copy references, and profile URL JavaScript. No Projects.co.id button or external marketplace link remains on the website.
+- Changed top navigation CTA to an internal anchor `Lihat contoh kerja` linking to `#karya`.
+- GitHub source: `portfolio/index.html`; detail: `research/projects_co_id_interactive_portfolio_2026-11-13.md`.
+- Three demos previously passed mobile browser tests; this change affects only the final CTA/navigation and profile-specific handler, not demo logic.
+- The URL above is the link to paste into the Projects.co.id portfolio item's `Link` field. No public profile URL is needed. No account edit/upload, bid, message, payment or transaction was performed.
 
 ## 0U. PROJECTS.CO.ID — GENERAL PROFILE & PORTFOLIO KIT — 2026-11-12
 
