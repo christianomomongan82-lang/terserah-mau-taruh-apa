@@ -1,10 +1,16 @@
 # P-CONTENT — Pivot bisnis ke studio konten produkized
 
 **Tanggal riset:** 2026-11-12  
-**Status:** arah kerja utama baru; penawaran pilot belum dijual; belum ada pelanggan atau pemasukan.  
-**Keputusan:** hentikan distribusi software/affiliate sebagai model utama. Ganti dengan bisnis jasa digital milik sendiri: produksi batch konten siap-publikasi untuk UMKM, dimulai dari penjual makanan rumahan/katering kecil.
+**Status:** ARSIP / USULAN ASISTEN YANG TIDAK DISETUJUI. Tidak ada bukti bahwa pengguna memilih studio jasa konten. Bukan bisnis aktif dan jangan dijalankan kecuali diminta eksplisit.  
+**Usulan asisten saat itu (BUKAN KEPUTUSAN PENGGUNA):** studio jasa digital produksi batch konten siap-publikasi untuk UMKM. Usulan ini kemudian ditarik karena pengguna menyatakan bukan bisnis yang dimaksud.
 
-## 1. Kenapa beralih
+## 1. Catatan status dan alasan pengarsipan
+
+Dokumen ini dibuat oleh asisten sebagai usulan perubahan bisnis. Commit/dokumen ini bukan bukti persetujuan pengguna. Pada percakapan berikutnya pengguna menyatakan studio konten bukan bisnis yang dimaksud. Arah kerja yang dipulihkan di `PROJECT_CONTROL.md` adalah RapiUsaha / produk digital B2C untuk UMKM.
+
+## 2. Riset historis (arsip)
+
+### 2.1 Kenapa usulan ini pernah dibuat
 
 Pengguna mengoreksi bahwa yang harus pindah adalah bisnis yang sedang dikerjakan asisten. Ini bukan sekadar menambah vendor/industri pada bisnis distribusi software. P-DISTRO dan pencarian affiliate diparkir sebagai riset lama; bukan model utama saat ini.
 
@@ -17,7 +23,7 @@ Kriteria bisnis baru:
 - Produksi bisa dibatch dan dibantu AI/template; pemasaran bisa dijadwalkan otomatis.
 - Tidak mengandalkan KYC/approval program partner vendor.
 
-## 2. Bukti pasar
+## 3. Bukti pasar
 
 ### Perilaku penjualan online
 Publikasi BPS *Statistik E-Commerce 2024* dirilis 28 November 2025. Ringkasan data BPS yang dimuat Katadata menyebut:
@@ -48,7 +54,7 @@ Sumber ringkasan persentase: https://databoks.katadata.co.id/en/technology-telec
   https://bukamenu.id/pricing
   https://www.sosmed.io/harga
 
-## 3. Model bisnis terpilih
+## 4. Model bisnis yang pernah diusulkan (arsip)
 
 **Studio batch konten siap-publikasi untuk UMKM**, bukan pengelola akun penuh dan bukan agensi yang harus datang mengambil foto.
 
@@ -84,7 +90,7 @@ Harga di atas adalah hipotesis uji harga, bukan harga pasar tervalidasi. Banding
 - Pesanan dapat diproses async melalui form/brief baku; tidak perlu meeting/call.
 - Paket bulanan memberi potensi recurring; hasilnya bergantung pada retensi dan kemampuan mendapatkan pelanggan, belum terbukti.
 
-## 4. Mesin pemasaran dan pemenuhan
+## 5. Mesin pemasaran yang pernah diusulkan (arsip)
 
 1. Satu akun brand milik usaha ini; tampilkan contoh konten dan penawaran secara publik.
 2. Satu riset masalah pelanggan → 3–5 turunan konten edukatif/portfolio.
@@ -97,7 +103,7 @@ Harga di atas adalah hipotesis uji harga, bukan harga pasar tervalidasi. Banding
 **Status Metricool saat pemeriksaan 2026-11-12:** layanan tersedia, tetapi belum ada akun media sosial yang terhubung. Brand ID yang terdeteksi 8048597. Link koneksi: https://app.metricool.com/brands/connections?blogId=8048597. Belum ada post terjadwal/published.
 Rujukan paket Metricool Free: https://metricool.com/pricing/ dan https://help.metricool.com/main-differences-between-free-and-paid-plans-bl0v9
 
-## 5. Pembayaran dan batas usia
+## 6. Pembayaran dan batas usia (catatan historis)
 
 LYNK.ID dapat menjadi salah satu checkout digital/service page, tetapi syarat umur memiliki perbedaan redaksi pada halaman resminya: versi Inggris menyebut minimum 18 tahun atau izin orang tua/wali; bagian Indonesia menyebut 21 tahun atau izin orang tua/wali. Karena pengguna berusia 17 tahun, minta konfirmasi tertulis dari Lynk dan gunakan hanya dengan persetujuan wali; jangan memalsukan usia atau meminjam identitas/rekening tanpa izin.
 Sumber: https://www.lynk.id/terms
@@ -106,7 +112,7 @@ Halaman harga Lynk menyebut akun gratis memiliki transaction fee 5% dan withdraw
 Sumber harga: https://www.lynk.id/pricing/
 Sumber ketentuan payout: https://www.lynk.id/terms
 
-## 6. Uji validasi yang tidak boleh dilewati
+## 7. Uji validasi yang pernah disarankan (tidak aktif)
 
 Sebelum menganggap bisnis ini terbukti:
 - Buat portofolio awal yang benar-benar terlihat: 6 contoh konten untuk satu usaha makanan fiktif yang jelas diberi label DEMO.
@@ -116,12 +122,12 @@ Sebelum menganggap bisnis ini terbukti:
 - **GO awal** jika ada minimal 1 order berbayar dari orang di luar keluarga/teman dekat dan produk dapat diserahkan sesuai janji. Setelah itu evaluasi margin waktu dan kemungkinan repeat.
 - **NO-GO / ubah penawaran** bila tidak ada klik/brief setelah distribusi konten yang memadai; jangan menganggap tidak ada permintaan hanya dari jumlah view rendah.
 
-## 7. Batas dan fakta yang belum terbukti
+## 8. Batas dan fakta yang belum terbukti
 - Belum ada pelanggan, order, pendapatan, atau test hasil konten.
 - Angka harga adalah hipotesis uji.
 - Tidak dijamin otomatis mendatangkan pembeli. Scheduling hanya mengotomatiskan penayangan; riset, kualitas konten, pemeriksaan materi, dan pelayanan tetap perlu dikerjakan.
 - Pengguna masih 17 tahun; gunakan izin wali untuk akun/kontrak/pencairan yang mensyaratkannya.
 - Jangan menghidupkan kembali P-DISTRO, RentalOps, atau afiliasi vendor sebagai model utama kecuali pengguna secara eksplisit mengubah keputusan.
 
-## 8. Next step paling bernilai
+## 9. Next step historis (JANGAN DIJALANKAN)
 Bangun portofolio DEMO enam konten untuk satu contoh bisnis kuliner rumahan dan satu landing page penawaran pilot. Jangan buat website besar, jangan berlangganan tool, dan jangan publish memakai akun pribadi tanpa persetujuan.
