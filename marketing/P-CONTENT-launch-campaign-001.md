@@ -1,9 +1,9 @@
 # P-CONTENT — Launch Campaign 001
 **Tanggal:** 12 November 2026  
-**Status:** draft siap produksi; belum dipublikasikan.  
-**Tujuan:** mendapatkan order pilot pertama untuk paket batch konten UMKM kuliner.
+**Status:** DIARSIPKAN / TIDAK DISETUJUI. Ini campaign untuk usulan studio jasa konten yang tidak dipilih pengguna; jangan dipublikasikan atau dilanjutkan.  
+**Tujuan historis:** draft ini pernah disiapkan untuk usulan studio jasa konten UMKM, tetapi bukan arah bisnis aktif.
 
-## Offer yang dijual
+## Penawaran historis (tidak aktif)
 
 **Paket Konten 7 Hari — Rp99.000 (harga uji/pilot)**
 
