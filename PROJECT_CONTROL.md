@@ -2,15 +2,19 @@
 
 ## 0V. PROJECTS.CO.ID — INTERACTIVE PORTFOLIO — 2026-11-13
 
-**Status: ASSISTANT_PREPARED; standalone interactive HTML created; not hosted or uploaded.**
+**Status: LIVE and browser-tested.** Public portfolio website deployed; exact Projects.co.id profile URL still needed before activating the profile CTA.
 
-- User explicitly approved upgrading the general freelancer portfolio into a more interactive presentation.
-- Created `Portofolio_Interaktif_Data.html`, a single-file, mobile-responsive portfolio with service overview, three interactive demos (data entry, quality checking, and text annotation), work-sample detail popups, workflow explanation, and copyable profile summary.
-- All sample data is fictitious. The text classification demo uses a simple keyword rule and is explicitly not presented as AI or as a definitive client annotation standard.
-- JavaScript syntax passed Node v22.16.0 `node --check`. Browser-based QA was blocked by the current execution environment; full visual/interaction QA is not claimed.
-- Artifact is available in the conversation download, not stored as a live public website. No hosting, Projects.co.id profile edit, portfolio upload, bid, message, or transaction occurred.
-- Detailed implementation checkpoint: [research/projects_co_id_interactive_portfolio_2026-11-13.md](research/projects_co_id_interactive_portfolio_2026-11-13.md).
-- Next step: after user reviews the HTML, publish it to a public static URL with approval, then attach that URL through Projects.co.id's portfolio link field. Keep the existing PNG/PDF samples as optional attachments.
+- User explicitly asked for a more interactive, complete freelancer portfolio for the existing general positioning: **Data Entry & Pengolahan Data | Spreadsheet | Pemeriksaan Data | Anotasi Teks**. No service pivot.
+- Live URL: https://portofolio-data.usahalab-id.workers.dev/
+- Cloudflare Worker `portofolio-data` deployed on the existing `usahalab-id.workers.dev` subdomain. Worker subdomain enabled; `/health` endpoint verified returning `ok`.
+- Website was fetched live and mobile browser automation successfully tested all three demos: structured data entry, quality findings (duplicate/blank/inconsistent price), and headline annotation.
+- Enhanced page includes expanded service descriptions, scope/deliverables section, fuller profile description, copy buttons, and three detailed embedded portfolio sample visuals. No external image/CSS/JS assets required.
+- Removed generic Projects.co.id homepage link. CTA remains intentionally disabled until the user provides their exact public Projects.co.id profile URL. Do not guess a username or build a fake profile destination.
+- All examples use fictitious practice data. The annotation demo uses a basic keyword rule and is explicitly not represented as an AI model or a definitive label guideline.
+- GitHub source: `portfolio/index.html`; detailed evidence: `research/projects_co_id_interactive_portfolio_2026-11-13.md`.
+- Conversation deliverables: `Portofolio_Interaktif_Data.html`, cover PNG, three detailed sample PNGs, revised profile copy text, and `Paket_Portofolio_Projects_co_id.zip`.
+- No Projects.co.id profile edit, portfolio upload, bid, message, payment, or transaction occurred.
+- Next action: user shares public Projects.co.id profile URL; wire CTA to that exact page and redeploy. For Projects.co.id portfolio entry, use the live website URL in the `Link` field and the matching sample PNG as image.
 
 ## 0U. PROJECTS.CO.ID — GENERAL PROFILE & PORTFOLIO KIT — 2026-11-12
 
