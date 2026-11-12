@@ -1,5 +1,17 @@
 # Project Control — Sumber Kebenaran Lintas Percakapan
 
+## 0L. ALTERNATIF MARKETPLACE FREELANCE — 2026-11-12
+
+**Status: Projects.co.id tetap utama; IFreelance.id menjadi lead kedua yang kelayakan usia 17-nya harus dikonfirmasi tertulis. Platform lain yang diperiksa sebagian besar tidak cocok karena umur, modal, atau aktivitas situs.**
+
+- **IFreelance.id (ASSISTANT_PROPOSAL/OPEN):** marketplace jasa lokal di bawah PT IFree Technologies Indonesia, Terms diperbarui 8 Sep 2026. Punya kategori Data Entry & Pengetikan (22 layanan), pendaftaran freelancer gratis, seller listing paket/portfolio, custom offer/chat, order escrow, dan withdrawal ke rekening terverifikasi. Namun ToS hanya menyebut legal capacity dan age requirements yang ditentukan Platform; tidak menyebut angka minimum. Seller onboarding dapat meminta NIK, tanggal lahir, KTP, selfie, rekening. Belum diketahui apakah usia 17 diterima, komisi/fee dan batas minimum payout. Beberapa profil yang diamati bergabung Oktober 2026 dan memiliki 0 order/0 review; tautan profil homepage dengan review count tinggi ada yang 404. **Jangan KYC sebelum support mengonfirmasi usia 17 + KTP/rekening sendiri, fee, minimum payout dan mekanisme payout.** Support: support@ifreelance.id. URL https://ifreelance.id/
+- **Freelancer.com:** terms melarang pengguna yang tidak dapat mengikat kontrak atau berusia di bawah 16; orang 16–17, tunduk hukum lokal, hanya dapat menggunakan akun orang dewasa dengan izin. Free member mendapat 6 bids/bulan tetapi harus memiliki saldo minimum US$20 untuk bid; withdrawal express ke bank Indonesia minimal US$50 ekuivalen + US$1 fee, dan first withdrawal dapat tertunda 15 hari. **Tidak cocok untuk akun independen tanpa wali dan modal Rp0.**
+- **Dieliminasi karena usia/aturan:** Sribu minimal 18 + KTP + NPWP + 4 portofolio; Fastwork minimal 18; Fiverr <18 perlu akun orang tua/wali dan desktop untuk aktivasi seller; Workana tidak tersedia untuk minors; Truelancer, Guru, Contra dan Malt minimal 18 (Malt juga butuh bisnis terdaftar).
+- **Freelance.co.id:** daftar proyek yang tampil terbaru Mei 2025, banyak posting tampak uji coba, layanan no-review/no-order; tidak dianggap aktif.
+- **Gawee:** 17+ dan KTP, tetapi model kerja on-site, check-in/out lokasi dan fee 20%; bukan freelance remote.
+- **Laporan:** [research/online_work_freelance_platform_alternatives_2026-11-12.md](research/online_work_freelance_platform_alternatives_2026-11-12.md).
+
+
 ## 0K. KOREKSI LADENIN + PELUANG KONKRET PROJECTS.CO.ID — 2026-11-12
 
 **Status: USER_CONFIRMED menyatakan pengalaman langsung bahwa misi Ladenin yang ditampilkan adalah survei. Ladenin ditolak. ASSISTANT_PROPOSAL: Projects.co.id adalah jalur kerja pertama yang saat ini paling konkret dan syarat usia tertulisnya cocok untuk pengguna.**
