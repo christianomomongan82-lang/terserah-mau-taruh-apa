@@ -53,6 +53,15 @@ Dokumen ini dibuat agar Claude dapat memahami proyek tanpa konektor GitHub. Guna
 - **Kandidat produk asisten untuk riset/prototipe:** Home Bakery / Cottage Bakery Order & Cost System. Etsy menampilkan 1.000+ hasil kategori bakery planner/order tracker. Salah satu listing digital mendapat badge Bestseller, lebih dari 20 views/24 jam dan harga promo US$8,75; tokonya memiliki 117,4 ribu penjualan keseluruhan toko, bukan listing itu sendiri. Pasar memiliki pembeli, tetapi kompetisi dan diskon berat.
 - Belum ada produk yang disetujui final, belum ada listing, video, atau transaksi. Langkah berikut: cek gap produk/pesaing, buat prototipe phone-first yang sederhana, uji fungsi dan harga, siapkan video promosi. Jangan mencampur angka toko dengan penjualan listing, dan jangan menjadikan volume hasil pencarian sebagai data transaksi.
 
+## 2C. Status prototipe dan video promosi (2026-11-12; belum produk final)
+
+- Asisten membuat prototipe XLSX bernama `RapiPO_Home_Bakery_Order_Profit_Tracker_Prototype.xlsx` dalam percakapan, dengan sheet Start Here, Menu & Cost, Orders, dan Dashboard.
+- Kalkulasi contoh diuji: sales US$123.00; estimated gross profit US$60.20; unpaid balance US$68.00; 3 active demo orders. Scan formula tidak menemukan error umum.
+- Asisten membuat video teaser vertical `RapiPO_Prototype_Promo_Vertical.mp4`, 720×1280, 30fps, 18 detik, dengan musik orisinal. Video menyatakan prototype/demo; bukan pengumuman produk telah dijual.
+- Kedua file adalah lampiran percakapan, belum di-commit sebagai binary ke GitHub. Belum diuji di aplikasi Google Sheets Android dan belum diuji oleh pembeli.
+- RapiPO dan home bakery masih rekomendasi/proposal asisten; belum keputusan produk final eksplisit dari pengguna. Jangan menyatakan produk tervalidasi atau sudah diluncurkan.
+- Next: uji XLSX pada Google Sheets Android, tambah order notes/change tracking jika memang membantu, buat bahasa Indonesia dan buyer guide, lalu verifikasi checkout/payout Kreavo dan siapkan Etsy setelah usia/payout memenuhi syarat.
+
 ## 3. Batas usia dan pembayaran
 
 - Saat snapshot dibuat, pengguna berusia 17 tahun.
