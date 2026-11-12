@@ -1,11 +1,46 @@
 # Project Control — Sumber Kebenaran Lintas Percakapan
 
+## 0K. KOREKSI LADENIN + PELUANG KONKRET PROJECTS.CO.ID — 2026-11-12
+
+**Status: USER_CONFIRMED menyatakan pengalaman langsung bahwa misi Ladenin yang ditampilkan adalah survei. Ladenin ditolak. ASSISTANT_PROPOSAL: Projects.co.id adalah jalur kerja pertama yang saat ini paling konkret dan syarat usia tertulisnya cocok untuk pengguna.**
+
+- **Ladenin: REJECTED.** Pengguna telah membuka/memeriksa platform dan melaporkan bahwa pekerjaan yang disajikan ternyata survei. Jangan lagi mengarahkan pengguna ke Ladenin, meskipun Terms/fiturnya menyebut kategori “Digital/Online”. Pengamatan langsung pengguna mengoreksi klasifikasi asisten.
+- **Projects.co.id: kandidat utama (ASSISTANT_PROPOSAL, belum ada akun/bid/penerimaan).**
+  - Terms resmi menyebut individu “berusia diatas 17 (tujuh belas) tahun”; ini berbeda dari minimum 18. Pengguna berumur 17 tahun 10 bulan pada tanggal riset, sehingga secara literal sudah berusia di atas 17. Tidak perlu mengubah tanggal lahir atau menyamarkan identitas.
+  - Pendaftaran pengguna gratis; satu akun dapat menjadi worker. Pekerjaan adalah proyek dengan hasil yang dapat dikemas sebagai file.
+  - Cara kerja: pilih project → kirim bid/penawaran → owner memilih → owner mendanai proyek di escrow → sistem mengirim notifikasi mulai kerja → worker unggah hasil dan klik Report Done → setelah diterima, saldo dikreditkan → tarik ke rekening bank.
+  - Tidak ada biaya saat mengajukan bid. Worker fee 12%. Transfer bank selain BCA, BNI, BNI Syariah, Mandiri dikenai Rp7.500; standar minimum auto-withdrawal Rp57.500. BRI tidak dibebaskan dari biaya ini. Estimasi net honor Rp150.000 = Rp132.000 setelah fee 12%, atau Rp124.500 setelah transfer Rp7.500.
+  - Pembayaran hanya aman jika owner mendanai escrow terlebih dahulu; jangan mulai kerja sebelum notifikasi sistem resmi dan jangan menerima pembayaran langsung di luar platform.
+  - User dapat menggunakan komunikasi chat di platform; masih ada kebutuhan bid dan komunikasi singkat. Tidak perlu cold-DM, tetapi ini bukan job yang sepenuhnya tanpa interaksi.
+- **Peluang yang terpantau aktif saat pemeriksaan:**
+  1. **Anotator Clickbait Judul Berita Bahasa Indonesia untuk penelitian skripsi** — https://projects.co.id/public/browse_projects/view/41651d/anotator-clickbait-judul-berita-berbahasa-indonesia-untuk-penelitian-skripsi
+     - Kebutuhan 3 anotator; tiap orang melabeli 300 judul berita ke Clickbait/Non-clickbait di Google Spreadsheet; guideline diberikan; diskusi validasi diperlukan untuk hasil yang berbeda; kerja remote.
+     - Honor tertulis Rp150.000 per anotator; published budget Rp120.000–Rp150.000; deadline 7 Desember 2026; 8 hari estimasi.
+     - Bid count 88 pada saat pemeriksaan 12 November; owner baru, 0 project/0 rating. Kelebihan: tiga slot, pekerjaan cocok untuk HP + bahasa Indonesia + anotasi output. Kekurangan: persaingan tinggi, owner belum bereputasi, ada kebutuhan diskusi singkat. Pembayaran melalui escrow tetap melindungi jika mengikuti mekanisme platform.
+     - **Rekomendasi peluang pertama untuk dipertimbangkan**, bukan jaminan dapat.
+  2. **Input 100 data makanan ke Excel/Google Sheets** — https://projects.co.id/public/browse_projects/view/d7651d/input-50-data
+     - 100 baris data makanan mengikuti template, validasi nama/info dan cek duplikasi; budget Rp150.000–Rp300.000; deadline 10 Desember; 7 hari estimasi.
+     - Owner punya 6 project, rating 10/10, 36 reputation points; ini bukti histori lebih baik.
+     - Bid count sudah 565 pada pemeriksaan halaman detail 12 November. Peluang lolos lebih berat karena persaingan ekstrem, tetapi owner lebih meyakinkan.
+     - Lebih sedikit diskusi jika template jelas, dapat dilakukan melalui Google Sheets Android; perlu konfirmasi format sumber dan izin akses.
+  3. **Internal Tester Google Play** — Rp150.000–Rp200.000, 12 tester, 14 hari, 70 bids. Bukan prioritas karena perlu menguji aplikasi yang belum diketahui serta kemungkinan melibatkan akses/perizinan akun Google.
+  4. **Anotator Clickbait** dipilih di atas dua opsi lainnya karena pekerjaan data/labeling, tiga slot, dan budget/honor yang disebut jelas. Namun jangan membuat klaim pengalaman formal yang tidak dimiliki.
+- **Pekerjaan yang ditolak pada kategori yang sama:**
+  - Entry 3.000 akun game ke software: lingkup dan kepemilikan data tidak jelas.
+  - Scrap 200 leads berisi nomor WA/akun sosial: tidak cocok dengan preferensi pengguna dan menyangkut pengumpulan data kontak.
+  - Salin 1.000 email/nomor/alamat dari Gmail: menyentuh data pribadi dan akses email pihak lain; jangan pilih.
+  - Konversi 80 halaman PDF scan jadi 50.000 kata: target akurasi 98%, tenggat 5 hari, sangat tidak realistis melalui HP saja; tolak.
+- **Langkah selanjutnya (ASSISTANT_PROPOSAL):** bantu pengguna membuat akun Projects.co.id, isi profil jujur tanpa mengada-ada pengalaman, buat 1 bid yang kuat untuk lowongan anotator (honor Rp150.000) dan/atau 1 bid data entry, setelah persyaratan perangkat/waktu dipastikan. Teks bid dapat disiapkan asisten; pengguna tetap mengendalikan pengiriman bid.
+- **Catatan penting:** tidak ada akun, KYC, bid, kontrak atau pembayaran yang telah dilakukan. Ini temuan peluang aktif, bukan klaim pekerjaan sudah didapat.
+- **Laporan:** [research/online_work_projects_co_id_concrete_jobs_2026-11-12.md](research/online_work_projects_co_id_concrete_jobs_2026-11-12.md).
+
+
 ## 0J. FILTER KTP + REKENING — PLATFORM 17+ — 2026-11-12
 
 **Koreksi instruksi pengguna:** jangan jadikan usia 18 sebagai filter absolut. Cari platform yang syarat resminya menerima usia 17+ dan/atau menyatakan KTP sebagai syarat eligibility. Gunakan identitas dan rekening milik pengguna sendiri; jangan memalsukan data. Jangan berhenti pada saran menunggu 18 bila ada platform resmi yang mengizinkan 17+.
 
 - Kebutuhan tetap: tugas kerja nyata berbasis output (bukan survei), Android, tanpa modal, minim komunikasi, rekening BRI/DANA; tidak mau cold-DM, sales, spam, referral, engagement palsu, dan konten rutin.
-- **Kandidat paling dekat untuk diperiksa sekarang — Ladenin (ASSISTANT_PROPOSAL):**
+- **Ladenin: REJECTED berdasarkan pemeriksaan langsung pengguna; lihat checkpoint 0K.**
   - Terms: usia minimal 17 tahun atau sudah memiliki KTP; identitas harus asli.
   - Web app memiliki kategori “Digital / Online” dan filter Online vs Di Lokasi.
   - KYC pekerja: NIK, foto KTP, selfie dengan KTP. Wajib sebelum melamar/mengambil misi. Jangan bagikan OTP/password/rekening ke pemberi misi.
@@ -28,7 +63,7 @@
   - Bukan pilihan HP-only/remote; pertimbangkan hanya jika ada gig sangat dekat dan akses transport aman.
   - URL: https://www.gawee.id/
 - **BuzzTask (tidak cocok):** terms menerima 17+, dokumen identitas, rekening/e-wallet sendiri; tetapi pekerja mendaftar sebagai buzzer tugas social-media marketing. Pengguna tidak mencari engagement/marketing tasks. URL: https://socialrush.id/syarat-ketentuan
-- **Status shortlist baru:** Ladenin #1 untuk diperiksa karena age/KTP/cashout cocok dan ada filter online; NusaTalent #2 hanya untuk melihat daftar misi, dengan red flag privasi/domain dan kecocokan task; Kerja E-niaga HOLD; Gawee non-remote; BuzzTask ditolak karena jenis tugas.
+- **Status shortlist lama superseded:** Ladenin ditolak oleh pengguna karena daftar misi yang tampil ternyata survei. NusaTalent tetap HOLD; Kerja E-niaga HOLD; Gawee non-remote; BuzzTask ditolak karena jenis tugas. Rute kerja baru yang lebih konkret: Projects.co.id (checkpoint 0K).
 - Laporan: [research/online_work_17plus_ktp_bank_platforms_2026-11-12.md](research/online_work_17plus_ktp_bank_platforms_2026-11-12.md).
 
 
