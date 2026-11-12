@@ -1,5 +1,20 @@
 # Project Control — Sumber Kebenaran Lintas Percakapan
 
+## 0M. LARANGAN SURVEI UNTUK PENCARIAN KERJA — 2026-11-12
+
+**Status: USER_CONFIRMED — pengguna sangat tidak menyukai survei. Semua platform atau tugas yang utamanya mengisi survei/kuesioner opini harus dikeluarkan dari rekomendasi pekerjaan.**
+
+- Pengguna menegaskan JAKPAT/Nusaresearch bukan yang dicari; setelah mencobanya/melihatnya, pengguna juga menegaskan NusaTalent SideJobs ternyata survei. Maka **NusaTalent SideJobs: REJECTED**, bukan kandidat cadangan.
+- **Ladenin: REJECTED**, berdasarkan pemeriksaan langsung pengguna; halaman tugas yang muncul ternyata survei.
+- **JAKPAT, Nusaresearch, SurveyKita dan platform survey/reward panel lainnya: REJECTED untuk pencarian kerja ini.** Jangan merekomendasikan survei berbayar atau kuesioner sebagai alternatif.
+- Makna “kerja repetitif” yang dicari: tugas/proyek freelance yang menghasilkan output konkret bagi klien, misalnya data entry, anotasi/labeling, proofreading/formatting, transkripsi dokumen, data cleaning, product listing/catalogue entry, QA website/aplikasi yang sah, atau virtual admin terstruktur.
+- Marketplace freelance/project bidding dan fixed-price services tetap boleh dicari; utamakan proyek yang jelas deliverables, budget, deadline, client history, dan escrow/payout.
+- Batasan penting: HP Android saja, modal Rp0, minim komunikasi/negosiasi, rekening BRI/DANA atas nama sendiri; tanpa sales, cold-DM, referral, spam, fake reviews/engagement, atau konten rutin.
+- **Marketplace utama saat ini:** Projects.co.id; IFreelance.id sebagai lead yang harus mengonfirmasi umur 17, fee, dan payout; Freelancer.com tidak cocok karena akun minor memerlukan akun dewasa dengan izin dan bidding mensyaratkan saldo minimum. Ladenin dan NusaTalent dicoret.
+- **Langkah selanjutnya:** tambah pencarian marketplace freelance Indonesia/global yang sah bagi pengguna sendiri, lalu cari listing proyek langsung di tiap marketplace; jangan menampilkan survey/gig survey sebagai pekerjaan.
+- Laporan yang relevan: [research/online_work_projects_co_id_concrete_jobs_2026-11-12.md](research/online_work_projects_co_id_concrete_jobs_2026-11-12.md), [research/online_work_freelance_platform_alternatives_2026-11-12.md](research/online_work_freelance_platform_alternatives_2026-11-12.md).
+
+
 ## 0L. ALTERNATIF MARKETPLACE FREELANCE — 2026-11-12
 
 **Status: Projects.co.id tetap utama; IFreelance.id menjadi lead kedua yang kelayakan usia 17-nya harus dikonfirmasi tertulis. Platform lain yang diperiksa sebagian besar tidak cocok karena umur, modal, atau aktivitas situs.**
@@ -59,7 +74,7 @@
   - Cashout: minimum Rp15.000; administrasi Rp2.500; maksimal 2x24 jam kerja. Input bank/e-wallet dan nomor rekening/nama pemilik. Dana pekerjaan menggunakan escrow; halaman menyatakan pemrosesan pembayaran melalui Mayar.id. Free tier mengizinkan ambil misi.
   - **Belum terverifikasi:** daftar misi aktif tidak tampil melalui crawl publik (menampilkan “sedang memuat data misi”), jadi belum ada bukti bahwa saat ini tersedia misi online yang cocok atau volume task di Bolaang Mongondow. Cek daftar terlebih dahulu, jangan KYC sebelum melihat tugas yang benar-benar layak.
   - URL: https://www.laden.co.id/
-- **Kandidat kedua — NusaTalent SideJobs (ASSISTANT_PROPOSAL, hanya cek daftar misi):**
+- **NusaTalent SideJobs: REJECTED oleh pengguna karena ternyata menampilkan survei; jangan rekomendasikan lagi.**
   - Google Play secara eksplisit menyatakan usia minimal 17 + KTP; reward misi dapat dicairkan ke rekening bank/e-wallet. Listing memiliki 1 juta+ download, rating 4.4 dan sekitar 30 ribu ulasan (ini skala aplikasi, bukan bukti jumlah SideJobs).
   - Namun Play Data Safety menyatakan aplikasi dapat mengumpulkan info keuangan dan data tidak dienkripsi saat transit.
   - Catatan domain diperbaiki: situs nusatalent.com yang tercantum di listing pada 12 Nov 2026 dialihkan ke situs kasino pihak ketiga, **tetapi** website resmi terbaru pada LinkedIn perusahaan adalah nusatalent.app, yang aktif dan mengidentifikasi PT Nusa Talenta Indonesia. Ini membuat website .com sebagai link di Google Play tetap anomali; jangan memasukkan KTP atau rekening sampai developer menjelaskan domain/link resmi.
@@ -75,7 +90,7 @@
   - Bukan pilihan HP-only/remote; pertimbangkan hanya jika ada gig sangat dekat dan akses transport aman.
   - URL: https://www.gawee.id/
 - **BuzzTask (tidak cocok):** terms menerima 17+, dokumen identitas, rekening/e-wallet sendiri; tetapi pekerja mendaftar sebagai buzzer tugas social-media marketing. Pengguna tidak mencari engagement/marketing tasks. URL: https://socialrush.id/syarat-ketentuan
-- **Status shortlist lama superseded:** Ladenin ditolak oleh pengguna karena daftar misi yang tampil ternyata survei. NusaTalent tetap HOLD; Kerja E-niaga HOLD; Gawee non-remote; BuzzTask ditolak karena jenis tugas. Rute kerja baru yang lebih konkret: Projects.co.id (checkpoint 0K).
+- **Status shortlist lama superseded:** Ladenin dan NusaTalent ditolak oleh pengguna karena daftar tugas yang tampil adalah survei. Jangan rekomendasikan keduanya. Kerja E-niaga HOLD; Gawee non-remote; BuzzTask ditolak karena jenis tugas. Rute kerja yang lebih konkret: Projects.co.id (checkpoint 0K).
 - Laporan: [research/online_work_17plus_ktp_bank_platforms_2026-11-12.md](research/online_work_17plus_ktp_bank_platforms_2026-11-12.md).
 
 
