@@ -1,5 +1,37 @@
 # Project Control — Sumber Kebenaran Lintas Percakapan
 
+## 0N. UPWORK + CHATGPT: BANTUAN BAHASA DAN WORKFLOW — 2026-11-12
+
+**Status: USER_CONFIRMED — pengguna menyukai Upwork karena rating/review Google Play yang tinggi, tetapi kesulitan memahami bahasa Inggris dan menginginkan alur yang lebih otomatis. Assistant proposal: gunakan integrasi resmi Upwork di ChatGPT sebagai jalur utama setelah akun memenuhi syarat.**
+
+- Pengguna menyebut memilih Upwork karena aplikasi Play Store punya rating bagus dan banyak ulasan; alasan ini adalah preferensi/kepercayaan pengguna, bukan bukti bahwa setiap lowongan/klien aman. Tetap audit tiap job dan client.
+- Pengguna tidak nyaman dengan bahasa Inggris dan ingin workflow yang lebih otomatis.
+- **Fakta baru — integrasi Upwork resmi ChatGPT:** Upwork Help Center (artikel “How to use Upwork in ChatGPT”, diperiksa 12 Nov 2026) menyatakan app Upwork terintegrasi ke ChatGPT. Cara koneksi: ChatGPT Settings → Apps → browse app directory → search “Upwork” → Connect → consent.
+  - Freelancer dapat mencari job melalui @Upwork, mendapat rekomendasi sesuai profil, save/hide jobs, mengajukan proposal, meninjau/menolak/meminta perubahan atas offer, membaca/merespons pesan kontrak, mengirim milestone yang selesai dan memeriksa earnings/Connects.
+  - Proposal/messaging/job actions disiapkan untuk review pengguna sebelum dikirim; proposal submit memerlukan konfirmasi. Accepting offer adalah tindakan mengikat yang diselesaikan di Upwork.com; aksi terkait dana/pembayaran/milestone juga mengarah ke Upwork.com.
+  - Upwork menyatakan integrasi tidak dikenakan biaya tambahan dan tersedia bagi ChatGPT users termasuk Free; tindakan yang menghabiskan Connects tetap menunjukkan biaya sebelum konfirmasi.
+  - Saat pemeriksaan tool runtime ini, tidak ada Upwork connector/action yang terekspos di ALL_TOOLS dan Plugin Management search tidak menampilkan Upwork, walaupun panduan resmi menyebut app tersedia pada Settings → Apps. Jadi arahkan pengguna memeriksa Apps directory di UI; jangan klaim koneksi sudah aktif. Bila tidak muncul, kemungkinan rollout/availability belum tersedia pada sesi pengguna.
+  - Sumber: https://support.upwork.com/hc/en-us/articles/48662546612883-How-to-use-Upwork-in-ChatGPT
+- **Age gate:** Upwork Terms/eligibility menyatakan pengguna harus berumur 18 tahun atau usia mayoritas yang lebih tinggi. KTP/rekening tidak menggantikan umur minimum. Jangan membuat akun dengan tanggal lahir palsu atau memakai identitas/akun orang lain. Pengguna saat ini 17; Upwork account/proposal tidak digunakan sebelum 18.
+  - Sumber: https://support.upwork.com/hc/en-us/articles/211067778-Who-s-eligible-to-join-and-use-Upwork ; https://www.upwork.com/legal
+- **Android:** Upwork mobile app mendukung Android 10+; pengguna memakai Android 15. App mendukung profile, job search, proposals, messages, notifications, contracts. Beberapa fitur mungkin tetap butuh browser.
+  - Sumber: https://support.upwork.com/hc/en-us/articles/360015504093-How-to-use-the-Upwork-mobile-app ; https://support.upwork.com/hc/en-us/articles/219506307-Using-the-mobile-app-for-job-searches-and-proposals
+- **Bahasa Inggris:** Google Translate Tap to Translate mendukung teks yang dapat disalin dari app lain: aktifkan melalui Google Translate → Settings → Tap to Translate; di Android 10+ gunakan opsi Paste; salin teks Inggris lalu tekan gelembung/aksi Translate. Untuk gambar/screenshot, kirim ke ChatGPT atau gunakan Google Translate Camera/All Images. ChatGPT dapat mengubah listing, pesan, kontrak dan syarat kerja menjadi ringkasan Indonesia serta menyusun balasan Inggris yang diperiksa pengguna.
+  - Sumber: https://support.google.com/translate/answer/6350658?hl=en-MC
+- **Connects/biaya proposal:** jumlah Connects ditampilkan pada setiap job; harga satu Connect US$0.15. Boost bersifat opsional. Menggunakan Connects tidak menjamin proposal dilihat/diwawancara/diterima. Jangan bid semua pekerjaan dan jangan boost; seleksi proyek dengan hati-hati. Sumber: https://support.upwork.com/hc/en-us/articles/211062898-About-Connects-costs-uses-balances-and-expiration
+- **Batas automation:** jangan gunakan script, bot, scraper, browser extension atau service yang otomatis mengakses/scrape/submit ke Upwork tanpa izin; Upwork dapat memberikan warning, restriction atau ban. Workflow boleh diotomatisasi melalui Upwork official ChatGPT integration dan API key yang disetujui; user harus meninjau/mengonfirmasi proposal dan tindakan penting.
+  - Sumber: https://support.upwork.com/hc/en-us/articles/43342677368467-Use-bots-and-other-automation-properly ; https://support.upwork.com/hc/en-us/articles/48662546612883-How-to-use-Upwork-in-ChatGPT
+- **Workflow yang diusulkan (ASSISTANT_PROPOSAL):**
+  1. Setelah akun memenuhi 18+, hubungkan Upwork di ChatGPT Settings → Apps.
+  2. Gunakan prompt bahasa Indonesia: cari remote fixed-price tasks berupa data entry, Indonesian-language data annotation, transcript cleanup, document formatting, spreadsheet cleanup/product catalog; phone-friendly; no calls; low English requirement; client history yang baik; no unpaid test.
+  3. ChatGPT/Upwork menampilkan job. Assistant menerjemahkan deskripsi, deliverable, budget, deadline, English level, risks, Connects cost, client history dan fit Android.
+  4. Assistant menyusun proposal bahasa Inggris berdasarkan skill nyata pengguna; jangan mengklaim pengalaman/keahlian yang tidak ada.
+  5. Pengguna review dan memberi konfirmasi sebelum proposal dikirim.
+  6. Semua pesan/offer diterjemahkan ke Indonesia; assistant menyiapkan balasan Inggris; pengguna meninjau sebelum pengiriman.
+  7. Assistant membantu pengerjaan/QA deliverable pada file yang diizinkan klien. Ikuti kebijakan klien tentang AI dan jangan menyembunyikan penggunaan AI bila diwajibkan klien/platform.
+  8. Terima offer, verifikasi kontrak/milestone, dan tindakan pembayaran hanya melalui Upwork; jangan pindah ke Telegram/WhatsApp atau membayar biaya di luar platform.
+- **Status:** Upwork belum tersambung, akun belum dibuat/terverifikasi, tidak ada lowongan atau proposal yang dikirim. User memakai Android; penggunaan Upwork menunggu eligibility 18+.
+
 ## 0M. LARANGAN SURVEI UNTUK PENCARIAN KERJA — 2026-11-12
 
 **Status: USER_CONFIRMED — pengguna sangat tidak menyukai survei. Semua platform atau tugas yang utamanya mengisi survei/kuesioner opini harus dikeluarkan dari rekomendasi pekerjaan.**
