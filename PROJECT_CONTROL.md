@@ -1,5 +1,23 @@
 # Project Control — Sumber Kebenaran Lintas Percakapan
 
+## 0D. CHECKPOINT PERBANDINGAN PRODUK DAN AUDIT KOMPETITOR — 2026-11-12
+
+**Status: RISET PEMBANDING SELESAI UNTUK PUTARAN INI; TIDAK ADA PRODUK FINAL YANG DIKUNCI.**
+
+- **Proyek aktif:** RapiUsaha, produk digital B2C untuk UMKM; model, kualitas sebagai pembeda, harga menarik, marketplace ramai, promosi TikTok/Instagram dengan video dibuat asisten tetap USER_CONFIRMED.
+- **Temuan utama:** home bakery masih kandidat dengan bukti permintaan listing spesifik paling kuat dibanding cleaning, nail tech, dan photography yang diperiksa. Bukti termasuk listing Etsy berstatus Bestseller dan listing lain dengan 61 ulasan item 4.8/5.
+- **Koreksi strategi produk:** RapiPO all-in-one generik tidak layak diluncurkan dalam bentuk sekarang. Pesaing sudah menawarkan 11–14 tab, order/DP, recipe costing, inventory, CRM, expenses, dashboards, production planning, dan bahkan order form Google Forms yang auto-save ke Sheets.
+- **Diferensiasi “mobile-first/mudah digunakan” belum terbukti.** Beberapa pesaing sudah mendukung Google Sheets mobile/phone; klaim itu tidak boleh dianggap pembeda sebelum uji komparatif.
+- **Celah yang masih perlu diuji:** satu job spesifik yang belum ditangani baik (misalnya riwayat revisi order/version control atau weekly preorder capacity). Ini hipotesis riset, belum keputusan produk.
+- **Cleaning business:** harga dan nilai problem pricing menarik, tetapi bukti yang diperiksa lebih banyak pada level shop sales, sementara listing kalkulator spesifik sering belum punya review. Belum menggantikan home bakery.
+- **Nail tech:** pasar ramai tetapi harga banyak tertekan dan apps booking/payment adalah alternatif yang lebih kuat.
+- **Photography:** harga bundle dapat lebih tinggi tetapi validasi item dan kebutuhan support belum cukup.
+- **Sourdough microbakery:** subsegmen lebih tajam, tetapi sudah ada pesaing untuk bread club, preorder, fermentation schedule, recipe costing dan production planning.
+- **Laporan lengkap:** [research/RapiUsaha_product_opportunity_comparison_2026-11-12.md](research/RapiUsaha_product_opportunity_comparison_2026-11-12.md).
+- **Langkah berikutnya yang disarankan (ASSISTANT_PROPOSAL):** riset gap kompetitor yang spesifik dengan sumber ulasan/komunitas; buktikan apakah problem berulang dan apakah pembeli mau membayar. Jangan menambah fitur RapiPO atau mengunci home bakery sebelum itu.
+- **Tidak ada perubahan keputusan bisnis pengguna:** segmen, produk, harga, dan marketplace tetap OPEN. RapiPO tetap proposal asisten dan prototipe, bukan produk disetujui/tervalidasi.
+
+
 ## 0C. KERANGKA FILOSOFI BISNIS RAPIUSAHA — 2026-11-12
 
 **Status: kerangka evaluasi yang diminta pengguna untuk dilanjutkan; detail rubrik adalah USULAN ASISTEN, bukan perubahan model bisnis atau persetujuan produk.**
