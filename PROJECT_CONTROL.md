@@ -25,6 +25,7 @@
 - **Target jangka panjang:** mengejar pendapatan bersih bulanan setinggi mungkin.
 - **Prioritas trade-off:** SEIMBANG — tetap mengejar pemasukan pertama dalam 30 hari tanpa mengorbankan potensi jangka panjang yang besar.
 - **Pembayaran/payout:** pengguna ingin mengelola sendiri dan tidak menghendaki keterlibatan orang tua/wali.
+- **Akun pembayaran yang tersedia (dikonfirmasi pengguna, 2026-11-12):** pengguna menyatakan sudah memiliki rekening BRI dan e-wallet DANA. Kepemilikan atas nama sendiri, status verifikasi/KYC, fitur penerimaan pembayaran, dan kelayakan menerima payout bisnis belum diperiksa; jangan mengasumsikannya.
 - **Batas legal/operasional:** pengguna berusia 17 tahun pada saat pencatatan. Persyaratan usia, KYC, kepemilikan akun, rekening, dan payout wajib diperiksa berdasarkan ketentuan resmi setiap platform. Jangan menyarankan pemalsuan usia atau penggunaan identitas orang lain. Jika jalur mandiri tidak memenuhi syarat, jelaskan hambatan dan cari alternatif yang sah; jangan menganggap pengguna setuju melibatkan wali.
 
 ### Status keputusan dan hal yang belum diputuskan
