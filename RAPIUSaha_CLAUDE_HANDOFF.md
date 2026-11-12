@@ -32,6 +32,15 @@ Dokumen ini dibuat agar Claude dapat memahami proyek tanpa konektor GitHub. Guna
 - Pengguna ingin mengelola pembayaran/payout sendiri dan tidak menghendaki keterlibatan orang tua/wali.
 - Pengguna menyatakan memiliki rekening BRI dan e-wallet DANA. Belum diverifikasi apakah keduanya atas nama sendiri, lolos KYC, bisa menerima pembayaran komersial, atau memenuhi syarat payout.
 
+## 2A. Strategi pemasaran terbaru (USER_CONFIRMED; 2026-11-12)
+
+- Harga produk harus cukup terjangkau untuk menarik pembeli, sementara kualitas produk dan pengalaman pakai menjadi pembeda.
+- Produk akan ditempatkan di marketplace yang cocok untuk produk digital; marketplace final belum dipilih.
+- Instagram dan TikTok akan dipakai untuk promosi dengan video visual yang menarik, bukan hanya posting teks.
+- Pengguna tidak ingin mengedit video. Asisten bertanggung jawab menghasilkan materi video promosi final yang siap diunggah; belum ada video yang dibuat.
+- Produk spesifik, segmen prioritas, harga, marketplace, dan konsep video masih OPEN sampai riset dan rekomendasi selesai.
+- Jangan menganggap generic HPP spreadsheet atau Paket Operasional Jualan WhatsApp sebagai produk final hanya karena pernah diusulkan.
+
 ## 3. Batas usia dan pembayaran
 
 - Saat snapshot dibuat, pengguna berusia 17 tahun.
