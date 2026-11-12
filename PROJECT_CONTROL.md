@@ -5,10 +5,23 @@
 
 > Aturan utama: dokumen ini membantu menemukan sumber yang benar; ia tidak menggantikan bukti langsung dari repo, deployment, file, atau keputusan eksplisit terbaru pengguna. Status yang belum dicek ditandai apa adanya.
 
+## 0. ARAH BISNIS AKTIF — STATUS TERKOREKSI 2026-11-12
+
+**Status sekarang: P-DIGITAL / RapiUsaha adalah arah kerja yang sedang dilanjutkan.**
+
+- **Dasar pemulihan:** tepat sebelum akun Instagram dibuat, arah yang dibahas adalah bisnis **produk digital B2C untuk UMKM**, bukan jasa produksi konten untuk klien. Pengguna meminta nama akun, memilih nama brand **RapiUsaha**, lalu menyatakan akun Instagram sudah dibuat.
+- **Penawaran awal yang pernah diusulkan:** paket digital operasional jualan WhatsApp untuk UMKM/penjual rumahan: pencatatan order dan pembayaran, kalkulator harga/modal/margin, template katalog, template pesan pelanggan, serta panduan singkat.
+- **Batas kepastian:** RapiUsaha dan arah produk digital adalah arah kerja yang sedang dilanjutkan berdasarkan konteks langsung. Rincian produk tersebut masih HIPOTESIS/MVP AWAL; belum ada bukti riset willingness-to-pay, produk selesai, penjualan, atau keputusan bahwa setiap fitur wajib masuk.
+- **Bukan bisnis aktif:** P-CONTENT (jasa/studio produksi konten untuk UMKM) TIDAK DISETUJUI pengguna dan tidak boleh diperlakukan sebagai keputusan. P-DISTRO/P-RENTAL dan SignageQuote adalah riwayat/proyek berbeda, bukan arah otomatis RapiUsaha.
+- **Larangan:** jangan mengubah RapiUsaha menjadi jasa social-media/content studio, affiliate software, rental, atau SaaS tanpa instruksi eksplisit pengguna.
+- **Langkah berikutnya:** lanjutkan dari akun RapiUsaha yang sudah dibuat; rapikan identitas profil lalu bangun MVP digital product yang paling kecil untuk diuji. Jangan bikin akun baru.
+
+Bagian ini adalah checkpoint pemulihan terbaru. Jika ada paragraf lama di bawah yang menyatakan P-CONTENT atau P-DISTRO sebagai bisnis utama, anggap status itu sudah digantikan oleh bagian ini dan koreksi pada entri proyeknya.
+
 ## 1. Proyek yang terpisah
 
-### P-CONTENT — Studio batch konten siap-publikasi untuk UMKM
-- **Status:** PROYEK UTAMA AKTIF mulai 2026-11-12; menggantikan P-DISTRO sebagai model bisnis yang sedang dikembangkan. Ini bisnis jasa digital milik sendiri, bukan affiliate/distribusi software.
+### P-CONTENT — Studio batch konten siap-publikasi untuk UMKM (TIDAK AKTIF / TIDAK DISETUJUI)
+- **Status:** DITARIK dari status proyek utama pada 2026-11-12. Catatan/rencana ini dibuat oleh asisten, tetapi tidak ada bukti pengguna menyetujui model jasa studio konten. Jangan jalankan atau perlakukan sebagai bisnis pengguna.
 - **Tujuan:** mendapatkan pembayaran pertama secepat mungkin dengan modal rendah, alur kerja phone-first, minim meeting/cold-DM, dan produksi konten yang bisa dibatch dengan AI/template. Pemasaran disiapkan melalui kalender konten dan scheduling otomatis; jangan mengklaim sudah berjalan sebelum akun terhubung.
 - **Penawaran awal:** paket produksi batch konten siap unggah untuk UMKM; target uji pertama penjual makanan rumahan/snack/frozen food/katering kecil yang sudah berjualan lewat WhatsApp dan punya foto produk sendiri.
 - **Produk pilot:** Rp99.000 sebagai harga uji untuk 4 feed/carousel + 4 variasi story + caption/CTA + kalender 7 hari + satu revisi sederhana. Paket bulanan uji Rp249.000 untuk 8 feed/carousel + 8 story + 4 skrip Reels + caption/CTA + kalender 30 hari. Harga ini hipotesis eksperimen, bukan harga pasar terverifikasi. Pelanggan mengunggah sendiri; tidak termasuk admin akun, balas DM, iklan, foto/video shooting, atau jaminan penjualan.
@@ -19,14 +32,14 @@
 - **Validasi:** belum ada pelanggan atau pemasukan. Buat portfolio DEMO enam konten dan landing page satu layar; uji publikasi 14 hari; ukur reach, profile visits, clicks, brief, order berbayar, dan waktu produksi. GO awal bila ada setidaknya satu order berbayar dari luar keluarga/teman dekat dan deliverable selesai sesuai janji. Bila tidak, revisi segmen/offer berdasarkan data.
 - **Riset lengkap:** https://github.com/christianomomongan82-lang/terserah-mau-taruh-apa/blob/main/research/P-CONTENT-pivot-2026-11-12.md
 - **Campaign akuisisi pertama:** `marketing/P-CONTENT-launch-campaign-001.md` dibuat 2026-11-12; enam draft posting, offer pilot, jadwal uji 14 hari, dan checklist publikasi. Status DRAFT; belum dipublikasikan karena brand, portfolio visual, link order, dan akun sosial belum siap.
-- **Batas tegas:** jangan kembali menjadikan rental atau distribusi affiliate sebagai bisnis utama; jangan bangun SaaS baru; jangan beli tool; jangan pakai foto AI seolah foto nyata dari produk klien; jangan auto-DM/spam; jangan publish lewat akun pribadi tanpa izin.
+- **Status arsip:** semua detail penawaran, harga, dan campaign P-CONTENT di bawah adalah artefak usulan asisten yang TIDAK DISETUJUI; jangan gunakan sebagai basis tindakan bisnis kecuali pengguna meminta secara eksplisit.
  
-### P-DISTRO — Distribusi software B2B lintas industri (DIPARKIR)
+### P-DISTRO — Distribusi software B2B lintas industri (ARSIP / TIDAK AKTIF)
 
-- **Status:** DIPARKIR sebagai model bisnis utama per 2026-11-12 berdasarkan koreksi eksplisit pengguna. Riset Jubelio/Mekari/Olsera dan campaign penjual multichannel disimpan sebagai arsip; jangan lanjutkan sebagai arah kerja utama kecuali diminta pengguna.
+- **Status:** BUKAN arah kerja RapiUsaha saat ini. Riset Jubelio/Mekari/Olsera dan campaign penjual multichannel disimpan sebagai arsip; jangan lanjutkan sebagai bisnis aktif kecuali pengguna secara eksplisit memintanya.
 - **Tujuan jangka pendek:** menghasilkan pemasukan/komisi pertama secepat mungkin, dengan modal rendah dan proses yang dapat diotomatisasi. Pilih program berdasarkan (1) kecepatan mendapat pelanggan pertama, (2) nilai komisi dan ambang payout, (3) tim vendor membantu demo/closing, (4) kelayakan peserta usia 17 tahun dan metode pencairan, (5) mudahnya dipasarkan dengan konten digital.
 - **Tujuan jangka panjang:** mempunyai beberapa sumber komisi/partner lintas industri. Rental, e-commerce, accounting, HR, POS, CRM, dan software vertikal lainnya adalah kandidat pasar; jangan mengunci bisnis pada satu industri karena percobaan pertama.
-- **Klarifikasi eksplisit pengguna (2026-11-12):** yang harus bergeser adalah fokus kerja ASISTEN, bukan identitas atau arah dasar bisnis pengguna. Bisnis distribusi software/layanan B2B tetap berjalan; asisten harus berhenti terpaku pada produk rental dan aktif mengeksplorasi vendor/vertikal lain. RentalOps tetap aset/vertikal yang boleh dipakai, bukan pusat semua pekerjaan. Jangan menafsirkan ini sebagai perintah mengganti bisnis pengguna menjadi jenis usaha lain. Pengguna juga meminta pemasaran lebih otomatis.
+- **Catatan sejarah:** instruksi lintas-industri ini berlaku pada tahap sebelumnya, tetapi kemudian arah percakapan bergeser ke pembentukan brand RapiUsaha dan produk digital B2C. Jangan mengaktifkan kembali P-DISTRO berdasarkan catatan lama ini.
 - **Kandidat lintas industri yang sudah diteliti:**
   1. **Penjual online/e-commerce omnichannel — Jubelio Ambassador (prioritas uji pertama).** Program promosi sederhana: ambassador membagikan kode, tim Jubelio mengurus proses setelah lead diserahkan. Komisi publik Rp200.000/klien setelah bisnis menggunakan Jubelio; penarikan minimal 2 pengguna berkode; pembayaran awal bulan berikutnya; akun harus diverifikasi, akun sosial/blog publik, rekening pencairan harus sama dengan nama ambassador; pendaftaran gratis; verifikasi hingga 3 hari kerja. Program menyatakan siapa pun dapat bergabung selama memiliki media sosial publik, tetapi batas usia 17 tahun tidak dinyatakan secara eksplisit dan belum dikonfirmasi tertulis. Jangan menganggap pendaftar 17 tahun dapat bergabung; jangan pakai identitas/rekening orang lain tanpa persetujuan resmi. Draft pertanyaan ke support@jubelio.com dibuat di Gmail, draft ID `r6592441606336964955`, BELUM DIKIRIM. Sumber: https://jubelio.com/jubelio-ambassador/ ; https://jubelio.com/affiliate-jubelio/
   2. **Akuntansi/pembukuan bisnis — Mekari Jurnal Referral Agent (prioritas uji kedua).** Program resmi menyebut komisi 15% dari nilai kontrak referral yang berhasil close-deal berlangganan Jurnal, program gratis, pendaftar individu/freelancer/content creators cocok, kode/link referral dan dashboard tersedia, Mekari memproses penjualan. Harga resmi menunjukkan mulai Rp399.000/bulan pada pricing overview, sedangkan halaman produk pembukuan menyebut sekitar Rp449.000/bulan; jangan menetapkan komisi nominal sebelum vendor memastikan harga dan dasar kontraknya. Program komunitas Mekari punya aturan KTP/rekening H+14 dan payout paling lambat H+14 setelah Won, tetapi belum dipastikan bahwa semua aturan itu persis berlaku pada Referral Agent. Kelayakan usia 17 tahun, rekening wali, KTP, serta waktu payout perlu konfirmasi tertulis. Sumber: https://mekari.com/partnership/referral/ ; https://mekari.com/pricing/ ; https://mekari.com/produk/jurnal/pembukuan/ ; https://community.mekari.com/gamifikasi/referral-community/
@@ -42,7 +55,7 @@
 - **Larangan fokus:** jangan terus mengunci diri pada rental, jangan memindahkan target ke rental event/sound system sebagai pivot tanpa izin, jangan membangun website besar sebelum program partner valid, dan jangan menggunakan nama pribadi pengguna untuk brand/domain/situs.
  
 ### P-RENTAL — Distribusi software B2B untuk bisnis rental
-- **Status:** ASET PILOT/PROYEK TERPISAH DI DALAM RIWAYAT DISTRIBUSI; bukan lagi satu-satunya atau fokus utama bisnis. Dipertahankan untuk reuse jika terbukti menghasilkan komisi, tetapi tidak boleh menghalangi pencarian pasar/software lintas industri. Fokus utama terbaru ada pada P-DISTRO.
+- **Status:** ARSIP/PROYEK LAMA; bukan bisnis aktif RapiUsaha. Aset dan riset dipertahankan hanya sebagai referensi jika pengguna secara eksplisit ingin membukanya kembali.
 - **Identitas proyek:** bisnis distribusi software B2B berbasis komisi/partner, bukan perusahaan jasa rental dan bukan sekadar website RentalOps.
 - **Arah jangka panjang:** membangun perusahaan distribusi software B2B dengan beberapa sumber komisi/vendor. Aset inti: saluran akuisisi pelanggan, konten informatif, alat bantu interaktif, dan sistem referral.
 - **Segmen yang sedang dievaluasi:** pemilik bisnis rental. Jangan anggap seluruh pemilik rental sebagai target yang cocok untuk setiap produk; segmentasi harus berdasarkan kebutuhan operasional dan percakapan pelanggan.
