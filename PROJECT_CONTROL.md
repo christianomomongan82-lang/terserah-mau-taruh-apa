@@ -1,5 +1,20 @@
 # Project Control — Sumber Kebenaran Lintas Percakapan
 
+## 0G. CHECKPOINT KERJA ONLINE REPETITIF — 2026-11-12
+
+**Status: USER_CONFIRMED memilih pekerjaan repetitif; rekomendasi kanal oleh asisten, belum ada platform yang dipilih pengguna atau payout yang berhasil diuji.**
+
+- Pengguna memilih tipe kerja online repetitif. Prioritas: HP Android, tanpa modal, minim komunikasi, sesuai usia aktual, payout yang bisa diterima lewat rekening sendiri/e-wallet; tidak ingin cold-DM, sales, referral-spam, atau produksi konten rutin.
+- Pengguna sebelumnya menyatakan usia 17 tahun, memiliki e-KTP, rekening BRI, dan DANA; gunakan data identitas asli dan jangan menyiasati batas usia.
+- **Kandidat utama:** JAKPAT (minimal 17; survei berulang; pilihan cash bank tertentu atau e-money seperti DANA bergantung menu Redeem; BRI belum diverifikasi), Nusaresearch (aturan anggota menolak pengguna di bawah 17 tanpa pengawasan; DANA 550 poin = Rp25.000; survey terbatas/tidak dijamin), NusaTalent SideJobs (minimal 17 + KTP; misi dengan payout bank/e-wallet; jenis misi dan tarif aktual perlu disaring agar bukan promosi/referral).
+- **Kandidat eksperimen saja:** SurveyKita.id (17+, payout rekening/e-wallet sendiri, tetapi platform baru dan bukti reputasi/payout independen masih tipis).
+- **Belum cocok:** Tasker, Toloka, Flavetask, Google Opinion Rewards karena syarat 18+; ySense menerima 16+ di luar AS tetapi payout ke BRI/DANA belum terverifikasi; Braintrust DATAmundi listing deadline yang terindeks sudah lewat dan payout Indonesia tidak jelas.
+- **Laporan dan sumber:** [research/online_work_shortlist_android_repetitive_2026-11-12.md](research/online_work_shortlist_android_repetitive_2026-11-12.md), SHA terverifikasi d9651059ff6c886a2ebe549e9d2e9caea333a2d3.
+- **Rekomendasi langkah berikutnya (ASSISTANT_PROPOSAL):** uji gratis JAKPAT dan Nusaresearch, cek misi NusaTalent; lakukan cashout kecil untuk membuktikan payout, lalu catat waktu, reward bersih, kuota, penolakan, dan lama pencairan. Jangan menganggap panel survei sebagai pekerjaan penuh waktu.
+- **Batas keras:** tidak membayar deposit/top-up/biaya membuka tugas; jangan berikan OTP/PIN/password; jangan membuat akun ganda atau memalsukan usia/identitas. Tidak ada pendaftaran/payout yang telah dilakukan oleh asisten.
+- **Hubungan dengan RapiUsaha:** pengguna sedang memprioritaskan kerja online untuk membangun sumber daya. Ini bukan persetujuan mengganti model bisnis RapiUsaha. RapiUsaha tetap produk digital B2C untuk UMKM; status pengembangan/peluncuran produk sementara ditunda oleh pengguna, sampai ada arahan baru.
+
+
 ## 0F. CHECKPOINT KANDIDAT PRODUK HOME DAYCARE — 2026-11-12
 
 **Status: HOME DAYCARE STARTER/ADMIN KIT MENJADI KANDIDAT VALIDASI TERATAS (ASSISTANT_PROPOSAL); BELUM PRODUK FINAL USER_CONFIRMED.**
