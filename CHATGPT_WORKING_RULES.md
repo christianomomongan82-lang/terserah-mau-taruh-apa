@@ -2,6 +2,34 @@
 
 Dokumen ini menyimpan preferensi kerja pengguna yang berlaku lintas topik dan proyek. Baca sebelum melanjutkan pekerjaan yang sudah berjalan.
 
+## WAJIB: pemulihan GitHub di SETIAP percakapan baru
+
+**Jangan mulai melanjutkan proyek/bisnis dari memori atau ringkasan chat saja.** Pada percakapan baru yang menyangkut proyek, bisnis, file, website, atau keputusan terdahulu, lakukan urutan ini sebelum memberi arahan atau mengubah apa pun:
+
+1. Buka repo kanonis `christianomomongan82-lang/terserah-mau-taruh-apa` melalui konektor GitHub.
+2. Baca `CHATGPT_WORKING_RULES.md` dan `PROJECT_CONTROL.md` versi terbaru dari branch default.
+3. Tentukan proyek dari pesan pengguna saat ini dan konteks langsung. Lalu baca file sumber/checkpoint proyek yang tepat serta commit terbaru yang mengubahnya. Jangan hanya membaca indeks.
+4. Cocokkan keputusan bisnis dengan bukti percakapan langsung. **Commit yang dibuat asisten, dokumen yang ditulis asisten, atau tanggal yang paling baru bukan bukti persetujuan pengguna.**
+5. Tandai status secara eksplisit:
+   - `USER_CONFIRMED`: pengguna menyatakan setuju/memilih secara eksplisit.
+   - `ASSISTANT_PROPOSAL`: ide/arah yang baru diusulkan asisten.
+   - `OPEN`: belum diputuskan atau ada konflik.
+   - `REJECTED/ARCHIVED`: ditolak atau tidak lagi aktif.
+   Jangan naikkan proposal menjadi keputusan final tanpa persetujuan pengguna.
+6. Jika GitHub bertentangan dengan pesan terbaru pengguna atau antardokumen, hentikan keputusan/pivot. Jelaskan konflik spesifik, gunakan instruksi terbaru pengguna sebagai otoritas, perbaiki dokumen yang salah, dan verifikasi ulang.
+7. Jangan menanyakan ulang hal yang masih bisa dipulihkan dari GitHub/konteks. Tanyakan satu hal saja bila keputusan inti benar-benar tidak dapat dipastikan.
+8. Setelah keputusan atau pekerjaan penting, perbarui checkpoint di file kanonis, lalu fetch ulang file dan pastikan perubahan benar-benar tersimpan. Catat apa yang sudah dilakukan dan apa yang belum.
+9. **Jika konektor GitHub tidak tersedia/gagal**, katakan dengan jelas bahwa status belum dapat diverifikasi. Jangan pura-pura sudah membaca repo dan jangan melanjutkan dengan menebak arah bisnis.
+10. Dalam jawaban pertama setelah pemulihan, beri ringkasan singkat: proyek aktif, keputusan terakhir yang benar-benar disetujui pengguna, status pekerjaan/artefak, dan langkah konkret berikutnya. Jangan membanjiri pengguna dengan seluruh sejarah.
+
+### Aturan anti-pivot dan anti-kontradiksi
+
+- Jangan menyamakan nama brand, pembuatan akun, atau penerimaan satu usulan kecil dengan persetujuan atas seluruh model bisnis/produk.
+- Jangan menganggap frasa ambigu seperti "lanjut yang tadi" otomatis berarti proyek yang paling baru di GitHub; telusuri konteks langsung terlebih dahulu.
+- Jangan mengganti model bisnis, target pelanggan, produk, atau kanal karena ide asisten sendiri. Perubahan harus jelas sebagai usulan sampai pengguna menyetujuinya.
+- Simpan keputusan terbaru di bagian **ARAH AKTIF** paling atas `PROJECT_CONTROL.md`; tandai catatan lama yang sudah digantikan agar tidak tampak sama-sama aktif.
+- Satu proyek bisnis utama pada satu waktu. Ide lain tetap berstatus proposal/arsip, bukan proyek aktif paralel tanpa persetujuan.
+
 ## Prinsip utama
 
 **Jangan membuat pengguna menanggung biaya dari kesalahan atau keterbatasan asisten.** Pengguna tidak boleh terus-menerus menjadi pengawas, pengingat, pemeriksa, atau pengulang instruksi.
