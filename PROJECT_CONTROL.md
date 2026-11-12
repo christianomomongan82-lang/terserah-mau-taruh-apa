@@ -1,5 +1,37 @@
 # Project Control — Sumber Kebenaran Lintas Percakapan
 
+## 0J. FILTER KTP + REKENING — PLATFORM 17+ — 2026-11-12
+
+**Koreksi instruksi pengguna:** jangan jadikan usia 18 sebagai filter absolut. Cari platform yang syarat resminya menerima usia 17+ dan/atau menyatakan KTP sebagai syarat eligibility. Gunakan identitas dan rekening milik pengguna sendiri; jangan memalsukan data. Jangan berhenti pada saran menunggu 18 bila ada platform resmi yang mengizinkan 17+.
+
+- Kebutuhan tetap: tugas kerja nyata berbasis output (bukan survei), Android, tanpa modal, minim komunikasi, rekening BRI/DANA; tidak mau cold-DM, sales, spam, referral, engagement palsu, dan konten rutin.
+- **Kandidat paling dekat untuk diperiksa sekarang — Ladenin (ASSISTANT_PROPOSAL):**
+  - Terms: usia minimal 17 tahun atau sudah memiliki KTP; identitas harus asli.
+  - Web app memiliki kategori “Digital / Online” dan filter Online vs Di Lokasi.
+  - KYC pekerja: NIK, foto KTP, selfie dengan KTP. Wajib sebelum melamar/mengambil misi. Jangan bagikan OTP/password/rekening ke pemberi misi.
+  - Cashout: minimum Rp15.000; administrasi Rp2.500; maksimal 2x24 jam kerja. Input bank/e-wallet dan nomor rekening/nama pemilik. Dana pekerjaan menggunakan escrow; halaman menyatakan pemrosesan pembayaran melalui Mayar.id. Free tier mengizinkan ambil misi.
+  - **Belum terverifikasi:** daftar misi aktif tidak tampil melalui crawl publik (menampilkan “sedang memuat data misi”), jadi belum ada bukti bahwa saat ini tersedia misi online yang cocok atau volume task di Bolaang Mongondow. Cek daftar terlebih dahulu, jangan KYC sebelum melihat tugas yang benar-benar layak.
+  - URL: https://www.laden.co.id/
+- **Kandidat kedua — NusaTalent SideJobs (ASSISTANT_PROPOSAL, hanya cek daftar misi):**
+  - Google Play secara eksplisit menyatakan usia minimal 17 + KTP; reward misi dapat dicairkan ke rekening bank/e-wallet. Listing memiliki 1 juta+ download, rating 4.4 dan sekitar 30 ribu ulasan (ini skala aplikasi, bukan bukti jumlah SideJobs).
+  - Namun Play Data Safety menyatakan aplikasi dapat mengumpulkan info keuangan dan data tidak dienkripsi saat transit.
+  - Catatan domain diperbaiki: situs nusatalent.com yang tercantum di listing pada 12 Nov 2026 dialihkan ke situs kasino pihak ketiga, **tetapi** website resmi terbaru pada LinkedIn perusahaan adalah nusatalent.app, yang aktif dan mengidentifikasi PT Nusa Talenta Indonesia. Ini membuat website .com sebagai link di Google Play tetap anomali; jangan memasukkan KTP atau rekening sampai developer menjelaskan domain/link resmi.
+  - Model bisnis perusahaan terutama influencer marketing, app/Google Maps reviews, lead generation, social-media management, affiliate/sales, dan merchant acquisition. Banyak misi berpotensi tidak sesuai preferensi anti-promosi/engagement pengguna. Jangan rekomendasikan misi review palsu, spam, lead-gen, referral atau sales.
+  - URL resmi yang dirujuk LinkedIn: https://nusatalent.app/ ; Play Store: https://play.google.com/store/apps/details?id=com.nusatalent.nusatalent
+- **Kerja E-niaga (HOLD — klaim belum terverifikasi):**
+  - Terms menyatakan usia minimal 17 dan pembayaran harian ke bank/e-wallet; halaman mengiklankan tugas e-commerce remote berbasis HP seperti review listing, cek harga, stok, resi, kategorisasi katalog, QA foto, uji checkout.
+  - Namun tidak menampilkan nama badan hukum/operator yang jelas, alamat kantor, brand klien bernama atau bukti pembayaran independen; angka 48 ribu pekerja dan Rp32 M+ pembayaran hanya klaim situs sendiri. Tombol tugas mengarah ke formcraft.app, bukan detail tugas. Jangan kirim KTP, rekening, OTP atau deposit sampai operator diverifikasi independen.
+  - URL: https://kerjaeniaga.com/
+- **Gawee (tidak cocok untuk batasan online sekarang):**
+  - Terms menyatakan usia minimal 17, KTP valid, KYC KTP + selfie. Pendaftaran gratis; pekerjaan adalah gig tenaga harian/jangka pendek **di lokasi** (check-in lokasi, dokumentasi kerja) dengan komunikasi pemberi kerja lewat chat.
+  - Platform fee 20% dari upah; dana melalui escrow dan dilepas setelah pemberi kerja menyetujui atau tidak merespons 24 jam.
+  - Bukan pilihan HP-only/remote; pertimbangkan hanya jika ada gig sangat dekat dan akses transport aman.
+  - URL: https://www.gawee.id/
+- **BuzzTask (tidak cocok):** terms menerima 17+, dokumen identitas, rekening/e-wallet sendiri; tetapi pekerja mendaftar sebagai buzzer tugas social-media marketing. Pengguna tidak mencari engagement/marketing tasks. URL: https://socialrush.id/syarat-ketentuan
+- **Status shortlist baru:** Ladenin #1 untuk diperiksa karena age/KTP/cashout cocok dan ada filter online; NusaTalent #2 hanya untuk melihat daftar misi, dengan red flag privasi/domain dan kecocokan task; Kerja E-niaga HOLD; Gawee non-remote; BuzzTask ditolak karena jenis tugas.
+- Laporan: [research/online_work_17plus_ktp_bank_platforms_2026-11-12.md](research/online_work_17plus_ktp_bank_platforms_2026-11-12.md).
+
+
 ## 0I. JALUR KERJA AI-DATA: 17 TAHUN SEKARANG, 18 TAHUN NANTI — 2026-11-12
 
 **Status: hasil riset aktual; tidak ada pekerjaan/task platform yang saat ini terverifikasi cocok untuk seluruh batasan usia 17 + Android-only + minim komunikasi. Jalur terbaik setelah usia 18 sudah ditemukan.**
