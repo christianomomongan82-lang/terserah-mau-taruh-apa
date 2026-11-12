@@ -9,6 +9,16 @@
 
 **Status persetujuan: USER_CONFIRMED.** Pengguna menyetujui rangkuman profil bisnis secara eksplisit pada percakapan 2026-11-12. Catatan ini merekam preferensi dan batasan pengguna; bukan persetujuan atas produk tertentu.
 
+### Strategi produk dan pemasaran (USER_CONFIRMED; 2026-11-12)
+
+- **Harga:** produk harus cukup terjangkau untuk menarik pembeli awal; angka/harga final belum diputuskan.
+- **Pembeda utama:** kualitas produk dan pengalaman penggunaan, bukan hanya perang harga.
+- **Saluran penjualan:** produk ditempatkan di marketplace yang cocok untuk file/produk digital; marketplace final belum dipilih.
+- **Promosi:** TikTok dan Instagram digunakan untuk promosi dengan video visual yang menarik, bukan hanya posting teks.
+- **Produksi video:** pengguna tidak ingin mengedit video sendiri; asisten diminta bertanggung jawab membuat materi video promosi sampai siap diunggah. Ini adalah kebutuhan produksi, bukan bukti bahwa video sudah dibuat.
+- **OPEN:** produk spesifik, niche pembeli, struktur paket, harga peluncuran/harga normal, marketplace final, dan konsep video kampanye.
+- **Batas:** jangan mengunci produk atau platform sebelum riset bukti permintaan, kompetisi, fee, syarat usia/KYC/payout, dan uji alur checkout.
+
 ### Profil yang dikonfirmasi pengguna
 - **Model bisnis:** membuat produk digital sendiri dan menjualnya berulang kali.
 - **Target pelanggan:** belum ditentukan; pilih berdasarkan peluang pasar terbaik.
