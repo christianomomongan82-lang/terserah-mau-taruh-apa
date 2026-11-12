@@ -1,4 +1,7 @@
 # Platform Kerja 17+ dengan KTP dan Rekening Sendiri
+
+> **KOREKSI TERBARU: NusaTalent SideJobs telah DITOLAK pengguna karena tugas yang ditampilkan ternyata survei. Jangan gunakan bagian lama tentang NusaTalent sebagai rekomendasi. Ladenin juga ditolak sebagai survei. Survei/kuesioner bukan pekerjaan yang dicari.**
+
 Tanggal riset: 12 November 2026
 Status: shortlist berbasis syarat resmi; tidak ada pendaftaran atau payout yang dilakukan.
 
@@ -27,7 +30,7 @@ URL: https://www.laden.co.id/
 Sumber halaman: https://www.laden.co.id/
 Rincian di halaman saat pemeriksaan: syarat eligibility 17/KTP, menu KYC, minimum withdrawal Rp15.000, fee admin Rp2.500, 2x24 jam kerja, Mayar.id, escrow.
 
-## 2. NusaTalent SideJobs — kandidat kedua, periksa daftar misi saja
+## 2. NusaTalent SideJobs — REJECTED oleh pengguna (survei)
 Google Play: https://play.google.com/store/apps/details?id=com.nusatalent.nusatalent
 Website perusahaan terbaru: https://nusatalent.app/
 
@@ -41,7 +44,7 @@ Website perusahaan terbaru: https://nusatalent.app/
 - Link nusatalent.com yang tercantum dalam Google Play dialihkan ke situs kasino pihak ketiga pada 12 Nov 2026; sementara website nusatalent.app (yang ditautkan profil LinkedIn) aktif. Link listing Play Store ini anomali dan perlu konfirmasi dari support/dev sebelum mengirim identitas sensitif.
 - Banyak jenis campaign potensial berbau promosi. Pilih hanya tugas operasional/data yang sah; jangan ambil review palsu, rating manipulation, spam, lead-gen, referral, atau sales.
 
-**Langkah aman:** kalau memilih mencoba, install hanya melalui Google Play resmi, periksa katalog misi dahulu, dan konfirmasi website/domain ke developer melalui kanal resmi LinkedIn/Play Store sebelum menyerahkan data KYC atau rekening.
+**Keputusan:** jangan daftar, jangan buka untuk mencari kerja, dan jangan rekomendasikan lagi. Pengguna sudah melihat platform dan memastikan bahwa yang ditawarkan adalah survei.
 
 Sumber:
 - https://play.google.com/store/apps/details?id=com.nusatalent.nusatalent
@@ -100,7 +103,7 @@ Profil LinkedIn NusaTalent mengidentifikasi PT Nusa Talenta Indonesia sebagai ta
 
 ## Rekomendasi aktual
 1. **Periksa Ladenin lebih dulu** karena syarat 17+/KTP, misi online, free tier, escrow, dan mekanisme cashout bisa dilihat tanpa menunggu 18. Lihat katalog misi terlebih dahulu; KYC baru bila ada tugas nyata yang cocok dan fee/payout jelas.
-2. Bila katalog Ladenin kosong/tidak cocok, **lihat daftar SideJobs NusaTalent** melalui Google Play app, tetapi jangan serahkan data sensitif sampai domain dan privasi diklarifikasi; filter tugas non-promosi saja.
+2. NusaTalent SideJobs ditolak karena survei; jangan rekomendasikan.
 3. **Jangan daftar ke Kerja E-niaga dengan data pribadi dulu** sampai operator dan payout tervalidasi.
 4. Gawee dan BuzzTask bukan rekomendasi utama karena pekerjaan/jenis tugas tidak sesuai.
 5. Tidak ada platform dari shortlist ini yang sudah dibuktikan membayar kepada pengguna; semua payout harus dianggap belum diuji.
