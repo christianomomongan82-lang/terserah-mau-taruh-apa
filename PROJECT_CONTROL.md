@@ -1,5 +1,20 @@
 # Project Control — Sumber Kebenaran Lintas Percakapan
 
+## 0E. CHECKPOINT AUDIT CELAH HOME BAKERY DAN PEMBANDING — 2026-11-12
+
+**Status: PUTARAN AUDIT SELESAI; BELUM ADA PRODUK FINAL YANG LAYAK DIKUNCI.**
+
+- **Proyek aktif tetap:** RapiUsaha — produk digital B2C untuk UMKM/owner-operators; harga menarik dengan kualitas sebagai pembeda; marketplace yang ramai; video TikTok/Instagram dibuat asisten. Ini semua tetap USER_CONFIRMED.
+- **Kandidat lama:** Home bakery masih memiliki paid-item evidence paling jelas dari segmen yang diperiksa sebelumnya, tetapi kategori order/costing/production planner sudah padat.
+- **Audit gap terbaru:** masalah perubahan pesanan custom nyata (flavor, size/tier, design, dietary requirements, delivery, rush fees; impact ke biaya, waktu, dan keputusan pembelian bahan). Namun, inti solusinya sudah ditawarkan oleh Orders App (capture/update order details) dan GetTheOK (customer change approval, price impact, version history; free 3 approvals/month, paid plans $9/$19/$29/month). Etsy search juga menampilkan Bakery Order Change & Pickup Kit seharga $2.49.
+- **Putusan:** jangan membuat RapiPO generik, order-revision spreadsheet, atau approval tracker bakery generik sekarang. Pain point valid, tetapi diferensiasi dan willingness-to-pay untuk file baru belum terbukti serta pengganti software gratis sudah ada.
+- **RapiPO:** NO-GO untuk ekspansi dan peluncuran dalam bentuk generik. Prototype tetap arsip pembelajaran; jangan menyebut produk siap jual/validated.
+- **Segmen pembanding:** dog grooming/mobile pet grooming dan short-term-rental cleaning juga punya produk digital yang bersaing. Sinyal item-level reviews yang diperiksa terbatas; shop sales jangan disamakan dengan sales listing. Belum ada bukti cukup untuk pindah segmen.
+- **Laporan audit:** [research/RapiUsaha_gap_validation_custom_order_changes_2026-11-12.md](research/RapiUsaha_gap_validation_custom_order_changes_2026-11-12.md) (SHA terakhir diverifikasi 539f7e53b8716007907088f5e8d6efe657b79b1c).
+- **Langkah berikutnya (ASSISTANT_PROPOSAL):** perluas riset ke kandidat UMKM lain, memakai bukti ulasan/pembelian pada listing spesifik dan audit solusi gratis/software; baru buat prototype setelah ditemukan gap yang tetap nyata setelah kompetitor diperiksa. Jangan mengunci produk/segmen/harga/platform tanpa persetujuan pengguna.
+- **Batas:** jangan membangun produk hanya agar ada kemajuan; bukti masalah saja tidak cukup jika pengganti yang gratis sudah menyelesaikannya. Jangan membuat video iklan launch untuk produk yang belum dipilih dan divalidasi; video prototipe yang ada hanya demo internal.
+
+
 ## 0D. CHECKPOINT PERBANDINGAN PRODUK DAN AUDIT KOMPETITOR — 2026-11-12
 
 **Status: RISET PEMBANDING SELESAI UNTUK PUTARAN INI; TIDAK ADA PRODUK FINAL YANG DIKUNCI.**
