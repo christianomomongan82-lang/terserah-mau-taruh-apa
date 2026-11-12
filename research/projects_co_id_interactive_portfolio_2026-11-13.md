@@ -22,10 +22,10 @@ The user explicitly requested an interactive, more complete presentation for the
 ## Verification
 - Mobile browser test before this change passed for all three demos.
 - JavaScript syntax checked with Node after removing the marketplace handler.
-- Latest source commit was fetched back from GitHub after update.
-- Post-deployment live fetch is required to verify absence of the removed CTA and the new navigation. Do not claim it until confirmed.
+- Latest source commit was fetched back from GitHub after update; the public Worker was redeployed and fetched live.
+- Post-deployment live fetch verified the public page has no Projects.co.id references, no disabled/wait-for-profile button, and no marketplace contact CTA.
 - Samples are fictitious practice data. No client-work claims or performance guarantees.
 
 ## Remaining work
-- User only needs to paste the public URL above into their Projects.co.id portfolio entry. No profile-specific URL is needed, and there are no buttons waiting for such a URL.
+- User only needs to paste the public URL above into their Projects.co.id portfolio entry. No profile-specific URL is needed; the website is a standalone portfolio with no buttons sending visitors back to the marketplace.
 - No Projects.co.id login/profile edit, portfolio upload, bid, message, or transaction occurred.
