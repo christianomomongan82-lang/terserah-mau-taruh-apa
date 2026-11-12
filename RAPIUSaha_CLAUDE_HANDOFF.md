@@ -92,6 +92,22 @@ Dokumen ini dibuat agar Claude dapat memahami proyek tanpa konektor GitHub. Guna
 - Home bakery masih kandidat riset, bukan keputusan final; jangan langsung pivot. Perluas pencarian segmen lain dengan review/penjualan item-level yang dapat diverifikasi dan audit kompetitor gratis.
 - Belum ada produk final, harga, segmen, atau marketplace yang disetujui. Tidak ada video launch yang harus dibuat sebelum gap/value dibuktikan.
 
+## 2F. Kandidat produk terbaru setelah perbandingan (2026-11-12; ASSISTANT_PROPOSAL)
+
+- Deep dive: [research/RapiUsaha_daycare_candidate_deep_dive_2026-11-12.md](research/RapiUsaha_daycare_candidate_deep_dive_2026-11-12.md).
+- Kandidat teratas saat ini: Home Daycare Starter / Parent Onboarding Admin Kit. Satu listing Etsy berstatus Bestseller, 20+ views dalam 24 jam, promo US$9.99, 93 ulasan item-level, rating 4.8/5, dan 98% buyer recommend. Seller shop memiliki 82.3k sales/5.5k ratings secara total; jangan salah menganggap angka toko sebagai listing sales.
+- Listing pesaing berisi 275 halaman Canva. Review item menyebut mudah download/edit, dibutuhkan, dan jumlah konten yang banyak. Seller menyatakan Canva mobile app kadang glitchy dan merekomendasikan komputer.
+- Free competitor: NestliCare mengiklankan seluruh daycare software gratis selamanya, termasuk attendance, daily reports, meals, billing, messaging, enrollment, parent app, staff, documents/forms. Jangan membuat app/attendance/payment system yang menduplikasi itu.
+- Hipotesis gap: starter/onboarding pack yang lebih kecil, curated, fillable/printable, phone-friendly dan tidak mengharuskan Canva. Belum terbukti; jangan mengklaim lebih mudah sebelum prototipe diuji.
+- Scope yang layak diuji: child/family intake questionnaire non-medical; first-week onboarding checklist; daily family communication report; meal/supply/attendance print aids; parent messages. Hindari contract templates yang legally binding, official licensing/regulatory claims, emergency procedures, medication/medical forms, dan klaim compliance karena harus diadaptasi per yurisdiksi dan memerlukan review ahli.
+- Kandidat pembanding baru:
+  - Mobile detailing pre-inspection form: $4.35, 12 item reviews 5.0/5, namun free apps DetailProof/Shine Route sudah melakukan photo proof, damage map, customer signature dan offline reports.
+  - Machine embroidery calculator: $2.65, 37 item reviews 4.8/5, namun banyak free calculators dan PrintUnite.
+  - Candle costing: 35 item reviews 4.9/5, tetapi BatchScale memiliki 23 free resources dan Stockria free up to 250 items.
+- **Status bisnis tidak berubah:** produk, segmen, isi paket, harga, marketplace tetap OPEN; daycare kit hanya kandidat rekomendasi, belum disetujui pengguna. RapiPO home bakery generik dan bakery change-approval tracker tetap NO-GO.
+- **Distribution hard gate:** Etsy account owner minimum 18; pengguna tidak ingin melibatkan wali dan baru memenuhi syarat 25 Dec 2026. Kreavo perlu dites untuk checkout negara target, bank owner/KYC/payout pada usia 17; jangan asumsikan international checkout atau discovery trafik.
+- Jangan membuat produk final atau video launch sampai ada bukti bahwa pack no-Canva/mobile-friendly memiliki value dan jalur checkout/payout legal tersedia.
+
 ## 3. Batas usia dan pembayaran
 
 - Saat snapshot dibuat, pengguna berusia 17 tahun.
