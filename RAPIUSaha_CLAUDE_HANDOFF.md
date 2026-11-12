@@ -41,6 +41,18 @@ Dokumen ini dibuat agar Claude dapat memahami proyek tanpa konektor GitHub. Guna
 - Produk spesifik, segmen prioritas, harga, marketplace, dan konsep video masih OPEN sampai riset dan rekomendasi selesai.
 - Jangan menganggap generic HPP spreadsheet atau Paket Operasional Jualan WhatsApp sebagai produk final hanya karena pernah diusulkan.
 
+## 2B. Riset marketplace dan kandidat produk (2026-11-12; rekomendasi asisten, belum dikunci pengguna)
+
+- Riset lengkap tersimpan di [research/RapiUsaha_marketplace_channel_2026-11-12.md](research/RapiUsaha_marketplace_channel_2026-11-12.md).
+- **Etsy adalah kandidat marketplace utama jangka panjang** karena Q3 2026 menyebut sekitar 88 juta active buyers (TTM), mengizinkan instant digital downloads, dan Etsy Payments tersedia di Indonesia. Ini rekomendasi asisten, belum keputusan final pengguna.
+- Etsy mewajibkan pemilik akun minimal 18 tahun. Penjual 13–17 tahun hanya boleh melalui akun wali dengan izin dan pengawasan langsung serta data keuangan atas nama wali. Pengguna tidak ingin keterlibatan wali, jadi jangan membuka akun Etsy sebelum syarat usia mandiri terpenuhi.
+- Biaya Etsy untuk bank Indonesia: listing US$0,20; transaction fee 6,5%; processing 4,5% + Rp7.000/order; deposit minimum Rp28.000 dan deposit fee Rp28.000 jika deposit di bawah threshold Rp1.400.000. Periksa ulang saat pendaftaran karena fee dapat berubah.
+- Shopee memiliki traffic tinggi tetapi program resmi penjualan produk digital yang ditemukan terbatas pada e-voucher dari Partner yang disebut dalam lampiran perjanjian. Jangan mengasumsikan listing biasa dapat menjual file spreadsheet/PDF.
+- Kreavo menerima pengguna minimal 17 tahun menurut Terms, tetapi halaman publiknya saat diperiksa menampilkan 0+ seller/produk dan 0 kreator/produk terjual; tidak ada bukti marketplace discovery ramai. Hanya pertimbangkan sebagai checkout sementara yang diarahkan traffic sendiri setelah payout diverifikasi.
+- Tokoge mendukung file digital, tetapi usia minimum dan skala pembeli belum jelas; jangan menetapkannya sebagai marketplace utama.
+- **Kandidat produk asisten untuk riset/prototipe:** Home Bakery / Cottage Bakery Order & Cost System. Etsy menampilkan 1.000+ hasil kategori bakery planner/order tracker. Salah satu listing digital mendapat badge Bestseller, lebih dari 20 views/24 jam dan harga promo US$8,75; tokonya memiliki 117,4 ribu penjualan keseluruhan toko, bukan listing itu sendiri. Pasar memiliki pembeli, tetapi kompetisi dan diskon berat.
+- Belum ada produk yang disetujui final, belum ada listing, video, atau transaksi. Langkah berikut: cek gap produk/pesaing, buat prototipe phone-first yang sederhana, uji fungsi dan harga, siapkan video promosi. Jangan mencampur angka toko dengan penjualan listing, dan jangan menjadikan volume hasil pencarian sebagai data transaksi.
+
 ## 3. Batas usia dan pembayaran
 
 - Saat snapshot dibuat, pengguna berusia 17 tahun.
