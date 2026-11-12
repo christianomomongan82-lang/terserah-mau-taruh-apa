@@ -24,6 +24,24 @@
 
 > Aturan utama: dokumen ini membantu menemukan sumber yang benar; ia tidak menggantikan bukti langsung dari repo, deployment, file, atau keputusan eksplisit terbaru pengguna. Status yang belum dicek ditandai apa adanya.
 
+### 0B.1. CHECKPOINT PROTOTIPE RapiPO — 2026-11-12
+
+**Status: PROTOTIPE AWAL SELESAI DIBUAT; BELUM FINAL / BELUM DIUJI PEMBELI.**
+
+- **Produk kerja (ASSISTANT_PROPOSAL):** RapiPO — Home Bakery Order & Profit Tracker, untuk home bakery/cottage bakery kecil. Produk/segmen tetap rekomendasi asisten, belum persetujuan final eksplisit pengguna.
+- **File prototipe XLSX dibuat di percakapan:** `RapiPO_Home_Bakery_Order_Profit_Tracker_Prototype.xlsx`.
+- **Bagian workbook:** Start Here; Menu & Cost; Orders (10 kolom inti, dropdown produk/status); Dashboard.
+- **Perhitungan formula yang diuji dengan data demo:** total order sales US$123.00; estimated gross profit US$60.20; unpaid balance US$68.00; active orders 3. Menu calculator contoh: cookies cost/unit US$1.45, suggested price US$2.42, selling price US$3.00.
+- **Pemeriksaan kualitas:** tidak ditemukan error formula #REF!, #DIV/0!, #VALUE!, #NAME?, atau #N/A; render dashboard/orders diperiksa. Kompatibilitas Google Sheets Android belum diuji langsung. Data demo harus dihapus sebelum penggunaan nyata.
+- **Video teaser dibuat di percakapan:** `RapiPO_Prototype_Promo_Vertical.mp4`, MP4 vertikal 720×1280, 30 fps, durasi 18 detik, musik instrumental orisinal. Ditandai sebagai prototype/demo, bukan iklan produk yang sudah diluncurkan.
+- **Batasan video/prototipe:** angka dashboard dan contoh order adalah data demo, tidak boleh diklaim sebagai hasil pelanggan. Tidak ada penjualan/validasi yang terjadi.
+- **Belum tersimpan sebagai binary di repo:** XLSX dan MP4 tersedia sebagai file lampiran percakapan; checkpoint dan riset disimpan di repo. Jangan klaim binary sudah di-commit ke GitHub.
+- **Yang belum selesai:** order notes/change tracking; tes formula/dropdown di Google Sheets Android; versi Bahasa Indonesia; panduan pembeli; pembuktian willingness-to-pay; verifikasi payout Kreavo; rencana pembukaan Etsy ketika syarat usia terpenuhi; listing final.
+- **Langkah berikutnya:** uji workbook di Google Sheets Android dengan mengganti satu produk, menambah order, mengubah quantity dan DP; setelah temuan uji, revisi workbook, tambahkan notes perubahan pesanan, buat Bahasa Indonesia dan PDF guide, lalu verifikasi fee/payout/channel sebelum listing. Jangan menjual file prototype ini sebagai final sebelum tes.
+- **Sumber riset:** `research/RapiUsaha_marketplace_channel_2026-11-12.md` (terakhir diverifikasi; SHA b7365815ff131c3d80a528112e950017552b780e).
+- **Rekomendasi kanal:** Etsy untuk discovery jangka panjang setelah umur 18 dan payout/KYC eligible; Kreavo hanya checkout interim bila jalur 17+ dan rekening diverifikasi. Shopee/TikTok Shop/Tokopedia bukan jalur default file download.
+- **Harga:** belum dikunci. Benchmark Etsy pesaing diskon saat diperiksa sekitar US$3.50–US$15.94; jangan tetapkan harga sebelum hitung biaya dan nilai pembeda.
+
 ## 0A. CHECKPOINT PROFIL P-DIGITAL / RapiUsaha — 2026-11-12
 
 **Status persetujuan: USER_CONFIRMED.** Pengguna menyetujui rangkuman profil bisnis secara eksplisit pada percakapan 2026-11-12. Catatan ini merekam preferensi dan batasan pengguna; bukan persetujuan atas produk tertentu.
