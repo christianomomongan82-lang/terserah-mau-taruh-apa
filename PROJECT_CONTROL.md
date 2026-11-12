@@ -1,19 +1,25 @@
 # Project Control — Sumber Kebenaran Lintas Percakapan
 
-## 0G. CHECKPOINT KERJA ONLINE REPETITIF — 2026-11-12
+## 0H. KOREKSI ARAH KERJA ONLINE — TANPA SURVEI — 2026-11-12
 
-**Status: USER_CONFIRMED memilih pekerjaan repetitif; rekomendasi kanal oleh asisten, belum ada platform yang dipilih pengguna atau payout yang berhasil diuji.**
+**Status: USER_CONFIRMED menolak jalur survei berbayar. Kandidat kerja repetitif harus menghasilkan output kerja; belum ada platform atau lowongan yang dipilih/dijalankan.**
 
-- Pengguna memilih tipe kerja online repetitif. Prioritas: HP Android, tanpa modal, minim komunikasi, sesuai usia aktual, payout yang bisa diterima lewat rekening sendiri/e-wallet; tidak ingin cold-DM, sales, referral-spam, atau produksi konten rutin.
-- Pengguna sebelumnya menyatakan usia 17 tahun, memiliki e-KTP, rekening BRI, dan DANA; gunakan data identitas asli dan jangan menyiasati batas usia.
-- **Kandidat utama:** JAKPAT (minimal 17; survei berulang; pilihan cash bank tertentu atau e-money seperti DANA bergantung menu Redeem; BRI belum diverifikasi), Nusaresearch (aturan anggota menolak pengguna di bawah 17 tanpa pengawasan; DANA 550 poin = Rp25.000; survey terbatas/tidak dijamin), NusaTalent SideJobs (minimal 17 + KTP; misi dengan payout bank/e-wallet; jenis misi dan tarif aktual perlu disaring agar bukan promosi/referral).
-- **Kandidat eksperimen saja:** SurveyKita.id (17+, payout rekening/e-wallet sendiri, tetapi platform baru dan bukti reputasi/payout independen masih tipis).
-- **Belum cocok:** Tasker, Toloka, Flavetask, Google Opinion Rewards karena syarat 18+; ySense menerima 16+ di luar AS tetapi payout ke BRI/DANA belum terverifikasi; Braintrust DATAmundi listing deadline yang terindeks sudah lewat dan payout Indonesia tidak jelas.
-- **Laporan dan sumber:** [research/online_work_shortlist_android_repetitive_2026-11-12.md](research/online_work_shortlist_android_repetitive_2026-11-12.md), SHA terverifikasi d9651059ff6c886a2ebe549e9d2e9caea333a2d3.
-- **Rekomendasi langkah berikutnya (ASSISTANT_PROPOSAL):** uji gratis JAKPAT dan Nusaresearch, cek misi NusaTalent; lakukan cashout kecil untuk membuktikan payout, lalu catat waktu, reward bersih, kuota, penolakan, dan lama pencairan. Jangan menganggap panel survei sebagai pekerjaan penuh waktu.
-- **Batas keras:** tidak membayar deposit/top-up/biaya membuka tugas; jangan berikan OTP/PIN/password; jangan membuat akun ganda atau memalsukan usia/identitas. Tidak ada pendaftaran/payout yang telah dilakukan oleh asisten.
-- **Hubungan dengan RapiUsaha:** pengguna sedang memprioritaskan kerja online untuk membangun sumber daya. Ini bukan persetujuan mengganti model bisnis RapiUsaha. RapiUsaha tetap produk digital B2C untuk UMKM; status pengembangan/peluncuran produk sementara ditunda oleh pengguna, sampai ada arahan baru.
+- Koreksi dari pengguna: “Survei? Ngapain anjing survei.” Ini menolak rekomendasi survei sebagai jawaban atas permintaan kerja online. Asisten sebelumnya salah menyamakan repetisi dengan survei berbayar.
+- **JAKPAT dan Nusaresearch: REJECTED untuk pencarian kerja ini.** Jangan rekomendasikan atau arahkan pengguna mendaftar ke panel survei.
+- Definisi kerja yang dicari: tugas yang menghasilkan output kerja, misalnya pelabelan data/gambar, pemeriksaan dan validasi data, input katalog/produk, dokumentasi, uji aplikasi yang sah, atau tugas administrasi terstruktur; bukan kuesioner opini, promosi, referral, manipulasi review, atau menghubungi calon pelanggan.
+- Profil tetap: HP Android saja, modal Rp0, minim komunikasi/negosiasi, usia 17, e-KTP, rekening BRI dan DANA, tanpa keterlibatan wali. Jangan mengasumsikan bisa memakai laptop/PC atau kemampuan bahasa Inggris.
+- **Kandidat platform paling dekat (ASSISTANT_PROPOSAL): NusaTalent SideJobs.** Listing resmi Google Play menyebut pendaftar minimal 17 tahun + KTP; misi memberi reward/komisi yang dapat dicairkan ke bank atau e-wallet. Namun jenis misi, rate, volume task, minimum payout, dan bukti payout aktual belum dipublikasikan/diperiksa. Wajib cek daftar misi dulu; hanya pertimbangkan pekerjaan data/admin/app-testing yang sah dan repetitif. Tolak promosi, sales, referral, spam, review palsu, pembelian, top-up, dan tugas yang meminta mengontak orang. Catatan keamanan: Google Play menyatakan data keuangan dapat dikumpulkan dan data tidak dienkripsi saat transit menurut deklarasi developer.
+- **Kanal lowongan cadangan (ASSISTANT_PROPOSAL): KitaLulus.** Pusat bantuan resminya menyebut usia minimum 17 tahun dengan KTP, serta filter freelance dan remote. Namun daftar remote-freelance yang diperiksa pada 12 Nov dipenuhi “Misi Seru” yang merupakan campaign marketing/promosi; itu tidak cocok dengan preferensi pengguna. Beberapa lowongan administrasi/AI remote lainnya meminta laptop/komputer atau jadwal full-time dan/atau identitas perusahaan belum cukup diverifikasi. Belum ditemukan lowongan spesifik yang lolos seluruh batasan HP-only dan minim komunikasi.
+- **Ladenin: tidak diprioritaskan.** Syaratnya 17 tahun atau memiliki KTP dan sistemnya memuat misi online, tetapi sampel tugas yang tampil didominasi follow/engagement media sosial, rating/review, referral, atau pekerjaan dengan chat; beberapa hanya bernilai Rp1.000–Rp2.000 dan banyak kuota sudah 0. Hindari review palsu, manipulasi engagement, referral, serta misi yang meminta data/akun atau pembelian.
+- **Platform tidak eligible saat ini:** Tasker (18+), Jwuma (18+), Flavetask (18+), AdaTugas (18+). Jangan sarankan pengguna mengakali umur.
+- **Tidak terverifikasi / jangan serahkan data:** Kerja E-niaga mengklaim tugas e-commerce bernilai puluhan ribu dan pencairan harian, tetapi tidak ditemukan bukti independen tentang badan usaha, volume tugas, atau pembayaran nyata. Jangan unggah KTP/rekening atau bekerja di sana sebelum identitas operator dan payout diverifikasi.
+- **Waitlist, bukan pekerjaan aktif:** DataKita mempromosikan tugas beta yang dirancang untuk smartphone dan pembayaran e-wallet Indonesia, tetapi saat diperiksa hanya membuka waitlist; tidak menjanjikan akses, task, atau pendapatan dan syarat usia belum jelas.
+- **Kesimpulan saat ini:** belum ada platform yang terbukti menyediakan kerja repetitif berbayar, HP-only, minim komunikasi, dan memenuhi usia 17 sekaligus. NusaTalent SideJobs adalah kandidat pertama untuk diperiksa isi misinya, bukan jaminan pekerjaan. Jangan kembali ke survei sebagai pengganti.
+- **Sumber riset koreksi:** [research/online_work_task_based_shortlist_no_surveys_2026-11-12.md](research/online_work_task_based_shortlist_no_surveys_2026-11-12.md).
 
+## 0G. ARSIP SHORTLIST LAMA — SURVEI (SUPERSEDED) — 2026-11-12
+
+**Status: rekomendasi JAKPAT/Nusaresearch pada catatan lama dicabut setelah pengguna menolak survei. Jangan gunakan sebagai langkah aktif.** Isi riset historis masih tersimpan di [research/online_work_shortlist_android_repetitive_2026-11-12.md](research/online_work_shortlist_android_repetitive_2026-11-12.md); kandidat survei berstatus REJECTED, bukan pilihan pengguna.
 
 ## 0F. CHECKPOINT KANDIDAT PRODUK HOME DAYCARE — 2026-11-12
 
