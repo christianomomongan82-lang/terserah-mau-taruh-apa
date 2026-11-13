@@ -1,5 +1,23 @@
 # Project Control — Sumber Kebenaran Lintas Percakapan
 
+## 0Z. RAPIUSAHA — VALIDASI PRODUK PUTARAN 2 — 2026-11-13
+
+**Status: RISET ASISTEN SELESAI; tidak ada produk atau niche baru yang dikunci pengguna.** Semua verdict pada audit ini adalah ASSISTANT_PROPOSAL, bukan USER_CONFIRMED.
+
+- **Arah bisnis tetap:** RapiUsaha — produk digital B2C untuk UMKM (USER_CONFIRMED). Projects.co.id tetap kanal pemasukan tambahan yang terpisah.
+- **Home Daycare Launch / Parent Onboarding Pack: HOLD.** Ada bukti item-level demand (listing 275 halaman 93 review, rating 4.8/5; listing pesaing lain 69 review, rating 4.8/5), tetapi kategori Etsy menampilkan 5.000+ items. Solusi serupa sudah hadir dalam Canva, Word, Google Docs dan fillable PDF. Produk fillable PDF yang ditinjau bahkan meminta pengisian via komputer karena sebagian phone/browser viewer tidak mendukung field. Perbedaan format/lebih ringkas/mobile-friendly belum menjadi gap unik yang tervalidasi. Ada risiko legal/regulasi/medical untuk daycare forms. Jangan buat produk sekarang.
+- **Kalkulator margin seller marketplace Indonesia: NO-GO generik.** ASEAN Seller sudah menyediakan spreadsheet gratis Shopee/Tokopedia/Lazada dengan BEP dan simulasi campaign; MahirSeller, TakarLaba dan iBuat.Link menyediakan kalkulator browser gratis. Fee marketplace bervariasi dan dapat berubah sehingga produk statis juga menuntut maintenance.
+- **Vending machine route/profit tracker: WATCHLIST, bukan build.** Ada produk Etsy dengan 451 reviews dan 84 reviews, tetapi VendingHQ mengklaim paket gratis unlimited machines dengan P&L/route/service logs; RouteStock gratis untuk 2 mesin; VendSoft punya alternatif berbayar mulai US$19/bulan. Paid demand ada, tetapi pengganti gratis memenuhi inti fungsi dan niche ini belum jelas cocok untuk basis target RapiUsaha di Indonesia.
+- **Florist / flower-shop tracker: NO-GO generik.** Ada produk Etsy dengan 34 item reviews dan harga sekitar US$14.49; Evoflor memasarkan paket gratis hingga 100 orders/bulan dan 2 event/bulan dengan order/customer/recipe-costing functions.
+- **Beauty salon tracker: NO-GO generik.** Produk sejenis punya review Etsy hingga sekitar 3.4k, tetapi hasil pasar padat dan OneStellara, SalonHQ, Pronto menawarkan software gratis dengan kombinasi booking, customer, inventory dan finance.
+- **Distribusi/payout:** Kreavo Terms menyebut usia minimal 17, pembayaran QRIS kecuali metode lain muncul pada checkout, saldo ditahan 7 hari, minimum withdraw Rp100.000 dan proses 1–3 hari kerja; Help Center menyebut QRIS/VA/e-wallet/retail dan biasanya 1–2 hari kerja. Homepage menampilkan “0+ seller dan 0+ produk digital”. Perbedaan Terms/Help/marketing wajib diuji pada checkout aktual; jangan menganggap Kreavo sudah punya discovery audience. Etsy tetap diblokir sampai pengguna berusia 18 pada 25 Desember 2026 jika tanpa wali.
+- **Putusan sementara:** belum ada kandidat yang lolos seluruh filter (item-level payment evidence, gap yang bertahan dari software gratis, phone-first, biaya produksi Rp0, self-service, channel dan payout yang bisa dipakai sekarang). Jangan membuat produk/iklan/listing hanya untuk terlihat maju.
+- **Langkah berikutnya:** lanjutkan riset peluang dari kebutuhan UMKM yang relevan di Indonesia dan fokus pada workflow spesifik yang belum diselesaikan alternatif gratis; produk, niche, harga dan marketplace tetap OPEN sampai bukti cukup dan pengguna menyetujui.
+- **Laporan dan bukti:** `research/RapiUsaha_product_validation_round2_2026-11-13.md` (commit `d14be783f22e09ab3ced81b8b44a8df0195649a7`). [Buka laporan](https://github.com/christianomomongan82-lang/terserah-mau-taruh-apa/blob/main/research/RapiUsaha_product_validation_round2_2026-11-13.md).
+- **Tidak dilakukan:** tidak ada akun baru, perubahan akun, listing, produk, iklan, penjualan, pembelian, atau pembayaran.
+
+---
+
 ## 0Y. PROJECTS.CO.ID — SERVICE 02 DATA CLEANING PREPARED — 2026-11-13
 
 **Status: ASSISTANT_PREPARED / DRAFT READY.** User instructed to create the most important next step after agreeing to expand income. The first priority chosen was a higher-value, clearly bounded spreadsheet cleaning service. Specific price/options remain an assistant proposal; no account listing has been published.
