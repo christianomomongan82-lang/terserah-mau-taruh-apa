@@ -43,7 +43,7 @@ Snapshot proyek relevan:
 
 **Verdict pasar:** platform layak diuji sebagai kanal tambahan dengan batas waktu/biaya rendah, tetapi tidak layak diperlakukan sebagai sumber pemasukan utama atau pemasukan yang dapat dipastikan. Memperluas kata kunci pencarian membantu menemukan pekerjaan yang berdekatan, tetapi tidak otomatis menciptakan skill-fit atau demand.
 
-## 2. Audit tiga draft service
+## 2. Audit tiga service yang sudah diterbitkan
 
 ### Service 01 — Input data
 - Usulan: Rp50.000, maksimal 100 baris dan 5 kolom, 2 hari.
@@ -62,12 +62,12 @@ Snapshot proyek relevan:
 ### Service 03 — Template rekap penjualan
 - Usulan: Rp125.000, 4 hari, workbook 3 sheet, 500 baris input, ringkasan 12 bulan, grafik, dan add-on kapasitas.
 - Demo sintetis menghasilkan Rp412.000 dari 12 transaksi dan 27 unit; scan formula-error tercatat nol dan label bulan grafik telah diperbaiki pada preview.
-- Status: draft asisten, belum disetujui atau diterbitkan.
+- Status: pengguna mengonfirmasi layanan ini sudah diterbitkan sebagai salah satu dari tiga Sell Service. Rincian live belum diverifikasi; spesifikasi di bawah adalah catatan draft persiapan.
 - Net ilustratif setelah fee Service 12%: Rp110.000 sebelum biaya lain.
 - Batasan scope sudah relatif jelas, tetapi kompatibilitas dan kenyamanan pemakaian di Android belum dibuktikan.
 
 ### Masalah konsistensi harga
-Riset strategi yang lebih luas pernah mengusulkan cleaning Rp125.000–175.000 dan template spreadsheet custom Rp250.000–350.000, sedangkan draft nyata Service 02/03 memakai Rp75.000 dan Rp125.000. Seluruhnya masih proposal asisten. Belum ada dasar dari waktu kerja aktual, permintaan pembeli, atau transaksi untuk memilih salah satu angka. **Jangan menganggap harga-harga tersebut final.** Harga baru layak ditetapkan setelah tes pengerjaan dan perhitungan net per jam.
+Riset strategi yang lebih luas pernah mengusulkan cleaning Rp125.000–175.000 dan template spreadsheet custom Rp250.000–350.000, sedangkan draft nyata Service 02/03 memakai Rp75.000 dan Rp125.000. Nominal tersebut adalah angka pada draft persiapan, bukan verifikasi harga yang tampil saat ini. Pengguna sudah mengonfirmasi keputusan menerbitkan ketiga layanan, tetapi rincian harga live belum diperiksa dan bisa saja berbeda dari draft. Belum ada dasar dari waktu kerja aktual, permintaan pembeli, atau transaksi untuk menilai harga mana yang paling menguntungkan. **Jangan gunakan angka draft sebagai harga live sampai halaman masing-masing diperiksa.**
 
 ## 3. Audit sampel dan kemampuan delivery
 
