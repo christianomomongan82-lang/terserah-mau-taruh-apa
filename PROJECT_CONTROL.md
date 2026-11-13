@@ -1,5 +1,23 @@
 # Project Control — Sumber Kebenaran Lintas Percakapan
 
+## 0AA. PROJECTS.CO.ID — SERVICE 03 SALES TEMPLATE PREPARED — 2026-11-13
+
+**Status: ASSISTANT_PREPARED / DRAFT READY.** Service 03 is a proposed fixed-scope Excel template service. The price, service scope, delivery period, and add-on are not user-approved, and no listing has been published.
+
+- **Project context:** Projects.co.id is supplementary freelance income, separate from the primary business RapiUsaha — B2C digital products for UMKM. The user's confirmed goal is to increase income. Do not merge the freelancer track into RapiUsaha.
+- **Last checkpoint:** Service 02 Data Cleaning remains a prepared draft, not confirmed published. Its copy excludes any portfolio reference per the user's explicit correction.
+- **Service 03 concept:** “Jasa Pembuatan Template Rekap Penjualan Excel Sederhana”. One reusable XLSX workbook for one sales workflow: Panduan, Input Penjualan, and Ringkasan sheets; 500 transaction rows; automatic transaction totals; 12-month summary of sales value, transaction count, and units; one monthly sales chart; year selector; one minor in-scope revision. Chat-based clarification only; no calls required.
+- **Proposed settings (ASSISTANT_PROPOSAL):** Rp125,000 base price; 4-day finish; add-on to expand input capacity to 1,500 rows total for +Rp25,000. At the official 12% Service fee, base balance would be Rp110,000 before withdrawal/tax/work costs. Not a user-approved or market-validated price.
+- **Market check:** an inspected public Projects.co.id “Excel / Spreadsheet Specialist” service lists simple report Rp50,000, simple financial report Rp120,000, and e-commerce report Rp170,000. Its page showed no recorded reviews and the seller profile showed 0 completed projects at inspection. Advertised prices are not verified sales. Official Service FAQ states a 12% fee and supports optional add-ons; official worker instructions say each service page should describe one specific service type. Sources: https://projects.co.id/public/browse_services/view/ad9912/excel-spreadsheet-specialist ; https://projects.co.id/public/pages/faq_service ; https://projects.co.id/public/pages/faq_worker .
+- **Created demo workbook:** `/mnt/data/Contoh_Template_Rekap_Penjualan_Sederhana.xlsx`. Contains 3 sheets and 500 prepared input rows. Synthetic test data yielded Rp412,000 sales from 12 transactions and 27 units; monthly totals calculated; formula-error scan returned 0 matches; chart labels visually checked and corrected. This is a practice sample using fictional transactions, not client work or sales proof.
+- **Detailed copy, research, boundaries, and test notes:** `research/projects_co_id_service_03_sales_template_2026-11-13.md`.
+- **Listing exclusions:** no inventory, purchases, expenses, HPP, profit/loss, tax, debt/payables, multi-branch, scraping, marketplace integration, macros/VBA, complex formulas, or importing/cleaning historical data. No portfolio mention or link.
+- **Decision classification:** USER_CONFIRMED = expand income; Projects.co.id remains a separate supplemental track; omit deleted portfolio. ASSISTANT_PROPOSAL = Service 03 concept, title, scope, Rp125k price, 4-day delivery, and row-capacity option. OPEN = final approval and publication.
+- **Not done:** no account login, service form entry, submission, publication, bid, message, payment, or sale. Do not claim listing is live.
+- **Next step:** show the copy-ready listing and sample workbook to the user; wait for explicit approval before publishing or representing the pricing as decided.
+
+---
+
 ## 0Z. RAPIUSAHA — VALIDASI PRODUK PUTARAN 2 — 2026-11-13
 
 **Status: RISET ASISTEN SELESAI; tidak ada produk atau niche baru yang dikunci pengguna.** Semua verdict pada audit ini adalah ASSISTANT_PROPOSAL, bukan USER_CONFIRMED.
