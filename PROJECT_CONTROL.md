@@ -1,3 +1,13 @@
+## 0AG. AGENT ROUTINE TOOL VISIBILITY DIAGNOSED — 2026-11-14
+
+**Status: Learned App save awaits approval/verification; notification routine is not yet created; end-to-end round trip not yet tested.** Current user-reported Agent response says tools passed local simulation, app save submitted for approval but not confirmed, and routine tool unavailable in that session.
+
+- Agent source shows this is expected main/helper separation, not absence of the feature: main-agent tool selection excludes routine_create; main-agent prompt tells it routines must be created by a helper; helper worker tools contain ScheduleCreateTool registered as routine_create.
+- Next instruction: main Agent must use delegate to ask a helper to call routine_create, then verify using routine_list. It must not call routine_create itself.
+- The app's webapp_save requires a distinct approval interaction and only reports 'Saved...' after approval; use webapp_list to establish persistence.
+- No Cloudflare task/ticket has been created and no Gmail wake email has been sent yet.
+- Detailed implementation and current Worker deployment status: research/chatgpt_agent_bridge_2026-11-14.md.
+
 ## 0AF. CHATGPT ↔ AGENT ANDROID BRIDGE — EPHEMERAL TICKET ROUTES DEPLOYED; ROUND TRIP PENDING — 2026-11-14
 
 **Status: PARTIAL IMPLEMENTATION VERIFIED.** The current task is the technical bridge between ChatGPT and the user's Android Agent app. It does not replace or alter the primary business. **RapiUsaha remains the primary B2C digital-products business for UMKM.**
