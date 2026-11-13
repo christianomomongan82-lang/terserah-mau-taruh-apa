@@ -1,5 +1,23 @@
 # Project Control — Sumber Kebenaran Lintas Percakapan
 
+## 0Y. PROJECTS.CO.ID — SERVICE 02 DATA CLEANING PREPARED — 2026-11-13
+
+**Status: ASSISTANT_PREPARED / DRAFT READY.** User instructed to create the most important next step after agreeing to expand income. The first priority chosen was a higher-value, clearly bounded spreadsheet cleaning service. Specific price/options remain an assistant proposal; no account listing has been published.
+
+- **Project context:** supplementary Projects.co.id freelancer income track. The primary business direction remains RapiUsaha — B2C digital products for UMKM. Do not merge or replace the main business with a service agency.
+- **Why this service first:** existing entry service is basic data entry at Rp50,000. Cleaning + quality-check summary offers a clearer higher-value step while reusing the same spreadsheet skill family. Current public competitor examples range from Rp50,000 for advertised large-batch light cleaning to Rp150,000 for around 250 rows with a basic dashboard and Rp200,000–250,000 for 300-row cleaning/data support. Prices are offers, not proven sales. Therefore use a competitive Rp75,000 starter, not the earlier Rp125,000–175,000 suggestion, and differentiate via explicit QA summary rather than unsupported volume claims.
+- **Prepared Sell Service draft:** title: Jasa Cleaning Data Excel: Hapus Duplikat & Cek Data Kosong. Base price Rp75,000; finish time 3 days; maximum 300 rows × 10 columns, one source file and one sheet. Includes duplicate removal based on agreed key, trimming excess spaces, standardizing text/date/number formats, flagging empty/incomplete data, sorting/table cleanup, QA summary, XLSX/CSV output, and one minor in-scope revision.
+- **Options (proposed, multiple choice):** additional up to 300 rows (maximum total 600) +Rp50,000; one additional sheet in the same file (maximum 300 rows) +Rp25,000.
+- **Exclusions:** no web research/scraping, scanned image/PDF entry, guessing missing values, complex formulas, pivot/dashboard, macros, API integration, or external validation that email/phone numbers are active. Missing values are flagged for client confirmation. Duplicate removal key is agreed before work begins.
+- **Tags (choose only those actually available in the marketplace selector):** Data Cleaning, Microsoft Excel, Data Processing, Data Entry, Spreadsheet.
+- **Net calculation:** Rp75,000 less 12% Service fee = Rp66,000 before bank withdrawal fee/tax/working cost.
+- **Created workbook:** /mnt/data/Contoh_Pembersihan_dan_Pemeriksaan_Kualitas_Data.xlsx. Contains Panduan, Data Awal, Data Bersih, and Ringkasan QA sheets. The example has 28 input rows, 25 unique IDs after removing 3 duplicates, 1 missing contact, 1 missing email, and 1 missing category. All records are synthetic, not real client data. Summary formulas were inspected; scan found no formula errors. Visual QA preview inspected.
+- **Copy-ready text:** /mnt/data/Projects_co_id_Service_02_Cleaning_Data.txt.
+- **Detailed copy and research:** research/projects_co_id_service_02_data_cleaning_2026-11-13.md.
+- **User correction retained:** never mention or link a portfolio in Sell Service copy; the user deleted that item. No portfolio reference appears in this prepared service.
+- **Not done:** no Projects.co.id login/account access, service form entry, listing submission, publication, bid, message, payment, or sale. Do not claim the service is live.
+- **Next priority:** after the user reviews/approves this listing, prepare a higher-ticket one-workflow spreadsheet template service. Do not publish or claim a price was user-approved without explicit confirmation.
+
 ## 0X. PROJECTS.CO.ID — STRATEGI MEMPERBESAR PEMASUKAN — 2026-11-13
 
 **Status:** Tujuan memperbesar pemasukan adalah USER_CONFIRMED dari percakapan 2026-11-13. Rancangan strategi dan paket/harga di bawah adalah ASSISTANT_PROPOSAL; belum dipilih, diterbitkan, atau diuji.
