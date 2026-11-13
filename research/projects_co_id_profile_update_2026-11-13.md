@@ -1,38 +1,55 @@
-# Projects.co.id — Rencana Perbaikan Profil — 13 November 2026
+# Projects.co.id — Perubahan Profil — 13 November 2026
 
 ## Status
-**DRAF DISIAPKAN; BELUM TERSIMPAN / BELUM TERVERIFIKASI.**
+**TERSIMPAN DAN TERVERIFIKASI SETELAH RELOAD.**
 
-Pengguna meminta profil akun Projects.co.id diperbaiki. Audit browser read-only menemukan:
-- Display Name masih menggunakan username `tianmmngn`.
-- Self Introduction kosong.
-- Language belum dipilih.
-- Skills tidak terisi.
-- Akun belum memiliki ulasan, proyek selesai, atau penjualan yang tampil.
-- Halaman publik tidak menampilkan portofolio; pengguna sebelumnya memilih menghapus portfolio. Jangan menambahkan portfolio atau menyebutkannya sebagai bukti kerja.
+Pengguna mengizinkan perombakan profil akun Projects.co.id, dengan pengecualian foto profil yang akan ditambahkan sendiri oleh pengguna. Sesi browser terautentikasi berhasil membuka halaman edit, mengirim formulir melalui tombol `Save Profile`, kemudian memuat ulang halaman dan memeriksa kembali nilai yang tersimpan dari server.
 
-## Teks profil yang disiapkan
+## Perubahan yang tersimpan
 
-**Display Name (usulan):** Tian
+### Display Name
+- Sebelumnya: `tianmmngn`
+- Sekarang: `Tian`
 
-**Self Introduction:**
+### Self Introduction
+Teks berikut tersimpan lengkap dengan pemisahan paragraf dan daftar layanan:
 
-> Layanan saya berfokus pada pekerjaan spreadsheet sederhana menggunakan Microsoft Excel dan Google Sheets: input data dari file yang diberikan, pembersihan data dasar (menghapus duplikat, merapikan spasi, menyeragamkan format, dan menandai data kosong), serta pembuatan template rekap penjualan sederhana. Setiap pekerjaan mengikuti batas jumlah baris, kolom, dan fitur yang disepakati. Saya melakukan pengecekan ulang sebelum menyerahkan file. Mohon sertakan contoh data dan format hasil yang diinginkan agar ruang lingkup pekerjaan jelas sejak awal.
+> Fokus layanan saya adalah membantu pemilik usaha dan pelaku UMKM mengolah data sederhana menggunakan Microsoft Excel dan Google Sheets.
+>
+> **Layanan yang saya sediakan:**
+> - Input dan pemindahan data dari file yang diberikan ke Excel atau Google Sheets.
+> - Pembersihan data dasar, termasuk menghapus duplikat, merapikan spasi, menyeragamkan format, dan menandai data kosong.
+> - Template rekap penjualan sederhana dengan lembar input transaksi, ringkasan bulanan, dan grafik.
+>
+> Setiap pekerjaan mengikuti batas file, jumlah baris dan kolom, serta fitur yang tercantum pada layanan. Sebelum diserahkan, file diperiksa kembali agar susunan data dan hasilnya mudah dipahami.
+>
+> Agar ruang lingkup jelas sejak awal, silakan sertakan contoh file, tujuan penggunaan, dan format hasil yang diharapkan. Saya akan mengonfirmasi detail pekerjaan sebelum pengerjaan dimulai.
 
-**Language:** Indonesia (opsi tersedia pada form).
+### Language
+- Dipilih: `Indonesia`.
 
-**Skills:** pencarian di selector menemukan `Data Entry`; pilihan lain yang dicari (Microsoft Excel, Google Sheets, Data Cleaning, Spreadsheet Formatting, Sales Reporting/Sales Summary) belum ditemukan. Jangan mengklaim skill lain tersedia sebelum diperiksa ulang. Jangan memilih tingkat keahlian atau sertifikat yang tidak didukung bukti.
+### Skills
+- Satu-satunya skill yang terkonfirmasi terpilih setelah reload: `Data Entry`.
+- Skill yang tidak relevan dibersihkan sebelum penyimpanan; hasil akhir yang terverifikasi hanya menampilkan `Data Entry`.
+- Status opsi `Microsoft Excel` dan `Google Sheets`: bukti selector tidak konsisten. Satu run awal melaporkan label tersebut terlihat, tetapi run penyimpanan terakhir tidak menemukan opsi yang bisa dipilih sebagai label persis. Karena itu keduanya tidak dicatat sebagai skill terpilih atau dianggap pasti tidak tersedia.
+- Jangan menambahkan klaim keahlian, level, atau sertifikasi yang tidak terverifikasi.
 
-## Catatan eksekusi browser
-1. Run pertama melaporkan Display Name, Self Introduction, Language, dan satu skill berhasil diubah. Tetapi pemeriksaan read-only setelah reload menunjukkan semuanya masih pada kondisi lama. Laporan awal tersebut terbukti tidak akurat dan tidak boleh dianggap sebagai perubahan tersimpan.
-2. Run kedua mengisi Display Name = `Tian`, Self Introduction sesuai teks di atas, dan memilih Language = `Indonesia`. Pencarian skill `Data Entry` dilakukan tetapi opsi belum diklik. Tombol `Save Profile` tidak ditekan karena run berhenti akibat keterbatasan budget otomatisasi.
-3. Belum ada respons server, reload, atau bukti persistensi. Status akhir profil server **belum berubah terkonfirmasi**. Nilai yang mungkin masih tertinggal di form browser tidak diketahui.
+## Yang sengaja dipertahankan
+- Foto/avatar: tidak diubah; pengguna akan menambahkan gambar sendiri.
+- Gender: tetap `Pria`.
+- Notify Me New Projects: tetap `Yes/On`.
+- Tanggal lahir, alamat, negara/provinsi/kabupaten/kecamatan/kelurahan, kode pos, website, email, nomor telepon, password, dan portofolio: tidak diubah.
+- Tiga layanan yang sudah terbit: tidak diubah; harga, scope, opsi, waktu pengerjaan, status publikasi, bid, pesan, order, transaksi, dan pengaturan pembayaran juga tidak disentuh.
 
-## Batas perubahan yang diizinkan
-- Pengguna mengizinkan perbaikan profil saja.
-- Jangan mengubah layanan yang sudah terbit, harga, scope, publikasi, bid, pesan, transaksi, portofolio, foto/avatar, email, password, telepon, tanggal lahir, alamat, atau informasi pribadi lain.
-- Jangan mengarang pengalaman kerja, klien, jumlah proyek selesai, rating, sertifikat, atau hasil penjualan.
-- Jangan menyatakan perubahan berhasil sebelum klik simpan, menerima konfirmasi, lalu reload dan melihat nilai yang sama dari server.
+## Verifikasi
+- Browser mengakses akun yang sedang login.
+- Tombol `Save Profile` diklik satu kali setelah perbaikan.
+- Halaman edit dimuat ulang.
+- Server mengembalikan Display Name `Tian`, Language `Indonesia`, Self Introduction lengkap, dan Skills `Data Entry`.
+- Dengan demikian, perubahan di atas berstatus **TERSIMPAN**, bukan sekadar teks yang diisikan ke form.
 
-## Langkah berikutnya
-Selesaikan penyimpanan profil saja ketika sesi otomatisasi tersedia; pilih Data Entry hanya bila opsi dropdown benar-benar tersedia; klik Save Profile; lalu reload halaman edit dan profil publik. Bila tidak dapat diverifikasi, laporkan sebagai belum tersimpan dan jangan membuat klaim keberhasilan.
+## Batas dan konteks proyek
+- Perubahan ini mengikuti izin eksplisit pengguna untuk mengubah isi profil kecuali foto.
+- RapiUsaha tetap bisnis utama: produk digital B2C untuk UMKM.
+- Projects.co.id tetap jalur freelance tambahan. Tidak ada perubahan model bisnis atau tiga listing yang sudah diterbitkan.
+- Langkah berikutnya yang tersisa hanya penambahan foto profil oleh pengguna bila sudah siap.
