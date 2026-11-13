@@ -1,3 +1,17 @@
+## 0AC. PROJECTS.CO.ID — LIVE THREE-SERVICE READ-ONLY AUDIT COMPLETED — 2026-11-13
+
+**Status: VERIFIED BY AUTHENTICATED BROWSER READ.** User confirmed they had completed the profile-save/login step. Although the profile registry still showed no `signed_in_sites` entry for projects.co.id, a browser run using the same Default profile opened the account's `/user/my_services` pages and explicitly reported the account as logged in. The registry flag was therefore not a reliable blocker in this case; do not make the user repeat setup solely because that flag is empty. Audit was read-only; no account/listing changes, messages, bids, or transactions were made.
+
+- Account handle shown by the authenticated page: `tianmmngn`.
+- All three services show status `Registered`.
+- Service 01: [Jasa Input Data ke Excel / Google Sheets hingga 100 Baris](https://projects.co.id/public/browse_services/view/7dcf13/jasa-input-data-ke-excel-google-sheets-hingga-100-baris) — base Rp50,000; up to 100 rows / 5 columns; 2 days; registration 13/11/2026 10:34:41 WIB.
+- Service 02: [Jasa Cleaning Data Excel: Hapus Duplikat & Cek Data Kosong](https://projects.co.id/public/browse_services/view/89cf13/jasa-cleaning-data-excel-hapus-duplikat-amp-cek-data-kosong) — base Rp75,000; up to 300 rows / 10 columns, one source file and one sheet; 3 days; registration 13/11/2026 16:01:20 WIB.
+- Service 03: [Jasa Pembuatan Template Rekap Penjualan Excel Sederhana](https://projects.co.id/public/browse_services/view/8ccf13/jasa-pembuatan-template-rekap-penjualan-excel-sederhana) — Rp125,000; workbook includes guide, input sheet up to 500 transactions, 12-month summary, chart, one light revision; 4 days; registration 13/11/2026 16:31:39 WIB.
+- Exact scope/exclusions and full observed details are recorded in `research/projects_co_id_live_listing_audit_2026-11-13.md`.
+- At audit time all three showed zero sales/count and Rp0 amount, no rating, zero points/ranking, and no inquiry/order/review activity displayed. Dashboard aggregate metrics were not separately displayed. Treat zero as the displayed state at audit time, not as a claim about historical exposure/impressions.
+- This audit does not change the user's existing decision to pause further bids/account/listing changes/expansion until 25 Dec 2026 unless the user instructs otherwise. RapiUsaha remains the primary business (B2C digital products for UMKM); Projects.co.id remains supplemental.
+- No assistant-side modifications or commercial actions occurred.
+
 ## 0AB. PROJECTS.CO.ID — THREE SERVICES PUBLISHED; FURTHER ACTION PAUSED — 2026-11-13
 
 **Status: USER_CONFIRMED PUBLISHED.** The user explicitly corrected the audit: all three prepared Sell Services (data entry, data cleaning, and sales-summary template) have already been published by the user. This supersedes previous notes that treated all three as drafts. The assistant has not independently inspected the live listing URLs or final published titles/prices/descriptions/options, so those details remain unverified. Do not claim to have checked the pages. Do not unpublish, delete, or change the existing listings without the user's instruction.
