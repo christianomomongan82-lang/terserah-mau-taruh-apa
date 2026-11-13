@@ -1,6 +1,20 @@
-## 0AD. PROJECTS.CO.ID — PROFILE REWRITE PREPARED; SAVE NOT CONFIRMED — 2026-11-13
+## 0AE. PROJECTS.CO.ID — PROFILE UPDATE SAVED AND RELOAD-VERIFIED — 2026-11-13
 
-**Status: OPEN / NOT SAVED.** The user explicitly asked the assistant to improve their Projects.co.id profile. A read-only audit found that public profile fields for display name, self-introduction, language, and skills were blank/generic. The proposed rewrite is restricted to accurately describing the three existing spreadsheet services; it does not claim employment history, clients, completed jobs, certifications, or expertise.
+**Status: VERIFIED SAVED.** The user explicitly authorized improving the Projects.co.id profile while leaving the photo unchanged. An authenticated browser submitted the profile form, then reloaded the edit page and confirmed the server-persisted values.
+
+- **Display Name:** changed from `tianmmngn` to `Tian`.
+- **Self Introduction:** replaced the blank field with a clear Indonesian description of the three existing spreadsheet services for UMKM: data input, basic data cleaning, and a simple sales-summary template. The full copy is recorded in `research/projects_co_id_profile_update_2026-11-13.md`.
+- **Language:** selected `Indonesia`.
+- **Skills:** after cleanup and reload, only `Data Entry` is confirmed selected. No irrelevant skill remains selected in the final verified result. The final run could not select `Microsoft Excel` or `Google Sheets` as exact skill labels; an earlier run reported seeing those labels, so their availability evidence is inconsistent and must not be represented as definitively unavailable. Do not claim any unselected skills.
+- **Preserved:** Photo/avatar (user said they must supply the image themselves), Gender = Pria, Notify Me New Projects = On, private/contact/location fields, website, and portfolio.
+- **Not touched:** all three published service listings, prices, descriptions/options, bids, messages, orders, transactions, payment settings, password, email, and phone.
+- **Verification evidence:** authenticated browser opened the profile edit page, clicked `Save Profile`, reloaded the edit page, and confirmed Display Name `Tian`, Language `Indonesia`, the complete Self Introduction, and the final Skills selection `Data Entry` persisted server-side.
+- **Project hierarchy unchanged:** RapiUsaha remains the primary business (B2C digital products for UMKM); Projects.co.id remains a supplementary freelancer-income channel. This was a profile-only account update, not a business or service pivot.
+- **Next step:** the user can add their chosen profile image separately. Do not edit service listings or other account sections without a new explicit instruction.
+
+## 0AD. PROJECTS.CO.ID — PROFILE REWRITE PREPARED; SAVE NOT CONFIRMED — 2026-11-13 (SUPERSEDED ATTEMPT LOG)
+
+**Historical status only: OPEN / NOT SAVED at the time. Superseded by verified save in section 0AE.** The user explicitly asked the assistant to improve their Projects.co.id profile. A read-only audit found that public profile fields for display name, self-introduction, language, and skills were blank/generic. The proposed rewrite is restricted to accurately describing the three existing spreadsheet services; it does not claim employment history, clients, completed jobs, certifications, or expertise.
 
 - User-authorized scope: improve the user's profile only. Do not edit services, bids, messages, portfolio, payment, or unrelated account settings.
 - Proposed Display Name: `Tian`.
