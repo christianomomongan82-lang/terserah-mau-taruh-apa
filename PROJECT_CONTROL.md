@@ -1,3 +1,18 @@
+## 0AB. PROJECTS.CO.ID — PAUSED UNTIL AGE 18; READINESS AUDIT — 2026-11-13
+
+**Status: USER_CONFIRMED HOLD.** The user explicitly chose to postpone account actions and transactions until turning 18 on 25 December 2026, and to audit readiness first. Until then, do not register/access or modify the account, publish a service/product, bid, message owners, accept work, or transact. Preparation may continue only through audit, phone-based sample QA, timing tests, and pricing review.
+
+- **Project hierarchy:** RapiUsaha remains the primary business: B2C digital products for UMKM. Projects.co.id remains a separate supplemental freelance-income track. No change to either business model.
+- **Market verdict:** assistant audit finds Projects.co.id suitable only as a supplementary channel to test, not a dependable main income source yet. On 2026-11-13 public pages showed approximately 130–135 open projects and 8 Data Entry projects, against 1,756 Data Entry services. Listings are not proof of purchases; actual order frequency/conversion remains unknown. Relevant prior bid snapshots were high (around 92–224 bids).
+- **Draft services:** Service 01 input data Rp50k; Service 02 cleaning Rp75k; Service 03 sales template Rp125k. All remain ASSISTANT_PROPOSAL, not approved or published. Price recommendations across earlier strategy documents conflict (cleaning Rp125k–175k; template Rp250k–350k), so no price is locked.
+- **Sample readiness:** synthetic data only. Service 02 and 03 workbook samples need real end-to-end Android testing. The packaging-reject demo workbook has incomplete visual QA and must not be used in a bid until corrected.
+- **Policy discrepancy:** current Terms say individuals must be "over 17", and separately state under-17 users may be deactivated. User chose to wait for 18 on 25 Dec to avoid ambiguity. Service fee is 12%. For open Projects, FAQ Worker says 12% at all budgets while Pricing says free at Rp50k–Rp100k and 12% above Rp100k; use conservative 12% until platform clarifies.
+- **No execution occurred:** no account access/edit, listing, bid, owner message, payment, client, review, or sale.
+- **Audit:** `research/projects_co_id_readiness_audit_2026-11-13.md`.
+- **Next prep:** mobile QA, measure completion time for each service, reconcile prices based on real effort and fee, then choose at most one launch service after 25 Dec. Keep all account actions paused until then.
+
+---
+
 # Project Control — Sumber Kebenaran Lintas Percakapan
 
 ## 0AA. PROJECTS.CO.ID — SERVICE 03 SALES TEMPLATE PREPARED — 2026-11-13
