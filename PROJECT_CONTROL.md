@@ -808,3 +808,17 @@ Jika salah satu gagal, koreksi dulu sebelum menjawab.
 Ringkasan/memori lintas percakapan dapat tidak lengkap atau keliru, dan tidak menjamin seluruh chat lama otomatis terbaca. Dokumen eksternal ini adalah mekanisme pemulihan, bukan jaminan teknis bahwa model tidak akan pernah salah. Karena itu, sumber utama harus diperiksa ulang sebelum keputusan atau perubahan penting; jangan mengklaim kontinuitas yang belum diverifikasi.
 
 ---
+
+
+## 0AF. CHATGPT ↔ AGENT ANDROID BRIDGE — TWO-WAY ROUTE IDENTIFIED, NOT YET CONNECTED — 2026-11-14
+
+- **Status:** ARCHITECTURE VERIFIED; END-TO-END NOT YET TESTED. Do not claim ChatGPT and Agent are connected until one full round trip succeeds.
+- **Goal:** Let ChatGPT dispatch short, read-only research/browsing tasks to the Android Agent and read the result back in ChatGPT, without PC or another app install.
+- **Existing resource inspected:** Cloudflare Worker `kreavo-bridge` + KV namespace `kreavo-bridge`. The Worker already provides GET `/client/command` and POST `/client/result` routes for a shared command/result queue. Existing namespace was empty; a temporary write/read/delete probe succeeded and the namespace was verified empty afterward. No Worker code/settings or other existing Worker was changed.
+- **Proposed channel:** ChatGPT writes command JSON to existing KV key `command`; sends a wake-up email with subject marker `CHATGPT-AGENT`; Agent uses a notification-triggered routine listening for Gmail; Agent reads the Worker command from its own browser on the allowed Kreavo origin and posts a result to the Worker; ChatGPT reads the KV `result` key. The Worker stores result for 300 seconds.
+- **Important collision:** existing Worker uses fixed keys `command` and `result`, shared with the Kreavo bookmarklet. Do not use both bridge sessions simultaneously. Check active Kreavo snapshot/session before enqueueing; do not modify or repurpose business assets beyond this limited shared transport.
+- **One-time setup not yet done:** create a narrow Agent learned web app with read command + post result tools, user approves save, user turns Trust ON only for this app, allow Gmail in Agent's read-notification apps, and create notification routine for Gmail package `com.google.android.gm` + `CHATGPT-AGENT`. Agent background task scope is read-only only.
+- **Unavoidable user action:** Agent is local to Android and has no remote tool in this ChatGPT session; initial setup/notification permission/trust cannot be changed remotely. Do not ask user to install more apps, configure another relay, or do research manually.
+- **Result caveat:** five-minute KV result TTL means retrieval must be prompt; durable long-running result delivery is not yet solved. Use only short tasks at first.
+- **Canonical technical record:** `research/chatgpt_agent_bridge_2026-11-14.md`.
+- **Scope boundary:** this technical bridge is not a business pivot. RapiUsaha remains the primary B2C digital-products business for UMKM. No changes to RapiUsaha, Projects.co.id, RentalOps, SignageQuote, SiapKirim, or P-Backtest.
