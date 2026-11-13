@@ -1,3 +1,17 @@
+## 0AF. CHATGPT ↔ AGENT ANDROID BRIDGE — EPHEMERAL TICKET ROUTES DEPLOYED; ROUND TRIP PENDING — 2026-11-14
+
+**Status: PARTIAL IMPLEMENTATION VERIFIED.** The current task is the technical bridge between ChatGPT and the user's Android Agent app. It does not replace or alter the primary business. **RapiUsaha remains the primary B2C digital-products business for UMKM.**
+
+- User has now explicitly granted the assistant authority to carry out the bridge work. This authorizes bounded technical changes to the existing `kreavo-bridge` Worker; it is not blanket approval for unrelated account, business, Worker, or financial changes.
+- Existing Worker `kreavo-bridge` was updated only by adding separate Agent endpoints `GET /agent/command` and `POST /agent/result`, protected by an ephemeral per-task `X-Agent-Ticket` capability. No long-lived Worker secret is embedded in the Learned App definition.
+- Deployment returned ID `0ecddcd0152a4c08be47c35c2254d043`; deployed script tag `3b5f08489c874b27a873a27455fc62aa`. Re-read confirmed new routes and legacy Kreavo routes both remain in the script; `BRIDGE_KV` binding and compatibility date are preserved. KV namespace was empty on final inspection.
+- The old Kreavo browser bridge's `/client/command`, `/client/result`, `/client/snapshot`, `/install`, and `/health` code remains present. Avoid running its bookmarklet alongside Agent until legacy queue use is serialized.
+- Learned App should use ID `chatgpt_bridge`, start URL `https://www.kreavo.id`, a read-only `get_command` and one narrow result-post tool `send_result`. The dynamic ticket is read from browser URL fragment `#agent=<ticket>` and sent as request header at runtime; no static ROOM token in the tool definition.
+- Agent source confirms notification trigger format `com.google.android.gm|CHATGPT-AGENT` and has `routine_create` for notification events. The routine must open the Kreavo URL including the ticket fragment, fetch one task, do read-only work only, then post its result.
+- **Still pending:** the user must approve saving the Learned App, Trust only the ChatGPT Bridge app, allow Gmail notifications/Android notification access, and create the notification routine. Then ChatGPT must run and retrieve one harmless end-to-end test. No connection success may be claimed before this round trip succeeds.
+- Full technical record and verification detail: `research/chatgpt_agent_bridge_2026-11-14.md`.
+- No RapiUsaha, Projects.co.id, RentalOps, SignageQuote, SiapKirim, or Backtest project state was changed.
+
 ## 0AE. PROJECTS.CO.ID — PROFILE UPDATE SAVED AND RELOAD-VERIFIED — 2026-11-13
 
 **Status: VERIFIED SAVED.** The user explicitly authorized improving the Projects.co.id profile while leaving the photo unchanged. An authenticated browser submitted the profile form, then reloaded the edit page and confirmed the server-persisted values.
