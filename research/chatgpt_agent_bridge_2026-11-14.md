@@ -49,3 +49,40 @@ There is currently **no verified two-way ChatGPT ↔ Agent bridge** available fr
 1. Inspect whether Agent has a supported, approval-safe result export that can be read by an already-connected ChatGPT connector (for example an explicitly authorized GitHub write/readback flow), without requiring background send/delete/spend.
 2. If no safe return path exists, report that honestly and stop; do not keep experimenting with user's accounts.
 3. Any future deployment needs explicit scope, least-privilege access, authentication, TTL/retention, and a verified test from ChatGPT → Agent → ChatGPT.
+
+
+## 2026-11-14 update: existing Kreavo Bridge gives a viable two-way relay path
+
+**Status: ARCHITECTURE VERIFIED; NOT YET ACTIVE END-TO-END.** This supersedes the earlier conclusion that only a one-way Gmail wake-up was available. Do not claim the apps are connected until the one-time Agent setup is completed and a full round-trip test succeeds.
+
+### Existing infrastructure inspected (read-only)
+- Cloudflare Worker: `kreavo-bridge`; public host `https://kreavo-bridge.usahalab-id.workers.dev`.
+- Existing Worker uses KV namespace `kreavo-bridge` (ID `ab71a201c13f48fcbf533e9b83e6c19d`) and binds it as `BRIDGE_KV`.
+- Worker already has two routes suitable for a queue: GET `/client/command?t=...&after=...` reads KV key `command`; POST `/client/result?t=...` stores JSON under key `result` with a 300-second TTL. Both require the embedded room token and an Origin of `https://www.kreavo.id` or `https://kreavo.id`. The Agent browser can call them from a learned web app whose start URL is on that allowed Kreavo origin.
+- Worker code and settings were fetched and inspected; no code, settings, secret, deployment or KV namespace was changed.
+- KV namespace keys were initially empty. A dedicated temporary key `agent-bridge-probe` was written/read/deleted to prove the connected Cloudflare API has KV write/read/delete permission. A final list-keys call verified the namespace was empty again. Never store the embedded room token in GitHub or public files.
+- The old Worker uses shared fixed keys `command` and `result`; therefore the Agent relay and any Kreavo bookmarklet session must not be active simultaneously. Check for an active Kreavo bridge/snapshot before issuing a command; serialize use. This is a known limitation, not a separate queue.
+
+### Proposed round-trip protocol
+1. ChatGPT writes a short JSON command to KV key `command` with a 300-second TTL using the connected Cloudflare API.
+2. ChatGPT sends a wake-up email to the user's own Gmail address with subject marker `CHATGPT-AGENT`.
+3. A notification-triggered Agent routine listens only for Gmail package `com.google.android.gm` and that marker. Agent's NotificationReader supports app/keyword triggers; Gmail must be explicitly allowed for notification reading in Agent.
+4. Agent uses a saved learned web app (start URL `https://www.kreavo.id`) to GET the Worker command endpoint, runs the task under a read-only scope, then POSTs the result to `/client/result`.
+5. ChatGPT reads the KV key `result` with the connected Cloudflare API and deletes `command`/ `result` after retrieval. The result expires after five minutes, so the user/assistant must retrieve it promptly after Agent finishes; longer durable delivery is not yet solved.
+
+### Agent setup requirements (one-time, user action unavoidable)
+- In Agent foreground chat, ask it to open the allowed Kreavo origin, test and save a two-tool learned app: read-only `get_command`; write `send_result` (POSTs only the result payload to the existing Worker). The WebAppSaveTool asks for approval when saving.
+- In Agent > Connections > Learned apps, switch Trust ON only for this narrowly scoped `ChatGPT Bridge` app. The Agent source shows write tools prompt every run unless the user explicitly trusts that learned app. No other app should be trusted.
+- In Agent > Connections > Read notifications, allow only Gmail; Android notification-listener permission and Gmail notifications must be enabled. Create a notification routine for `com.google.android.gm|CHATGPT-AGENT` which reads one queued command, does read-only research/browsing only, posts a result, and stops. No sending, purchases, deletions, account changes, posting, or form submission in background runs.
+- Agent's current app must remain unrestricted from Android battery optimization for background routines to work on Samsung.
+
+### Safety/limitations
+- No additional app install, PC, new Worker, or paid plan is required by this architecture. The existing Worker is reused; do not modify its deployed code.
+- Because fixed queue keys are shared with the Kreavo bookmarklet, close/disconnect that bookmarklet while Agent bridge runs. ChatGPT should refuse to enqueue work if a live Kreavo snapshot indicates the old bridge is active.
+- The Worker room token is embedded in the existing deployed Worker source. Keep it only in the user's local Agent learned-app tool; never write it into GitHub.
+- Initial setup and the Trust toggle cannot be performed remotely from ChatGPT; do not pretend they are done. After that, perform and verify a single small round trip before using it for real work.
+- Result TTL is 300 seconds. This is suitable for short tasks and requires prompt retrieval; it is not yet a durable asynchronous result queue.
+- Official OpenAI current MCP requirements: custom MCP connections are web-only and require Business/Enterprise/Edu for full MCP; Pro read/fetch only. Current Free mobile session therefore cannot directly attach Agent's loopback MCP server. Source: https://help.openai.com/en/articles/12584461-connecting-custom-mcp-servers-in-chatgpt
+
+## Next action
+Prepare one copy/paste bootstrap instruction for the user to place in Agent's foreground chat, with the exact Worker endpoints and a narrow read-only routine. Ask the user only to approve the learned-app save, enable Gmail notification access, and toggle Trust for this one bridge app. Then run one harmless end-to-end test. Until a successful round trip is observed, status remains NOT CONNECTED.
