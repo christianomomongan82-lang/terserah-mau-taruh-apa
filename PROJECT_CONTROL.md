@@ -1,3 +1,19 @@
+## 0AD. PROJECTS.CO.ID — PROFILE REWRITE PREPARED; SAVE NOT CONFIRMED — 2026-11-13
+
+**Status: OPEN / NOT SAVED.** The user explicitly asked the assistant to improve their Projects.co.id profile. A read-only audit found that public profile fields for display name, self-introduction, language, and skills were blank/generic. The proposed rewrite is restricted to accurately describing the three existing spreadsheet services; it does not claim employment history, clients, completed jobs, certifications, or expertise.
+
+- User-authorized scope: improve the user's profile only. Do not edit services, bids, messages, portfolio, payment, or unrelated account settings.
+- Proposed Display Name: `Tian`.
+- Proposed Self Introduction is recorded in `research/projects_co_id_profile_update_2026-11-13.md`.
+- Language option found: `Indonesia`.
+- Skills selector: `Data Entry` was available; no verified choices found for Microsoft Excel, Google Sheets, Data Cleaning, Spreadsheet Formatting, or Sales Reporting in the attempted selector search.
+- First browser edit run reported success, but an independent read-only reload showed the profile unchanged (Display Name still `tianmmngn`, Self Introduction blank, Language unselected, no Skills). Treat the first success report as incorrect.
+- A second run filled Display Name, Self Introduction, and Language and searched for Data Entry, but stopped before selecting the skill or clicking `Save Profile`; no server confirmation or reload verification occurred. Therefore **no profile change is confirmed saved**. The browser form may have unsaved values; its current client-side state is unknown.
+- No unrelated personal/contact fields, avatar, website, location, or portfolio were changed.
+- Do not tell the user the profile is improved/live until the form is explicitly submitted and a fresh reload confirms the server-persisted values.
+- Next step: when an authorized browser automation session is available, finish only the approved profile save, then reload and verify public profile display. Do not repeat login setup just because the browser-profile registry omits `projects.co.id`; prior read-only browser access worked.
+- RapiUsaha remains the primary business (B2C digital products for UMKM); Projects.co.id remains a supplemental track. This profile-only request does not authorize broader changes to the business or services.
+
 ## 0AC. PROJECTS.CO.ID — LIVE THREE-SERVICE READ-ONLY AUDIT COMPLETED — 2026-11-13
 
 **Status: VERIFIED BY AUTHENTICATED BROWSER READ.** User confirmed they had completed the profile-save/login step. Although the profile registry still showed no `signed_in_sites` entry for projects.co.id, a browser run using the same Default profile opened the account's `/user/my_services` pages and explicitly reported the account as logged in. The registry flag was therefore not a reliable blocker in this case; do not make the user repeat setup solely because that flag is empty. Audit was read-only; no account/listing changes, messages, bids, or transactions were made.
