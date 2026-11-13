@@ -50,9 +50,9 @@ No inventory tracking, purchasing, expense/profit/loss, COGS, taxes, accounts re
 These prices are an initial test, not a market-validated optimum. The Rp125,000 price is deliberately positioned between the observed simple-report offers (Rp50k–Rp120k) and e-commerce report offer (Rp170k), while the deliverable is a reusable template rather than a finished analysis of buyer-supplied historical data.
 
 ## Copy-ready listing description
-Punya usaha dan ingin mencatat penjualan dengan lebih teratur? Saya membantu membuat template Excel sederhana agar transaksi dapat dicatat dalam satu tabel dan hasil penjualan bulanan diringkas secara otomatis.
+Punya usaha dan ingin mencatat penjualan dengan lebih teratur? Template ini membantu mencatat transaksi dalam satu tabel dan merangkum hasil penjualan bulanan secara otomatis.
 
-**Paket dasar — Rp125.000**
+**Yang akan Anda terima**
 - 1 file Excel (.xlsx).
 - 1 sheet panduan penggunaan.
 - 1 sheet input transaksi dengan kapasitas hingga 500 baris.
@@ -71,10 +71,7 @@ Punya usaha dan ingin mencatat penjualan dengan lebih teratur? Saya membantu mem
 4. File Excel diserahkan setelah pemeriksaan akhir.
 
 **Batasan**
-Paket ini khusus untuk pencatatan dan rekap penjualan sederhana. Tidak termasuk stok barang, pembelian, pengeluaran, HPP, laba bersih, pajak, hutang-piutang, multi-cabang, integrasi marketplace, macro/VBA, atau pengolahan data transaksi lama. Untuk kebutuhan di luar ruang lingkup tersebut, spesifikasi dan harga harus disepakati sebelum pemesanan.
-
-**Opsi tambahan**
-Kapasitas input diperluas hingga 1.500 transaksi — tambahan Rp25.000.
+Template ini khusus untuk pencatatan dan rekap penjualan sederhana. Tidak termasuk stok barang, pembelian, pengeluaran, HPP, laba bersih, pajak, hutang-piutang, multi-cabang, integrasi marketplace, macro/VBA, atau pengolahan data transaksi lama. Untuk kebutuhan di luar ruang lingkup tersebut, spesifikasi perlu disepakati sebelum pemesanan.
 
 ## Example workbook created and checked
 File: `Contoh_Template_Rekap_Penjualan_Sederhana.xlsx`
