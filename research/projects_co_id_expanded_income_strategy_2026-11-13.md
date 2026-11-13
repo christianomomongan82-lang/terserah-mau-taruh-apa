@@ -1,3 +1,5 @@
+> **KOREKSI STATUS — 13 November 2026:** Pengguna mengoreksi bahwa **ketiga Sell Service (input data, cleaning data, dan template rekap penjualan) sudah diterbitkan oleh pengguna**. Catatan lama yang menyebut semua masih draft/belum dipublikasikan sudah kedaluwarsa dan bagian tersebut disupersesi oleh koreksi ini. Ini adalah konfirmasi langsung pengguna; URL halaman publik, tanggal publikasi, dan rincian live (judul/harga/deskripsi/options) belum diperiksa secara independen. Jangan mengklaim detail live yang belum diverifikasi. Jangan menghapus atau menonaktifkan listing yang sudah terbit tanpa instruksi pengguna. Jeda sampai usia 18 berlaku untuk langkah lanjutan yang belum dilakukan; tidak membatalkan status listing yang sudah terbit.
+
 # Projects.co.id — Strategi Memperbesar Pemasukan — 13 November 2026
 
 ## Inti keputusan
@@ -7,7 +9,7 @@ Benar: mengandalkan proyek Data Entry yang kebetulan cocok tidak cukup. Suplai p
 2. Nilai rata-rata transaksi (average order value), bukan sekadar menambah volume kerja murah.
 
 **Tujuan pengguna:** memperbesar pemasukan dari Projects.co.id.
-**Belum disetujui:** katalog service baru, paket dan harga yang direkomendasikan, serta keputusan menerbitkan/bid.
+**Catatan status terkini:** pengguna kemudian mengonfirmasi bahwa tiga service (input data, cleaning data, template rekap penjualan) sudah diterbitkan oleh pengguna. Rincian live belum diverifikasi secara independen. Rekomendasi harga/opsi dan strategi bidding lain dalam dokumen ini tetap merupakan proposal sampai ada bukti konfigurasi/keputusan yang lebih spesifik.
 
 ## 1. Kondisi pasar Projects.co.id pada 13 November 2026
 
@@ -183,7 +185,7 @@ Setelah listing berjalan, ukur: impressions/views, jumlah buyer yang bertanya, o
 - USER_CONFIRMED: deskripsi Sell Service tidak boleh menyebut portfolio.
 - ASSISTANT_PROPOSAL: model tangga tiga layanan, harga dan add-ons, broader bidding filter, Sell Product untuk RapiUsaha, affiliate prioritas rendah.
 - OPEN: layanan kedua/ketiga, harga, dan waktu publikasi.
-- Tidak ada listing/service/product yang diterbitkan, bid atau pesan yang dikirim, atau transaksi yang dilakukan.
+- Pembaruan: pengguna mengonfirmasi tiga Sell Service telah diterbitkan. Tidak ada bid yang dikirim oleh asisten; status order, pesan/inquiry, dan penjualan belum diverifikasi.
 
 ## Sumber utama
 - Service FAQ: https://projects.co.id/public/pages/faq_service
