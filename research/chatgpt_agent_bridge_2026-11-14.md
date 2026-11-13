@@ -86,3 +86,38 @@ There is currently **no verified two-way ChatGPT ↔ Agent bridge** available fr
 
 ## Next action
 Prepare one copy/paste bootstrap instruction for the user to place in Agent's foreground chat, with the exact Worker endpoints and a narrow read-only routine. Ask the user only to approve the learned-app save, enable Gmail notification access, and toggle Trust for this one bridge app. Then run one harmless end-to-end test. Until a successful round trip is observed, status remains NOT CONNECTED.
+
+
+## 2026-11-14 update: ephemeral Agent capability endpoints deployed
+
+**Status: Worker patch DEPLOYED AND CONFIGURATION-VERIFIED; Agent round trip NOT YET TESTED.** This supersedes the earlier design that embedded the long-lived ROOM token in Learned App JavaScript. That design was rejected after Agent's Learned App guide refused secrets in tool definitions.
+
+### Change made to the existing Worker
+- Updated only Cloudflare Worker `kreavo-bridge` through its script-content endpoint.
+- New dedicated routes:
+  - `GET /agent/command` reads an Agent task using the `X-Agent-Ticket` request header.
+  - `POST /agent/result` accepts a result using the same header.
+- Tickets are short-lived random capabilities held in KV as `agent:task:<ticket>`; they are not hardcoded in the Learned App. The Learned App reads the one-task ticket from the current browser URL fragment `#agent=<ticket>` and sends it as a runtime header.
+- CORS now allows `X-Agent-Ticket` for the new endpoints.
+- New route validation requires a ticket matching 40–64 URL-safe characters, a matching task ID, a boolean `ok`, and a string result capped at 3,500 characters. Task and result records use 300-second KV TTL.
+- Existing legacy routes `/client/command`, `/client/result`, `/client/snapshot`, `/install`, and `/health` were retained. The legacy ROOM-token authentication remains only for the old Kreavo routes; it is not included in the Agent Learned App.
+- No other Worker, DNS record, KV namespace, or project was changed.
+
+### Deployment and verification
+- Cloudflare upload succeeded for Worker `kreavo-bridge`; deployment ID returned: `0ecddcd0152a4c08be47c35c2254d043`; uploaded script tag: `3b5f08489c874b27a873a27455fc62aa`.
+- Re-fetched deployed Worker content and verified both new Agent route strings and both legacy command/result route strings exist.
+- Re-fetched Worker settings and verified `BRIDGE_KV` still points to namespace `ab71a201c13f48fcbf533e9b83e6c19d`; compatibility date remains `2026-11-07`.
+- Re-listed KV keys: empty. No task/result probe was left behind.
+- Public HTTP health/test request could not be verified through the web browser tool in this session. The Agent-mediated fetch/round trip remains the required live endpoint test.
+
+### Agent configuration contract
+- Learned App ID/name: `chatgpt_bridge` / `ChatGPT Bridge`; start URL `https://www.kreavo.id`.
+- `get_command`: read-only, no parameters, reads only the ticket in `location.hash` (format `#agent=<ticket>`) and GETs `/agent/command` with header `X-Agent-Ticket`.
+- `send_result`: write tool, parameters `id`, `ok`, `result`; reads the same hash ticket and POSTs only the result to `/agent/result`. No long-lived secret is embedded in either tool definition.
+- Agent tool names generated from the app ID are `web_chatgpt_bridge_get_command` and `web_chatgpt_bridge_send_result`.
+- Notification routine trigger remains `com.google.android.gm|CHATGPT-AGENT`. Routine must extract the ephemeral ticket from the notification marker, open `https://www.kreavo.id/#agent=<ticket>` with Agent's `browser_open`, call `get_command`, perform only read-only research/browsing, and call `send_result` with the matching task ID.
+- Current Agent source confirms `routine_create` supports `kind=notification`; the earlier statement that no routine tool existed was session-specific, not an application-wide absence.
+- User still must approve Learned App save, turn Trust ON only for this app (to allow its one result-post tool in background), and permit Gmail notification reading/Android notification access. No app installation or paid service is required.
+- Initial execution scope remains read-only. No email sending by Agent, posts, purchases, deletions, account changes, or form submissions.
+- Shared KV keys remain separate from the old Kreavo bookmarklet's `command`/ `result` keys. The old bookmarklet must still be disconnected while this bridge is used because it shares those legacy keys; Agent tasks use `agent:task:` and `agent:result:` prefixes.
+- **Do not mark the bridge connected** until one test proves ChatGPT task creation -> Gmail notification -> Agent fetch -> Agent result POST -> ChatGPT result retrieval.
