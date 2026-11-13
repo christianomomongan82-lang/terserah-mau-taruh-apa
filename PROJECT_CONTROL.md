@@ -2,7 +2,7 @@
 
 ## 0AA. PROJECTS.CO.ID — SERVICE 03 SALES TEMPLATE PREPARED — 2026-11-13
 
-**Status: ASSISTANT_PREPARED / DRAFT READY.** Service 03 is a proposed fixed-scope Excel template service. The price, service scope, delivery period, and add-on are not user-approved, and no listing has been published.
+**Status: ASSISTANT_PREPARED / DRAFT READY.** Service 03 is a proposed fixed-scope Excel template service. The price, service scope, delivery period, and add-on are not user-approved, and no listing has been published. On 2026-11-13 the user explicitly instructed that the listing description must not repeat the service title or any prices because Projects.co.id provides separate fields for those. The copy-ready description was revised to contain only the service explanation, deliverables, workflow, and exclusions; optional add-on and all pricing are kept out of the description.
 
 - **Project context:** Projects.co.id is supplementary freelance income, separate from the primary business RapiUsaha — B2C digital products for UMKM. The user's confirmed goal is to increase income. Do not merge the freelancer track into RapiUsaha.
 - **Last checkpoint:** Service 02 Data Cleaning remains a prepared draft, not confirmed published. Its copy excludes any portfolio reference per the user's explicit correction.
