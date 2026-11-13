@@ -1,3 +1,5 @@
+> **KOREKSI STATUS — 13 November 2026:** Pengguna mengoreksi bahwa **ketiga Sell Service (input data, cleaning data, dan template rekap penjualan) sudah diterbitkan oleh pengguna**. Catatan lama yang menyebut semua masih draft/belum dipublikasikan sudah kedaluwarsa dan bagian tersebut disupersesi oleh koreksi ini. Ini adalah konfirmasi langsung pengguna; URL halaman publik, tanggal publikasi, dan rincian live (judul/harga/deskripsi/options) belum diperiksa secara independen. Jangan mengklaim detail live yang belum diverifikasi. Jangan menghapus atau menonaktifkan listing yang sudah terbit tanpa instruksi pengguna. Jeda sampai usia 18 berlaku untuk langkah lanjutan yang belum dilakukan; tidak membatalkan status listing yang sudah terbit.
+
 # Projects.co.id — Analisis Peluang Profit — 13 November 2026
 
 ## Kesimpulan
@@ -7,7 +9,7 @@ Projects.co.id layak dipakai sebagai kanal tambahan untuk pendapatan freelancer 
 2. Bidding selektif pada pekerjaan yang scope-nya jelas dan cocok dengan kemampuan.
 3. Sell Product sebagai kanal tambahan bagi produk digital RapiUsaha setelah produknya benar-benar diuji dan siap dijual.
 
-Ini adalah hasil analisis dan usulan asisten. Belum ada pilihan bid atau listing yang dikonfirmasi pengguna.
+Ini adalah hasil analisis dan usulan asisten. Pembaruan kemudian: pengguna mengonfirmasi bahwa tiga Sell Service (input data, cleaning data, template rekap penjualan) sudah diterbitkan oleh pengguna. Rincian live belum diverifikasi; keputusan bidding dan performa penjualan masih terbuka.
 
 ## 1. Apa yang bisa dijual di Projects.co.id?
 
@@ -125,10 +127,10 @@ Setelah produk RapiUsaha lolos uji Android/Google Sheets dan ada bukti bahwa tar
 
 ## 8. Batas keputusan dan status aktual
 
-- User-confirmed: Projects.co.id adalah jalur yang sedang dibahas untuk tambahan profit; pengguna meminta agar deskripsi Sell Service tidak menyebut portfolio karena telah menghapusnya.
-- Assistant proposal: harga, title, dan scope Sell Service Rp50.000/100 baris; prioritas bid anotasi; bid Excel sebagai cadangan; penggunaan Sell Product untuk RapiUsaha.
-- Open: apakah pengguna memilih untuk menerbitkan Sell Service sekarang, melakukan bid anotasi, atau keduanya.
-- Tidak ada login akun, pembuatan/penerbitan listing, pengiriman bid, pesan kepada owner, pembayaran, atau transaksi yang dilakukan dalam analisis ini.
+- User-confirmed: Projects.co.id adalah jalur tambahan; portfolio tidak boleh disebut pada deskripsi service; pengguna mengonfirmasi tiga service sudah diterbitkan.
+- Assistant proposal: detail harga/scope yang tercatat di sini dan prioritas bidding; detail live service belum diverifikasi.
+- Open: performa tiga listing, actual orders/sales, dan apakah/ kapan bidding akan dimulai.
+- Tidak ada bid yang dikirim oleh asisten dalam analisis ini. Pengguna telah mengonfirmasi bahwa publikasi tiga listing dilakukan olehnya.
 
 ## Sumber utama
 
