@@ -35,7 +35,9 @@
 
 ## 0Y. PROJECTS.CO.ID — SERVICE 02 DATA CLEANING PREPARED — 2026-11-13
 
-**Status: ASSISTANT_PREPARED / DRAFT READY.** User instructed to create the most important next step after agreeing to expand income. The first priority chosen was a higher-value, clearly bounded spreadsheet cleaning service. Specific price/options remain an assistant proposal; no account listing has been published.
+**Catatan status terkini — lihat 0AB:** bagian di bawah adalah arsip persiapan Service 02. Pengguna telah mengonfirmasi ketiga layanan sudah diterbitkan. Status draft/belum terbit pada bagian historis ini tidak lagi berlaku. Rincian halaman live belum diverifikasi.
+
+**Status historis saat catatan ini dibuat: ASSISTANT_PREPARED / DRAFT READY.** User instructed to create the most important next step after agreeing to expand income. The first priority chosen was a higher-value, clearly bounded spreadsheet cleaning service. Specific price/options remain an assistant proposal; no account listing has been published.
 
 - **Project context:** supplementary Projects.co.id freelancer income track. The primary business direction remains RapiUsaha — B2C digital products for UMKM. Do not merge or replace the main business with a service agency.
 - **Why this service first:** existing entry service is basic data entry at Rp50,000. Cleaning + quality-check summary offers a clearer higher-value step while reusing the same spreadsheet skill family. Current public competitor examples range from Rp50,000 for advertised large-batch light cleaning to Rp150,000 for around 250 rows with a basic dashboard and Rp200,000–250,000 for 300-row cleaning/data support. Prices are offers, not proven sales. Therefore use a competitive Rp75,000 starter, not the earlier Rp125,000–175,000 suggestion, and differentiate via explicit QA summary rather than unsupported volume claims.
@@ -53,7 +55,9 @@
 
 ## 0X. PROJECTS.CO.ID — STRATEGI MEMPERBESAR PEMASUKAN — 2026-11-13
 
-**Status:** Tujuan memperbesar pemasukan adalah USER_CONFIRMED dari percakapan 2026-11-13. Rancangan strategi dan paket/harga di bawah adalah ASSISTANT_PROPOSAL; belum dipilih, diterbitkan, atau diuji.
+**Catatan status terkini — lihat 0AB:** strategi dan harga di bawah merupakan catatan proposal sebelum pengguna mengonfirmasi bahwa tiga service sudah diterbitkan. Jangan membaca status lama ini sebagai bukti bahwa listing belum live; detail konfigurasi live belum diverifikasi.
+
+**Status historis saat catatan ini dibuat:** Tujuan memperbesar pemasukan adalah USER_CONFIRMED dari percakapan 2026-11-13. Rancangan strategi dan paket/harga di bawah adalah ASSISTANT_PROPOSAL; belum dipilih, diterbitkan, atau diuji.
 
 - **Konteks aktif:** Projects.co.id adalah kanal freelancer tambahan yang terpisah dari bisnis utama RapiUsaha. RapiUsaha tetap bisnis produk digital B2C untuk UMKM; jangan mengubahnya menjadi studio jasa/konten.
 - **Koreksi strategi sebelumnya:** mengandalkan satu atau dua proyek bidding Data Entry yang kebetulan cocok terlalu sempit dan tidak bisa menjadi mesin pendapatan utama. Halaman Projects.co.id yang diperiksa pada 2026-11-13 menunjukkan sekitar 134 proyek aktif di semua kategori dan 8 di Data Entry & Data Mining. Angka listing bisa berubah, tetapi snapshot cukup untuk menunjukkan bahwa bidding Data Entry saja memiliki suplai terbatas.
@@ -75,7 +79,9 @@
 
 ## 0W. PROJECTS.CO.ID — PROFIT OPPORTUNITY ANALYSIS — 2026-11-13
 
-**Status: ASSISTANT_RESEARCHED; recommendations are ASSISTANT_PROPOSAL, not user-approved account actions or published listings.** This is a supplementary income channel for the freelancer track; it does not replace the active RapiUsaha business.
+**Catatan status terkini — lihat 0AB:** analisis ini adalah arsip sebelum pengguna mengonfirmasi tiga service telah diterbitkan. Pernyataan historis bahwa listing belum diterbitkan tidak lagi berlaku. Rincian live belum diverifikasi.
+
+**Status historis saat catatan ini dibuat: ASSISTANT_RESEARCHED; recommendations are ASSISTANT_PROPOSAL, not user-approved account actions or published listings.** This is a supplementary income channel for the freelancer track; it does not replace the active RapiUsaha business.
 
 - **Project context:** P-DIGITAL / RapiUsaha remains the active primary business: B2C digital products for UMKM. Projects.co.id freelancing is a separate, supplementary attempt to earn through project bidding and fixed-scope services. Do not convert RapiUsaha into a service studio or change its business model.
 - **Latest user-confirmed correction:** user explicitly said the portfolio was deleted and asked that Sell Service copy not mention it. Do not refer to, link, or promise a portfolio in the current Sell Service description. This instruction concerns marketplace copy; it does not authorize deleting or editing any separate website/Worker.
