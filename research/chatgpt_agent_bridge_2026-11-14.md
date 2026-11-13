@@ -121,3 +121,14 @@ Prepare one copy/paste bootstrap instruction for the user to place in Agent's fo
 - Initial execution scope remains read-only. No email sending by Agent, posts, purchases, deletions, account changes, or form submissions.
 - Shared KV keys remain separate from the old Kreavo bookmarklet's `command`/ `result` keys. The old bookmarklet must still be disconnected while this bridge is used because it shares those legacy keys; Agent tasks use `agent:task:` and `agent:result:` prefixes.
 - **Do not mark the bridge connected** until one test proves ChatGPT task creation -> Gmail notification -> Agent fetch -> Agent result POST -> ChatGPT result retrieval.
+
+## 2026-11-14 follow-up: Agent main/helper tool split diagnosed
+
+The latest Agent response reported routine_create unavailable. Source review explains the exact reason:
+- AgentRuntime.tools(forHelper=false) exposes the main-agent tool set and deliberately excludes routine_create from the helper tool list.
+- The main-agent system prompt explicitly states that routines and watchers are always created by a helper, never by the main agent.
+- workerTools() does include ScheduleCreateTool, which implements routine_create; helpers receive worker tools.
+- Therefore, this is not an app-wide absence of routine_create. The main Agent must call delegate with a standalone instruction for a helper to invoke routine_create. Do not keep asking the main Agent to call it directly.
+- webapp_save is also in the worker-tools list and requests an approval through ctx.ask; the app must be checked with webapp_list after approval rather than treating 'submitted for approval' as saved.
+- Current user-reported state: Learned App approval requested but not confirmed; routine not created; get_command not live-tested. No task/ticket was put in KV and no wake email has been sent.
+- Next: have main Agent verify Learned App state using webapp_list; surface/complete any pending save approval, then test with an actual ticket. To create the notification routine, ask the main Agent to delegate a helper brief that directly calls routine_create using exact values and the strict read-only prompt. Verify with routine_list.
