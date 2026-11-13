@@ -1,8 +1,10 @@
+> **KOREKSI STATUS — 13 November 2026:** Pengguna mengoreksi bahwa **ketiga Sell Service (input data, cleaning data, dan template rekap penjualan) sudah diterbitkan oleh pengguna**. Catatan lama yang menyebut semua masih draft/belum dipublikasikan sudah kedaluwarsa dan bagian tersebut disupersesi oleh koreksi ini. Ini adalah konfirmasi langsung pengguna; URL halaman publik, tanggal publikasi, dan rincian live (judul/harga/deskripsi/options) belum diperiksa secara independen. Jangan mengklaim detail live yang belum diverifikasi. Jangan menghapus atau menonaktifkan listing yang sudah terbit tanpa instruksi pengguna. Jeda sampai usia 18 berlaku untuk langkah lanjutan yang belum dilakukan; tidak membatalkan status listing yang sudah terbit.
+
 # Audit Kesiapan Projects.co.id Menjelang Usia 18 — 13 November 2026
 
 ## Ringkasan keputusan
 
-**Verdict: HOLD untuk seluruh tindakan akun dan transaksi sampai pengguna genap 18 tahun pada 25 Desember 2026.** Selama masa tunggu, pekerjaan dibatasi pada audit, pengujian sampel di Android, pembuktian waktu pengerjaan, dan perapian satu penawaran terbaik. Tidak ada pendaftaran, bidding, publikasi service/product, pesan ke owner, atau transaksi.
+**Verdict: tiga Sell Service sudah diterbitkan oleh pengguna; langkah lanjutan (bid baru, perubahan akun/listing, atau ekspansi) tetap ditahan sampai pengguna berusia 18 tahun pada 25 Desember 2026, kecuali pengguna memberi instruksi baru. Selama jeda, audit, pengujian sampel di Android, pembuktian waktu pengerjaan, dan pemeriksaan performa listing yang sudah terbit tetap boleh dilakukan. Jangan menghapus atau mengubah listing yang sudah terbit tanpa instruksi pengguna.
 
 Projects.co.id tetap merupakan **jalur freelance tambahan**, bukan pengganti bisnis utama RapiUsaha — produk digital B2C untuk UMKM. Audit ini tidak mengubah produk, target, atau strategi RapiUsaha.
 
@@ -11,7 +13,7 @@ Projects.co.id tetap merupakan **jalur freelance tambahan**, bukan pengganti bis
 ### USER_CONFIRMED
 - Tujuan pengguna adalah memperbesar pemasukan.
 - Projects.co.id dibahas sebagai jalur freelance tambahan, terpisah dari RapiUsaha.
-- Pengguna memilih menunda tindakan sampai berusia 18 tahun pada 25 Desember 2026.
+- Pengguna memilih menunda langkah lanjutan agar lebih leluasa setelah berusia 18 tahun pada 25 Desember 2026; pengguna kemudian mengonfirmasi bahwa tiga Sell Service telah lebih dahulu diterbitkan.
 - Pengguna ingin masa tunggu dipakai untuk audit terlebih dahulu.
 - Deskripsi service tidak boleh menyebut atau menautkan portfolio yang telah dihapus dari penawaran; jangan mengarang pengalaman klien atau hasil penjualan.
 
@@ -23,10 +25,9 @@ Projects.co.id tetap merupakan **jalur freelance tambahan**, bukan pengganti bis
 - Semua harga, scope listing, add-on, dan strategi publikasi.
 
 ### Status aktual
-- Tidak ada akun yang diakses atau diubah.
-- Tidak ada service/product listing yang diterbitkan.
-- Tidak ada bid atau pesan kepada owner yang dikirim.
-- Tidak ada pembayaran, kontrak, klien, review, atau penjualan.
+- Pengguna mengonfirmasi tiga Sell Service sudah diterbitkan: input data, cleaning data, dan template rekap penjualan.
+- URL halaman publik, tanggal publikasi, dan rincian live ketiga listing belum diperiksa secara independen.
+- Tidak ada bid yang dikirim oleh asisten. Status pesan, inquiry, order masuk, kontrak, pembayaran, review, dan penjualan belum diketahui dari pemeriksaan ini.
 - Semua workbook demo memakai data sintetis; sampel bukan bukti pengalaman klien.
 
 ## 1. Ukuran dan bentuk pasar
@@ -46,7 +47,7 @@ Snapshot proyek relevan:
 
 ### Service 01 — Input data
 - Usulan: Rp50.000, maksimal 100 baris dan 5 kolom, 2 hari.
-- Status: draft asisten, belum disetujui atau diterbitkan.
+- Status: pengguna mengonfirmasi layanan ini sudah diterbitkan sebagai salah satu dari tiga Sell Service. Rincian live belum diverifikasi; spesifikasi di bawah adalah catatan draft persiapan.
 - Kelemahan: layanan generik dan mudah dibandingkan berdasarkan harga; tidak ada diferensiasi kuat.
 - Net ilustratif setelah fee Service 12%: Rp44.000 sebelum biaya penarikan, pajak, dan waktu kerja.
 - Belum ada pengukuran waktu kerja nyata, sehingga margin per jam belum diketahui.
@@ -54,7 +55,7 @@ Snapshot proyek relevan:
 ### Service 02 — Cleaning data
 - Usulan: Rp75.000, maksimal 300 baris × 10 kolom, satu file/sheet, 3 hari.
 - Demo sintetis: 28 baris input, 25 record unik, 3 duplikat dihapus, beberapa data kosong ditandai; pemeriksaan formula tercatat tanpa error dan preview visual telah diperiksa.
-- Status: draft asisten, belum disetujui atau diterbitkan.
+- Status: pengguna mengonfirmasi layanan ini sudah diterbitkan sebagai salah satu dari tiga Sell Service. Rincian live belum diverifikasi; spesifikasi di bawah adalah catatan draft persiapan.
 - Net ilustratif setelah fee Service 12%: Rp66.000 sebelum biaya lain.
 - Risiko: pesaing memasang harga rendah untuk volume lebih besar; diferensiasi QA harus benar-benar terlihat dan waktu pengerjaan harus diukur.
 
@@ -119,6 +120,6 @@ Pengguna lebih nyaman dengan komunikasi tertulis dan minim negosiasi. Karena itu
 - Service 03 details: https://github.com/christianomomongan82-lang/terserah-mau-taruh-apa/blob/main/research/projects_co_id_service_03_sales_template_2026-11-13.md
 
 ## Status akhir audit
-**USER_CONFIRMED:** pause tindakan akun/transaksi sampai 25 Desember 2026; audit terlebih dahulu.
-**ASSISTANT_VERDICT:** Projects.co.id hanya layak sebagai kanal tambahan untuk diuji, belum terbukti dapat menjadi sumber order rutin. Fokus pra-18 adalah uji HP, waktu pengerjaan, dan satu service terbaik.
-**OPEN:** service mana yang dipilih, harga final, apakah akan bidding, dan apakah akan memublikasikan listing setelah usia 18.
+**USER_CONFIRMED:** tiga service sudah diterbitkan; langkah lanjutan direncanakan lebih leluasa setelah 25 Desember 2026; audit dilakukan selama jeda.
+**ASSISTANT_VERDICT:** Projects.co.id hanya layak sebagai kanal tambahan untuk diuji, belum terbukti dapat menjadi sumber order rutin. Fokus pra-18 adalah uji HP, waktu pengerjaan, dan memeriksa performa tiga listing yang sudah terbit.
+**OPEN:** URL dan detail aktual ketiga listing, metrik views/inquiry/order, performa sampel di HP, langkah bidding, dan perubahan listing berikutnya.
