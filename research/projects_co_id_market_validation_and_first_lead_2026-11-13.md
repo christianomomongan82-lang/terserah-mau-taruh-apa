@@ -1,7 +1,9 @@
+> **KOREKSI STATUS — 13 November 2026:** Pengguna mengoreksi bahwa **ketiga Sell Service (input data, cleaning data, dan template rekap penjualan) sudah diterbitkan oleh pengguna**. Catatan lama yang menyebut semua masih draft/belum dipublikasikan sudah kedaluwarsa dan bagian tersebut disupersesi oleh koreksi ini. Ini adalah konfirmasi langsung pengguna; URL halaman publik, tanggal publikasi, dan rincian live (judul/harga/deskripsi/options) belum diperiksa secara independen. Jangan mengklaim detail live yang belum diverifikasi. Jangan menghapus atau menonaktifkan listing yang sudah terbit tanpa instruksi pengguna. Jeda sampai usia 18 berlaku untuk langkah lanjutan yang belum dilakukan; tidak membatalkan status listing yang sudah terbit.
+
 # Projects.co.id — Market Validation & First Lead — 13 November 2026
 
 ## Status
-Initial execution started at the user's instruction to begin and act. Public market scan and a task-specific demonstration workbook were created. No bid was submitted and no account action was performed.
+Initial execution included a public market scan and a task-specific demonstration workbook. Superseding update (13 Nov 2026): the user confirmed that the three prepared Sell Services (data entry, data cleaning, sales-summary template) have already been published by the user. The assistant did not submit them. No bid was submitted by the assistant. Live URLs/final page settings and performance metrics have not been independently verified.
 
 ## Confirmed direction and constraints
 - Projects.co.id freelance work is a supplementary income track, separate from the primary business RapiUsaha (B2C digital products for UMKM).
@@ -26,7 +28,7 @@ Inspected current public listings on 13 November 2026:
 ## First target selected for a prepared application
 - Candidate: "Template Excel" for packaging rejection data, owner Ikaratna21 (10/10 displayed, 3 projects), budget Rp125,000–150,000, finish 7 days, around 224 bids in the 13 Nov snapshot.
 - Reason: strongest match to current spreadsheet work and a buyer with some visible platform history; bid competition is high.
-- No bid has been submitted. No platform account was accessed.
+- No bid has been submitted by the assistant. The user later confirmed that the three prepared Sell Services have been published by the user; the assistant has not independently inspected their live pages.
 - Proposed application angle: one input sheet (date, batch, packaging/product, supplier, reject category, rejected quantity, unit, note), one monthly summary separating five reject categories, total rejected quantity and count of cases; confirm whether monthly figures should count cases, quantities, or both.
 - Suggested bid amount/time is still OPEN; if pursued after eligibility and sample validation, consider the bottom of buyer's Rp125,000–150,000 band and the stated 7-day time window. This is not user-approved.
 
@@ -52,7 +54,7 @@ Inspected current public listings on 13 November 2026:
 - Never claim prior client work; describe the example as a demonstration with fictional records only after it passes visual and formula QA.
 
 ## Next step
-1. Resolve Projects.co.id age wording before any account action.
+1. Inspect the three already-published service pages and record their actual URLs, titles, prices, descriptions, and options.
 2. Complete visual QA of the demonstration workbook and test it on Android/Excel mobile if possible.
-3. If the sample works, decide whether to submit one carefully tailored bid to the Ikaratna21 project; no mass bidding.
-4. In parallel, validate direct recurring work demand from online sellers/small retailers, but do not send cold outreach without user approval. A monthly record-cleanup/summary service could generate repeat work if a paying customer validates it.
+3. Measure actual build/cleaning time and calculate realistic net income per hour.
+4. Keep new bids and listing changes paused until the user is ready to act more freely after turning 18; do not perform cold outreach without user approval. A monthly record-cleanup/summary service could generate repeat work if a paying customer validates it.
