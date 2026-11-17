@@ -1,3 +1,23 @@
+## 0BF. USER DIRECTS ASSISTANT TO TAKE OVER BRIDGE RECOVERY — 2026-11-18
+
+**Status: USER_CONFIRMED instruction to take over technical work and use available methods; route change not yet locked to a specific architecture.**
+
+- User is fed up with repeated MacroDroid UI instructions, cannot send more screenshots, and explicitly directed ChatGPT to handle the bridge itself and use any available method. Stop asking the user to perform repetitive MacroDroid setup or send screenshots. Exhaust remote investigation first; if an on-device step is truly unavoidable, request only the single minimum action and explain why.
+- Active project remains ChatGPT ↔ Android Agent Bridge. RapiUsaha remains the separate B2C digital-products business direction.
+- Last explicit architecture decision remains Option A (ChatGPT owns dispatch, result retrieval, diagnosis and retries; Android Agent executes; MacroDroid Free was intended only as a wake adapter). The new broad instruction authorizes exploring alternate implementations but does not explicitly select Agent-owned reasoning/polling as the new architecture.
+- Re-read `CHATGPT_WORKING_RULES.md`, this file and the latest Agent Bridge checkpoint. New audit is recorded in `research/android_agent_bridge_autonomous_recovery_2026-11-18.md`.
+- Remote Desktop Commander again returned **no connected devices**. This ChatGPT session has no direct Android control channel.
+- Cloudflare read-only inspection: Worker `kreavo-bridge` and KV namespace exist; Worker bindings include `BRIDGE_KV` and `AI`; its Worker secrets list is empty. Existing pending commands are `broker-readonly-smoke-20261118-01` and `bootstrap-poller-20261118-01`. Do not duplicate, overwrite, claim, or replay them until state is rechecked.
+- Worker already has `/agent/command` and `/agent/result` broker routes, but no external phone-wake route/secret is configured. No Agent claim or valid result was verified in this audit.
+- Upstream Agent source at commit `8594dfadc3f728d0123990179dfc4361d55dd69c` confirms:
+  - External routine broadcasts require an on-device sender (or supported linked computer), package `com.past9.phoneaos`, action `com.past9.phoneaos.RUN_ROUTINE`, and extras `token` + `routine`.
+  - Agent HTTP automation listens only on `127.0.0.1:47321` while the app is running; Cloudflare cannot call it directly from the internet.
+  - Agent routines support interval triggers (minimum 15 minutes), email triggers checked on a 15-minute cadence, and notification triggers for allowed apps. A fixed broker-poll routine is a possible free fallback, not yet configured/tested and not real-time.
+- MacroDroid manual UI setup is paused. Do not continue telling the user to create variables or send screenshots. Do not pay for MacroDroid Pro, API billing, subscriptions or any other service without explicit approval. Keep the Agent token on the phone.
+- Next: continue remote-only investigation and inspect the Worker/broker implementation. If no remote route exists, clearly identify the one unavoidable phone-side enablement instead of pretending the bridge is complete. Preserve ChatGPT as task owner wherever possible. Verify any eventual round trip using an Agent claim and a matching valid result, not an HTTP 2xx alone.
+
+---
+
 ## 0BD. USER LOCKED CHATGPT-OWNED ORCHESTRATION — OPTION A — 2026-11-18
 
 **Status: USER_CONFIRMED.**
