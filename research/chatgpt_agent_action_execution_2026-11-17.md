@@ -1,3 +1,9 @@
+# ARCHIVAL TECHNICAL HISTORY — READ ACTIVE_DECISIONS.md FIRST
+
+This file contains historical implementation experiments and superseded proposals. It is not the current decision source. For the active goal, approved architecture, rejected paths, permissions, and next step, read ACTIVE_DECISIONS.md. In particular, all MacroDroid and ntfy wake-adapter proposals in this file are REJECTED/ARCHIVED and must never be revived or recommended. A historical line saying the user approved a proposal is not current approval; the latest direct user correction and ACTIVE_DECISIONS.md govern.
+
+---
+
 ## 0AU. CHATGPT WEB BROWSER TEST BLOCKED BY MISSING DEVICE CONTROL — 2026-11-18
 
 **Status: NOT TESTED.** User said continue with a read-only test of Agent's own browser opening ChatGPT Web. The current ChatGPT session has no direct Android device-control connection: Remote Desktop Commander reports no connected devices. Do not pretend a test was performed or substitute a separate TinyFish browser session as proof of Agent browser access.
@@ -349,123 +355,49 @@ Sources reviewed:
 
 ## 2026-11-18 — MacroDroid FCM webhook as a phone-side wake adapter
 
-### Finding
-The previous diagnosis was correct that ChatGPT/Cloudflare cannot reach Agent's loopback listener, and that Gmail's notification trigger was not being consumed. However, a new public phone-entry mechanism exists upstream: MacroDroid Webhook (URL) receives external HTTPS calls via Firebase Cloud Messaging, then can execute a local broadcast. Agent's current upstream code deliberately exports an authenticated broadcast receiver for exactly this class of local automation integration.
+**Status: ARCHIVED / REJECTED — NOT CURRENT.**
 
-### Exact source contracts
-- MacroDroid Webhook trigger URL form: `https://trigger.macrodroid.com/<device-id>/<identifier>`; query args can update pre-existing variables. The docs say it uses FCM, requires Google Play Services and internet.
-- Agent broadcast: explicit package `com.past9.phoneaos`; action `com.past9.phoneaos.RUN_ROUTINE`; extras `token`, `routine`, optional `note`. A separate `com.past9.phoneaos.INSTRUCT` action is available, but reusing the existing routine is less disruptive.
-- `IntentTriggerReceiver` calls `Routines.runTraced`, which starts the selected existing routine with the supplied context note and works when Agent is not running. The local `AutomationServer` HTTP listener is not used by this route.
-- Official Play listing says MacroDroid Free supports up to 5 macros, so a single-macro bridge does not require Pro.
-
-### Proposed request path
-ChatGPT writes the authorized task/ticket to the existing Cloudflare KV route -> ChatGPT invokes a protected Worker wake route -> Worker calls the secret MacroDroid webhook with `bridge_ticket=<ticket>` -> MacroDroid sends the explicit-package Agent broadcast for routine id 2 and sets note text to the same shape as the existing Gmail notification context -> existing routine handles the ticket and posts its result through the existing bridge -> ChatGPT reads and validates the result and decides any safe follow-up.
-
-The synthetic notification-shaped note is intended to preserve Routine #2's existing prompt/learned-tool contract. It must be validated with the existing harmless read-only task; do not assume it works merely because the source supports the broadcast.
-
-### Security / constraints
-The Agent per-install token is entered only in MacroDroid on the phone and never sent to ChatGPT. The MacroDroid webhook URL is a bearer capability URL and must be stored in a Cloudflare Worker secret, not committed to GitHub. Keep the Agent's Allow outside runs switch and AppGuard approvals intact. FCM acceptance is not proof of local execution; latency is not guaranteed and depends on Google Play Services, internet, Android background policy and device power state.
-
-### Work status
-Research only. No MacroDroid installation/configuration, Agent setting/routine modification, Worker code/secret deployment, new task dispatch, or duplicate Gmail wake was performed. Wait for the user to create the one local macro and provide its webhook URL; then add the minimal Worker wake adapter and run one read-only verification against the preserved existing task. Do not ask the user to copy/relay Agent output.
-
+Historical record only. This proposal and its former next steps are superseded by ACTIVE_DECISIONS.md. Do not treat any statement here as current user approval or as an available implementation path.
 
 ## 2026-11-18 — Replace paid MacroDroid wake adapter with free ntfy
 
-User rejected the MacroDroid Pro payment requirement, even as a one-time fee. Do not ask them to buy it. New no-cost proposal:
-- ntfy.sh + its free open-source Android client; the upstream project says ntfy.sh is free without signup or fees for normal use, and paid plans are optional.
-- Use Google Play flavor on ntfy.sh so it uses FCM. The F-Droid flavor has no Firebase and uses persistent foreground service/instant delivery instead.
-- App package is `io.heckel.ntfy`. Agent's existing NotificationReader can allow this app and match a notification routine by package and keyword. Update the existing ChatGPT Bridge routine #2 in place to spec `io.heckel.ntfy|CHATGPT-AGENT`, preserving its prompt, and add ntfy to the Agent allowed notification apps.
-- Worker sends an HTTPS POST to `https://ntfy.sh/<random-secret-topic>`, title `CHATGPT-AGENT`, body only the ephemeral ticket. Topic names are public/unlisted, not private: random topic is a bearer capability; do not store it in GitHub or send task details/private data in notifications. Worker secret stores the topic URL.
-- FCM/Android delivery is best-effort; no SLA. Only a claim marker plus valid Agent result proves the bridge works.
+**Status: ARCHIVED / REJECTED — NOT CURRENT.**
 
-No ntfy install, topic, Agent settings, Worker code/secret, or task dispatch has been made. This is a source-verified proposal awaiting one-time local phone setup. Official references: https://github.com/binwiederhier/ntfy ; https://docs.ntfy.sh/subscribe/phone/ ; https://f-droid.org/packages/io.heckel.ntfy/ ; https://github.com/binwiederhier/ntfy-android/blob/main/app/build.gradle ; https://github.com/Past-da-king/agent/blob/main/app/src/main/java/com/past9/phoneaos/system/NotificationReader.kt
-
+Historical record only. This proposal and its former next steps are superseded by ACTIVE_DECISIONS.md. Do not treat any statement here as current user approval or as an available implementation path.
 
 ## 0BA. NTFY PLAY-STORE WEBSOCKET ERROR: SWITCH TO FCM MODE — 2026-11-18
 
-The user confirmed installation from Google Play and reported the ntfy app error “WebSocket not supported” with repeated reconnects. Correct the earlier assumption that Play Store automatically avoids WebSocket: the official ntfy phone docs say the app's **Instant delivery / Subscription Service** uses a persistent foreground connection; on the Google Play build with the main `ntfy.sh` host, disabling Subscription Service allows FCM delivery instead. FCM may be delayed (sometimes minutes or hours), so this is a compatibility fallback, not guaranteed instant delivery.
+**Status: ARCHIVED / REJECTED — NOT CURRENT.**
 
-Recommended minimal fix: long-press ntfy's persistent instant-delivery notification → open its settings → turn off **Subscription Service**. Then test delivery. No reinstall or paid app required. Official source: https://docs.ntfy.sh/subscribe/phone/ (Instant delivery). The user has not yet applied this setting or verified a notification. Agent routine/allowlist and Worker wake route are still unverified; end-to-end success requires an Agent claim plus valid result.
-
+Historical record only. This proposal and its former next steps are superseded by ACTIVE_DECISIONS.md. Do not treat any statement here as current user approval or as an available implementation path.
 
 ## 0AV. NTFY PATH ABANDONED; CHATGPT-OWNED CONTROL REQUIREMENT REAFFIRMED — 2026-11-18
 
-**Status: BLOCKED / no architecture switch approved.** User rejected the ntfy troubleshooting burden and asked to continue using another method. Do not ask the user to keep debugging ntfy, WebSocket, or notification settings. The user's actual requirement remains ChatGPT-owned dispatch, retrieval, failure diagnosis and safe retry; Agent is the phone-side executor, not the decision-maker.
+**Status: ARCHIVED / REJECTED — NOT CURRENT.**
 
-- User confirmed ntfy was installed from Google Play, but the app reported WebSocket unsupported / repeated reconnect. The prior advice to disable "Subscription Service" was confusing and is not treated as a completed fix. Abandon this ntfy path unless a genuinely zero-friction fix is found; do not ask the user to change more ntfy settings.
-- Fresh verification of Cloudflare Worker `kreavo-bridge` source: it contains the existing authenticated `/agent/command` and `/agent/result` routes, broker pending/active/result/status KV logic, and conservative Workers AI failure triage. It has no configured external phone wake route in the deployed source. No Worker code or secret was changed in this check.
-- Fresh KV read on 2026-11-18:
-  - Two legacy task records remain, including bootstrap task `bootstrap-poller-20261118-01`; no claim marker or legacy result exists.
-  - Broker pending task `broker-readonly-smoke-20261118-01` remains pending, attempt 1; no broker result/status/active record was found.
-  - Do not duplicate or replay either task while execution state is uncertain.
-- Fresh Remote Desktop Commander device check returned no connected devices. Therefore ChatGPT cannot directly operate or configure the user's Android Agent app from this session.
-- Existing ChatGPT automation `Monitor Agent Bridge` is enabled daily, not real-time. The platform's supported recurring automation cadence is daily/weekly/monthly; it cannot be converted to 15-minute polling.
-- Agent upstream source research already recorded in 0AT/0AX shows an Agent-owned interval routine can poll at a minimum of 15 minutes, but this delegates execution/decision-making to Agent and Android may delay it. This is **not** the user's approved target architecture and must not be silently substituted.
-- Gmail notification wake has not been proven: the existing wake message remained unconsumed in the prior check; fresh KV state still has no Agent claim/result. A Gmail-based Agent email-poll routine is another Agent-owned polling path, not proof of ChatGPT-owned orchestration.
-- **Decision boundary:** no more ntfy/MacroDroid purchases or settings troubleshooting. Do not change the architecture to Agent-owned polling without explaining that it fails the strict ChatGPT-owned requirement and obtaining the user's explicit approval. Continue investigating a supported, no-additional-payment way for ChatGPT to trigger and read Agent tasks directly. If none exists with current connections, state the exact device-control/platform boundary rather than presenting a workaround as completion.
-- No task was duplicated, no Gmail message was resent, no Agent routine was changed, no Worker/KV config was modified, and no new automation was created in this check.
-
+Historical record only. This proposal and its former next steps are superseded by ACTIVE_DECISIONS.md. Do not treat any statement here as current user approval or as an available implementation path.
 
 ## 0BB. FREE MACRODROID WEBHOOK-TO-AGENT BROADCAST CONFIRMED AS NO-PRO ROUTE — 2026-11-18
 
-**Status: BLOCKED / DISPUTED by on-device evidence.** User installed MacroDroid and reports the Webhook option visible in the app is marked Pro. The earlier assumption that the selected trigger is free was not verified against the user's exact screen. Do not ask user to pay; stop setup until exact trigger is identified. This is a correction to the earlier shorthand “MacroDroid rejected”: the user rejected paying for MacroDroid Pro. The free tier may satisfy the technical requirement without any purchase.
+**Status: ARCHIVED / REJECTED — NOT CURRENT.**
 
-### Verified product capability
-- MacroDroid's current Google Play listing states the free/ad-supported edition supports up to **5 macros**; Pro is for removing ads and unlimited macros. The listing also identifies webhooks as a trigger category and intents as a supported capability.
-- MacroDroid's official Wiki documents the basic **Webhook (URL)** trigger as FCM-delivered, callable from any HTTP client, and its **Send Intent** action as able to send an explicit-package Broadcast with a custom action and typed extras.
-- A current third-party GitHub research thread testing the same trigger explicitly reports “Free, no Pro needed” and 5 macros. Treat this as corroboration, not the primary basis.
-- Critical distinction: use the basic Webhook (URL) trigger, **not** the separate “Webhook (with response)” trigger, which appears in release notes as Pro-only.
-- Only one macro is needed for this bridge. The five-macro cap is therefore not a blocker unless the user's device already has all five macro slots occupied. No Pro payment is required for the proposed single-macro design.
-
-### Exact bridge path
-1. ChatGPT creates the task in the existing Cloudflare KV broker.
-2. A narrowly scoped authenticated Worker wake endpoint calls the user's MacroDroid webhook URL with only the ephemeral task ticket.
-3. MacroDroid receives the FCM push and sends an explicit-package Android broadcast:
-   - package: `com.past9.phoneaos`
-   - action: `com.past9.phoneaos.RUN_ROUTINE`
-   - extras: local Agent token, existing routine id `2`, and a notification-shaped note containing `CHATGPT-AGENT-<ticket>`.
-4. Agent runs its existing routine and posts the result to the existing Worker task/result endpoints.
-5. ChatGPT retrieves the result and owns diagnosis/retry. MacroDroid is only a wake adapter; it does not reason about tasks.
-
-### Security and delivery constraints
-- The Agent token is stored only inside the local MacroDroid macro and must never be sent to ChatGPT or stored in GitHub/Cloudflare.
-- The generated MacroDroid webhook URL is a bearer capability and must be provided only for storage as a Cloudflare Worker secret; never commit it to GitHub or expose it in a public log.
-- Enable the webhook variable whitelist for only the one pre-created ticket variable. Do not send task contents or private information through the webhook.
-- Requires Google Play Services and internet. FCM is best-effort; a successful HTTP response from MacroDroid's webhook service is not proof that the phone executed the macro. Only an Agent claim marker plus a valid task result proves the round trip.
-- Existing Agent `Allow outside runs` and per-install token remain mandatory. Do not bypass Agent's own security or approval controls.
-- This path avoids ntfy/WebSocket and does not depend on Gmail notification access. It still requires a one-time local macro setup and sharing the webhook URL; ChatGPT cannot perform that local setup because no remote Android device is connected in this session.
-- No app has been installed, no phone settings or Agent routines changed, no Worker code/secret changed, and no pending task was dispatched during this research.
-
-### Decision boundary
-The user explicitly approved proceeding with MacroDroid Free on 2026-11-18. This authorizes only the no-cost single-macro path, not Pro or any paid service. Next: provide minimal phone setup; wait for the generated webhook URL (not the Agent token), then add the protected Worker wake route and verify one harmless read-only round trip. Do not ask the user to buy Pro. If the user declines installing MacroDroid, the remaining no-new-app candidate is to fix the already-existing Gmail notification allowlist/routine path, which would require local Agent notification permission and must not be represented as already working.
-
-### Sources checked
-- MacroDroid Google Play listing (free edition: up to 5 macros; webhook and intents listed): https://play.google.com/store/apps/details?id=com.arlosoft.macrodroid
-- MacroDroid Wiki — basic Webhook (URL), FCM delivery and query variables: https://wiki.macrodroid.com/wiki/index.php/Trigger:_Webhook_(URL)
-- MacroDroid Wiki — Send Intent supports explicit package, Broadcast target and extras: https://wiki.macrodroid.com/wiki/index.php/Action:_Send_Intent
-- Third-party 2026 implementation/research thread corroborating that the basic webhook works on the free tier: https://github.com/IgorKvasn/whats/issues/86
-- Agent upstream broadcast contract and token/routine requirements remain recorded in section 0AY of `PROJECT_CONTROL.md` and the Agent source audit in this file.
-
+Historical record only. This proposal and its former next steps are superseded by ACTIVE_DECISIONS.md. Do not treat any statement here as current user approval or as an available implementation path.
 
 ## 0BC. USER SELECTED OPTION A: CHATGPT-OWNED ORCHESTRATION — 2026-11-18
 
-User explicitly chose Option A. ChatGPT remains the task dispatcher, result retriever, analyst, and retry decision-maker; Android Agent is only the phone-side executor; MacroDroid Free is only the wake adapter. Agent-owned polling is not an approved replacement. No paid tools or API billing are authorized. Implementation remains unconfigured pending one local MacroDroid macro and its webhook URL. The Agent token must stay on-device. The existing pending read-only smoke task must not be duplicated or replayed until state is checked. Next: configure one basic Webhook (URL) → explicit Send Intent/Broadcast macro, then store the webhook URL only as a Cloudflare Worker secret, add a narrow wake endpoint, and verify an Agent claim plus valid result.
+**Status: ARCHIVED / REJECTED — NOT CURRENT.**
 
+Historical record only. This proposal and its former next steps are superseded by ACTIVE_DECISIONS.md. Do not treat any statement here as current user approval or as an available implementation path.
 
 ## 0BD. ON-DEVICE CONTRADICTION — 2026-11-18
 
-User reports that after installing MacroDroid, the Webhook option visible in the app is marked Pro. This directly conflicts with the prior research assumption that the basic Webhook (URL) trigger is free. The exact trigger label has not yet been visually verified. Stop setup and request a screenshot of the trigger picker; do not tell the user to buy Pro. If the basic Webhook (URL) is also Pro-gated in this installed build/account, discard this route and find another genuinely free wake method. Option A (ChatGPT-owned orchestration) remains the user's selected architecture; MacroDroid Free is no longer considered available until proven on-device.
+**Status: ARCHIVED / REJECTED — NOT CURRENT.**
 
-
+Historical record only. This proposal and its former next steps are superseded by ACTIVE_DECISIONS.md. Do not treat any statement here as current user approval or as an available implementation path.
 
 ## 0BE. USER CONFIRMS BASIC WEBHOOK URL SCREEN; VARIABLE WHITELIST NEEDS PRE-CREATED VARIABLE — 2026-11-18
 
-**Status: USER-CONFIRMED SCREEN DETAILS; setup still in progress.** User supplied a text transcription of the basic MacroDroid **Webhook (URL)** trigger settings. The screen exposes the URL, IP whitelist, body-to-string variable, query-parameter-to-dictionary variable, and a checkbox to enable Variable Whitelist. Enabling that checkbox did not reveal any additional controls on the user's screen.
+**Status: ARCHIVED / REJECTED — NOT CURRENT.**
 
-- This is consistent with MacroDroid's documented behavior: webhook query parameters set **existing** MacroDroid variables; the webhook does not create variables. The whitelist restricts which existing variables may be updated. Therefore the checkbox need not reveal a variable picker at that point.
-- Correct next setup step: save the trigger, create a global String variable named `bridge_ticket` from MacroDroid's Variables manager (or create it as a new global String variable via Set Variable), then return to the webhook trigger and configure the whitelist to allow only `bridge_ticket`. Verify the exact UI before proceeding.
-- Keep body-to-string and query-parameter-to-dictionary outputs set to “Do not save output”; neither is needed for the ticket parameter.
-- User pasted the generated webhook URL into the private ChatGPT conversation. Treat that URL as exposed bearer material: before production use, generate a new device ID in MacroDroid (this invalidates the old webhook URLs), then use only the newly generated URL as a Cloudflare Worker secret. Never place either URL in GitHub. Do not ask for or receive the Agent token.
-- No Agent broadcast action has been configured, no Worker wake endpoint/secret has been added, and no task has been dispatched. Option A remains the user-approved architecture.
-- Sources: MacroDroid Wiki Webhook (URL), https://www.macrodroidforum.com/wiki/index.php?title=Trigger:_Webhook_(URL); MacroDroid Wiki Set Variable, https://macrodroidforum.com/wiki/index.php?title=Action:_Set_Variable; MacroDroid upstream announcement on pre-defining webhook variables, https://medium.com/@macrodroid/introducing-the-webhook-trigger-a760e2ee140d.
+Historical record only. This proposal and its former next steps are superseded by ACTIVE_DECISIONS.md. Do not treat any statement here as current user approval or as an available implementation path.
+
