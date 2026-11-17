@@ -290,3 +290,30 @@ Sources:
 - https://developers.cloudflare.com/workers-ai/features/function-calling/
 - https://help.openai.com/en/articles/9039756-managing-billing-for-chatgpt-and-the-api-platform
 - https://developers.openai.com/api/docs/guides/chatgpt-api-credits
+
+
+## 0AV. USER APPROVED NO-DESKTOP AI BROKER — IMPLEMENTATION CHECKPOINT — 2026-11-18
+
+**Status: PARTIAL IMPLEMENTATION; Agent pickup pending.**
+
+- User explicitly approved the Workers AI + Android Agent interval architecture and granted authority to complete technical setup without routine questions. This is not blanket permission to bypass AppGuard, interactive approvals, or safety limits on money, legal, security, or uncertain consequential actions.
+- Deployed to existing `kreavo-bridge` Worker only; no new Worker or queue:
+  - Workers AI binding `AI` added alongside the existing `BRIDGE_KV`.
+  - Selected `@cf/google/gemma-4-26b-a4b-it`; live model smoke test returned valid JSON (57 tokens, ~0.736 Neurons).
+  - Persistent broker implementation stores pending/active/result/status under `agent:broker:*` keys. It serializes one active command, preserves existing ephemeral endpoints/legacy Kreavo routes and does not reuse Kreavo's old fixed keys.
+  - Conservative triage reviews failures; model errors/invalid output default to review. It enqueues at most one retry and a maximum of two total attempts only for explicitly idempotent read-only tasks. Never auto-retries writes or uncertain outcomes.
+  - Ephemeral fetch claims are recorded under `agent:claim:<ticket>`.
+  - Deployment IDs: `cbb0c7d1c8d0413a90fde3117ac2b5c7` initial; `e6eb16cb0900490c962e2f6874b8cbd4` latest; latest ETag `1ccb1a2e5c4f569cc3afbdab47c944d2fef24fe59d0848924179d4390fa6b716`.
+  - Worker source/bindings readback succeeded; external health request returned `ok:true`.
+- Bootstrap command ID `bootstrap-poller-20261118-01` was stored and a single Gmail wake email sent (message ID `1a1ea741aa45401c`) to the user's own mailbox. No bootstrap claim marker or Agent result existed at the last check. A read-only broker smoke task `broker-readonly-smoke-20261118-01` remains pending; no active broker task/result exists.
+- Do not record random capability tickets in GitHub. They remain in KV and in the Agent routine prompt only.
+- Routine #2 remains unchanged. Creating/verifying separate `Agent Bridge Poller` interval 15 minutes is pending Agent pickup. Android WorkManager may delay the actual interval; do not call this real-time.
+- No OpenAI API key, paid plan, payment setup, new domain, Queue, email service, or business pivot.
+- Next: check exact KV claim/result/pending keys; once Agent responds, verify routine_list state and read-only broker result. If it hasn't fetched, diagnose phone-side Gmail notifications/routine processing; do not duplicate the command or claim the routine is active.
+
+Sources reviewed:
+- https://developers.cloudflare.com/workers-ai/platform/pricing/
+- https://developers.cloudflare.com/workers-ai/models/gemma-4-26b-a4b-it/
+- https://developers.cloudflare.com/workers-ai/features/function-calling/
+- https://github.com/Past-da-king/agent/blob/8594dfadc3f728d0123990179dfc4361d55dd69c/app/src/main/java/com/past9/phoneaos/tools/AgentTools.kt
+- https://github.com/Past-da-king/agent/blob/8594dfadc3f728d0123990179dfc4361d55dd69c/app/src/main/java/com/past9/phoneaos/agent/AgentRuntime.kt
