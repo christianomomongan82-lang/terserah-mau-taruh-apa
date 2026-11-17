@@ -1,3 +1,30 @@
+## 0AV. USER APPROVED NO-DESKTOP AI BROKER; WORKER DEPLOYED, AGENT BOOTSTRAP PENDING — 2026-11-18
+
+**Status: PARTIAL IMPLEMENTATION.** User explicitly approved the Workers AI + Agent interval architecture and granted broad authority to complete the technical setup without asking for routine micro-approvals. This does not authorize bypassing Agent AppGuard/user approval, or money, banking, payment, legal acceptance, account-security, password, permanent deletion, or uncertain consequential actions.
+
+- Active technical project remains ChatGPT ↔ Android Agent Bridge. The business direction remains RapiUsaha B2C digital products for UMKM.
+- User-confirmed architecture: Agent on Android executes commands; Cloudflare Worker + KV brokers a single active/pending command; Workers AI Gemma 4 performs conservative failure triage and may enqueue a bounded retry only for explicitly idempotent read-only tasks; ChatGPT remains the user's instruction/review surface. The external model is not ChatGPT.
+- Live model smoke test succeeded using `@cf/google/gemma-4-26b-a4b-it`; it returned valid JSON, 57 total tokens, approximately 0.736 Neurons.
+- Cloudflare Worker `kreavo-bridge` was updated and deployed:
+  - Added Workers AI binding `AI`; preserved `BRIDGE_KV` → namespace `ab71a201c13f48fcbf533e9b83e6c19d`.
+  - Added persistent broker route branch on the existing `/agent/command` and `/agent/result` endpoints. It serializes one active command and one pending command using the dedicated `agent:broker:*` KV prefix, preserving legacy Kreavo keys and existing ephemeral-ticket route.
+  - Added conservative AI failure triage. It defaults to review on model errors, malformed output, partial/uncertain outcomes, authentication/permission/user-approval blockers and consequential actions.
+  - Auto-retry is limited to a maximum of two attempts and only when task metadata explicitly says `idempotent=true`, `allowAutoRetry=true`, `actionClass="read_only"`, and the model clearly classifies a transient failure before a side effect. No auto-retry for writes or uncertain actions.
+  - Added `agent:claim:<ticket>` markers to the legacy ephemeral fetch route to diagnose whether a task was picked up.
+  - First broker/AI deployment ID: `cbb0c7d1c8d0413a90fde3117ac2b5c7`. Follow-up claim-marker deployment ID: `e6eb16cb0900490c962e2f6874b8cbd4`, ETag `1ccb1a2e5c4f569cc3afbdab47c944d2fef24fe59d0848924179d4390fa6b716`.
+  - Fresh Worker source readback confirmed the broker and AI triage code plus the claim marker. Settings readback confirmed `AI` and `BRIDGE_KV`. Public `/health` endpoint was independently fetched and returned `{"ok":true,"service":"kreavo-bridge","version":"1.0"}`.
+- Bootstrap dispatch:
+  - Stored a one-use bootstrap task with ID `bootstrap-poller-20261118-01`, plus one read-only broker smoke task `broker-readonly-smoke-20261118-01`. The random capability tickets are intentionally omitted from GitHub.
+  - Sent one Gmail wake message to the user's own mailbox; message ID `1a1ea741aa45401c`; sender and recipient are the same mailbox; subject/body contain the matching `CHATGPT-AGENT` trigger marker.
+  - At last KV readback, the bootstrap task still existed, but neither a claim marker nor result existed. The broker pending task still existed, with no active command and no broker result. Thus **Agent has not yet been proven to have fetched or executed the bootstrap**, and the new interval routine is NOT confirmed active.
+- Existing notification Routine #2 was not modified. The bootstrap instruction asks that Agent create/update a separate routine named `Agent Bridge Poller` with `kind="interval"`, `spec="15"` (15 minutes), while preserving Routine #2. Routine creation and readback remain pending.
+- A live smoke test via the public Worker health route succeeded. A direct Cloudflare-execute fetch to the Worker domain was blocked by the tool network sandbox; this is not an Agent Bridge failure.
+- Agent interval uses Android WorkManager with network constraints and may be delayed by Doze/power management; 15 minutes is a minimum cadence, not a real-time guarantee.
+- No OpenAI API key, Cloudflare Paid plan, new Queues, new domain, email service, or payment configuration was created. No business model or other project changed.
+- Next: inspect KV for bootstrap claim/result and broker active/pending/result. Do not duplicate the wake message or the active command. If bootstrap is fetched, verify the routine's ID/name/kind/spec/enabled state and saved prompt from Agent's routine_list output, then verify the read-only example.com task result. If not fetched, diagnose the Android Gmail notification/routine execution blocker before changing the design.
+
+---
+
 ## 0AU. PRACTICAL NO-DESKTOP AGENT ORCHESTRATION OPTION IDENTIFIED — 2026-11-18
 
 **Status: RESEARCH COMPLETE; PROPOSAL ONLY. No routine, Worker, KV, billing, or account changes.**
