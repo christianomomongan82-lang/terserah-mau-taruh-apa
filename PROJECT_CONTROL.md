@@ -1,14 +1,15 @@
-## 0BC. USER APPROVED FREE MACRODROID WAKE ADAPTER — 2026-11-18
+## 0BD. USER LOCKED CHATGPT-OWNED ORCHESTRATION — OPTION A — 2026-11-18
 
-**Status: USER_CONFIRMED for the no-cost MacroDroid Free route; implementation not yet configured or tested.**
+**Status: USER_CONFIRMED.**
 
-- User explicitly approved proceeding with MacroDroid Free. This approval is limited to the free single-macro Webhook (URL) → Send Intent/Broadcast adapter; no MacroDroid Pro purchase, subscription, or paid service is authorized.
-- Active technical project: ChatGPT ↔ Android Agent Bridge. The user's controlling requirement remains ChatGPT-owned task dispatch, result retrieval, diagnosis and safe retries; Agent is the phone-side executor and MacroDroid is only the wake adapter. RapiUsaha remains B2C digital products for UMKM and is unrelated to this bridge.
-- Verified candidate path: existing Cloudflare KV broker task → protected Worker wake endpoint → secret MacroDroid Webhook (URL) → FCM → explicit broadcast to Agent package `com.past9.phoneaos`, action `com.past9.phoneaos.RUN_ROUTINE`, invoking existing routine id `2` with local Agent token and ticket marker → Agent posts result → ChatGPT retrieves and validates it.
-- Security: Agent token must remain only on the phone inside MacroDroid. MacroDroid webhook URL is a bearer secret and must be stored only as a Cloudflare Worker secret, never in GitHub or ordinary logs. Only the ephemeral ticket is passed through the webhook. Preserve Agent's Allow outside runs and AppGuard protections.
-- No phone configuration, MacroDroid installation, Worker code/secret, queue, pending task, or existing routine has yet been changed. No task has been dispatched. Existing pending tasks must not be duplicated or replayed while their state is uncertain.
-- **Next step:** give the user the minimum one-time phone setup for one free macro. Once the user provides the generated webhook URL (never the Agent token), inspect the live Worker/KV state again, add the narrow wake endpoint and store the URL as a Worker secret, then verify one harmless read-only round trip by observing an Agent claim and valid result. FCM delivery is best-effort; webhook HTTP success alone is not proof.
-- Research and exact Android/Agent contracts are in `research/chatgpt_agent_action_execution_2026-11-17.md`, section 0BB.
+- User explicitly selected Option A: ChatGPT remains the brain/orchestrator; Android Agent remains the phone-side executor; MacroDroid Free is only the wake adapter. Do not substitute Agent-owned polling as the primary architecture.
+- No paid tools, MacroDroid Pro, subscriptions, or new API billing are authorized by this choice.
+- Active project: ChatGPT ↔ Android Agent Bridge. RapiUsaha remains the separate business direction (B2C digital products for UMKM).
+- Current verified implementation status: existing Cloudflare Worker/KV broker exists; one read-only smoke task `broker-readonly-smoke-20261118-01` remains pending; no active claim was found in the latest check. MacroDroid is not yet installed/configured; no webhook URL or Agent token has been provided; no Worker wake route/secret exists. Do not duplicate or replay the pending task while state is uncertain.
+- Next: user configures one free MacroDroid macro using basic Webhook (URL) trigger → explicit Send Intent/Broadcast to Agent. User must never share the Agent token; enter it locally on the phone. User may provide the generated webhook URL for secure storage as a Cloudflare Worker secret only. Then inspect Worker/KV again, implement the narrow wake route, and verify Agent claim plus valid result. A webhook HTTP success alone is not proof.
+- The architecture choice is settled; do not ask the user to choose between ChatGPT-owned orchestration and Agent polling again. Research details and security boundaries are in `research/chatgpt_agent_action_execution_2026-11-17.md`, section 0BB.
+
+---
 
 ---
 
