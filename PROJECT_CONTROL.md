@@ -1,3 +1,36 @@
+## 0AY. INTERNET-TO-ANDROID AGENT WAKE PATH IDENTIFIED VIA MACRODROID — 2026-11-18
+
+**Status: ASSISTANT_PROPOSAL / technically source-verified, not yet configured or end-to-end tested.** This supersedes the earlier statement that no practical internet-to-phone entry point had been found; the old Gmail wake path remains unconsumed, but a separate push-to-broadcast path is now identified.
+
+- Active technical project: ChatGPT ↔ Android Agent Bridge. Last user-confirmed intent remains that ChatGPT owns dispatch, result retrieval, diagnosis and safe retries; the user should not relay Agent output. RapiUsaha remains B2C digital products for UMKM.
+- New path:
+  1. MacroDroid's **Webhook (URL)** trigger accepts an HTTPS call from anywhere and delivers a trigger to the Android device through Firebase Cloud Messaging (FCM). Query parameters can update pre-created MacroDroid variables. It requires Google Play Services and internet; HTTP acceptance does not prove on-device execution, and FCM/Android may delay delivery.
+  2. MacroDroid runs a single local **Send Intent → Broadcast** action, explicitly targeting package `com.past9.phoneaos`.
+  3. The current upstream Agent source exposes an exported `IntentTriggerReceiver`. Action `com.past9.phoneaos.RUN_ROUTINE` accepts extras `token`, `routine`, and optional `note`; Android starts Agent for this explicit-package broadcast even when Agent is not already running. The Agent's own `automationAllowed` switch and per-install token remain mandatory; no safety/approval bypass is introduced.
+  4. Reuse existing notification Routine #2 by id, passing a note formatted like the existing Gmail notification context with `CHATGPT-AGENT-<ticket>`. This should preserve its existing Learned App/task/result logic; it remains a hypothesis until a harmless live test confirms the installed app and the exact routine prompt behave as expected.
+  5. ChatGPT continues to create the existing ticket/task in Cloudflare KV. The existing Worker will need a narrowly scoped wake adapter that calls the MacroDroid webhook with the ticket variable; store the full webhook URL as a Worker secret, never in GitHub. After the broadcast runs, ChatGPT reads the existing Agent claim/result records and handles safe diagnosis/retry.
+- Minimal on-phone setup required once:
+  - Install MacroDroid if it is not already installed. Its official Google Play listing says Free supports up to 5 macros; one macro is sufficient, so Pro is not required for this design.
+  - In Agent Settings → Automation from other apps, copy the Agent token directly into MacroDroid and turn on **Allow outside runs**. Do not send the Agent token to ChatGPT.
+  - Create one MacroDroid macro: Webhook trigger with a pre-created string variable `bridge_ticket` (whitelist only that variable); Send Intent action set to Target=Broadcast, Package=`com.past9.phoneaos`, Action=`com.past9.phoneaos.RUN_ROUTINE`, extras `token`=<Agent token>, `routine`=`2`, `note`=`A notification just arrived from Gmail: "CHATGPT-AGENT-{bridge_ticket}".`
+  - Share the generated MacroDroid webhook URL with ChatGPT so it can be stored as a Cloudflare Worker secret. Treat that URL as a password/capability URL; do not publish it.
+- Security and scope:
+  - Agent token stays on the phone inside the local macro. Only the MacroDroid webhook URL is supplied for the Worker secret.
+  - Use a high-entropy webhook identifier; no IP allowlist is assumed because Worker egress IPs are not a stable allowlist.
+  - Existing Agent approval/AppGuard rules remain in force. Background actions requiring user approval must still stop.
+  - No new domain, Queue, OpenAI API key, paid Cloudflare plan, or model switch is required.
+- Current state: MacroDroid is not yet verified installed/configured; no webhook URL exists in ChatGPT context; no Worker wake route has been added; no Agent settings/routine have been changed; no task or email has been duplicated. Existing pending bridge tasks are preserved. The Worker adapter and one harmless read-only end-to-end verification are next after the webhook URL is available.
+- Important limitations: FCM delivery has no guaranteed latency/SLA and requires Google Play Services plus internet. The exact Agent app build installed on the phone has not been remotely inspected; current upstream source supports the receiver, but the first live test must confirm the installed build includes it. This is an event-driven bridge, not guaranteed real-time.
+- Sources inspected:
+  - Agent current main `IntentTriggers.kt`: https://github.com/Past-da-king/agent/blob/main/app/src/main/java/com/past9/phoneaos/automation/IntentTriggers.kt
+  - Agent current main `AndroidManifest.xml`: https://github.com/Past-da-king/agent/blob/main/app/src/main/AndroidManifest.xml
+  - Agent current main `Routines.kt`: https://github.com/Past-da-king/agent/blob/main/app/src/main/java/com/past9/phoneaos/triggers/Routines.kt
+  - MacroDroid Webhook trigger: https://www.macrodroidforum.com/wiki/index.php?title=Trigger:_Webhook_(URL)
+  - MacroDroid Send Intent action: https://www.macrodroidforum.com/wiki/index.php?title=Action:_Send_Intent
+  - MacroDroid official Google Play listing: https://play.google.com/store/apps/details?id=com.arlosoft.macrodroid
+
+---
+
 ## 0AX. AGENT PICKUP BLOCKER CONFIRMED; NO REMOTE PHONE ENTRY POINT — 2026-11-18
 
 **Outcome: NOT COMPLETED.** The current ChatGPT session cannot reach the Android Agent process. The Worker/broker is deployed, but the Agent has not claimed or executed the pending test.
