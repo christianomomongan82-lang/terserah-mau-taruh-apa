@@ -1,3 +1,17 @@
+## 0BB. FREE MACRODROID BASIC WEBHOOK IS A NO-PRO CANDIDATE — 2026-11-18
+
+**Status: ASSISTANT_PROPOSAL / research verified, not user-approved or configured.** This corrects the earlier shorthand that MacroDroid was wholly rejected. The user rejected paying for Pro; the free edition is a separate option.
+
+- MacroDroid Google Play listing says Free supports up to 5 macros. This bridge needs one macro only. The same listing includes webhooks among triggers and intents among supported capabilities.
+- Use the basic **Webhook (URL)** trigger (FCM-delivered) and **Send Intent → Broadcast** with explicit package `com.past9.phoneaos`, action `com.past9.phoneaos.RUN_ROUTINE`, extras for the local Agent token, routine id `2`, and ticket marker. Do not use the separate Pro-only **Webhook (with response)** feature.
+- The Agent token stays only in the local MacroDroid macro. The generated webhook URL is a bearer secret and must be stored only as a Cloudflare Worker secret, never in GitHub.
+- This replaces ntfy as the leading no-cost candidate; ntfy remains abandoned. It does not alter the user's strict requirement that ChatGPT owns task dispatch, result retrieval, diagnosis and retry. MacroDroid is only a push/broadcast adapter.
+- The Worker wake endpoint can be added only after the user approves the free MacroDroid route and provides its generated webhook URL. No phone settings, Agent routines, Worker code/secrets, pending tasks, or broker queue were changed during this research. No additional task was dispatched.
+- FCM requires Google Play Services and internet; delivery is best-effort. A webhook HTTP 200 is not proof of execution; only an Agent claim plus valid result proves end-to-end operation.
+- Exact evidence and sources are recorded in `research/chatgpt_agent_action_execution_2026-11-17.md`, section 0BB.
+
+---
+
 ## 0AZ. FREE NTFY PUSH WAKE PATH; PAID MACRODROID DEPENDENCY REJECTED — 2026-11-18
 
 **Status: ASSISTANT_PROPOSAL / source-verified, not yet configured or end-to-end tested.** User explicitly rejected a paid MacroDroid dependency, even though its Pro payment is one-time. Do not ask the user to purchase MacroDroid or any paid automation tool. The 0AY MacroDroid proposal is superseded/rejected for this project.
