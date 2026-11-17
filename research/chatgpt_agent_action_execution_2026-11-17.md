@@ -317,3 +317,13 @@ Sources reviewed:
 - https://developers.cloudflare.com/workers-ai/features/function-calling/
 - https://github.com/Past-da-king/agent/blob/8594dfadc3f728d0123990179dfc4361d55dd69c/app/src/main/java/com/past9/phoneaos/tools/AgentTools.kt
 - https://github.com/Past-da-king/agent/blob/8594dfadc3f728d0123990179dfc4361d55dd69c/app/src/main/java/com/past9/phoneaos/agent/AgentRuntime.kt
+
+
+## 0AW. BACKGROUND ROUTINE CANNOT CREATE ROUTINES; BOOTSTRAP CORRECTED — 2026-11-18
+
+- Current KV confirms no bootstrap claim marker/result; the broker read-only smoke task remains pending with no active task/result.
+- Gmail wake message `1a1ea741aa45401c` remains `UNREAD`, `SENT`, `INBOX`; body/subject are the expected marker and ticket. This is consistent with no consumption but does not independently establish the cause.
+- Audited AgentRuntime.kt at upstream commit `8594dfadc3f728d0123990179dfc4361d55dd69c`: main-agent `tools()` contains ScheduleCreateTool/Update/List; `routineTools()` contains `tools(forHelper=true)` and extra task/memory/people/wake tools, but no schedule management tools. Thus the original instruction to create a routine from a background routine was impossible. This is corrected and must not be repeated.
+- Updated the existing bootstrap KV task in place, preserving the ticket and task ID, to a read-only `example.com` browser_open/browser_read smoke test followed by the existing result tool. Readback verified the corrected payload. Did not resend Gmail, modify Routine #2, or change Worker/AI/broker.
+- Next: establish why the existing Gmail-triggered routine has not consumed the unread message, using an actual Agent-side inspection path. No Desktop assumption and no claim that the 15-minute poller exists.
+
