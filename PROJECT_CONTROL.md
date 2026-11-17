@@ -1,3 +1,17 @@
+## 0AM. GMAIL LOGIN VERIFIED BY AGENT REPORT; FRESH DRAFT TEST DISPATCHED — 2026-11-17
+
+**Status: Agent reported Gmail Inbox open and its Personal browser session logged in. This is user-pasted Agent output, not independent browser inspection by ChatGPT.** After receiving that report, ChatGPT dispatched one fresh, explicitly authorized test through the existing bridge:
+- Task ID: `bridge-action-draft-20261117-loginverified`.
+- Intended effect: create exactly one draft in the user's own Gmail account, To `christianomomongan82@gmail.com`, subject `[TES BRIDGE] Draft dibuat oleh Agent — jangan dikirim`, body states it is a bridge test and must not be sent.
+- Explicit restrictions: do not send; do not modify/delete any other email or draft; use Agent's Gmail browser UI, not the Gmail connector.
+- Task stored in existing KV namespace under an ephemeral ticket with 3600-second TTL. **The ticket is intentionally not recorded in GitHub.**
+- Wake notification email sent to the same mailbox; Gmail send returned message ID `1a1ea08520baf9f5`.
+- Immediate Cloudflare readback confirmed the task record is present and `status=pending`; no matching result record existed at that read.
+- Gmail Drafts readback showed only three pre-existing unrelated drafts; the requested test draft was not present yet. Existing drafts were left untouched.
+- Current status: **DISPATCHED / PENDING AGENT RESULT; draft creation NOT VERIFIED.** Poll for the matching result and inspect Gmail Drafts before claiming success. Do not send the draft.
+- Next step: retrieve `agent:result:<ticket>` via KV bulk-get while TTL is active; verify matching task ID and result; then inspect Gmail Drafts for exact subject/body. If the Agent routine does not fire, diagnose notification delivery/routine execution before creating another task.
+- Project scope unchanged: this is the ChatGPT ↔ Android Agent technical bridge. RapiUsaha remains the primary B2C digital-products business for UMKM.
+
 ## 0AL. USER REQUESTED REAL ACTION CAPABILITY — COMMAND FETCH VERIFIED; AGENT BROWSER GMAIL LOGIN REQUIRED — 2026-11-17
 
 **Status: ROUTINE #2 prompt reported updated and active. First test expired at 5 minutes. The 1-hour retry successfully fetched the task, but Agent stopped before action because Gmail in Agent's own browser profile requested sign-in. No draft was created or email sent. Next step: one-time Gmail sign-in in Agent browser via foreground browser handoff; then dispatch a fresh action test.** The user provided a screenshot of Agent confirming the prompt update, while name, Gmail notification trigger/spec, and active status were retained. This is user-provided screenshot evidence, not independent routine-list readback. The tested Gmail/Cloudflare bridge remains connected; action execution capability is now enabled by the routine prompt, but no real external write/action has yet been verified.
