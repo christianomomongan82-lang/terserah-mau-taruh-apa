@@ -1261,3 +1261,11 @@ Ringkasan/memori lintas percakapan dapat tidak lengkap atau keliru, dan tidak me
 - Minimal user-side fix: on the ntfy Android app, long-press its persistent “instant delivery” foreground notification, open its settings, and turn off **Subscription Service**. Official docs: https://docs.ntfy.sh/subscribe/phone/ (Instant delivery section). Then send a test notification and confirm it arrives. Do not ask the user to reinstall or use a paid app.
 - This is an intentional tradeoff: FCM avoids the persistent WebSocket connection but delivery is best-effort and may be delayed. If FCM does not work, investigate network/Google Play Services before changing the bridge architecture.
 - The topic subscription and Agent notification routine are still not confirmed operational. Do not claim end-to-end bridge success until an Agent claim and valid result are observed.
+
+
+## 0BD. MACRODROID FREE WEBHOOK AVAILABILITY CONTRADICTED BY USER'S INSTALLED APP — 2026-11-18
+
+- **Status:** BLOCKED / NOT VERIFIED FREE ON THIS DEVICE. User installed MacroDroid and reports that the Webhook option visible in the app is marked Pro. The assistant's previous instruction to select it was premature and contradicted the user's no-payment constraint. User must not purchase Pro or proceed with a paid feature.
+- Prior 0BB claim that the basic Webhook (URL) trigger is free is now disputed by direct evidence from the user's installed app. Public listing/wiki/research did not establish what exact menu item the user sees. Distinguish basic **Webhook (URL)** from **Webhook (with response)**, but do not assume the user's screen is the former without seeing it.
+- **Correction:** stop MacroDroid setup. Ask for one screenshot of the trigger picker showing the exact Webhook entry and Pro marker, then verify whether a separate basic Webhook (URL) option exists. If all available webhook triggers require Pro, abandon MacroDroid immediately and investigate a genuinely free path without asking the user to pay or troubleshoot ntfy again.
+- Architecture decision A remains USER_CONFIRMED in principle (ChatGPT is the brain; Agent is executor), but MacroDroid Free as the wake adapter is now OPEN/BLOCKED pending on-device verification. No MacroDroid Pro purchase authorized. No webhook URL, Worker secret, macro, or Agent task was created by this attempt.
