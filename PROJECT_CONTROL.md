@@ -1,6 +1,29 @@
-## 0AJ. AGENT BRIDGE — TASK EXECUTION WORKS; RESULT TICKET LOST WHEN BROWSER LEAVES KREAVO — 2026-11-17
+## 0AK. CHATGPT ↔ AGENT BRIDGE — FIRST FULL READ-ONLY ROUND-TRIP VERIFIED — 2026-11-17
 
-**Status: PARTIAL ROUND-TRIP VERIFIED; NOT YET CONNECTED.** The Gmail notification permission issue recorded in 0AI has been resolved by the user. The second test reached Agent: Agent reported opening https://example.com/, title "Example Domain", no H1, and final URL https://example.com/. Agent then reported result submission failed because the ticket could not be found. This proves the Gmail notification and routine fired and the read-only task executed; the callback still failed.
+**Status: CONNECTED for short read-only research/browsing tasks.** On 2026-11-17, ChatGPT successfully dispatched a task through Gmail notification, Agent executed it, and ChatGPT retrieved the matching result from Cloudflare KV. This is a working relay bridge (Gmail + Cloudflare Worker), not a native MCP connection.
+
+- User confirmed existing Learned App `ChatGPT Bridge` and Routine #2 were updated. Learned App Trust remained `user trusts its changes`. Routine #2 trigger: `notification`, `com.google.android.gm|CHATGPT-AGENT`. Its updated prompt passes the ephemeral ticket as an explicit argument to both tools; no use of `location.hash` or ticket-in-URL.
+- Test task ID: `bridge-test-20261117-766cfd9a7b4f`.
+- New 48-character ephemeral ticket stored in `agent:task:<ticket>` (300-second TTL). Ticket deliberately omitted from this public checkpoint.
+- Gmail wake email sent to the same connected mailbox, message ID `1a1e90730d16a99a`. Gmail metadata verified labels `UNREAD`, `SENT`, `INBOX`; subject AND body contained the unique `CHATGPT-AGENT-<ticket>` marker.
+- Agent successfully browsed `https://example.com/` and returned: title `Example Domain`, H1 count `0`, final URL `https://example.com/`, no other action.
+- Cloudflare KV POST `/bulk/get` retrieved the result:
+  - received at `2026-11-17T10:22:53.391Z`
+  - ID `bridge-test-20261117-766cfd9a7b4f` (exact match)
+  - `ok=true`
+  - result text: `Judul: Example Domain. Jumlah H1: 0. URL akhir: https://example.com/. Tidak ada tindakan lain.`
+- A second bulk-get confirmed task record status `complete` and the corresponding result. Both test keys were deleted; final KV key listing with prefix `agent:` returned an empty array.
+- One individual KV GET returned 404 even while key listing showed the result; POST `/bulk/get` successfully retrieved the value. Use bulk-get for readback through the current Cloudflare connector.
+- Root cause of the previous failed callback: Agent's `EnginePageRunner.ensure()` navigates back to the Learned App's static start URL after browsing an external domain. The earlier tools depended on `location.hash`; this lost the ticket after visiting example.com. Updated tools now accept `ticket` explicitly. No Worker redeploy was needed.
+- Agent NotificationReader de-duplicates notifications by package/title/text within a 10-minute lookback. To avoid an identical wake notification being suppressed, each wake email includes the unique marker in both subject and body.
+- **Scope proven:** short read-only browsing/research. This test does NOT authorize or validate sending, posting, purchasing, deletion, account changes, or form submission. Keep the routine's read-only restrictions.
+- **Limits:** ephemeral task/result TTL 300 seconds; ChatGPT must retrieve results promptly. Durable long-running queue delivery is not implemented.
+- Full evidence/diagnosis: `research/chatgpt_agent_bridge_roundtrip_bug_2026-11-17.md`.
+- Project boundaries unchanged: RapiUsaha remains the primary B2C digital-products business for UMKM. No other project or business was changed.
+
+## 0AJ. AGENT BRIDGE — TASK EXECUTION WORKS; RESULT TICKET LOST WHEN BROWSER LEAVES KREAVO — 2026-11-17 (SUPERSEDED BY 0AK)
+
+**Historical status at this checkpoint: PARTIAL ROUND-TRIP VERIFIED; NOT YET CONNECTED. Superseded by successful test 0AK below.** The Gmail notification permission issue recorded in 0AI has been resolved by the user. The second test reached Agent: Agent reported opening https://example.com/, title "Example Domain", no H1, and final URL https://example.com/. Agent then reported result submission failed because the ticket could not be found. This proves the Gmail notification and routine fired and the read-only task executed; the callback still failed.
 
 - **Root cause confirmed from current Agent source:** `NotificationReader.kt` passes notification title/text into routine context; `Routines.kt` prepends that context to the routine prompt. But `WebAppTools.kt`'s `EnginePageRunner.ensure()` reopens the Learned App's static `startUrl` whenever the browser has left the learned app's host. The task navigates to example.com; before a later Learned App call, Agent reopens plain `https://www.kreavo.id`, losing the ephemeral ticket stored only in `location.hash`. This matches the reported "ticket not found" at result send.
 - **Fix:** update the current Learned App tools to require an explicit ephemeral `ticket` argument. Both `get_command(ticket)` and `send_result(ticket,id,ok,result)` must read the ticket from arguments and place it in `X-Agent-Ticket`; neither tool may depend on `location.hash`.
