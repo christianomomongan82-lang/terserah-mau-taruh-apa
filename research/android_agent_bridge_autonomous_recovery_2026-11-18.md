@@ -1,3 +1,15 @@
+# ACTIVE USER CORRECTION — 2026-11-18
+
+This notice supersedes any conflicting older proposal in this file.
+
+- End goal: ChatGPT manages the user's Instagram work through the user's Android Agent app. The ChatGPT↔Agent bridge is only enabling infrastructure.
+- Agent remains the phone-side executor; ChatGPT owns task dispatch, result retrieval, evaluation, and follow-up. Monitoring is task-scoped, not 24/7.
+- **MacroDroid is REJECTED.** Do not recommend it, ask the user to configure it, or revive it as a wake adapter. Any historical MacroDroid discussion below is archival evidence only and is not an active option.
+- Current live Agent pickup and Instagram account access remain unverified. Do not claim control until a matching live task/result proves it.
+- Begin Instagram work read-only. Obtain explicit approval before posting, commenting, messaging, following/unfollowing, or changing account settings.
+
+---
+
 # Android Agent Bridge — autonomous recovery audit (2026-11-18)
 
 ## User instruction
