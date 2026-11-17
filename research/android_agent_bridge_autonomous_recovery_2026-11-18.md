@@ -1,3 +1,9 @@
+# ARCHIVAL RECOVERY NOTES — ACTIVE STATE IS IN ACTIVE_DECISIONS.md
+
+This file is historical troubleshooting evidence, not the current project decision source. Read ACTIVE_DECISIONS.md first. Do not infer that any old proposal, blocker, or next step remains active unless the current decision ledger says so. Rejected paths remain rejected.
+
+---
+
 # ACTIVE USER CORRECTION — 2026-11-18
 
 This notice supersedes any conflicting older proposal in this file.
