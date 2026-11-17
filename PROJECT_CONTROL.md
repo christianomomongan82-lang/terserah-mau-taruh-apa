@@ -1,3 +1,18 @@
+# ACTIVE CONTINUITY OVERRIDE — 2026-11-18
+
+**Status: USER_CONFIRMED correction. This section supersedes conflicting older assistant-generated proposals and notes below.**
+
+- **Actual end goal:** use the user's Android app Agent as the executor so ChatGPT can manage the user's Instagram work through task-scoped dispatch, monitoring, result retrieval, and follow-up. The bridge is infrastructure, not the end goal.
+- **USER_CONFIRMED:** Agent is the Android executor; ChatGPT is the controller/decision-maker. User does not want to switch to Agent repeatedly or manually relay its results. Monitoring is task-scoped, not 24/7.
+- **REJECTED:** MacroDroid. Do not recommend it, ask the user to install/configure it, or revive any MacroDroid webhook/intent adapter proposal. Older sections 0AY and 0BB–0BE that describe MacroDroid as approved/next-step are historical and superseded by this explicit correction. Section 0BG's later correction already points back to Agent-native integration; this override makes the rejection unambiguous.
+- **OPEN / NOT VERIFIED:** current live Agent pickup path; current Instagram login/session and account identity; exact Instagram operating scope. Historical example.com round-trip proves only that one past read-only task worked, not that current Instagram control works.
+- **Permission boundary:** begin with read-only Instagram inspection. Do not post, comment, DM, follow/unfollow, or change account/profile/security settings without the user's explicit approval for the specific action.
+- **Unchanged business direction:** RapiUsaha remains B2C digital products for UMKM. Instagram operation does not authorize a business-model or product pivot.
+- **Mandatory continuation gate:** read CHATGPT_WORKING_RULES.md, this active override, and the relevant Agent bridge source/checkpoint on every new project continuation. Extract the latest USER_CONFIRMED and REJECTED decisions before planning. If any older note conflicts, this override wins until the user explicitly changes it.
+- **Next step:** continue from the existing Agent-native Learned App / notification-routine path and verify current live state before dispatching anything. Do not create duplicate tasks or ask the user to repeat already documented setup. If no supported Agent control route is available in the current session, state the exact blocker; do not substitute a rejected tool.
+
+---
+
 ## 0BK. CONTROLLED WORKER FAILURE-PATH QA — 2026-11-18
 
 **Status: PASS — runtime failure path verified end-to-end; no automatic retry.**
