@@ -186,3 +186,25 @@ This is user-provided screenshot evidence of the Agent's own confirmation, not a
 
 ---
 
+
+
+## 0AS. BRIDGE RESULT RETENTION EXTENDED; AUTOMATED CHATGPT MONITOR BLOCKED BY TASK QUOTA — 2026-11-17
+
+**Status: PARTIAL IMPLEMENTATION.** User authorized building autonomous monitoring so they do not have to inspect Agent replies or relay them to ChatGPT.
+
+- Active project: ChatGPT ↔ Android Agent Bridge. Business direction remains RapiUsaha B2C digital products for UMKM.
+- Successfully updated deployed Cloudflare Worker `kreavo-bridge` (account `d7e9ae2527e96a140d325f60b15cdce3`) through the Worker content API:
+  - `agent:result:<ticket>` retention changed from 300 seconds to **604,800 seconds (7 days)**.
+  - Completed `agent:task:<ticket>` retention changed from 300 seconds to **604,800 seconds (7 days)**.
+  - Existing ticket validation, origin restriction, task/result ID matching, and result schema validation were preserved.
+  - Unrelated Kreavo client snapshot/result TTLs remain 300 seconds.
+  - KV binding preserved: `BRIDGE_KV` → namespace `ab71a201c13f48fcbf533e9b83e6c19d`.
+  - Deployment confirmation: Worker `kreavo-bridge`, deployment ID `025f4829a44c48ecac59487ecd463e44`, tag `3b5f08489c874b27a873a27455fc62aa`. A fresh GET of deployed Worker content confirmed both Agent TTL values are 604800 and client TTLs remain 300.
+- Attempted to create a daily ChatGPT automation to inspect Agent results and notify the parent thread. Creation was **rejected** because the account already has 3 active scheduled tasks (plan limit 3). Existing tasks observed: daily SignageQuote uptime monitor, weekly B2B software partner research, and one-time SignageQuote 30-day evaluation. None was paused, deleted, or repurposed because user did not authorize changing those tasks.
+- Therefore no scheduled ChatGPT monitor was created. ChatGPT still cannot autonomously resume itself in real time when Agent posts a result. The 7-day retention makes later retrieval possible, but does not itself trigger ChatGPT.
+- Next viable options: user explicitly chooses one existing automation to pause/replace to free a slot, or a separately engineered always-on external orchestrator using an authorized model/API credential and explicit cost approval. Do not silently substitute daily polling or imply it is real-time.
+- No Agent Routine, Gmail settings, Learned App, or business scope was changed. No Agent task was dispatched in this implementation turn.
+- Safety: future retry only within original per-action authorization; never repeat uncertain create/send/publish/delete/payment/book actions; never bypass Agent AppGuard, sign-in, CAPTCHA, 2FA, or user approvals.
+
+---
+
