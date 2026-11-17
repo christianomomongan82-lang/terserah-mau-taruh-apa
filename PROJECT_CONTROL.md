@@ -1,3 +1,16 @@
+## 0AJ. AGENT BRIDGE — TASK EXECUTION WORKS; RESULT TICKET LOST WHEN BROWSER LEAVES KREAVO — 2026-11-17
+
+**Status: PARTIAL ROUND-TRIP VERIFIED; NOT YET CONNECTED.** The Gmail notification permission issue recorded in 0AI has been resolved by the user. The second test reached Agent: Agent reported opening https://example.com/, title "Example Domain", no H1, and final URL https://example.com/. Agent then reported result submission failed because the ticket could not be found. This proves the Gmail notification and routine fired and the read-only task executed; the callback still failed.
+
+- **Root cause confirmed from current Agent source:** `NotificationReader.kt` passes notification title/text into routine context; `Routines.kt` prepends that context to the routine prompt. But `WebAppTools.kt`'s `EnginePageRunner.ensure()` reopens the Learned App's static `startUrl` whenever the browser has left the learned app's host. The task navigates to example.com; before a later Learned App call, Agent reopens plain `https://www.kreavo.id`, losing the ephemeral ticket stored only in `location.hash`. This matches the reported "ticket not found" at result send.
+- **Fix:** update the current Learned App tools to require an explicit ephemeral `ticket` argument. Both `get_command(ticket)` and `send_result(ticket,id,ok,result)` must read the ticket from arguments and place it in `X-Agent-Ticket`; neither tool may depend on `location.hash`.
+- Update the existing Gmail routine prompt to extract the 40–64 character URL-safe ticket from notification context (subject marker `CHATGPT-AGENT-`) and pass it explicitly to both tools. Keep the existing strict read-only scope.
+- **No Cloudflare Worker change/redeploy is needed.** The existing `/agent/command` and `/agent/result` routes already accept the ticket header. No current task/result remains active; do not enqueue or email another test until the Agent tool definitions are updated.
+- Existing Learned App and routine do not need to be recreated, only updated. The browser may still open Kreavo for origin, but must not use its URL fragment as the ticket store.
+- Canonical detailed diagnosis: `research/chatgpt_agent_bridge_roundtrip_bug_2026-11-17.md`.
+- Previous 0AI Gmail-permission blocker is superseded: user later enabled Gmail notifications and the second task demonstrably reached Agent.
+- RapiUsaha remains the primary B2C digital-products business for UMKM. This technical bridge work does not change business direction or any other project.
+
 ## 0AI. AGENT BRIDGE BLOCKER IDENTIFIED — GMAIL NOTIFICATIONS NOT ALLOWED — 2026-11-17
 
 **Status: Learned App saved and trusted; notification routine recorded; Gmail notifications not allowed in Agent, so bridge remains NOT CONNECTED.** User-provided Agent diagnostics confirm both learned tools exist and Trust is on. Routine exists with kind=notification and spec=com.google.android.gm|CHATGPT-AGENT; diagnostic did not expose enabled/paused state. notifications_read explicitly reports no apps allowed.
