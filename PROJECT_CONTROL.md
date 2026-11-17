@@ -1234,3 +1234,13 @@ Ringkasan/memori lintas percakapan dapat tidak lengkap atau keliru, dan tidak me
 - **Result caveat:** five-minute KV result TTL means retrieval must be prompt; durable long-running result delivery is not yet solved. Use only short tasks at first.
 - **Canonical technical record:** `research/chatgpt_agent_bridge_2026-11-14.md`.
 - **Scope boundary:** this technical bridge is not a business pivot. RapiUsaha remains the primary B2C digital-products business for UMKM. No changes to RapiUsaha, Projects.co.id, RentalOps, SignageQuote, SiapKirim, or P-Backtest.
+
+
+## 0BA. NTFY PLAY-STORE BUILD CAN STILL HIT WEBSOCKET; USE FCM MODE — 2026-11-18
+
+**Status: DOCUMENTED CORRECTION / user has not yet changed the phone setting or verified delivery.** The user confirmed ntfy was installed from Google Play, but the app reports “WebSocket not supported” and reconnects.
+
+- Correct the earlier oversimplification: Google Play flavor supports Firebase Cloud Messaging (FCM) for the main host `ntfy.sh`, but this does not mean the app never attempts WebSocket. The official phone docs describe “Instant delivery” as a persistent foreground subscription service; disabling the Subscription Service falls back to FCM, which may be delayed (sometimes minutes or hours).
+- Minimal user-side fix: on the ntfy Android app, long-press its persistent “instant delivery” foreground notification, open its settings, and turn off **Subscription Service**. Official docs: https://docs.ntfy.sh/subscribe/phone/ (Instant delivery section). Then send a test notification and confirm it arrives. Do not ask the user to reinstall or use a paid app.
+- This is an intentional tradeoff: FCM avoids the persistent WebSocket connection but delivery is best-effort and may be delayed. If FCM does not work, investigate network/Google Play Services before changing the bridge architecture.
+- The topic subscription and Agent notification routine are still not confirmed operational. Do not claim end-to-end bridge success until an Agent claim and valid result are observed.
