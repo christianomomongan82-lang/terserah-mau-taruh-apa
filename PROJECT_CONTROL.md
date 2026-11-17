@@ -1,3 +1,21 @@
+## 0AQ. APPROVED: PHONE NOTIFICATION ON EVERY BRIDGE TASK RESULT — 2026-11-17
+
+**Status: USER_CONFIRMED direction; implementation NOT YET APPLIED.** The user approved direct Android phone notifications whenever an Agent task finishes successfully or fails, so they no longer need to repeatedly open Agent/ChatGPT to check status.
+
+- Active technical project: ChatGPT ↔ Android Agent Bridge. Business boundary unchanged: RapiUsaha remains the primary B2C digital-products business for UMKM.
+- Existing verified baseline: Gmail notification → Agent Routine #2 → Cloudflare KV result relay works; first Gmail draft browser write was independently verified. The subsequent Google Keep test was partial: Agent reports title visible, requested body not saved/verified. Do not retry by creating another note.
+- New source discovery in upstream `Past-da-king/agent` at commit `8594dfadc3f728d0123990179dfc4361d55dd69c`: Agent already includes `notify_user`, described as “Send the user a phone notification” and intended for background-work results/time-sensitive items. `routineTools()` is built from the helper tool set, and the runtime's routine tool path includes `NotifyTool()`. This supports using Agent's native phone notification; no new app, Worker, KV, or scheduled polling service is needed.
+- Proposed minimum change: update existing Routine #2 in place, preserving ID, name, notification trigger/spec, enabled state, and all current bridge/action/safety instructions. Add only a completion/failure notification rule:
+  - notify success only after the matching task result was successfully posted to the Bridge; include task ID and a concise outcome;
+  - notify failure when ticket extraction/fetch, task execution, or result posting fails; include the stage and concise reason;
+  - do not claim success before the result relay confirms it; do not change task authorization boundaries.
+- Routine editing must follow Agent's own `routine_list` → retain the complete current prompt → `routine_update(id=2, prompt=<full preserved prompt plus notification clause>)` pattern. Agent source explicitly warns that a cut prompt would lose the rest. Since this ChatGPT session has no remote routine-edit tool, the user must ask Agent's foreground chat to delegate a helper to perform the in-place update.
+- After update, read `routine_list` again and verify ID/name/kind/spec/enabled plus full prompt. Then use the existing `notify_user` once as a test notification; verify Android accepts it. Do not modify Worker, Learned App, Gmail trigger, KV namespace, or any other routine.
+- Current implementation state: **NOT CHANGED**. No notification has been sent by this proposed setup, and no config was modified in this turn.
+- Next step: provide the user one concise instruction to paste into Agent's foreground chat; Agent must inspect and preserve the complete existing prompt before updating it. If it cannot retrieve the full prompt or cannot access `notify_user` from Routine #2, stop and report the exact blocker rather than replacing the routine prompt blindly.
+
+---
+
 ## 0AP. GOOGLE KEEP BROWSER WRITE TEST — PARTIAL RESULT — 2026-11-17
 
 **Status: PARTIAL / BODY NOT SAVED OR VERIFIED. The bridge round-trip worked and Agent reports the new note title is visible, but the requested body is absent. Do not count this as a successful note-write test.**
