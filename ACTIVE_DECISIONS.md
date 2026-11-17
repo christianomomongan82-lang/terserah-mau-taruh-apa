@@ -146,3 +146,14 @@ This ledger supersedes conflicting assistant-generated proposals and historical 
 - Sent one fresh Gmail wake email using the same ticket marker. Gmail message ID: `1a1eb52d6b21c5e8`. KV write and readback both succeeded; the pending command and task record contain the revised instruction. No duplicate task ID or new ticket was created.
 - **Current status:** corrected task is queued in `agent:broker:pending`; execution and broker result are NOT YET VERIFIED. No matching active/status/result key was observed in the post-write readback. Do not claim Agent has executed it yet. User's established handoff remains: user says "udah" when Agent has finished; then ChatGPT checks the exact broker result once.
 - No Instagram profile/content changes, posts, messages, follows, likes, or other account mutations were made.
+
+
+## Corrective Worker result-ingress fix — 2026-11-18
+
+- User asked ChatGPT to repair the Agent→broker result failure directly, not merely describe it.
+- Confirmed deployed Worker behavior before the fix: POST /agent/result required agent:broker:active. If the Agent-side runner completed/displayed a task without first claiming agent:broker:pending, the result endpoint returned HTTP 409 no active broker task, even when the ticket-authenticated task record and matching pending command existed. This was a concrete bridge-side gap.
+- Patched the deployed kreavo-bridge Worker result ingress: it now accepts a result when either (a) the matching task is active, or (b) no active task exists but the ticket-authenticated pending command has the exact same task ID. It rechecks active state before accepting the pending fallback, validates the ticket/task ID, writes the same result/status records, and deletes the matching pending key. Mismatched IDs remain rejected; no auto-retry was added.
+- Cloudflare upload succeeded; the Worker API returned success with deployment ID da967861349a4799baa37b8a3af626e8. Immediate source readback confirmed the new pending-result branch is present.
+- NOT YET RUNTIME-VERIFIED: no Agent POST has yet exercised the new pending-result branch. The currently queued Instagram task remains pending; matching active/status/result records were absent at the last readback. This fix repairs the bridge's rejection of a pending-task result, but cannot manufacture the Agent UI response if the Android routine never sends a POST.
+- No Instagram account changes were made. No phone settings, Agent routines, secrets, or permissions were changed.
+- Next: verify the Agent's next result POST reaches the Worker and is stored; if no POST arrives, the remaining blocker is the Android Agent routine not invoking /agent/result, which cannot be modified from this session without a connected Android device-control channel.
