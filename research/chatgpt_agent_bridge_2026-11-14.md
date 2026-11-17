@@ -132,3 +132,14 @@ The latest Agent response reported routine_create unavailable. Source review exp
 - webapp_save is also in the worker-tools list and requests an approval through ctx.ask; the app must be checked with webapp_list after approval rather than treating 'submitted for approval' as saved.
 - Current user-reported state: Learned App approval requested but not confirmed; routine not created; get_command not live-tested. No task/ticket was put in KV and no wake email has been sent.
 - Next: have main Agent verify Learned App state using webapp_list; surface/complete any pending save approval, then test with an actual ticket. To create the notification routine, ask the main Agent to delegate a helper brief that directly calls routine_create using exact values and the strict read-only prompt. Verify with routine_list.
+## 2026-11-17 live test 1: Gmail wake delivered; no Agent result received
+
+**Status: NOT CONNECTED / first end-to-end test timed out.** After the user reported enabling Trust, a harmless read-only test was issued.
+
+- Confirmed KV namespace was empty before issuing the task: no legacy snapshot, legacy command/result, Agent task, or Agent result keys existed.
+- Created a single task under a random 48-character ephemeral ticket. Task ID: bridge-test-20261117-a06783cd23a9. Task was to read example.com only and return page title, domain, H1 and source URL. Task key TTL: 300 seconds.
+- Sent a wake-up email through the connected Gmail account to the user's own address, subject marker CHATGPT-AGENT plus the ephemeral ticket. Gmail send succeeded (message ID 1a1e8d00939640fb). A metadata read confirmed message labels UNREAD, SENT, INBOX and recipient is the same user mailbox.
+- Polled Cloudflare KV repeatedly during the 300-second window. No result key appeared. The task key remained present until TTL expiration; after expiration, final key listing was empty.
+- No actual Agent result was received. Because the Worker command GET does not currently record a claim/last-fetched marker, this result alone cannot distinguish (a) notification routine never fired, (b) it fired but failed to open/fetch the task, or (c) it fetched but failed while browsing or posting the result.
+- No token or ephemeral ticket is stored in this checkpoint. The temporary task expired naturally; no live queue items remain.
+- Next diagnostic step: ask Agent main chat to read routine_list for ChatGPT Bridge and report enabled/kind/spec/lastRunAt/lastResult, plus webapp_list and the app's Trust state. Use the Agent routine result to isolate the failed stage before any second test. Do not create another task or send another wake email until the diagnosis is known.
