@@ -136,3 +136,13 @@ This ledger supersedes conflicting assistant-generated proposals and historical 
 - **OPEN:** whether the existing Agent routine actually persists rejected/failed responses into the broker result channel. Verify this on the next controlled task; if rejection still produces no result, diagnose the Agent routine/result-write path before sending further work.
 - **Current stale task:** `instagram-aesthetic-audit-readonly-20261118-01` is still present in `agent:broker:pending` at the latest readback; no matching active/status/result keys exist. Do not dispatch a duplicate. Resolve or let this stale command expire before sending a new one.
 
+
+
+## Corrective Agent dispatch — Instagram result-return repair — 2026-11-18
+
+- User correction: when Agent shows a completed/rejected task but the broker remains pending, ChatGPT must repair the task/result path directly rather than merely report the mismatch or promise a future fix.
+- Live evidence before correction: task `instagram-aesthetic-audit-readonly-20261118-01` remained in `agent:broker:pending`; matching active/status/result keys were absent. The original broad visual-audit instruction was still queued. Therefore the Agent UI rejection had not been returned through the broker. Exact UI rejection text is not available in KV; do not claim its precise cause.
+- Corrective action: replaced the stale pending command and same ticket task record with a minimal, single-operation task using the already-verified connected Instagram action `INSTAGRAM_GET_USER_INFO` for authenticated account `me`. It is read-only, avoids browser/visual inspection, and explicitly requires POST to `/agent/result` with either the full successful result or the exact error. Agent must confirm the POST response.
+- Sent one fresh Gmail wake email using the same ticket marker. Gmail message ID: `1a1eb52d6b21c5e8`. KV write and readback both succeeded; the pending command and task record contain the revised instruction. No duplicate task ID or new ticket was created.
+- **Current status:** corrected task is queued in `agent:broker:pending`; execution and broker result are NOT YET VERIFIED. No matching active/status/result key was observed in the post-write readback. Do not claim Agent has executed it yet. User's established handoff remains: user says "udah" when Agent has finished; then ChatGPT checks the exact broker result once.
+- No Instagram profile/content changes, posts, messages, follows, likes, or other account mutations were made.
