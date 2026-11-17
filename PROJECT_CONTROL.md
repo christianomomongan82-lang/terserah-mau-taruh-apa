@@ -1,3 +1,16 @@
+## 0AU. PRACTICAL NO-DESKTOP AGENT ORCHESTRATION OPTION IDENTIFIED — 2026-11-18
+
+**Status: RESEARCH COMPLETE; PROPOSAL ONLY. No routine, Worker, KV, billing, or account changes.**
+
+- ChatGPT automation scheduling in this account cannot poll more frequently than daily because supported recurring cadences are daily, weekly, and monthly.
+- Live Worker settings check confirmed `kreavo-bridge` currently has only `BRIDGE_KV`, no AI binding.
+- Practical candidate: Agent interval routine (minimum 15 minutes, Android WorkManager may delay) + existing Cloudflare Worker + Workers AI free daily allocation (10,000 Neurons). Candidate model: Gemma 4 26B A4B (reasoning/function-calling/vision). It is a different model, not ChatGPT.
+- Exact ChatGPT/OpenAI reasoning via API remains possible but is billed separately from ChatGPT Free. Current API-credit benefit is for eligible Pro/Business plans, not Free.
+- Recommendation for low-cost autonomous loop: option 2 in `research/chatgpt_agent_action_execution_2026-11-17.md`; this is only an assistant proposal. Obtain explicit user approval before changing Worker code/bindings or Routine #2. Preserve per-action authorization and AppGuard restrictions.
+- Detailed findings and official sources are appended to the research file. No Desktop/PC dependency is proposed.
+
+---
+
 ## 0AT. DAILY BRIDGE MONITOR ENABLED; EVENT-DRIVEN ALTERNATIVES RESEARCHED — 2026-11-18
 
 **Status: DAILY MONITOR ENABLED; REAL-TIME CHATGPT ORCHESTRATION NOT YET IMPLEMENTED.** User explicitly approved replacing the weekly B2B software partner monitor with an Agent Bridge monitor, and requested research into a stronger method.
