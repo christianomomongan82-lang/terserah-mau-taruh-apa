@@ -380,3 +380,10 @@ User rejected the MacroDroid Pro payment requirement, even as a one-time fee. Do
 - FCM/Android delivery is best-effort; no SLA. Only a claim marker plus valid Agent result proves the bridge works.
 
 No ntfy install, topic, Agent settings, Worker code/secret, or task dispatch has been made. This is a source-verified proposal awaiting one-time local phone setup. Official references: https://github.com/binwiederhier/ntfy ; https://docs.ntfy.sh/subscribe/phone/ ; https://f-droid.org/packages/io.heckel.ntfy/ ; https://github.com/binwiederhier/ntfy-android/blob/main/app/build.gradle ; https://github.com/Past-da-king/agent/blob/main/app/src/main/java/com/past9/phoneaos/system/NotificationReader.kt
+
+
+## 0BA. NTFY PLAY-STORE WEBSOCKET ERROR: SWITCH TO FCM MODE — 2026-11-18
+
+The user confirmed installation from Google Play and reported the ntfy app error “WebSocket not supported” with repeated reconnects. Correct the earlier assumption that Play Store automatically avoids WebSocket: the official ntfy phone docs say the app's **Instant delivery / Subscription Service** uses a persistent foreground connection; on the Google Play build with the main `ntfy.sh` host, disabling Subscription Service allows FCM delivery instead. FCM may be delayed (sometimes minutes or hours), so this is a compatibility fallback, not guaranteed instant delivery.
+
+Recommended minimal fix: long-press ntfy's persistent instant-delivery notification → open its settings → turn off **Subscription Service**. Then test delivery. No reinstall or paid app required. Official source: https://docs.ntfy.sh/subscribe/phone/ (Instant delivery). The user has not yet applied this setting or verified a notification. Agent routine/allowlist and Worker wake route are still unverified; end-to-end success requires an Agent claim plus valid result.
