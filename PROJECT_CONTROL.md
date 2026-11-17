@@ -1,3 +1,16 @@
+## 0BG. FRESH REMOTE BRIDGE CHECK — 2026-11-18 03:07 +0800
+
+**Status: BLOCKED at the Android-device boundary; cloud-only completion is not possible with currently connected devices.**
+
+- Re-read canonical rules and project checkpoints. Directly fetched deployed Cloudflare Worker `kreavo-bridge`: broker routes exist, but there is no phone-wake endpoint. Bindings are `BRIDGE_KV` and `AI`; secret list is empty.
+- Current KV state: existing read-only task `broker-readonly-smoke-20261118-01` remains pending; no active broker task. It was not claimed, duplicated, replayed, or modified.
+- Remote Desktop Commander again reports no connected devices. ChatGPT has no remote Android control channel in this session.
+- No Worker/KV/Agent/phone changes and no new dispatch were made.
+- MacroDroid and ntfy troubleshooting remain paused. A possible fallback is an Agent-native 15-minute interval poller. This is not configured and is not approved as a permanent architecture switch; it would be a limited compromise because Agent runs the fixed poll routine, while ChatGPT can still own task creation, result validation, diagnosis and retries.
+- Next: ask for authorization only if proceeding with that specific 15-minute compromise; otherwise the exact blocker is a missing phone-side enablement or supported remote device connection. See `research/android_agent_bridge_autonomous_recovery_2026-11-18.md` for evidence.
+
+---
+
 ## 0BF. USER DIRECTS ASSISTANT TO TAKE OVER BRIDGE RECOVERY — 2026-11-18
 
 **Status: USER_CONFIRMED instruction to take over technical work and use available methods; route change not yet locked to a specific architecture.**
