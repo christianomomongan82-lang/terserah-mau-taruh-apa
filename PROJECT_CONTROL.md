@@ -1,17 +1,19 @@
 # ACTIVE CONTINUITY OVERRIDE — 2026-11-18
 
+**Read ACTIVE_DECISIONS.md as the sole current decision ledger before using any older section below.**
+
 **Status: USER_CONFIRMED correction. This section supersedes conflicting older assistant-generated proposals and notes below.**
 
 - **Actual end goal:** use the user's Android app Agent as the executor so ChatGPT can manage the user's Instagram work through task-scoped dispatch, monitoring, result retrieval, and follow-up. The bridge is infrastructure, not the end goal.
-- **USER_CONFIRMED:** Agent is the Android executor; ChatGPT is the controller/decision-maker. User does not want to switch to Agent repeatedly or manually relay its results. Monitoring is task-scoped, not 24/7.
-- **REJECTED:** MacroDroid. Do not recommend it, ask the user to install/configure it, or revive any MacroDroid webhook/intent adapter proposal. Older sections 0AY and 0BB–0BE that describe MacroDroid as approved/next-step are historical and superseded by this explicit correction. Section 0BG's later correction already points back to Agent-native integration; this override makes the rejection unambiguous.
-- **OPEN / NOT VERIFIED:** current live Agent pickup path; current Instagram login/session and account identity; exact Instagram operating scope. Historical example.com round-trip proves only that one past read-only task worked, not that current Instagram control works.
-- **Permission boundary:** begin with read-only Instagram inspection. Do not post, comment, DM, follow/unfollow, or change account/profile/security settings without the user's explicit approval for the specific action.
-- **Unchanged business direction:** RapiUsaha remains B2C digital products for UMKM. Instagram operation does not authorize a business-model or product pivot.
-- **Mandatory continuation gate:** read CHATGPT_WORKING_RULES.md, this active override, and the relevant Agent bridge source/checkpoint on every new project continuation. Extract the latest USER_CONFIRMED and REJECTED decisions before planning. If any older note conflicts, this override wins until the user explicitly changes it.
-- **Next step:** continue from the existing Agent-native Learned App / notification-routine path and verify current live state before dispatching anything. Do not create duplicate tasks or ask the user to repeat already documented setup. If no supported Agent control route is available in the current session, state the exact blocker; do not substitute a rejected tool.
+- **USER_CONFIRMED:** Agent is the Android executor; ChatGPT is the controller/decision-maker. User does not want to switch to Agent or relay results. Monitoring is task-scoped, not 24/7.
+- **REJECTED:** MacroDroid and ntfy. Do not recommend, configure, rename, or revive either as a wake adapter. Their former proposals are archival only.
+- **OPEN / NOT VERIFIED:** current live Agent pickup path; current Instagram login/session and account identity; exact Instagram operating scope.
+- **Permission boundary:** begin with read-only Instagram inspection. Do not post, comment, DM, follow/unfollow, or change account/profile settings without explicit approval for the specific action.
+- **Unchanged business direction:** RapiUsaha remains B2C digital products for UMKM.
+- **Mandatory continuation gate:** read CHATGPT_WORKING_RULES.md and ACTIVE_DECISIONS.md first, then only the relevant technical checkpoint. If any older note conflicts, this override and ACTIVE_DECISIONS.md win until the user explicitly changes a decision.
 
 ---
+
 
 ## 0BK. CONTROLLED WORKER FAILURE-PATH QA — 2026-11-18
 
@@ -72,114 +74,48 @@
 
 ---
 
-## 0BG. FRESH REMOTE BRIDGE CHECK — 2026-11-18 03:07 +0800
+## 0BG. ACTIVE CORRECTION: AGENT-NATIVE INSTAGRAM OBJECTIVE — 2026-11-18
 
-**Status: BLOCKED at the Android-device boundary; cloud-only completion is not possible with currently connected devices.**
+**Status: CURRENT CONTROL RECORD.** See the canonical decision ledger ACTIVE_DECISIONS.md.
 
-- Re-read canonical rules and project checkpoints. Directly fetched deployed Cloudflare Worker `kreavo-bridge`: broker routes exist, but there is no phone-wake endpoint. Bindings are `BRIDGE_KV` and `AI`; secret list is empty.
-- Current KV state: existing read-only task `broker-readonly-smoke-20261118-01` remains pending; no active broker task. It was not claimed, duplicated, replayed, or modified.
-- Remote Desktop Commander again reports no connected devices. ChatGPT has no remote Android control channel in this session.
-- No Worker/KV/Agent/phone changes and no new dispatch were made.
-- MacroDroid and ntfy troubleshooting remain paused. A possible fallback is an Agent-native 15-minute interval poller. This is not configured and is not approved as a permanent architecture switch; it would be a limited compromise because Agent runs the fixed poll routine, while ChatGPT can still own task creation, result validation, diagnosis and retries.
-- Next: ask for authorization only if proceeding with that specific 15-minute compromise; otherwise the exact blocker is a missing phone-side enablement or supported remote device connection. See `research/android_agent_bridge_autonomous_recovery_2026-11-18.md` for evidence.
+- The installed Android app Agent is the executor. ChatGPT is the task dispatcher, result retriever, evaluator, and follow-up decision-maker.
+- End objective: establish whether ChatGPT can manage Instagram work through Agent without requiring the user to relay Agent results. Current live pickup and Instagram session remain unverified.
+- MacroDroid and ntfy are rejected. Their old proposals are archived and must not be treated as active options.
+- No duplicate task or wake should be sent until existing queue state is checked.
+- Begin read-only. No posting, commenting, DMs, follows/unfollows, or account-setting changes without specific user approval.
 
 ---
 
 ## 0BF. USER DIRECTS ASSISTANT TO TAKE OVER BRIDGE RECOVERY — 2026-11-18
 
-**Status: USER_CONFIRMED instruction to take over technical work and use available methods; route change not yet locked to a specific architecture.**
+**Status: HISTORICAL instruction; active direction is superseded by the continuity override above.**
 
-- User is fed up with repeated MacroDroid UI instructions, cannot send more screenshots, and explicitly directed ChatGPT to handle the bridge itself and use any available method. Stop asking the user to perform repetitive MacroDroid setup or send screenshots. Exhaust remote investigation first; if an on-device step is truly unavoidable, request only the single minimum action and explain why.
-- Active project remains ChatGPT ↔ Android Agent Bridge. RapiUsaha remains the separate B2C digital-products business direction.
-- Last explicit architecture decision remains Option A (ChatGPT owns dispatch, result retrieval, diagnosis and retries; Android Agent executes; MacroDroid Free was intended only as a wake adapter). The new broad instruction authorizes exploring alternate implementations but does not explicitly select Agent-owned reasoning/polling as the new architecture.
-- Re-read `CHATGPT_WORKING_RULES.md`, this file and the latest Agent Bridge checkpoint. New audit is recorded in `research/android_agent_bridge_autonomous_recovery_2026-11-18.md`.
-- Remote Desktop Commander again returned **no connected devices**. This ChatGPT session has no direct Android control channel.
-- Cloudflare read-only inspection: Worker `kreavo-bridge` and KV namespace exist; Worker bindings include `BRIDGE_KV` and `AI`; its Worker secrets list is empty. Existing pending commands are `broker-readonly-smoke-20261118-01` and `bootstrap-poller-20261118-01`. Do not duplicate, overwrite, claim, or replay them until state is rechecked.
-- Worker already has `/agent/command` and `/agent/result` broker routes, but no external phone-wake route/secret is configured. No Agent claim or valid result was verified in this audit.
-- Upstream Agent source at commit `8594dfadc3f728d0123990179dfc4361d55dd69c` confirms:
-  - External routine broadcasts require an on-device sender (or supported linked computer), package `com.past9.phoneaos`, action `com.past9.phoneaos.RUN_ROUTINE`, and extras `token` + `routine`.
-  - Agent HTTP automation listens only on `127.0.0.1:47321` while the app is running; Cloudflare cannot call it directly from the internet.
-  - Agent routines support interval triggers (minimum 15 minutes), email triggers checked on a 15-minute cadence, and notification triggers for allowed apps. A fixed broker-poll routine is a possible free fallback, not yet configured/tested and not real-time.
-- MacroDroid manual UI setup is paused. Do not continue telling the user to create variables or send screenshots. Do not pay for MacroDroid Pro, API billing, subscriptions or any other service without explicit approval. Keep the Agent token on the phone.
-- Next: continue remote-only investigation and inspect the Worker/broker implementation. If no remote route exists, clearly identify the one unavoidable phone-side enablement instead of pretending the bridge is complete. Preserve ChatGPT as task owner wherever possible. Verify any eventual round trip using an Agent claim and a matching valid result, not an HTTP 2xx alone.
+- User's objective is to use the installed Android app Agent so ChatGPT can carry out Instagram work through task-scoped dispatch, result retrieval, evaluation, and follow-up. The bridge is infrastructure, not the end goal.
+- Agent is the Android executor; ChatGPT owns orchestration and decisions. User should not have to switch to Agent or relay its results. No 24/7 monitoring requirement.
+- MacroDroid and ntfy are rejected/archived paths. Do not recommend or configure them.
+- Existing bridge infrastructure and historical task results are evidence only; they do not prove current live pickup or Instagram access.
+- Continue only through the existing Agent-native Learned App / notification path. Check current state before dispatch; do not duplicate pending tasks.
+- Start with read-only Instagram inspection. Obtain explicit approval for each public or account-changing action.
 
 ---
 
-## 0BD. USER LOCKED CHATGPT-OWNED ORCHESTRATION — OPTION A — 2026-11-18
+## 0BD.
 
-**Status: USER_CONFIRMED.**
+**Status: ARCHIVED / REJECTED — NOT AN ACTIVE OPTION.**
 
-- User explicitly selected Option A: ChatGPT remains the brain/orchestrator; Android Agent remains the phone-side executor; MacroDroid Free is only the wake adapter. Do not substitute Agent-owned polling as the primary architecture.
-- No paid tools, MacroDroid Pro, subscriptions, or new API billing are authorized by this choice.
-- Active project: ChatGPT ↔ Android Agent Bridge. RapiUsaha remains the separate business direction (B2C digital products for UMKM).
-- Current verified implementation status: existing Cloudflare Worker/KV broker exists; one read-only smoke task `broker-readonly-smoke-20261118-01` remains pending; no active claim was found in the latest check. MacroDroid is not yet installed/configured; no webhook URL or Agent token has been provided; no Worker wake route/secret exists. Do not duplicate or replay the pending task while state is uncertain.
-- Next: user configures one free MacroDroid macro using basic Webhook (URL) trigger → explicit Send Intent/Broadcast to Agent. User must never share the Agent token; enter it locally on the phone. User may provide the generated webhook URL for secure storage as a Cloudflare Worker secret only. Then inspect Worker/KV again, implement the narrow wake route, and verify Agent claim plus valid result. A webhook HTTP success alone is not proof.
-- The architecture choice is settled; do not ask the user to choose between ChatGPT-owned orchestration and Agent polling again. Research details and security boundaries are in `research/chatgpt_agent_action_execution_2026-11-17.md`, section 0BB.
+This section is retained only as historical evidence. Its proposal and next steps are superseded by ACTIVE_DECISIONS.md and the current override at the top of PROJECT_CONTROL.md. Do not use this section to recommend, configure, revive, or infer user approval for the rejected path.
 
----
+## 0AZ.
 
----
+**Status: ARCHIVED / REJECTED — NOT AN ACTIVE OPTION.**
 
----
+This section is retained only as historical evidence. Its proposal and next steps are superseded by ACTIVE_DECISIONS.md and the current override at the top of PROJECT_CONTROL.md. Do not use this section to recommend, configure, revive, or infer user approval for the rejected path.
 
-## 0AZ. FREE NTFY PUSH WAKE PATH; PAID MACRODROID DEPENDENCY REJECTED — 2026-11-18
+## 0AY.
 
-**Status: ASSISTANT_PROPOSAL / source-verified, not yet configured or end-to-end tested.** User explicitly rejected a paid MacroDroid dependency, even though its Pro payment is one-time. Do not ask the user to purchase MacroDroid or any paid automation tool. The 0AY MacroDroid proposal is superseded/rejected for this project.
+**Status: ARCHIVED / REJECTED — NOT AN ACTIVE OPTION.**
 
-- Active technical project: ChatGPT ↔ Android Agent Bridge. User's approved intent remains ChatGPT-owned dispatch, result retrieval, diagnosis and safe retries; user should not relay Agent output. RapiUsaha remains B2C digital products for UMKM.
-- New no-cost candidate: **ntfy Android app + free ntfy.sh topic + existing Agent notification routine + existing Cloudflare Worker**.
-  1. ntfy.sh is documented as free to use without signup or fees for normal use; paid plans are optional. Android app is open-source and free on Google Play/F-Droid.
-  2. Use the Google Play build on the main ntfy.sh host so the app uses FCM for push delivery. F-Droid build omits Firebase and keeps a foreground connection instead; do not recommend F-Droid for this low-background-cost setup.
-  3. Subscribe the Android app to one high-entropy, hard-to-guess topic. ntfy topics are public/unlisted rather than private; anyone who knows the topic can publish/subscribe. Therefore the topic URL is a bearer capability and must be kept out of GitHub. Never send task contents, private data, or Agent credentials through the notification; only send the marker and ephemeral ticket.
-  4. Android package name is `io.heckel.ntfy` (verified in official ntfy Android build configuration and F-Droid package).
-  5. Agent `NotificationReader` already supports package+keyword matching. It reads only explicitly allowed apps and fires a notification routine for a live matching notification. Existing ChatGPT Bridge routine #2 can be updated in place to `io.heckel.ntfy|CHATGPT-AGENT`, preserving its prompt and Learned App tools. Add ntfy to Agent's allowed notification apps and ensure Android Notification Access is enabled.
-  6. Existing Cloudflare Worker can later send a POST to `https://ntfy.sh/<secret-topic>` with title `CHATGPT-AGENT` and body containing only the ephemeral ticket. This will wake the existing Agent notification routine. ChatGPT continues reading the task/result through existing KV broker keys.
-- User-side one-time setup still unavoidable: install ntfy from Google Play, subscribe to the unique topic ChatGPT supplies, then in Agent allow ntfy notifications and update existing routine #2 trigger to the exact package+keyword. The Agent's main chat can be instructed to perform the routine update in place and verify it with routine_list; do not create a duplicate routine or alter its prompt unnecessarily.
-- Security: ntfy public topics are not confidential. Generate a random high-entropy topic and treat it as a secret URL. Store it only as a Cloudflare Worker secret, not in GitHub. Notification body must contain no task details or private data. Existing Agent AppGuard, Trust boundaries and approvals remain unchanged.
-- Limitations: ntfy.sh best-effort uptime, no SLA; Google Play build uses FCM and may be delayed by network/Doze. F-Droid flavor uses a persistent foreground service instead. A successful HTTP publish is not proof Agent ran; only an observed Agent claim and valid result prove end-to-end success.
-- Current status: no ntfy app installation/subscription confirmed; no topic created or disclosed; no Agent notification allowlist/routine changes; no Worker route/secret changes; no new test task or duplicate wake sent. This is a researched free alternative, not yet operational.
-- Sources:
-  - ntfy upstream README states ntfy.sh is free without signup/fees: https://github.com/binwiederhier/ntfy
-  - ntfy Android docs on Play/F-Droid FCM differences and instant delivery: https://docs.ntfy.sh/subscribe/phone/
-  - ntfy Android F-Droid listing / package: https://f-droid.org/packages/io.heckel.ntfy/
-  - ntfy Android app package/build flavors: https://github.com/binwiederhier/ntfy-android/blob/main/app/build.gradle
-  - Agent NotificationReader and routines source: https://github.com/Past-da-king/agent/blob/main/app/src/main/java/com/past9/phoneaos/system/NotificationReader.kt
-  - Agent routine tool schema: https://github.com/Past-da-king/agent/blob/main/app/src/main/java/com/past9/phoneaos/tools/AgentTools.kt
-
----
-
-## 0AY. INTERNET-TO-ANDROID AGENT WAKE PATH IDENTIFIED VIA MACRODROID — 2026-11-18
-
-**Status: ASSISTANT_PROPOSAL / technically source-verified, not yet configured or end-to-end tested.** This supersedes the earlier statement that no practical internet-to-phone entry point had been found; the old Gmail wake path remains unconsumed, but a separate push-to-broadcast path is now identified.
-
-- Active technical project: ChatGPT ↔ Android Agent Bridge. Last user-confirmed intent remains that ChatGPT owns dispatch, result retrieval, diagnosis and safe retries; the user should not relay Agent output. RapiUsaha remains B2C digital products for UMKM.
-- New path:
-  1. MacroDroid's **Webhook (URL)** trigger accepts an HTTPS call from anywhere and delivers a trigger to the Android device through Firebase Cloud Messaging (FCM). Query parameters can update pre-created MacroDroid variables. It requires Google Play Services and internet; HTTP acceptance does not prove on-device execution, and FCM/Android may delay delivery.
-  2. MacroDroid runs a single local **Send Intent → Broadcast** action, explicitly targeting package `com.past9.phoneaos`.
-  3. The current upstream Agent source exposes an exported `IntentTriggerReceiver`. Action `com.past9.phoneaos.RUN_ROUTINE` accepts extras `token`, `routine`, and optional `note`; Android starts Agent for this explicit-package broadcast even when Agent is not already running. The Agent's own `automationAllowed` switch and per-install token remain mandatory; no safety/approval bypass is introduced.
-  4. Reuse existing notification Routine #2 by id, passing a note formatted like the existing Gmail notification context with `CHATGPT-AGENT-<ticket>`. This should preserve its existing Learned App/task/result logic; it remains a hypothesis until a harmless live test confirms the installed app and the exact routine prompt behave as expected.
-  5. ChatGPT continues to create the existing ticket/task in Cloudflare KV. The existing Worker will need a narrowly scoped wake adapter that calls the MacroDroid webhook with the ticket variable; store the full webhook URL as a Worker secret, never in GitHub. After the broadcast runs, ChatGPT reads the existing Agent claim/result records and handles safe diagnosis/retry.
-- Minimal on-phone setup required once:
-  - Install MacroDroid if it is not already installed. Its official Google Play listing says Free supports up to 5 macros; one macro is sufficient, so Pro is not required for this design.
-  - In Agent Settings → Automation from other apps, copy the Agent token directly into MacroDroid and turn on **Allow outside runs**. Do not send the Agent token to ChatGPT.
-  - Create one MacroDroid macro: Webhook trigger with a pre-created string variable `bridge_ticket` (whitelist only that variable); Send Intent action set to Target=Broadcast, Package=`com.past9.phoneaos`, Action=`com.past9.phoneaos.RUN_ROUTINE`, extras `token`=<Agent token>, `routine`=`2`, `note`=`A notification just arrived from Gmail: "CHATGPT-AGENT-{bridge_ticket}".`
-  - Share the generated MacroDroid webhook URL with ChatGPT so it can be stored as a Cloudflare Worker secret. Treat that URL as a password/capability URL; do not publish it.
-- Security and scope:
-  - Agent token stays on the phone inside the local macro. Only the MacroDroid webhook URL is supplied for the Worker secret.
-  - Use a high-entropy webhook identifier; no IP allowlist is assumed because Worker egress IPs are not a stable allowlist.
-  - Existing Agent approval/AppGuard rules remain in force. Background actions requiring user approval must still stop.
-  - No new domain, Queue, OpenAI API key, paid Cloudflare plan, or model switch is required.
-- Current state: MacroDroid is not yet verified installed/configured; no webhook URL exists in ChatGPT context; no Worker wake route has been added; no Agent settings/routine have been changed; no task or email has been duplicated. Existing pending bridge tasks are preserved. The Worker adapter and one harmless read-only end-to-end verification are next after the webhook URL is available.
-- Important limitations: FCM delivery has no guaranteed latency/SLA and requires Google Play Services plus internet. The exact Agent app build installed on the phone has not been remotely inspected; current upstream source supports the receiver, but the first live test must confirm the installed build includes it. This is an event-driven bridge, not guaranteed real-time.
-- Sources inspected:
-  - Agent current main `IntentTriggers.kt`: https://github.com/Past-da-king/agent/blob/main/app/src/main/java/com/past9/phoneaos/automation/IntentTriggers.kt
-  - Agent current main `AndroidManifest.xml`: https://github.com/Past-da-king/agent/blob/main/app/src/main/AndroidManifest.xml
-  - Agent current main `Routines.kt`: https://github.com/Past-da-king/agent/blob/main/app/src/main/java/com/past9/phoneaos/triggers/Routines.kt
-  - MacroDroid Webhook trigger: https://www.macrodroidforum.com/wiki/index.php?title=Trigger:_Webhook_(URL)
-  - MacroDroid Send Intent action: https://www.macrodroidforum.com/wiki/index.php?title=Action:_Send_Intent
-  - MacroDroid official Google Play listing: https://play.google.com/store/apps/details?id=com.arlosoft.macrodroid
-
----
+This section is retained only as historical evidence. Its proposal and next steps are superseded by ACTIVE_DECISIONS.md and the current override at the top of PROJECT_CONTROL.md. Do not use this section to recommend, configure, revive, or infer user approval for the rejected path.
 
 ## 0AX. AGENT PICKUP BLOCKER CONFIRMED; NO REMOTE PHONE ENTRY POINT — 2026-11-18
 
@@ -1378,16 +1314,11 @@ Ringkasan/memori lintas percakapan dapat tidak lengkap atau keliru, dan tidak me
 - Architecture decision A remains USER_CONFIRMED in principle (ChatGPT is the brain; Agent is executor), but MacroDroid Free as the wake adapter is now OPEN/BLOCKED pending on-device verification. No MacroDroid Pro purchase authorized. No webhook URL, Worker secret, macro, or Agent task was created by this attempt.
 
 
-## 0BE. MACRODROID BASIC WEBHOOK SCREEN CONFIRMED; GLOBAL TICKET VARIABLE NEXT — 2026-11-18
+## 0BE.
 
-**Status: USER_CONFIRMED screen; partial local setup only.**
+**Status: ARCHIVED / REJECTED — NOT AN ACTIVE OPTION.**
 
-- User installed MacroDroid and selected the basic **Webhook (URL)** trigger (not the Pro-only “Webhook (with response)”).
-- User transcribed its settings: generated URL; empty IP whitelist; body-to-string and query-parameter-to-dictionary outputs both “Do not save output”; Variable Whitelist checkbox. Enabling the checkbox showed no further controls.
-- Explanation verified against MacroDroid documentation: webhook query parameters update pre-existing variables; the webhook does not create variables. The whitelist controls which existing variables are eligible. Next: save trigger, create global String variable `bridge_ticket` via MacroDroid Variables manager, then return to trigger and whitelist only that variable. Do not assume exact UI until user reports it.
-- The webhook URL was pasted into the private chat and is treated as exposed bearer material. Before production use, user must generate a new device ID (invalidates old URLs); only the new URL may be stored as a Cloudflare Worker secret, never in GitHub. Agent token stays on-device and must never be shared.
-- No Send Intent action configured; no Worker wake route/secret; no task dispatched. Existing pending read-only smoke task remains untouched. User-approved Option A remains unchanged.
-- Research details and source links: `research/chatgpt_agent_action_execution_2026-11-17.md`, section 0BE.
+This section is retained only as historical evidence. Its proposal and next steps are superseded by ACTIVE_DECISIONS.md and the current override at the top of PROJECT_CONTROL.md. Do not use this section to recommend, configure, revive, or infer user approval for the rejected path.
 
 ## 0BF. RECHECK BRIDGE BEFORE INSTAGRAM WORK — 2026-11-18
 
