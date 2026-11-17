@@ -1,3 +1,21 @@
+## 0AO. FIRST VERIFIED AGENT BROWSER WRITE ACTION — 2026-11-17
+
+**Status: SUCCESS. The existing ChatGPT ↔ Android Agent bridge completed its first verified browser UI write action.**
+
+- Task ID: `bridge-action-draft-20261117-48char`.
+- Cloudflare result key returned `ok: true`, matching task ID, and Agent reported browser UI creation and save in Gmail Personal.
+- ChatGPT independently read Gmail Drafts after receiving the result and verified exactly one matching test draft:
+  - To: `christianomomongan82@gmail.com`
+  - Subject: `[TES BRIDGE] Draft dibuat oleh Agent — jangan dikirim`
+  - Body: `Ini adalah draft uji koneksi ChatGPT Bridge. Draft ini dibuat oleh Agent melalui browser Gmail dan TIDAK boleh dikirim.`
+- Draft ID: `r63581173553420803`.
+- Gmail Drafts readback confirms it is saved. It was not sent. Existing unrelated drafts remain unchanged.
+- The new task used a 48-character ticket and 24-hour TTL. Cloudflare showed task status `complete` and the result record; this verifies the end-to-end wake → ticket fetch → browser UI action → result relay.
+- Root-cause correction: the prior 44-character ticket was incompatible with the Agent routine's expected 48-character ticket format even though its KV record was still present. The format correction resolved the repeated ticket-not-found/expired symptom.
+- No Worker or Learned App code was changed. Existing Routine #2 and bridge infrastructure were sufficient once the ticket format was corrected.
+- Next step: preserve this successful configuration as the baseline. Do not change the Worker, Learned App, or routine unnecessarily. For future tasks, use exact 48-character tickets, sufficiently long TTL, explicit task IDs and per-action authorization. Continue verifying results in the target app before reporting success.
+- Scope remains unchanged: Android Agent ↔ ChatGPT bridge is the technical project; RapiUsaha remains the primary B2C digital-products business for UMKM.
+
 ## 0AN. TICKET FORMAT CORRECTED; FRESH ACTION TASK PENDING — 2026-11-17
 
 **Status: fresh 48-character task is stored and its Gmail wake message is verified delivered; Agent result has not arrived yet. No test draft exists yet.**
