@@ -1,3 +1,34 @@
+## 0AX. AGENT PICKUP BLOCKER CONFIRMED; NO REMOTE PHONE ENTRY POINT — 2026-11-18
+
+**Outcome: NOT COMPLETED.** The current ChatGPT session cannot reach the Android Agent process. The Worker/broker is deployed, but the Agent has not claimed or executed the pending test.
+
+- Active project: ChatGPT ↔ Android Agent Bridge. User instruction: complete the loop end-to-end without turning work into user-managed step-by-step tasks; report success only with evidence. RapiUsaha remains B2C digital products for UMKM.
+- Re-read working rules, control, and active research file from main.
+- Fresh KV inspection:
+  - Bootstrap task `bootstrap-poller-20261118-01` remains stored and unclaimed.
+  - No claim marker and no result exist.
+  - Broker pending task `broker-readonly-smoke-20261118-01` remains queued; no active task/result/status.
+- Fresh Gmail read of message `1a1ea741aa45401c`: labels remain `UNREAD,SENT,INBOX`. This supports that the wake was not consumed, but does not prove whether the notification was delivered to Android or why the listener did not fire.
+- Fresh Remote Desktop Commander device list: no connected devices.
+- Audited upstream Agent source at commit `8594dfadc3f728d0123990179dfc4361d55dd69c`:
+  - `NotificationReader` only triggers a notification routine when (a) the Android notification listener is connected, (b) the app package is enabled in Agent notification settings, and (c) a new live notification arrives. Notifications already present when listener reconnects are stored with `live=false` and intentionally do not fire routines.
+  - Gmail routine kind `email` is a separate 15-minute WorkManager poll using Composio `GMAIL_FETCH_EMAILS`; it records the newest message ID on first run and only runs on a later new matching email. It does not use Android Gmail notifications.
+  - `PhoneAutomation` local HTTP server binds only to `127.0.0.1`; documentation explicitly says nothing outside the phone can reach it. The alternative Android broadcast requires a local sender app and a per-install secret token plus "Allow outside runs". No connected computer/device or authorized remote channel is available in this ChatGPT session.
+  - `routine_create/list/update` are main-agent tools, not background routine tools; already corrected in 0AW.
+- Thus the current blockers are device-side and cannot be fixed remotely through Gmail/Cloudflare alone: the only configured wake is a Gmail notification trigger, but Agent has not consumed it; ChatGPT cannot inspect or change Agent's notification access, allowed-app list, routine row, or invoke the local loopback/broadcast interface from here.
+- No duplicate wake email was sent, no additional side effect attempted, no Worker/KV/Routine configuration changed in this continuation. Existing task tickets are left intact for later recovery; do not generate more wake emails or duplicate tasks.
+- The Worker + Workers AI broker remains deployed, but **the end-to-end loop is not working and must not be represented as successful**. Daily ChatGPT automation is only an interim check, not a substitute for the 15-minute phone poller.
+- To resume, one real phone-side access path is required: either a connected authorized device-control channel, or a local Agent notification/broadcast integration enabled on the phone. Without one of those, there is no supported way for this ChatGPT session to wake or inspect the Android Agent. Do not imply that Desktop is the only possible architecture; the essential requirement is any authenticated phone-side entry point.
+- User explicitly asked to stop with step-by-step reports and finish or state failure. This checkpoint records the failure boundary, not a request to make the user relay Agent output.
+
+Sources:
+- `app/src/main/java/com/past9/phoneaos/system/NotificationReader.kt` at upstream commit `8594dfadc3f728d0123990179dfc4361d55dd69c`
+- `app/src/main/java/com/past9/phoneaos/triggers/Routines.kt` at the same commit
+- `app/src/main/java/com/past9/phoneaos/automation/PhoneAutomation.kt` at the same commit
+- `docs/automation-macrodroid.md` at the same commit
+
+---
+
 ## 0AW. BOOTSTRAP CORRECTED AFTER AGENT ROUTINE TOOL-SCOPE AUDIT — 2026-11-18
 
 **Status: BRIDGE TEST STILL NOT CLAIMED; ROUTINE CREATION VIA BACKGROUND ROUTINE IS NOT SUPPORTED.**
