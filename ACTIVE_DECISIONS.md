@@ -125,3 +125,14 @@ This ledger supersedes conflicting assistant-generated proposals and historical 
 - No other accounts, posts, DMs, comments, or private messages were accessed. No login, connection, profile, or account changes were made.
 - **VERIFIED:** Agent's existing connected Instagram integration can read the authenticated account's own basic profile. This is the first direct evidence that the connected integration is active; the previous browser smoke test is a separate access path and must not be used to contradict it.
 - **OPEN:** profile bio retrieval is not yet confirmed; broader Instagram read/write capabilities are not yet tested. Continue with the user's requested work through Agent, inspect available connected tools and results, and keep all actions read-only unless the user explicitly approves a specific state-changing action.
+
+## User correction — handoff workflow for Agent results — 2026-11-18
+
+- **USER_CONFIRMED:** Stop attempting realtime/continuous polling while the user waits. The user is frustrated by progress claims that do not produce a retrievable result.
+- **USER_CONFIRMED operating sequence:** (1) ChatGPT sends one scoped task to Agent through the existing broker; (2) Agent executes and returns its full response through the broker result channel; (3) the user sends a short signal such as "udah" only after Agent has finished; (4) only then ChatGPT reads the exact task status/result from Cloudflare KV, evaluates it, and chooses the next step.
+- ChatGPT must not ask the user to copy/paste Agent's output if the broker result exists. The user's "udah" is a completion signal, not the result payload.
+- Every task instruction must explicitly require Agent to return a complete, structured result through the existing broker result mechanism, including exact errors/reasons if it cannot execute. Do not rely on a verbal/UI rejection with no broker result.
+- No realtime/background monitoring claim. Do not poll repeatedly while the user is waiting. Check once after the user's completion signal.
+- **OPEN:** whether the existing Agent routine actually persists rejected/failed responses into the broker result channel. Verify this on the next controlled task; if rejection still produces no result, diagnose the Agent routine/result-write path before sending further work.
+- **Current stale task:** `instagram-aesthetic-audit-readonly-20261118-01` is still present in `agent:broker:pending` at the latest readback; no matching active/status/result keys exist. Do not dispatch a duplicate. Resolve or let this stale command expire before sending a new one.
+
