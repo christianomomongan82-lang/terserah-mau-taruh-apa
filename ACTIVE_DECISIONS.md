@@ -60,3 +60,12 @@ This ledger supersedes conflicting assistant-generated proposals and historical 
 - Last readback after dispatch: exact command remained in `agent:broker:pending`; `agent:broker:active`, matching result, and matching status were absent. Therefore Agent had **not yet claimed or completed** the task at that check. The Gmail message remained UNREAD; that alone does not establish why the routine has not claimed it.
 - No duplicate wake/task was sent. Do not dispatch another task until this task is resolved or expires and queue state is rechecked. Do not claim the ChatGPT Web test succeeded.
 - Remote Desktop Commander still reports no connected devices. No phone-side settings or Agent routines were changed.
+
+## Result checkpoint — Agent ChatGPT Web read-only test — 2026-11-18
+
+- Task `agent-chatgpt-web-readonly-20261118-01` completed successfully on attempt 1. Broker readback at 2026-11-17T20:28:09Z showed pending and active keys absent and a stored result/status marked complete.
+- Agent opened and read `https://chatgpt.com/` using its own browser. Reported title: `ChatGPT: Chat, Work, Create & Code with AI`; visible headings included `Dapatkan respons yang disesuaikan dengan Anda` and `Sedang mengerjakan apa?`; visible sign-in buttons and login-oriented text indicate the page was a signed-out/login screen.
+- No sign-in, conversation opening/reading, message sending, clicks, or account changes were performed.
+- Conclusion: Agent's browser navigation and read-only page inspection work end-to-end through the current bridge. This does **not** verify an authenticated ChatGPT session, Instagram login/session, or Instagram management capability.
+- Next useful step: use the same Agent browser path for a narrowly scoped, read-only inspection of the Instagram login/session landing state; do not log in or change account state. Check broker pending/active before dispatching to avoid duplicates.
+- Monitoring clarification: ChatGPT can inspect broker state when it performs tool calls in an active turn; it cannot silently maintain a continuous background poll between messages unless a separate scheduled/automation mechanism is explicitly configured and available. Never imply continuous realtime monitoring is running when it is not.
