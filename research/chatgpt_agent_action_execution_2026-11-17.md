@@ -50,3 +50,12 @@ The current Routine #2 is explicitly configured read-only and has no live remote
 
 ## Project boundary
 This is a technical tool project only. RapiUsaha remains the primary B2C digital-products business for UMKM. No business model, product, customer segment or other project changed.
+
+## User-provided confirmation — 2026-11-17, 20:49 local
+
+The user supplied an Agent chat screenshot showing the main Agent reported:
+- Routine #2 "ChatGPT Bridge" prompt successfully updated.
+- Name, Gmail notification trigger/spec, and active status retained.
+- No new test was sent.
+
+This is user-provided screenshot evidence of the Agent's own confirmation, not an independent tool readback of routine configuration. The next step is a concrete, low-risk action test through the bridge. No real external write/action has yet been verified. Do not send a generic or unspecified action; wait for a specific task target and exact desired change, or propose a clearly reversible test for user approval.
