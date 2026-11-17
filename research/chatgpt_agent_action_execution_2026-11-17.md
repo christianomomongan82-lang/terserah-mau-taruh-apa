@@ -456,3 +456,16 @@ User explicitly chose Option A. ChatGPT remains the task dispatcher, result retr
 ## 0BD. ON-DEVICE CONTRADICTION — 2026-11-18
 
 User reports that after installing MacroDroid, the Webhook option visible in the app is marked Pro. This directly conflicts with the prior research assumption that the basic Webhook (URL) trigger is free. The exact trigger label has not yet been visually verified. Stop setup and request a screenshot of the trigger picker; do not tell the user to buy Pro. If the basic Webhook (URL) is also Pro-gated in this installed build/account, discard this route and find another genuinely free wake method. Option A (ChatGPT-owned orchestration) remains the user's selected architecture; MacroDroid Free is no longer considered available until proven on-device.
+
+
+
+## 0BE. USER CONFIRMS BASIC WEBHOOK URL SCREEN; VARIABLE WHITELIST NEEDS PRE-CREATED VARIABLE — 2026-11-18
+
+**Status: USER-CONFIRMED SCREEN DETAILS; setup still in progress.** User supplied a text transcription of the basic MacroDroid **Webhook (URL)** trigger settings. The screen exposes the URL, IP whitelist, body-to-string variable, query-parameter-to-dictionary variable, and a checkbox to enable Variable Whitelist. Enabling that checkbox did not reveal any additional controls on the user's screen.
+
+- This is consistent with MacroDroid's documented behavior: webhook query parameters set **existing** MacroDroid variables; the webhook does not create variables. The whitelist restricts which existing variables may be updated. Therefore the checkbox need not reveal a variable picker at that point.
+- Correct next setup step: save the trigger, create a global String variable named `bridge_ticket` from MacroDroid's Variables manager (or create it as a new global String variable via Set Variable), then return to the webhook trigger and configure the whitelist to allow only `bridge_ticket`. Verify the exact UI before proceeding.
+- Keep body-to-string and query-parameter-to-dictionary outputs set to “Do not save output”; neither is needed for the ticket parameter.
+- User pasted the generated webhook URL into the private ChatGPT conversation. Treat that URL as exposed bearer material: before production use, generate a new device ID in MacroDroid (this invalidates the old webhook URLs), then use only the newly generated URL as a Cloudflare Worker secret. Never place either URL in GitHub. Do not ask for or receive the Agent token.
+- No Agent broadcast action has been configured, no Worker wake endpoint/secret has been added, and no task has been dispatched. Option A remains the user-approved architecture.
+- Sources: MacroDroid Wiki Webhook (URL), https://www.macrodroidforum.com/wiki/index.php?title=Trigger:_Webhook_(URL); MacroDroid Wiki Set Variable, https://macrodroidforum.com/wiki/index.php?title=Action:_Set_Variable; MacroDroid upstream announcement on pre-defining webhook variables, https://medium.com/@macrodroid/introducing-the-webhook-trigger-a760e2ee140d.
