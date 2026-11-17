@@ -1373,3 +1373,35 @@ Ringkasan/memori lintas percakapan dapat tidak lengkap atau keliru, dan tidak me
 - The webhook URL was pasted into the private chat and is treated as exposed bearer material. Before production use, user must generate a new device ID (invalidates old URLs); only the new URL may be stored as a Cloudflare Worker secret, never in GitHub. Agent token stays on-device and must never be shared.
 - No Send Intent action configured; no Worker wake route/secret; no task dispatched. Existing pending read-only smoke task remains untouched. User-approved Option A remains unchanged.
 - Research details and source links: `research/chatgpt_agent_action_execution_2026-11-17.md`, section 0BE.
+
+## 0BF. RECHECK BRIDGE BEFORE INSTAGRAM WORK — 2026-11-18
+
+**Status: CHATGPT-OWNED BRIDGE ARCHITECTURE RETAINED; INSTAGRAM EXECUTION BLOCKED BY MISSING PHONE WAKE CONFIG.** This is a fresh read-only verification, not a claim that Instagram is connected.
+
+### User-approved direction
+- User reiterated that Android Agent is intended to let ChatGPT manage the user's Instagram, and explicitly directed continuing with Agent rather than Metricool.
+- The technical division remains: ChatGPT dispatches tasks, retrieves results, analyzes failures and chooses retries; Android Agent executes on the phone. No Metricool pivot.
+- Broader business remains RapiUsaha, B2C digital products for UMKM. Instagram is a promotion/operations channel, not approval for a content-services business.
+- No public posting, messaging, account edits, or other external Instagram side effects have been authorized by this checkpoint; start with safe read-only inspection and ask before publishing or interacting.
+
+### Fresh Cloudflare verification
+- Account: the connected Cloudflare account Christianomomongan82@gmail.com's Account.
+- Existing Worker kreavo-bridge is present; current script tag 3b5f08489c874b27a873a27455fc62aa, modified 2026-11-17T19:32:17Z.
+- Current Worker source still contains /agent/command, /agent/result, and broker pending/active/result/status logic. It does not contain a MacroDroid/phone wake route.
+- Worker secret listing returned an empty array. No MacroDroid webhook URL secret is configured.
+- KV namespace kreavo-bridge still contains historical task records. Read-only smoke task broker-readonly-smoke-20261118-01 has status complete and its successful Example Domain result is present. Failure QA broker-failure-path-qa-20261118-01 has status needs_chatgpt_review with the expected net::ERR_NAME_NOT_RESOLVED result. The bootstrap task bootstrap-poller-20261118-01 has a claim and successful read-only result; its task record is marked complete.
+- An older broker task key remains ready without a corresponding broker result/status record. Do not replay or overwrite it until its identity/state is resolved.
+- No task was enqueued, no Gmail wake was sent, no KV value was changed, and no Worker code, secret, or settings were modified during this check.
+
+### Exact blocker / minimum next step
+- Last user-confirmed MacroDroid screen was the basic Webhook (URL) trigger, with the global String variable bridge_ticket still to be created/whitelisted. The Send Intent/Broadcast action was not yet configured.
+- The previously pasted webhook URL is exposed bearer material and must not be reused. User must regenerate the MacroDroid device ID/webhook URL before production use.
+- ChatGPT has no connected remote Android device in this session, so it cannot create the local MacroDroid variable/action or read the Agent per-install token. The Agent token must remain on-device and must never be shared.
+- Minimum phone-side completion: configure the single MacroDroid macro using the fresh Webhook (URL) trigger, allow only bridge_ticket as the query variable, and add the explicit Agent broadcast action using the local Agent token and existing routine ID 2. Then provide only the newly generated webhook URL for storage as a Cloudflare Worker secret. Do not send the Agent token.
+- After receiving the fresh URL, add the narrow authenticated wake route/secret to the existing kreavo-bridge Worker, then run one harmless read-only round trip and verify an Agent claim plus matching result before attempting Instagram work.
+- Do not use ntfy, paid MacroDroid Pro, Metricool, or Agent-owned polling as substitutes; no architecture switch is approved.
+
+### Boundaries
+- Instagram account identity/connection is not verified in this checkpoint.
+- Agent's arbitrary Instagram UI capability, posting, comment/DM interaction, media upload and profile editing remain untested.
+- No password, 2FA code, recovery code, or Agent local token should be requested.
