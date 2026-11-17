@@ -409,7 +409,7 @@ Recommended minimal fix: long-press ntfy's persistent instant-delivery notificat
 
 ## 0BB. FREE MACRODROID WEBHOOK-TO-AGENT BROADCAST CONFIRMED AS NO-PRO ROUTE — 2026-11-18
 
-**Status: ASSISTANT_PROPOSAL / researched, not user-approved or configured.** This is a correction to the earlier shorthand “MacroDroid rejected”: the user rejected paying for MacroDroid Pro. The free tier may satisfy the technical requirement without any purchase.
+**Status: USER_CONFIRMED for proceeding with the free edition; researched, not yet configured or end-to-end tested.** This is a correction to the earlier shorthand “MacroDroid rejected”: the user rejected paying for MacroDroid Pro. The free tier may satisfy the technical requirement without any purchase.
 
 ### Verified product capability
 - MacroDroid's current Google Play listing states the free/ad-supported edition supports up to **5 macros**; Pro is for removing ads and unlimited macros. The listing also identifies webhooks as a trigger category and intents as a supported capability.
@@ -438,7 +438,7 @@ Recommended minimal fix: long-press ntfy's persistent instant-delivery notificat
 - No app has been installed, no phone settings or Agent routines changed, no Worker code/secret changed, and no pending task was dispatched during this research.
 
 ### Decision boundary
-The user has not yet explicitly approved using the free MacroDroid edition. Present it as the best verified no-cost candidate and ask for approval before asking for a local setup or deploying the Worker wake route. Do not ask the user to buy Pro. If the user declines installing MacroDroid, the remaining no-new-app candidate is to fix the already-existing Gmail notification allowlist/routine path, which would require local Agent notification permission and must not be represented as already working.
+The user explicitly approved proceeding with MacroDroid Free on 2026-11-18. This authorizes only the no-cost single-macro path, not Pro or any paid service. Next: provide minimal phone setup; wait for the generated webhook URL (not the Agent token), then add the protected Worker wake route and verify one harmless read-only round trip. Do not ask the user to buy Pro. If the user declines installing MacroDroid, the remaining no-new-app candidate is to fix the already-existing Gmail notification allowlist/routine path, which would require local Agent notification permission and must not be represented as already working.
 
 ### Sources checked
 - MacroDroid Google Play listing (free edition: up to 5 macros; webhook and intents listed): https://play.google.com/store/apps/details?id=com.arlosoft.macrodroid
