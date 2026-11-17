@@ -1,3 +1,12 @@
+## 0AH. AGENT BRIDGE LIVE TEST 1 TIMED OUT — 2026-11-17
+
+**Status: NOT CONNECTED.** Learned App and notification routine were reported stored by the user's Agent screenshot; user then reported enabling Trust. A read-only example.com task was queued and a Gmail wake-up email was sent to the user's own mailbox. Gmail confirmed the message was UNREAD + INBOX. No result arrived within the task's 300-second TTL; task expired and KV namespace returned to empty. This does not prove whether the routine failed to fire or the Agent failed later in the chain because command fetch is not currently logged. Do not claim success or send another test until Agent's routine_list lastRunAt/lastResult and webapp_list trust state are inspected.
+
+- Gmail message ID: 1a1e8d00939640fb.
+- Task ID (non-secret): bridge-test-20261117-a06783cd23a9.
+- Full evidence: research/chatgpt_agent_bridge_2026-11-14.md.
+- Existing Worker remains deployed with Agent routes and old Kreavo routes preserved. No other Cloudflare Worker/project changed.
+
 ## 0AG. AGENT ROUTINE TOOL VISIBILITY DIAGNOSED — 2026-11-14
 
 **Status: Learned App save awaits approval/verification; notification routine is not yet created; end-to-end round trip not yet tested.** Current user-reported Agent response says tools passed local simulation, app save submitted for approval but not confirmed, and routine tool unavailable in that session.
