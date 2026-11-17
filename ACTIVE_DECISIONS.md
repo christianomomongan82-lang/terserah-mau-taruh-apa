@@ -21,8 +21,8 @@ This file is the authoritative current decision ledger for the ChatGPT ↔ Andro
 | Instagram management through Agent | USER-ASKED GOAL | Establish capability; start read-only. The question is not blanket authorization for public actions. |
 | MacroDroid | REJECTED | Never recommend, configure, or revive it as a wake adapter. |
 | ntfy wake adapter | REJECTED/ARCHIVED | Do not substitute it for the existing Agent-native route. |
-| Agent-native Learned App / notification routine | OPEN / EXISTING PATH TO VERIFY | Recover and verify the already documented integration; do not rebuild from scratch or duplicate tasks. |
-| Current live Agent pickup | OPEN / NOT VERIFIED | A historical round-trip is not proof of current pickup. |
+| Agent-native Learned App / notification routine | VERIFIED FOR TASK-SCOPED ROUND-TRIP | Existing Gmail notification wake → Agent claim → Cloudflare result return succeeded in the live Instagram read-only test recorded below. This is a relay, not native direct MCP. |
+| Current live Agent pickup | VERIFIED FOR ONE LIVE TASK | Agent claimed and completed the Instagram read-only task on attempt 1; this does not prove every future task or persistent background monitoring. |
 | Instagram login/session | OPEN / NOT VERIFIED | Do not claim account access until verified by a live read-only task. |
 | RapiUsaha business direction | USER_CONFIRMED | Remains B2C digital products for UMKM; no business-model pivot. |
 
@@ -77,3 +77,16 @@ This ledger supersedes conflicting assistant-generated proposals and historical 
 - **Technical limitation verified:** tool Automations yang tersedia hanya mendukung jadwal sekali, harian, mingguan, atau bulanan; Railway scheduled automations paling sering sekali per jam dan tidak mengirim notifikasi. Keduanya tidak memenuhi pemantauan realtime antar-giliran. ChatGPT tidak memiliki proses yang tetap berjalan dan menerima event KV secara spontan setelah giliran berakhir.
 - **Do not misrepresent:** jangan menyebut pemantauan realtime/background sudah aktif. Jangan membuat jadwal lambat sebagai pengganti tanpa persetujuan pengguna. Untuk tugas yang sedang dikerjakan, gunakan polling aktif dalam giliran yang sama; jika giliran berakhir sebelum hasil tersedia, nyatakan secara jujur bahwa pemantauan terhenti dan lanjutkan pengecekan saat percakapan aktif kembali.
 - **Current live broker check (2026-11-18):** `agent:broker:pending` dan `agent:broker:active` tidak ditemukan; hasil dan status tes ChatGPT Web sebelumnya masih tersimpan dan berstatus `complete`. Tidak ada tugas Agent baru yang sedang berjalan pada saat pemeriksaan ini.
+
+
+## Result checkpoint — live Agent Instagram read-only integration test — 2026-11-18
+
+- Dispatched exactly one read-only task: `agent-instagram-readonly-smoke-20261118-01`. Before dispatch, Cloudflare KV showed no broker pending or active task; no duplicate was created.
+- Sent one Gmail wake marker through the existing configured mailbox. Gmail confirmed message ID `1a1eb3b27b30edff`.
+- ChatGPT polled the broker itself. The command moved from `pending` to `active` with a matching task ID, then the matching result/status appeared. Final readback: pending absent, active absent, result present, status `complete`, attempt 1.
+- Agent used its own browser to open and read `https://www.instagram.com/`. Result: page loaded; title `Instagram`; visible login prompts included “Login”, “Masuk”, “daftar”, and “Buka Instagram”. Based only on visible page text, the Agent browser session appears signed out.
+- Agent explicitly reported no clicks, typing, sign-in, prompts, messages, or state-changing actions. No Instagram account data was accessed.
+- **Verified:** the existing task-scoped Gmail notification → Agent execution → Cloudflare result → ChatGPT retrieval path worked live for this task. ChatGPT did not require the user to relay completion or copy the Agent result.
+- **Not verified:** native direct ChatGPT↔Agent MCP connection; authenticated Instagram session; any Instagram write/action capability; monitoring after the active ChatGPT turn ends.
+- Upstream source inspection found Agent's `LocalMcpServer` and `AutomationServer` bind to `127.0.0.1`; these endpoints are not directly reachable from Cloudflare. A truly direct remote MCP connection would require a secure app-side outbound tunnel/relay and a way for ChatGPT to register/use that endpoint. No Android device is connected to Remote Desktop Commander, so this session cannot install or modify the phone app remotely.
+- No Agent source, Worker code, phone settings, routines, or permissions were changed. The test was read-only and completed without retry.
