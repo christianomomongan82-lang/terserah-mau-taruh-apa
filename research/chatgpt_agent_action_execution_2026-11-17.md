@@ -59,3 +59,13 @@ The user supplied an Agent chat screenshot showing the main Agent reported:
 - No new test was sent.
 
 This is user-provided screenshot evidence of the Agent's own confirmation, not an independent tool readback of routine configuration. The next step is a concrete, low-risk action test through the bridge. No real external write/action has yet been verified. Do not send a generic or unspecified action; wait for a specific task target and exact desired change, or propose a clearly reversible test for user approval.
+
+## First real action test dispatched — pending Agent result — 2026-11-17
+
+- Selected a reversible, low-risk action: create exactly one Gmail draft in the user's own mailbox, do not send it.
+- Task ID: `bridge-action-draft-20261117-2048`.
+- A unique 48-character ticket was created and the task was stored in `agent:task:<ticket>` with a 300-second TTL. Ticket omitted from GitHub.
+- Wake-up email successfully sent to the user's own Gmail address; message ID `1a1e99138c8c1108`. Gmail metadata confirmed sender and recipient are both `christianomomongan82@gmail.com`; labels `UNREAD`, `SENT`, `INBOX`.
+- Task explicitly authorizes Agent to use the Gmail browser UI to create and save one draft with a specified recipient, subject, and body. It expressly forbids sending the draft or altering existing mail.
+- At the latest poll, Cloudflare KV still showed task status `pending` and no `agent:result:<ticket>`. Gmail draft search also showed no matching draft yet. Therefore Agent action has NOT been confirmed or claimed successful. Ticket will expire automatically; do not issue duplicate tests. If no result arrives, diagnose the notification/routine execution path first.
+- This test is meant to prove actual browser UI write capability; ChatGPT must not create the draft directly using its Gmail connector as a substitute.
