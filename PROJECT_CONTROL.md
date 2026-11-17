@@ -30,7 +30,7 @@
 ---
 ## 0BI. TASK-SCOPED BRIDGE EXECUTION AUDIT — 2026-11-18
 
-**Status: SUCCESS. Existing broker smoke task completed and its matching result was retrieved by ChatGPT.**
+**Status: HISTORICAL SUCCESS; Worker auto-retry concern documented here was corrected in 0BJ and runtime-verified in 0BK.**
 
 - User's confirmed operating requirement: ChatGPT dispatches a task, retrieves and evaluates Agent's result, and chooses any follow-up. The user does not need to monitor Agent or relay its responses. No 24/7 live monitoring requirement.
 - Fresh Cloudflare KV inspection before wake found the existing read-only task `broker-readonly-smoke-20261118-01` pending, with no active claim or result. No duplicate task was created.
@@ -38,9 +38,9 @@
 - Retrieved result: task ID exactly matched `broker-readonly-smoke-20261118-01`; `ok:true`; Agent reported `browser_open` and `browser_read` succeeded on `https://example.com/`, title `Example Domain`, no visible H1, and no state change. Attempt 1; Worker status `complete`. This verifies one task-scoped Agent → Cloudflare Bridge → ChatGPT result round-trip. It does not prove arbitrary Android actions or continuous background monitoring.
 - A previous legacy task `bootstrap-poller-20261118-01` also has a matching claim and result; Agent reported a successful read of example.com. This is additional historical round-trip evidence, not evidence that a recurring poller/routine was configured.
 - Remote Desktop Commander still reports no connected devices; there is no direct Android control channel in this session.
-- Direct read of the deployed Worker source confirms `/agent/command` claims the pending broker task and `/agent/result` stores matching results. It also confirms the Worker invokes Cloudflare Workers AI (`@cf/google/gemma-4-26b-a4b-it`) to classify failures and may enqueue a retry automatically when the task retry policy allows it. **This is an implementation conflict with the user's confirmed Option A**, where ChatGPT owns failure diagnosis and retry decisions. Do not treat Workers AI auto-retry as user-approved architecture. Review and correct this before relying on broker auto-retries for future work.
+- At the time of this historical audit, the deployed Worker invoked Cloudflare Workers AI to classify failures and could enqueue retries. That conflicted with Option A. This was corrected by the deployment recorded in 0BJ; the later runtime QA in 0BK confirms failed results now enter `needs_chatgpt_review` with no automatic retry.
 - No Worker code, secrets, Agent routine, or phone settings were changed. No task beyond the already-existing read-only smoke task was dispatched.
-- Next: align the Worker failure path with ChatGPT-owned diagnosis/retries, then use this task-scoped dispatch → wake → result retrieval → evaluation cycle for future tasks. No 24/7 watcher is required.
+- Next: use the corrected task-scoped dispatch → wake → result retrieval → evaluation cycle for short read-only tasks. No 24/7 watcher is required.
 
 ---
 ## 0BH. USER CLARIFIES AGENT OPERATING MODEL — 2026-11-18
