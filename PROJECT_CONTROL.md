@@ -1,3 +1,21 @@
+## 0BI. TASK-SCOPED BRIDGE EXECUTION AUDIT — 2026-11-18
+
+**Status: PARTIAL EVIDENCE; one legacy Agent round-trip succeeded, current broker smoke remains pending.**
+
+- User's confirmed operating requirement: ChatGPT dispatches a task, retrieves and evaluates Agent's result, and chooses any follow-up. The user does not need to monitor Agent or relay its responses. No 24/7 live monitoring requirement.
+- Fresh Cloudflare KV inspection found:
+  - `agent:broker:pending` still contains the existing read-only task `broker-readonly-smoke-20261118-01`.
+  - `agent:broker:active` was absent at the time of inspection.
+  - No `agent:broker:result:broker-readonly-smoke-20261118-01` or matching status record existed at that time.
+  - A previous legacy task `bootstrap-poller-20261118-01` has a matching claim and result. Agent reported that it opened and read example.com successfully. This is evidence of one Agent-to-Bridge result round-trip, not evidence that a recurring poller/routine was configured.
+- A Gmail wake email was sent to the user's own connected mailbox for the already-existing broker smoke task, using its existing ticket in the subject. The send succeeded. Immediate post-send KV read still showed the task pending, with no active claim or result yet. Do not send another wake or duplicate task without rechecking state.
+- Remote Desktop Commander still reports no connected devices; there is no direct Android control channel in this session.
+- Direct read of the deployed Worker source confirms `/agent/command` claims the pending broker task and `/agent/result` stores matching results. It also confirms the Worker invokes Cloudflare Workers AI (`@cf/google/gemma-4-26b-a4b-it`) to classify failures and may enqueue a retry automatically when the task retry policy allows it. **This is an implementation conflict with the user's confirmed Option A**, where ChatGPT owns failure diagnosis and retry decisions. Do not treat Workers AI auto-retry as user-approved architecture. Review and correct this before relying on broker auto-retries for future work.
+- The current read-only smoke task may complete without invoking failure triage. If it fails, do not assume the Worker retry decision represents ChatGPT's decision; inspect the exact status/result before any further action.
+- No new task was created; the existing pending task was not modified or claimed by ChatGPT. No Worker code, secrets, Agent routine, or phone settings were changed.
+- Next: retrieve the result of the existing smoke task when it arrives; then align the Worker failure path with ChatGPT-owned diagnosis/retries and document a task-scoped execution cycle. No 24/7 watcher is required.
+
+---
 ## 0BH. USER CLARIFIES AGENT OPERATING MODEL — 2026-11-18
 
 **Status: USER_CONFIRMED operating requirement; implementation remains BLOCKED at the Android wake/execution boundary.**
