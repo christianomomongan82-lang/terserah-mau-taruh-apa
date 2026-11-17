@@ -1,3 +1,18 @@
+## 0AN. TICKET FORMAT CORRECTED; FRESH ACTION TASK PENDING — 2026-11-17
+
+**Status: fresh 48-character task is stored and its Gmail wake message is verified delivered; Agent result has not arrived yet. No test draft exists yet.**
+
+- Root-cause finding: the immediately previous task was issued with a **44-character** ticket, while the bridge's established ticket format in the earlier successful round-trip is **48 characters**. Its KV key was still present and unexpired when Agent reported “ticket expired/task not found”. Therefore the old error did not reflect actual KV expiry; most likely the Agent routine's ticket extraction/format contract rejected or misread the 44-character value. This diagnosis is strongly supported by the observed mismatch but remains pending confirmation from the next successful fetch.
+- The 44-character task and any matching result key were deleted to prevent a stale/duplicate command from running.
+- A new 48-character ephemeral ticket was generated. It is intentionally omitted from GitHub. New task ID: `bridge-action-draft-20261117-48char`.
+- New task expiry: 86,400 seconds (24 hours). Cloudflare KV readback confirmed the exact task payload exists, status `pending`, and no result key exists yet.
+- A new wake email was sent to the user's own Gmail. Message ID: `1a1ea0ce20ea2bd6`. Gmail readback confirmed the exact `CHATGPT-AGENT-<48-char-ticket>` marker in both subject and body, and labels `UNREAD`, `SENT`, `INBOX`.
+- Exact authorized action remains: create one Gmail draft in `christianomomongan82@gmail.com`, addressed to the same account, subject `[TES BRIDGE] Draft dibuat oleh Agent — jangan dikirim`, with the explicit test body in the task. Do not send the draft or alter any other mail.
+- Gmail Drafts readback still shows only the user's three pre-existing unrelated drafts; no matching test draft exists. Those drafts were not changed.
+- A subsequent Cloudflare bulk-get again confirmed the new task is `pending` and no result is present. Current status: **DISPATCHED / PENDING; action not yet verified**.
+- Next: wait for Agent to fetch this exact 48-character ticket and return the matching task ID; then immediately bulk-get the result and verify the exact saved draft in Gmail Drafts. Do not create another task while this one remains pending.
+- No Worker or Learned App configuration has been changed. RapiUsaha remains the active B2C digital-products business for UMKM.
+
 # ChatGPT ↔ Agent — enabling real actions, not read-only — 2026-11-17
 
 ## User's clarified goal
