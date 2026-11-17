@@ -143,3 +143,12 @@ The latest Agent response reported routine_create unavailable. Source review exp
 - No actual Agent result was received. Because the Worker command GET does not currently record a claim/last-fetched marker, this result alone cannot distinguish (a) notification routine never fired, (b) it fired but failed to open/fetch the task, or (c) it fetched but failed while browsing or posting the result.
 - No token or ephemeral ticket is stored in this checkpoint. The temporary task expired naturally; no live queue items remain.
 - Next diagnostic step: ask Agent main chat to read routine_list for ChatGPT Bridge and report enabled/kind/spec/lastRunAt/lastResult, plus webapp_list and the app's Trust state. Use the Agent routine result to isolate the failed stage before any second test. Do not create another task or send another wake email until the diagnosis is known.
+## 2026-11-17 diagnostic after live-test timeout: Gmail notification access is the blocker
+
+**Status: precise blocker identified; waiting for the user to enable Gmail notifications in Agent.** User supplied results from Agent's diagnostics:
+- Learned App ChatGPT Bridge is saved; its two tools exist; Trust state is reported as 'user trusts its changes'.
+- Routine ChatGPT Bridge exists with kind notification and spec com.google.android.gm|CHATGPT-AGENT. The diagnostic output did not expose whether it is enabled/paused; do not infer that field.
+- notifications_read reported no notifications can be read because no apps have yet been allowed in Connections > Notifications.
+- This explains why the first Gmail wake email did not trigger the routine: Agent NotificationReader ignores every package not in the explicitly allowed notification-app set.
+- Agent source NotificationReader.onListenerConnected processes already active notifications with live=false; handle() only fires routines when live=true. Therefore, enabling notification access after the old test message arrived will not retroactively fire the routine for that old notification. Send a fresh wake email only after Gmail is allowed and Android Notification Access is enabled.
+- Next user action: Agent > Connections > Notifications > allow Gmail, then grant Android Notification Access if prompted. Do not repeat app save or routine creation.
