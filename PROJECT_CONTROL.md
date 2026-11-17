@@ -1,3 +1,13 @@
+## 0AI. AGENT BRIDGE BLOCKER IDENTIFIED — GMAIL NOTIFICATIONS NOT ALLOWED — 2026-11-17
+
+**Status: Learned App saved and trusted; notification routine recorded; Gmail notifications not allowed in Agent, so bridge remains NOT CONNECTED.** User-provided Agent diagnostics confirm both learned tools exist and Trust is on. Routine exists with kind=notification and spec=com.google.android.gm|CHATGPT-AGENT; diagnostic did not expose enabled/paused state. notifications_read explicitly reports no apps allowed.
+
+- Root cause for first live-test failure: Agent has no allowed notification apps, so Gmail notification events are not read and the notification routine cannot fire.
+- Minimum user action: Agent > Connections > Notifications > allow Gmail; grant Android Notification Access when prompted.
+- Once allowed, do NOT expect the earlier wake email to fire retroactively. Agent NotificationReader.onListenerConnected handles existing active notifications with live=false; notification routines fire only for live incoming notifications. Send a fresh wake email after the permission is enabled.
+- No need to recreate Learned App, re-enable Trust, or recreate the routine. Do not issue a second task/email until user confirms Gmail notification access is enabled.
+- Full diagnostic and source-backed behavior: research/chatgpt_agent_bridge_2026-11-14.md.
+
 ## 0AH. AGENT BRIDGE LIVE TEST 1 TIMED OUT — 2026-11-17
 
 **Status: NOT CONNECTED.** Learned App and notification routine were reported stored by the user's Agent screenshot; user then reported enabling Trust. A read-only example.com task was queued and a Gmail wake-up email was sent to the user's own mailbox. Gmail confirmed the message was UNREAD + INBOX. No result arrived within the task's 300-second TTL; task expired and KV namespace returned to empty. This does not prove whether the routine failed to fire or the Agent failed later in the chain because command fetch is not currently logged. Do not claim success or send another test until Agent's routine_list lastRunAt/lastResult and webapp_list trust state are inspected.
