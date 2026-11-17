@@ -368,3 +368,15 @@ The Agent per-install token is entered only in MacroDroid on the phone and never
 
 ### Work status
 Research only. No MacroDroid installation/configuration, Agent setting/routine modification, Worker code/secret deployment, new task dispatch, or duplicate Gmail wake was performed. Wait for the user to create the one local macro and provide its webhook URL; then add the minimal Worker wake adapter and run one read-only verification against the preserved existing task. Do not ask the user to copy/relay Agent output.
+
+
+## 2026-11-18 — Replace paid MacroDroid wake adapter with free ntfy
+
+User rejected the MacroDroid Pro payment requirement, even as a one-time fee. Do not ask them to buy it. New no-cost proposal:
+- ntfy.sh + its free open-source Android client; the upstream project says ntfy.sh is free without signup or fees for normal use, and paid plans are optional.
+- Use Google Play flavor on ntfy.sh so it uses FCM. The F-Droid flavor has no Firebase and uses persistent foreground service/instant delivery instead.
+- App package is `io.heckel.ntfy`. Agent's existing NotificationReader can allow this app and match a notification routine by package and keyword. Update the existing ChatGPT Bridge routine #2 in place to spec `io.heckel.ntfy|CHATGPT-AGENT`, preserving its prompt, and add ntfy to the Agent allowed notification apps.
+- Worker sends an HTTPS POST to `https://ntfy.sh/<random-secret-topic>`, title `CHATGPT-AGENT`, body only the ephemeral ticket. Topic names are public/unlisted, not private: random topic is a bearer capability; do not store it in GitHub or send task details/private data in notifications. Worker secret stores the topic URL.
+- FCM/Android delivery is best-effort; no SLA. Only a claim marker plus valid Agent result proves the bridge works.
+
+No ntfy install, topic, Agent settings, Worker code/secret, or task dispatch has been made. This is a source-verified proposal awaiting one-time local phone setup. Official references: https://github.com/binwiederhier/ntfy ; https://docs.ntfy.sh/subscribe/phone/ ; https://f-droid.org/packages/io.heckel.ntfy/ ; https://github.com/binwiederhier/ntfy-android/blob/main/app/build.gradle ; https://github.com/Past-da-king/agent/blob/main/app/src/main/java/com/past9/phoneaos/system/NotificationReader.kt
