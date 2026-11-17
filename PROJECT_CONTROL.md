@@ -1,3 +1,28 @@
+## 0AW. BOOTSTRAP CORRECTED AFTER AGENT ROUTINE TOOL-SCOPE AUDIT — 2026-11-18
+
+**Status: BRIDGE TEST STILL NOT CLAIMED; ROUTINE CREATION VIA BACKGROUND ROUTINE IS NOT SUPPORTED.**
+
+- Active project: ChatGPT ↔ Android Agent Bridge. Last user-approved direction remains a practical no-Desktop route, with broad authority to complete safe technical work. RapiUsaha B2C digital products for UMKM remains unchanged.
+- Re-read working rules, project control, and the active research checkpoint from main before this continuation.
+- Current KV readback:
+  - Bootstrap task `bootstrap-poller-20261118-01` exists.
+  - No `agent:claim:<ticket>` marker and no `agent:result:<ticket>` exist.
+  - Broker has no active task/result; read-only task `broker-readonly-smoke-20261118-01` remains in `agent:broker:pending`.
+- Gmail message `1a1ea741aa45401c` was fetched directly. It is still labeled `UNREAD`, `SENT`, and `INBOX`; the exact body and subject are the wake marker plus the bootstrap ticket. This is consistent with the Agent not having consumed the wake message, although unread state alone does not prove why the routine did not run.
+- **Important correction found by auditing upstream Agent source** at commit `8594dfadc3f728d0123990179dfc4361d55dd69c`:
+  - Main-agent `tools()` includes `ScheduleCreateTool`, `ScheduleUpdateTool`, and `ScheduleListTool`.
+  - Background `routineTools()` is built from `tools(forHelper = true)` plus task/memory/people/wake tools; it does **not** include schedule/routine create/update/list tools.
+  - Therefore the original bootstrap instruction asking a background routine to call `routine_list` / `routine_create` / `routine_update` was invalid. It could not have completed as written even if fetched. Do not repeat that instruction or assume background routines can create other routines.
+- Corrected the existing bootstrap KV task in place (same ticket and task ID; no duplicate email) to a strictly read-only `example.com` browser_open/browser_read smoke test that returns via the existing Learned App result tool. Readback confirms the corrected task is stored. No website writes or routine changes are requested by the corrected task.
+- Existing Gmail wake message was not resent. Existing notification Routine #2 was not modified. Worker, AI binding, KV namespace, and broker code were not changed in this continuation.
+- The previously deployed broker/Workers AI architecture remains deployed and health-checked, but the broker cannot be considered operational until an Agent poller claims and completes its pending test.
+- Next: determine why the existing Gmail-triggered routine has not consumed the unread wake message; verify its enabled state and exact trigger configuration through a supported Agent-side path. Do not create duplicate wake emails, do not assume a Desktop connection, and do not claim the 15-minute poller exists.
+
+Source inspected:
+- `https://raw.githubusercontent.com/Past-da-king/agent/8594dfadc3f728d0123990179dfc4361d55dd69c/app/src/main/java/com/past9/phoneaos/agent/AgentRuntime.kt`
+
+---
+
 ## 0AV. USER APPROVED NO-DESKTOP AI BROKER; WORKER DEPLOYED, AGENT BOOTSTRAP PENDING — 2026-11-18
 
 **Status: PARTIAL IMPLEMENTATION.** User explicitly approved the Workers AI + Agent interval architecture and granted broad authority to complete the technical setup without asking for routine micro-approvals. This does not authorize bypassing Agent AppGuard/user approval, or money, banking, payment, legal acceptance, account-security, password, permanent deletion, or uncertain consequential actions.
