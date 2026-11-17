@@ -446,3 +446,8 @@ The user explicitly approved proceeding with MacroDroid Free on 2026-11-18. This
 - MacroDroid Wiki — Send Intent supports explicit package, Broadcast target and extras: https://wiki.macrodroid.com/wiki/index.php/Action:_Send_Intent
 - Third-party 2026 implementation/research thread corroborating that the basic webhook works on the free tier: https://github.com/IgorKvasn/whats/issues/86
 - Agent upstream broadcast contract and token/routine requirements remain recorded in section 0AY of `PROJECT_CONTROL.md` and the Agent source audit in this file.
+
+
+## 0BC. USER SELECTED OPTION A: CHATGPT-OWNED ORCHESTRATION — 2026-11-18
+
+User explicitly chose Option A. ChatGPT remains the task dispatcher, result retriever, analyst, and retry decision-maker; Android Agent is only the phone-side executor; MacroDroid Free is only the wake adapter. Agent-owned polling is not an approved replacement. No paid tools or API billing are authorized. Implementation remains unconfigured pending one local MacroDroid macro and its webhook URL. The Agent token must stay on-device. The existing pending read-only smoke task must not be duplicated or replayed until state is checked. Next: configure one basic Webhook (URL) → explicit Send Intent/Broadcast macro, then store the webhook URL only as a Cloudflare Worker secret, add a narrow wake endpoint, and verify an Agent claim plus valid result.
