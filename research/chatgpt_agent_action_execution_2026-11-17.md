@@ -1,3 +1,19 @@
+## 0AU. CHATGPT WEB BROWSER TEST BLOCKED BY MISSING DEVICE CONTROL — 2026-11-18
+
+**Status: NOT TESTED.** User said continue with a read-only test of Agent's own browser opening ChatGPT Web. The current ChatGPT session has no direct Android device-control connection: Remote Desktop Commander reports no connected devices. Do not pretend a test was performed or substitute a separate TinyFish browser session as proof of Agent browser access.
+
+- Re-read `CHATGPT_WORKING_RULES.md`, `PROJECT_CONTROL.md`, and this project checkpoint from `main` before continuing. Active project remains ChatGPT ↔ Android Agent Bridge; RapiUsaha remains B2C digital products for UMKM.
+- Current user-approved direction: test Agent's own browser against ChatGPT Web in read-only mode, without sending/posting messages, signing in, or changing account state.
+- Upstream Agent source `Past-da-king/agent` at commit `8594dfadc3f728d0123990179dfc4361d55dd69c` confirms `BrowserOpenTool` opens a URL in Agent's real phone browser and returns a page outline; `BrowserReadTool` re-reads the page. These are the appropriate read-only operations for the test.
+- `Remote_Desktop_Commander__list_devices` returned: no Desktop Commander devices are connected. This is the concrete blocker to directly operating the phone from this ChatGPT session.
+- Cloudflare KV key listing for `agent:task:`, `agent:result:`, and `agent:handled:` returned empty at this check; no pending Agent command/result is available to inspect.
+- Existing `kreavo-bridge` Worker still validates 40–64 character tickets, task command ID, and result schema; Agent task/result TTL is 7 days. No Worker, KV, Routine, Gmail, or Agent configuration was changed in this turn.
+- The daily `Monitor Agent Bridge` automation remains enabled as an interim check; it is not real-time and its first scheduled run is 2026-11-19 09:00 Asia/Makassar.
+- Next safe step: establish a supported device-control connection to the Android phone, or dispatch a read-only browser_open/browser_read task through the established Agent bridge once the exact Routine #2 command schema and task payload are available. Do not ask the user to copy Agent's response. If a one-time device-side action is needed to establish remote control, ask for only that action, not for manual result relaying.
+- Do not use TinyFish's separate browser session as evidence that Agent's browser can access ChatGPT Web. Do not sign in, send messages, or alter ChatGPT account state during the read-only test.
+
+---
+
 ## 0AT. DAILY BRIDGE MONITOR ENABLED; EVENT-DRIVEN ALTERNATIVES RESEARCHED — 2026-11-18
 
 **Status: DAILY MONITOR ENABLED; REAL-TIME CHATGPT ORCHESTRATION NOT YET IMPLEMENTED.** User explicitly approved replacing the weekly B2B software partner monitor with an Agent Bridge monitor, and requested research into a stronger method.
