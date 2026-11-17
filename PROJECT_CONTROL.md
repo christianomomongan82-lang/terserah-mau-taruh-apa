@@ -1,3 +1,18 @@
+## 0BK. CONTROLLED WORKER FAILURE-PATH QA DISPATCHED — 2026-11-18
+
+**Status: DISPATCHED; Agent claim/result NOT YET OBSERVED. Do not call the failure-path test passed.**
+
+- Rechecked the broker KV before dispatch: `agent:broker:pending` and `agent:broker:active` were absent. The prior read-only smoke task remains recorded as `complete`. One separate legacy task-ticket record remains in KV, but it is not a broker pending/active command and was not modified.
+- Created exactly one disposable broker task: `broker-failure-path-qa-20261118-01`. It instructs Agent to attempt only `https://chatgpt-bridge-test-does-not-exist.invalid/`, then report `ok=false` with the exact browser-open error. It forbids retries, alternate URLs, and all state-changing actions.
+- The task ticket is ephemeral and remains only in KV/Gmail; it is intentionally omitted from this repository. Broker task and pending-command TTL: 900 seconds.
+- Sent one Gmail wake email to the connected account. Gmail confirmed message ID `1a1eb048073e9d89`; metadata readback showed the message as UNREAD, SENT, INBOX.
+- Immediate KV readback showed the exact task still in `agent:broker:pending`, no `agent:broker:active`, and no matching broker result/status yet. Therefore the Agent has not yet been observed claiming this task at the time of this checkpoint.
+- No duplicate wake email was sent. No second task was created. No retry was queued. The task was not manually replayed.
+- Next: retrieve the exact matching task result/status. Expected Worker state for an Agent-reported failure is `needs_chatgpt_review`; verify no pending retry appears. If the task expires without an Agent claim, record it as a wake/execution timeout, not a Worker failure-path pass.
+- Existing architecture decision remains USER_CONFIRMED Option A: ChatGPT owns dispatch, result retrieval, diagnosis and retries; Agent executes. No paid tools or additional user setup requested.
+
+---
+
 ## 0BJ. RESTORE CHATGPT-OWNED FAILURE DECISIONS IN WORKER — 2026-11-18
 
 **Status: DEPLOYED AND SOURCE-READBACK VERIFIED; failure-path runtime test not yet performed.**
