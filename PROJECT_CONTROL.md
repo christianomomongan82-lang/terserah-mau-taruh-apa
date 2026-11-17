@@ -1269,3 +1269,15 @@ Ringkasan/memori lintas percakapan dapat tidak lengkap atau keliru, dan tidak me
 - Prior 0BB claim that the basic Webhook (URL) trigger is free is now disputed by direct evidence from the user's installed app. Public listing/wiki/research did not establish what exact menu item the user sees. Distinguish basic **Webhook (URL)** from **Webhook (with response)**, but do not assume the user's screen is the former without seeing it.
 - **Correction:** stop MacroDroid setup. Ask for one screenshot of the trigger picker showing the exact Webhook entry and Pro marker, then verify whether a separate basic Webhook (URL) option exists. If all available webhook triggers require Pro, abandon MacroDroid immediately and investigate a genuinely free path without asking the user to pay or troubleshoot ntfy again.
 - Architecture decision A remains USER_CONFIRMED in principle (ChatGPT is the brain; Agent is executor), but MacroDroid Free as the wake adapter is now OPEN/BLOCKED pending on-device verification. No MacroDroid Pro purchase authorized. No webhook URL, Worker secret, macro, or Agent task was created by this attempt.
+
+
+## 0BE. MACRODROID BASIC WEBHOOK SCREEN CONFIRMED; GLOBAL TICKET VARIABLE NEXT — 2026-11-18
+
+**Status: USER_CONFIRMED screen; partial local setup only.**
+
+- User installed MacroDroid and selected the basic **Webhook (URL)** trigger (not the Pro-only “Webhook (with response)”).
+- User transcribed its settings: generated URL; empty IP whitelist; body-to-string and query-parameter-to-dictionary outputs both “Do not save output”; Variable Whitelist checkbox. Enabling the checkbox showed no further controls.
+- Explanation verified against MacroDroid documentation: webhook query parameters update pre-existing variables; the webhook does not create variables. The whitelist controls which existing variables are eligible. Next: save trigger, create global String variable `bridge_ticket` via MacroDroid Variables manager, then return to trigger and whitelist only that variable. Do not assume exact UI until user reports it.
+- The webhook URL was pasted into the private chat and is treated as exposed bearer material. Before production use, user must generate a new device ID (invalidates old URLs); only the new URL may be stored as a Cloudflare Worker secret, never in GitHub. Agent token stays on-device and must never be shared.
+- No Send Intent action configured; no Worker wake route/secret; no task dispatched. Existing pending read-only smoke task remains untouched. User-approved Option A remains unchanged.
+- Research details and source links: `research/chatgpt_agent_action_execution_2026-11-17.md`, section 0BE.
