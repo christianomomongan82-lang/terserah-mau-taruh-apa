@@ -387,3 +387,21 @@ No ntfy install, topic, Agent settings, Worker code/secret, or task dispatch has
 The user confirmed installation from Google Play and reported the ntfy app error “WebSocket not supported” with repeated reconnects. Correct the earlier assumption that Play Store automatically avoids WebSocket: the official ntfy phone docs say the app's **Instant delivery / Subscription Service** uses a persistent foreground connection; on the Google Play build with the main `ntfy.sh` host, disabling Subscription Service allows FCM delivery instead. FCM may be delayed (sometimes minutes or hours), so this is a compatibility fallback, not guaranteed instant delivery.
 
 Recommended minimal fix: long-press ntfy's persistent instant-delivery notification → open its settings → turn off **Subscription Service**. Then test delivery. No reinstall or paid app required. Official source: https://docs.ntfy.sh/subscribe/phone/ (Instant delivery). The user has not yet applied this setting or verified a notification. Agent routine/allowlist and Worker wake route are still unverified; end-to-end success requires an Agent claim plus valid result.
+
+
+## 0AV. NTFY PATH ABANDONED; CHATGPT-OWNED CONTROL REQUIREMENT REAFFIRMED — 2026-11-18
+
+**Status: BLOCKED / no architecture switch approved.** User rejected the ntfy troubleshooting burden and asked to continue using another method. Do not ask the user to keep debugging ntfy, WebSocket, or notification settings. The user's actual requirement remains ChatGPT-owned dispatch, retrieval, failure diagnosis and safe retry; Agent is the phone-side executor, not the decision-maker.
+
+- User confirmed ntfy was installed from Google Play, but the app reported WebSocket unsupported / repeated reconnect. The prior advice to disable "Subscription Service" was confusing and is not treated as a completed fix. Abandon this ntfy path unless a genuinely zero-friction fix is found; do not ask the user to change more ntfy settings.
+- Fresh verification of Cloudflare Worker `kreavo-bridge` source: it contains the existing authenticated `/agent/command` and `/agent/result` routes, broker pending/active/result/status KV logic, and conservative Workers AI failure triage. It has no configured external phone wake route in the deployed source. No Worker code or secret was changed in this check.
+- Fresh KV read on 2026-11-18:
+  - Two legacy task records remain, including bootstrap task `bootstrap-poller-20261118-01`; no claim marker or legacy result exists.
+  - Broker pending task `broker-readonly-smoke-20261118-01` remains pending, attempt 1; no broker result/status/active record was found.
+  - Do not duplicate or replay either task while execution state is uncertain.
+- Fresh Remote Desktop Commander device check returned no connected devices. Therefore ChatGPT cannot directly operate or configure the user's Android Agent app from this session.
+- Existing ChatGPT automation `Monitor Agent Bridge` is enabled daily, not real-time. The platform's supported recurring automation cadence is daily/weekly/monthly; it cannot be converted to 15-minute polling.
+- Agent upstream source research already recorded in 0AT/0AX shows an Agent-owned interval routine can poll at a minimum of 15 minutes, but this delegates execution/decision-making to Agent and Android may delay it. This is **not** the user's approved target architecture and must not be silently substituted.
+- Gmail notification wake has not been proven: the existing wake message remained unconsumed in the prior check; fresh KV state still has no Agent claim/result. A Gmail-based Agent email-poll routine is another Agent-owned polling path, not proof of ChatGPT-owned orchestration.
+- **Decision boundary:** no more ntfy/MacroDroid purchases or settings troubleshooting. Do not change the architecture to Agent-owned polling without explaining that it fails the strict ChatGPT-owned requirement and obtaining the user's explicit approval. Continue investigating a supported, no-additional-payment way for ChatGPT to trigger and read Agent tasks directly. If none exists with current connections, state the exact device-control/platform boundary rather than presenting a workaround as completion.
+- No task was duplicated, no Gmail message was resent, no Agent routine was changed, no Worker/KV config was modified, and no new automation was created in this check.
