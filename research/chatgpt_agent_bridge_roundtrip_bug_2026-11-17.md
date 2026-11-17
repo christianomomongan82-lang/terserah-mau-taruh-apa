@@ -1,3 +1,9 @@
+# HISTORICAL ROUND-TRIP EVIDENCE — NOT CURRENT STATUS
+
+This report proves one successful historical Agent bridge round-trip on 2026-11-17 only. It does not establish current live Agent pickup, current Instagram login/session, or present-day account access. Read ACTIVE_DECISIONS.md for the current goal, decisions, rejected paths, and permissions before using this report. Do not treat the historical CONNECTED label below as the current status.
+
+---
+
 # ChatGPT ↔ Agent bridge — diagnosis and successful round-trip — 2026-11-17
 
 ## Current status
