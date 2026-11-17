@@ -1,3 +1,17 @@
+## 0BH. USER CLARIFIES AGENT OPERATING MODEL — 2026-11-18
+
+**Status: USER_CONFIRMED operating requirement; implementation remains BLOCKED at the Android wake/execution boundary.**
+
+- User does not require ChatGPT to monitor the Android Agent 24/7 or maintain a permanent real-time watch.
+- Desired workflow is task-scoped orchestration: ChatGPT sends a task to Agent, checks/waits for the task result while the work is in progress, evaluates the returned output, and decides whether to send a follow-up task. The user should not need to open Agent repeatedly, copy its responses, or relay corrections manually.
+- ChatGPT should ask the user only when a genuine human decision/approval is needed.
+- This clarification does **not** authorize a permanent architecture change. Preserve the last explicit Option A decision: ChatGPT owns task dispatch, result retrieval, diagnosis and retry decisions; Agent executes on Android.
+- Distinguish bounded task-scoped checking from 24/7 monitoring. A persistent always-on watcher is not a requirement.
+- Current blocker remains: no connected remote Android device, and no verified phone-side wake mechanism. Existing pending read-only task must not be duplicated or replayed. No task was dispatched by this clarification.
+- Next: design/verify the smallest task-scoped dispatch-and-result cycle compatible with Agent's actual trigger constraints, without asking the user to relay Agent output or configure MacroDroid again.
+
+---
+
 ## 0BG. FRESH REMOTE BRIDGE CHECK — 2026-11-18 03:07 +0800
 
 **Status: BLOCKED at the Android-device boundary; cloud-only completion is not possible with currently connected devices.**
