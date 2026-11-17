@@ -1,3 +1,16 @@
+## 0BJ. RESTORE CHATGPT-OWNED FAILURE DECISIONS IN WORKER — 2026-11-18
+
+**Status: DEPLOYED AND SOURCE-READBACK VERIFIED; failure-path runtime test not yet performed.**
+
+- The deployed `kreavo-bridge` Worker previously used Cloudflare Workers AI (`@cf/google/gemma-4-26b-a4b-it`) to classify Agent failures and could automatically enqueue retries. This contradicted the user's confirmed Option A, where ChatGPT owns diagnosis and retry decisions.
+- Corrected the Worker source through its content-only upload endpoint. The failure path now records `needs_chatgpt_review` and a clear reason; it no longer calls the Workers AI triage function or enqueues retries. Success handling, ticket validation, pending/active claim flow, matching task-ID validation, result storage, and the existing Kreavo client routes were preserved.
+- Deployment API returned success: deployment ID `85a244f23a644e1a8563c31d1642d390`; deployed script source was fetched again and verified to contain `needs_chatgpt_review` and not contain `inspectAgentFailure`, `allowAutoRetry === true`, or `retryQueued`.
+- Worker settings readback confirms existing `BRIDGE_KV` and `AI` bindings remain present. The AI binding is now unused by the failure path; it was left intact to minimize unrelated configuration changes.
+- The already-completed read-only smoke task remains successful. No new task was dispatched, no KV task state was modified, and no Agent routine or phone setting was changed.
+- Runtime test of the new failure branch has not been performed; do not claim it has been exercised. On the next genuine failed task, ChatGPT must read the stored result/status, diagnose it, and decide whether a new task is safe and appropriate.
+- Next: use the proven task-scoped Gmail wake → Agent execution → KV result retrieval cycle; verify each exact task ID. Keep the user out of the result-relay loop. No 24/7 monitoring is required.
+
+---
 ## 0BI. TASK-SCOPED BRIDGE EXECUTION AUDIT — 2026-11-18
 
 **Status: SUCCESS. Existing broker smoke task completed and its matching result was retrieved by ChatGPT.**
