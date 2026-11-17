@@ -61,3 +61,18 @@ Do not create a fake success, do not use TinyFish or another cloud browser as pr
 - Agent intent receiver: https://github.com/Past-da-king/agent/blob/8594dfadc3f728d0123990179dfc4361d55dd69c/app/src/main/java/com/past9/phoneaos/automation/IntentTriggers.kt
 - Agent routine trigger validation: https://github.com/Past-da-king/agent/blob/8594dfadc3f728d0123990179dfc4361d55dd69c/app/src/main/java/com/past9/phoneaos/tools/AgentTools.kt
 - Agent notification listener: https://github.com/Past-da-king/agent/blob/8594dfadc3f728d0123990179dfc4361d55dd69c/app/src/main/java/com/past9/phoneaos/system/NotificationReader.kt
+
+
+## Fresh remote verification — 2026-11-18 03:07 +0800
+
+- Re-read the canonical rules, project control, and this checkpoint from `main` before continuing.
+- Cloudflare account connection is available and authenticated. Worker `kreavo-bridge` exists; its deployed script was fetched directly. It contains the existing `/agent/command` and `/agent/result` routes, but **no phone-wake endpoint**. The Worker is not able to emit an Android local broadcast or reach Agent's loopback-only HTTP server.
+- Worker bindings are only `BRIDGE_KV` and `AI`; the Worker secret list is empty. No wake URL/secret is configured.
+- KV namespace `kreavo-bridge` currently has `agent:broker:pending` containing the existing harmless read-only task `broker-readonly-smoke-20261118-01`; `agent:broker:active` is absent. The pending task was not claimed, replayed, duplicated, or modified. No result was present in the broker key listing.
+- Remote Desktop Commander was checked again and returned: **No Desktop Commander devices are connected yet.** This session still has no remote Android control channel.
+- Therefore there is no cloud-only change that can finish the phone side. The remaining hard blocker is local Android enablement of a wake/execution mechanism. MacroDroid setup remains paused; do not send the user back through its UI.
+- The lowest-friction alternative to investigate is an Agent-native scheduled/interval routine (minimum 15 minutes) that only fetches the existing broker command and posts its result. This would be a compromise from the strict original Option A because Agent runs a fixed poller, but ChatGPT can still own task creation, result validation, diagnosis, and retry decisions. **Not configured, not user-approved as a permanent architecture change, and not claimed working.**
+- No Worker code, secrets, KV records, Agent routines, phone settings, or pending tasks were changed. No new task was dispatched.
+
+### Immediate next decision
+The cloud side is ready enough for a controlled read-only test once the phone can run an Agent routine. The only viable path without a remote device connection is one-time local enablement of an Agent-native 15-minute poll routine, or later connecting a supported remote device. Do not ask the user to troubleshoot MacroDroid/ntfy again. If proposing the poller, explain the 15-minute/best-effort delay and ask only whether the user authorizes this limited compromise.
