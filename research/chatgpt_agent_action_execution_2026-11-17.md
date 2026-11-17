@@ -1,3 +1,40 @@
+## 0AT. DAILY BRIDGE MONITOR ENABLED; EVENT-DRIVEN ALTERNATIVES RESEARCHED — 2026-11-18
+
+**Status: DAILY MONITOR ENABLED; REAL-TIME CHATGPT ORCHESTRATION NOT YET IMPLEMENTED.** User explicitly approved replacing the weekly B2B software partner monitor with an Agent Bridge monitor, and requested research into a stronger method.
+
+- Active project: ChatGPT ↔ Android Agent Bridge. RapiUsaha B2C digital products for UMKM remains unchanged.
+- User-approved replacement applied to existing automation `6af47a587e788191ab32ee88d34d47fe`:
+  - Old title: "Pantau program partner software B2B"
+  - New title: "Monitor Agent Bridge"
+  - Enabled: true
+  - Schedule: daily, Asia/Makassar, first run 2026-11-19 09:00
+  - Prompt reads Agent results from Cloudflare KV, validates result/task ID, avoids duplicate or unsafe retries, writes handled markers, and notifies parent ChatGPT only for new results/material blockers.
+  - Re-read using automation peek confirmed complete prompt, schedule and enabled state.
+- The other two automations were left unchanged: SignageQuote uptime daily, and one-time SignageQuote evaluation. User authorized only replacing weekly B2B partner monitor.
+- Cloudflare Worker `kreavo-bridge` Agent task/result TTL was changed and readback verified in this turn:
+  - `agent:result:<ticket>` and completed `agent:task:<ticket>` retain 604800 seconds (7 days).
+  - Unrelated Kreavo client data TTL remains 300 seconds.
+  - Ticket validation, origin allowlist, task/result ID matching, and KV binding unchanged.
+  - Deployment `025f4829a44c48ecac59487ecd463e44`, tag `3b5f08489c874b27a873a27455fc62aa`.
+- New Agent implementation finding from upstream `Past-da-king/agent` commit `8594dfadc3f728d0123990179dfc4361d55dd69c`:
+  - `Routines.kt` and `AgentTools.kt` support `kind="interval"` with a minimum interval of 15 minutes.
+  - Interval routine uses Android WorkManager periodic work with a network-connected constraint. It can be delayed by Android Doze/power scheduling; it is not guaranteed exact-time/real-time.
+  - It can provide more frequent phone-side polling without a separate model API, but the Agent's own model performs its routine reasoning, not ChatGPT's model. Changing Routine #2 is NOT performed or approved yet.
+  - Agent also supports `kind="email"` polling, but code shows it wakes on a 15-minute schedule; this likewise has Agent, not ChatGPT, as the decision maker.
+- Other architecture options researched:
+  1. **Agent browser → dedicated ChatGPT Web controller thread:** potentially avoids separate API billing and lets ChatGPT remain the reasoning endpoint, but UI navigation/login/session/automation reliability has not been tested. Only an option to test, not a verified integration. BrowserTools has browser_open/read/type/press_key/wait and browser_handoff; do not send or post messages during testing without a narrowly scoped approval. The ChatGPT app/web conversation cannot be assumed to expose a supported external webhook or API to start a new ChatGPT turn.
+  2. **Cloudflare event-driven orchestrator:** Worker `POST /agent/result` can enqueue or start a Workflow, which can persist, retry, and wait between steps. Requires a model call for diagnosis and a way to wake Agent again. OpenAI API has separate billing from ChatGPT subscription and requires API project/key setup and payment arrangement; no API key created.
+  3. **Workers AI alternative:** Cloudflare docs currently describe 10,000 Neurons/day free allocation and multiple reasoning/function-calling models. It avoids separate OpenAI API usage charges inside the allowance, but it is a different model from ChatGPT, has finite daily allocation, and would require an AI binding. Existing Worker has only `BRIDGE_KV`; no AI binding changed.
+- Live Cloudflare account check found no zones and no Queues in the account. Cloudflare Email Service requires onboarding a sender domain with Cloudflare DNS; arbitrary recipient sending requires Workers Paid, while verified destination addresses can be free. No domain, queue, email service, OAuth, or payment settings have been changed.
+- Recommended next decision for user:
+  - If strict ChatGPT-model ownership and no separate API charge are priorities, test Agent's browser against a dedicated ChatGPT web controller in read-only mode first. This may prove brittle and must not be presented as working until tested.
+  - If reliable event-driven behavior is the priority, build Cloudflare Worker → Queue/Workflow → model API (OpenAI API or Workers AI). Explain model, cost and credential differences before enabling.
+  - If only faster phone-side monitoring is required, consider converting existing Agent Routine #2 to interval 15 minutes, but this delegates reasoning to Agent and Android may delay runs. Preserve its complete prompt and original scope if later approved.
+- No Agent Routine was edited, no Queue/Workflow was created, no new AI binding/model key/API key/Gmail OAuth was configured, and no new Agent task dispatched.
+- Never state the daily monitor is real-time. The user should not be asked to read/relay Agent replies. Keep per-action authorization and AppGuard restrictions.
+
+---
+
 ## 0AR. USER CLARIFICATION: CHATGPT MUST OWN THE AGENT LOOP — 2026-11-17
 
 **Status: USER_CONFIRMED intent.** The user's "not having to go back and forth" means they do NOT want to read Agent's replies, copy them into ChatGPT, or decide the next instruction. They are comfortable seeing ChatGPT's own notifications/messages. They want ChatGPT to dispatch work to Agent, retrieve the Bridge result itself, diagnose failures, and send corrective/retry tasks within the granted scope.
