@@ -69,3 +69,13 @@ This is user-provided screenshot evidence of the Agent's own confirmation, not a
 - Task explicitly authorizes Agent to use the Gmail browser UI to create and save one draft with a specified recipient, subject, and body. It expressly forbids sending the draft or altering existing mail.
 - At the latest poll, Cloudflare KV still showed task status `pending` and no `agent:result:<ticket>`. Gmail draft search also showed no matching draft yet. Therefore Agent action has NOT been confirmed or claimed successful. Ticket will expire automatically; do not issue duplicate tests. If no result arrives, diagnose the notification/routine execution path first.
 - This test is meant to prove actual browser UI write capability; ChatGPT must not create the draft directly using its Gmail connector as a substitute.
+
+## Retry after confirmed 5-minute expiry — 2026-11-17
+
+- User reported Agent result: `get_command (failed)`; message said ticket expired or task not found; Agent explicitly reported it performed no action.
+- This matches the exact TTL issue: the first task was written at 12:52:42Z with expiry 12:57:42Z (300 seconds). The Gmail wake message was sent at 12:52:50Z. The user only returned with the Agent failure after that expiry. The task key was absent from KV bulk-get after expiry. This is consistent with Agent/routine taking longer than the 5-minute ticket lifetime; no evidence indicates the browser action itself was attempted.
+- Checked Gmail Drafts for the exact test subject; no matching draft existed. Confirmed no prior `agent:` KV keys before retry.
+- Re-dispatched the same safe action under a fresh ticket, task ID `bridge-action-draft-20261117-retry1`, increasing task TTL from 300 seconds to **3600 seconds**. The action remains exactly one saved draft in the user's own Gmail; expressly do not send or alter existing mail.
+- Sent a fresh unique Gmail notification; message ID `1a1e996422c68ce3`, timestamp `2026-11-17T12:58:21Z`, sender and recipient both the user's own Gmail address; labels `UNREAD`, `SENT`, `INBOX`.
+- Verified Cloudflare KV bulk-get contains the correct task ID and payload, and key listing reports expiry timestamp `1794923895` (2026-11-17 13:58:15Z), one hour after creation. No result exists yet at dispatch verification.
+- Current state: retry is pending. Do not dispatch another duplicate. When result arrives, verify ID and inspect Gmail Drafts before claiming success. If the task still fails, investigate the Worker endpoint/ticket parsing rather than TTL.
