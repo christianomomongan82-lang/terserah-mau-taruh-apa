@@ -261,3 +261,32 @@ This is user-provided screenshot evidence of the Agent's own confirmation, not a
 
 ---
 
+
+
+## Practical alternative to Desktop — researched 2026-11-18
+
+**Status: ASSISTANT_PROPOSAL ONLY; no runtime changes and no model switch approved.**
+
+### Findings verified
+- The available ChatGPT automation scheduler supports only once, daily, weekly, and monthly schedules. It cannot poll the Agent Bridge every 15 minutes.
+- The existing Cloudflare Worker `kreavo-bridge` was read live. Its settings currently contain only `BRIDGE_KV`; there is no Workers AI binding.
+- The Agent source already documents `kind="interval"` with a minimum 15-minute interval, backed by Android WorkManager with a network constraint. Android may delay execution under power management; this is not exact real-time scheduling.
+- Cloudflare Workers AI includes a free allocation of 10,000 Neurons/day. The current model catalog exposes `@cf/google/gemma-4-26b-a4b-it` with reasoning, function calling, and vision; Cloudflare also lists it among models available on Workers Free. `@cf/zai-org/glm-4.7-flash` is another Free-plan option with multilingual and multi-turn tool-calling capabilities.
+- Workers AI is a different model/provider, not ChatGPT. It can be called from the existing Worker after adding an AI binding. The existing Agent interval routine can poll the Worker for the next task; the Worker can inspect Agent results and prepare a bounded follow-up/correction task in KV. This avoids Desktop, a new domain, Queues, and an OpenAI API key. The daily Neurons allowance is finite; requests can stop when the Free allocation is exhausted.
+- OpenAI API billing is separate from ChatGPT subscription billing. Current OpenAI API-credit benefits are described for eligible Pro and Business subscriptions, not Free. Therefore the current ChatGPT Free plan does not supply included API credits for this external orchestrator.
+
+### Practical paths
+1. **Minimum changes / no extra model service:** change the Agent routine to interval and let the Agent model execute and self-correct. This is simplest, but gives the Agent—not ChatGPT—the decision-making role.
+2. **Recommended no-OpenAI-API-cost autonomous loop:** use Agent interval (15 minutes minimum) + the existing Cloudflare Worker + Workers AI (Gemma 4 26B A4B as the initial candidate). ChatGPT can still create the initial task and review results while this conversation is active, but the external model handles automatic result diagnosis/follow-up between turns. This is NOT ChatGPT itself and is only a proposal.
+3. **Keep ChatGPT/OpenAI as the actual reasoning model:** call OpenAI API from the Worker. This is a separate billing path from ChatGPT Free; do not create a key, add payment, or enable spend without explicit user approval.
+
+### Next step
+Ask the user to approve exactly one architecture before editing Worker code or Routine #2. Preferred recommendation under the existing low-cost constraints is option 2, with per-action authorization and Agent AppGuard preserved. No routine, Worker, KV, billing, or account setting was changed during this research.
+ 
+Sources:
+- https://developers.cloudflare.com/workers-ai/platform/pricing/
+- https://developers.cloudflare.com/workers-ai/models/gemma-4-26b-a4b-it/
+- https://developers.cloudflare.com/changelog/product/workers-ai/
+- https://developers.cloudflare.com/workers-ai/features/function-calling/
+- https://help.openai.com/en/articles/9039756-managing-billing-for-chatgpt-and-the-api-platform
+- https://developers.openai.com/api/docs/guides/chatgpt-api-credits
