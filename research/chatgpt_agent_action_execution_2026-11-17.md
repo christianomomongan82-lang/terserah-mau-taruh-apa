@@ -409,7 +409,7 @@ Recommended minimal fix: long-press ntfy's persistent instant-delivery notificat
 
 ## 0BB. FREE MACRODROID WEBHOOK-TO-AGENT BROADCAST CONFIRMED AS NO-PRO ROUTE — 2026-11-18
 
-**Status: USER_CONFIRMED for proceeding with the free edition; researched, not yet configured or end-to-end tested.** This is a correction to the earlier shorthand “MacroDroid rejected”: the user rejected paying for MacroDroid Pro. The free tier may satisfy the technical requirement without any purchase.
+**Status: BLOCKED / DISPUTED by on-device evidence.** User installed MacroDroid and reports the Webhook option visible in the app is marked Pro. The earlier assumption that the selected trigger is free was not verified against the user's exact screen. Do not ask user to pay; stop setup until exact trigger is identified. This is a correction to the earlier shorthand “MacroDroid rejected”: the user rejected paying for MacroDroid Pro. The free tier may satisfy the technical requirement without any purchase.
 
 ### Verified product capability
 - MacroDroid's current Google Play listing states the free/ad-supported edition supports up to **5 macros**; Pro is for removing ads and unlimited macros. The listing also identifies webhooks as a trigger category and intents as a supported capability.
@@ -451,3 +451,8 @@ The user explicitly approved proceeding with MacroDroid Free on 2026-11-18. This
 ## 0BC. USER SELECTED OPTION A: CHATGPT-OWNED ORCHESTRATION — 2026-11-18
 
 User explicitly chose Option A. ChatGPT remains the task dispatcher, result retriever, analyst, and retry decision-maker; Android Agent is only the phone-side executor; MacroDroid Free is only the wake adapter. Agent-owned polling is not an approved replacement. No paid tools or API billing are authorized. Implementation remains unconfigured pending one local MacroDroid macro and its webhook URL. The Agent token must stay on-device. The existing pending read-only smoke task must not be duplicated or replayed until state is checked. Next: configure one basic Webhook (URL) → explicit Send Intent/Broadcast macro, then store the webhook URL only as a Cloudflare Worker secret, add a narrow wake endpoint, and verify an Agent claim plus valid result.
+
+
+## 0BD. ON-DEVICE CONTRADICTION — 2026-11-18
+
+User reports that after installing MacroDroid, the Webhook option visible in the app is marked Pro. This directly conflicts with the prior research assumption that the basic Webhook (URL) trigger is free. The exact trigger label has not yet been visually verified. Stop setup and request a screenshot of the trigger picker; do not tell the user to buy Pro. If the basic Webhook (URL) is also Pro-gated in this installed build/account, discard this route and find another genuinely free wake method. Option A (ChatGPT-owned orchestration) remains the user's selected architecture; MacroDroid Free is no longer considered available until proven on-device.
