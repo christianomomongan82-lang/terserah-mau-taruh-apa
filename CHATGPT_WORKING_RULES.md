@@ -145,3 +145,8 @@ This rule is mandatory across conversations and overrides older assistant-genera
 6. **No stale-note override.** When older records conflict with a newer direct correction, follow the newer correction and add a superseding correction to the canonical record. Do not silently quote the stale record as current truth.
 7. **Do not claim permanent memory or perfect prevention.** Demonstrate the control by updating and re-reading the canonical files. If GitHub cannot be read or written, say exactly so and do not claim the guard is installed.
 8. **Self-audit before every handoff:** check project identity, goal, current status, approved architecture, rejected paths, permissions, and whether the proposed next step makes the user repeat work. If any mismatch exists, fix it before sending.
+
+
+## Single source of truth — mandatory
+
+For the ChatGPT ↔ Android Agent / Instagram project, `ACTIVE_DECISIONS.md` is the sole current decision ledger. Read it before opening older research notes or summaries. Older project records are historical evidence only; do not take their proposed next steps or apparent approvals as current instructions. If an older file conflicts with `ACTIVE_DECISIONS.md`, stop and follow the ledger unless a newer direct user instruction in the current conversation explicitly changes it. Do not duplicate the ledger across multiple summaries; update the ledger first and reconcile only the necessary pointers/history. This rule exists because contradictory stale notes caused the assistant to revive a rejected path.
