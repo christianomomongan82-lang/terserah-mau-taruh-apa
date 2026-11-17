@@ -327,3 +327,21 @@ Sources reviewed:
 - Updated the existing bootstrap KV task in place, preserving the ticket and task ID, to a read-only `example.com` browser_open/browser_read smoke test followed by the existing result tool. Readback verified the corrected payload. Did not resend Gmail, modify Routine #2, or change Worker/AI/broker.
 - Next: establish why the existing Gmail-triggered routine has not consumed the unread message, using an actual Agent-side inspection path. No Desktop assumption and no claim that the 15-minute poller exists.
 
+
+
+## 0AX. AGENT PICKUP BLOCKER CONFIRMED; NO REMOTE PHONE ENTRY POINT — 2026-11-18
+
+**Outcome: NOT COMPLETED.** The Agent did not claim the bootstrap or broker task. The current ChatGPT session cannot reach the Android Agent process.
+
+- KV: bootstrap `bootstrap-poller-20261118-01` remains unclaimed; no claim/result. Broker task `broker-readonly-smoke-20261118-01` remains pending; no active task/result/status.
+- Gmail wake message `1a1ea741aa45401c` remains `UNREAD,SENT,INBOX`; this does not prove notification delivery.
+- No Remote Desktop Commander devices connected.
+- Upstream Agent source audit (commit `8594dfadc3f728d0123990179dfc4361d55dd69c`):
+  - NotificationReader fires notification routines only for new live notifications when listener is connected and the package is enabled. Notifications present at listener reconnect are stored but not fired.
+  - Gmail `email` routine is a distinct 15-minute WorkManager poll via Composio; first run only records newest message ID, subsequent new matching mail triggers.
+  - PhoneAutomation HTTP server is loopback-only (`127.0.0.1)); local broadcasts require a local sender app, per-install token and Allow outside runs.
+  - Background routine tools cannot create/list/update routines; already documented in 0AW.
+- ChatGPT cannot remotely inspect Agent notification access, Gmail allowed-app setting, local token, or invoke the loopback/broadcast path from current connectors. Cloudflare and Gmail alone cannot wake the phone's Agent process.
+- No duplicate wake email, new side effect, Worker/KV/Routine edit, or extra task was performed. Existing tasks remain intact for recovery.
+- End-to-end bridge is **not working yet**. A real phone-side access path is required: authenticated device control or local notification/broadcast integration. This is the concrete failure boundary; do not claim the 15-minute poller exists.
+
