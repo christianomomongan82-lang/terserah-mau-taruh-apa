@@ -345,3 +345,26 @@ Sources reviewed:
 - No duplicate wake email, new side effect, Worker/KV/Routine edit, or extra task was performed. Existing tasks remain intact for recovery.
 - End-to-end bridge is **not working yet**. A real phone-side access path is required: authenticated device control or local notification/broadcast integration. This is the concrete failure boundary; do not claim the 15-minute poller exists.
 
+
+
+## 2026-11-18 — MacroDroid FCM webhook as a phone-side wake adapter
+
+### Finding
+The previous diagnosis was correct that ChatGPT/Cloudflare cannot reach Agent's loopback listener, and that Gmail's notification trigger was not being consumed. However, a new public phone-entry mechanism exists upstream: MacroDroid Webhook (URL) receives external HTTPS calls via Firebase Cloud Messaging, then can execute a local broadcast. Agent's current upstream code deliberately exports an authenticated broadcast receiver for exactly this class of local automation integration.
+
+### Exact source contracts
+- MacroDroid Webhook trigger URL form: `https://trigger.macrodroid.com/<device-id>/<identifier>`; query args can update pre-existing variables. The docs say it uses FCM, requires Google Play Services and internet.
+- Agent broadcast: explicit package `com.past9.phoneaos`; action `com.past9.phoneaos.RUN_ROUTINE`; extras `token`, `routine`, optional `note`. A separate `com.past9.phoneaos.INSTRUCT` action is available, but reusing the existing routine is less disruptive.
+- `IntentTriggerReceiver` calls `Routines.runTraced`, which starts the selected existing routine with the supplied context note and works when Agent is not running. The local `AutomationServer` HTTP listener is not used by this route.
+- Official Play listing says MacroDroid Free supports up to 5 macros, so a single-macro bridge does not require Pro.
+
+### Proposed request path
+ChatGPT writes the authorized task/ticket to the existing Cloudflare KV route -> ChatGPT invokes a protected Worker wake route -> Worker calls the secret MacroDroid webhook with `bridge_ticket=<ticket>` -> MacroDroid sends the explicit-package Agent broadcast for routine id 2 and sets note text to the same shape as the existing Gmail notification context -> existing routine handles the ticket and posts its result through the existing bridge -> ChatGPT reads and validates the result and decides any safe follow-up.
+
+The synthetic notification-shaped note is intended to preserve Routine #2's existing prompt/learned-tool contract. It must be validated with the existing harmless read-only task; do not assume it works merely because the source supports the broadcast.
+
+### Security / constraints
+The Agent per-install token is entered only in MacroDroid on the phone and never sent to ChatGPT. The MacroDroid webhook URL is a bearer capability URL and must be stored in a Cloudflare Worker secret, not committed to GitHub. Keep the Agent's Allow outside runs switch and AppGuard approvals intact. FCM acceptance is not proof of local execution; latency is not guaranteed and depends on Google Play Services, internet, Android background policy and device power state.
+
+### Work status
+Research only. No MacroDroid installation/configuration, Agent setting/routine modification, Worker code/secret deployment, new task dispatch, or duplicate Gmail wake was performed. Wait for the user to create the one local macro and provide its webhook URL; then add the minimal Worker wake adapter and run one read-only verification against the preserved existing task. Do not ask the user to copy/relay Agent output.
