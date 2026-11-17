@@ -1405,3 +1405,15 @@ Ringkasan/memori lintas percakapan dapat tidak lengkap atau keliru, dan tidak me
 - Instagram account identity/connection is not verified in this checkpoint.
 - Agent's arbitrary Instagram UI capability, posting, comment/DM interaction, media upload and profile editing remain untested.
 - No password, 2FA code, recovery code, or Agent local token should be requested.
+
+## 0BG. CORRECTION: ANDROID AGENT IS THE APP; MACRODROID IS NOT THE PROJECT'S EXECUTOR — 2026-11-18
+
+**Correction to 0BF:** the assistant incorrectly presented MacroDroid as the required next user step. The user has explicitly corrected this: the installed application named **Agent** is the phone-side executor the project is built around. Do not conflate the Agent app with MacroDroid or ask the user to configure MacroDroid as if that were the agreed architecture.
+
+- Active project remains ChatGPT ↔ Android Agent Bridge; Agent is the Android app `com.past9.phoneaos`, ChatGPT owns dispatch/retrieval/diagnosis/retry decisions.
+- MacroDroid was only an assistant-researched proposed wake adapter (0AY), not an approved replacement for the Agent app. The current user instruction is to use Agent itself.
+- The original Agent-based design and learned app / notification-routine work are recorded in 0AF, 0AW and 0AX. Existing Agent routines and local Agent settings are on-device; this session has no connected remote Android device or exposed Agent control tools to inspect/change them directly.
+- Current Cloudflare Worker has the task/result broker routes, but the end-to-end Agent pickup path is not proven operational. Historical read-only tests in KV do not establish current live control.
+- Do not ask for Agent token, password, 2FA or recovery codes. Do not enqueue duplicate tasks or resend wake emails while the existing pending/legacy state is unresolved.
+- Next technical work must focus on recovering/using the already existing Agent app integration and its existing notification/Learned App path, not inventing a new MacroDroid setup. If the current ChatGPT session has no supported authenticated path into the installed Agent app, state that boundary plainly rather than pretending to control it.
+- Instagram account access/actions remain unverified. Start with read-only inspection once the Agent bridge works; ask for explicit approval before posting, messaging, or changing account settings.
