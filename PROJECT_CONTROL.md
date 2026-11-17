@@ -1,14 +1,16 @@
-## 0BB. FREE MACRODROID BASIC WEBHOOK IS A NO-PRO CANDIDATE — 2026-11-18
+## 0BC. USER APPROVED FREE MACRODROID WAKE ADAPTER — 2026-11-18
 
-**Status: ASSISTANT_PROPOSAL / research verified, not user-approved or configured.** This corrects the earlier shorthand that MacroDroid was wholly rejected. The user rejected paying for Pro; the free edition is a separate option.
+**Status: USER_CONFIRMED for the no-cost MacroDroid Free route; implementation not yet configured or tested.**
 
-- MacroDroid Google Play listing says Free supports up to 5 macros. This bridge needs one macro only. The same listing includes webhooks among triggers and intents among supported capabilities.
-- Use the basic **Webhook (URL)** trigger (FCM-delivered) and **Send Intent → Broadcast** with explicit package `com.past9.phoneaos`, action `com.past9.phoneaos.RUN_ROUTINE`, extras for the local Agent token, routine id `2`, and ticket marker. Do not use the separate Pro-only **Webhook (with response)** feature.
-- The Agent token stays only in the local MacroDroid macro. The generated webhook URL is a bearer secret and must be stored only as a Cloudflare Worker secret, never in GitHub.
-- This replaces ntfy as the leading no-cost candidate; ntfy remains abandoned. It does not alter the user's strict requirement that ChatGPT owns task dispatch, result retrieval, diagnosis and retry. MacroDroid is only a push/broadcast adapter.
-- The Worker wake endpoint can be added only after the user approves the free MacroDroid route and provides its generated webhook URL. No phone settings, Agent routines, Worker code/secrets, pending tasks, or broker queue were changed during this research. No additional task was dispatched.
-- FCM requires Google Play Services and internet; delivery is best-effort. A webhook HTTP 200 is not proof of execution; only an Agent claim plus valid result proves end-to-end operation.
-- Exact evidence and sources are recorded in `research/chatgpt_agent_action_execution_2026-11-17.md`, section 0BB.
+- User explicitly approved proceeding with MacroDroid Free. This approval is limited to the free single-macro Webhook (URL) → Send Intent/Broadcast adapter; no MacroDroid Pro purchase, subscription, or paid service is authorized.
+- Active technical project: ChatGPT ↔ Android Agent Bridge. The user's controlling requirement remains ChatGPT-owned task dispatch, result retrieval, diagnosis and safe retries; Agent is the phone-side executor and MacroDroid is only the wake adapter. RapiUsaha remains B2C digital products for UMKM and is unrelated to this bridge.
+- Verified candidate path: existing Cloudflare KV broker task → protected Worker wake endpoint → secret MacroDroid Webhook (URL) → FCM → explicit broadcast to Agent package `com.past9.phoneaos`, action `com.past9.phoneaos.RUN_ROUTINE`, invoking existing routine id `2` with local Agent token and ticket marker → Agent posts result → ChatGPT retrieves and validates it.
+- Security: Agent token must remain only on the phone inside MacroDroid. MacroDroid webhook URL is a bearer secret and must be stored only as a Cloudflare Worker secret, never in GitHub or ordinary logs. Only the ephemeral ticket is passed through the webhook. Preserve Agent's Allow outside runs and AppGuard protections.
+- No phone configuration, MacroDroid installation, Worker code/secret, queue, pending task, or existing routine has yet been changed. No task has been dispatched. Existing pending tasks must not be duplicated or replayed while their state is uncertain.
+- **Next step:** give the user the minimum one-time phone setup for one free macro. Once the user provides the generated webhook URL (never the Agent token), inspect the live Worker/KV state again, add the narrow wake endpoint and store the URL as a Worker secret, then verify one harmless read-only round trip by observing an Agent claim and valid result. FCM delivery is best-effort; webhook HTTP success alone is not proof.
+- Research and exact Android/Agent contracts are in `research/chatgpt_agent_action_execution_2026-11-17.md`, section 0BB.
+
+---
 
 ---
 
