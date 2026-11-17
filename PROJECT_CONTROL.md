@@ -1,3 +1,25 @@
+## 0AR. USER CLARIFICATION: CHATGPT MUST OWN THE AGENT LOOP — 2026-11-17
+
+**Status: USER_CONFIRMED intent.** The user's "not having to go back and forth" means they do NOT want to read Agent's replies, copy them into ChatGPT, or decide the next instruction. They are comfortable seeing ChatGPT's own notifications/messages. They want ChatGPT to dispatch work to Agent, retrieve the Bridge result itself, diagnose failures, and send corrective/retry tasks within the granted scope.
+
+- Correction to 0AQ: The previous interpretation (make Agent notify the phone directly) was wrong. **Do not modify Routine #2 to add `notify_user` for this purpose.** Agent-native notifications are not the requested solution.
+- Desired operating loop: ChatGPT prepares task + unique ticket → writes it to the existing `kreavo-bridge` Agent KV route → sends Gmail wake marker → ChatGPT reads result from KV → validates task ID/result → if `ok:false`, diagnose and decide a safe corrective task → repeat as needed → report only meaningful progress/final result to the user. User should not be asked to inspect Agent's response or relay it.
+- Current infrastructure verified read-only in this turn:
+  - Cloudflare account available; Worker `kreavo-bridge` exists.
+  - KV namespace `ab71a201c13f48fcbf533e9b83e6c19d` exists; current namespace key listing returned empty.
+  - Deployed Worker has `GET /agent/command` and `POST /agent/result`, authenticated by 40–64 character ephemeral `X-Agent-Ticket`, task/result key prefixes `agent:task:` and `agent:result:`.
+  - Agent result payload is validated against matching task ID; Worker stores result and marks task complete.
+  - Current Worker code stores result and completed task with **300-second TTL**. Agent task is fetched from KV by ticket.
+  - Gmail connector can send wake email to the user's own mailbox; use the established marker `CHATGPT-AGENT` plus ticket.
+  - Current KV listing was empty; no pending task or result was found. No task was dispatched in this clarification turn.
+- Verified outcome evidence: the 2026-11-17 Google Keep test returned a matching Bridge result to ChatGPT; Agent reported partial execution (`ok:false`, title seen, body not saved/verified). Therefore at least one Agent→Bridge→ChatGPT result return was observed. Do not characterize the Google Keep write itself as success.
+- Hard capability limit: ChatGPT can poll/read the Bridge and run retries while actively handling a task in the current turn. ChatGPT cannot keep a live process running or autonomously resume itself after the turn/session ends. Existing scheduled automation supports no more frequent than daily, so it is not real-time task orchestration. Do not promise persistent background monitoring.
+- Minimum next engineering improvement to consider: increase task/result retention and add an explicit stage/heartbeat/claim state so a missing result can be distinguished (not triggered vs fetched vs running vs failed-to-post), while preserving the existing Agent app and Routine. Do not change Worker or Routine until the required change is reviewed and explicitly authorized; never weaken ticket authentication or authorization scope.
+- User should only be asked for an unavoidable one-time action or explicit authorization for an external/destructive action. For routine safe read-only work, ChatGPT should manage dispatch, retrieval, diagnosis, and retries itself.
+- Business scope unchanged: RapiUsaha remains B2C digital products for UMKM.
+
+---
+
 ## 0AQ. APPROVED: PHONE NOTIFICATION ON EVERY BRIDGE TASK RESULT — 2026-11-17
 
 **Status: USER_CONFIRMED direction; implementation NOT YET APPLIED.** The user approved direct Android phone notifications whenever an Agent task finishes successfully or fails, so they no longer need to repeatedly open Agent/ChatGPT to check status.
