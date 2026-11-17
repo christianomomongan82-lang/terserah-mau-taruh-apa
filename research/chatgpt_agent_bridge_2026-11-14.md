@@ -1,3 +1,9 @@
+# ARCHIVAL BRIDGE RESEARCH — ACTIVE STATE IS IN ACTIVE_DECISIONS.md
+
+This file records an earlier technical investigation and is not the current project decision source. Read ACTIVE_DECISIONS.md before using any of the historical options or next steps below. The current goal is Instagram work through the existing Android Agent app; the bridge is only infrastructure. Any path rejected in ACTIVE_DECISIONS.md stays rejected even if this older research discusses it as possible.
+
+---
+
 # ChatGPT ↔ Agent Android bridge investigation — 2026-11-14
 
 ## Status
