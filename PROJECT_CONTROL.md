@@ -1,3 +1,29 @@
+## 0AZ. FREE NTFY PUSH WAKE PATH; PAID MACRODROID DEPENDENCY REJECTED — 2026-11-18
+
+**Status: ASSISTANT_PROPOSAL / source-verified, not yet configured or end-to-end tested.** User explicitly rejected a paid MacroDroid dependency, even though its Pro payment is one-time. Do not ask the user to purchase MacroDroid or any paid automation tool. The 0AY MacroDroid proposal is superseded/rejected for this project.
+
+- Active technical project: ChatGPT ↔ Android Agent Bridge. User's approved intent remains ChatGPT-owned dispatch, result retrieval, diagnosis and safe retries; user should not relay Agent output. RapiUsaha remains B2C digital products for UMKM.
+- New no-cost candidate: **ntfy Android app + free ntfy.sh topic + existing Agent notification routine + existing Cloudflare Worker**.
+  1. ntfy.sh is documented as free to use without signup or fees for normal use; paid plans are optional. Android app is open-source and free on Google Play/F-Droid.
+  2. Use the Google Play build on the main ntfy.sh host so the app uses FCM for push delivery. F-Droid build omits Firebase and keeps a foreground connection instead; do not recommend F-Droid for this low-background-cost setup.
+  3. Subscribe the Android app to one high-entropy, hard-to-guess topic. ntfy topics are public/unlisted rather than private; anyone who knows the topic can publish/subscribe. Therefore the topic URL is a bearer capability and must be kept out of GitHub. Never send task contents, private data, or Agent credentials through the notification; only send the marker and ephemeral ticket.
+  4. Android package name is `io.heckel.ntfy` (verified in official ntfy Android build configuration and F-Droid package).
+  5. Agent `NotificationReader` already supports package+keyword matching. It reads only explicitly allowed apps and fires a notification routine for a live matching notification. Existing ChatGPT Bridge routine #2 can be updated in place to `io.heckel.ntfy|CHATGPT-AGENT`, preserving its prompt and Learned App tools. Add ntfy to Agent's allowed notification apps and ensure Android Notification Access is enabled.
+  6. Existing Cloudflare Worker can later send a POST to `https://ntfy.sh/<secret-topic>` with title `CHATGPT-AGENT` and body containing only the ephemeral ticket. This will wake the existing Agent notification routine. ChatGPT continues reading the task/result through existing KV broker keys.
+- User-side one-time setup still unavoidable: install ntfy from Google Play, subscribe to the unique topic ChatGPT supplies, then in Agent allow ntfy notifications and update existing routine #2 trigger to the exact package+keyword. The Agent's main chat can be instructed to perform the routine update in place and verify it with routine_list; do not create a duplicate routine or alter its prompt unnecessarily.
+- Security: ntfy public topics are not confidential. Generate a random high-entropy topic and treat it as a secret URL. Store it only as a Cloudflare Worker secret, not in GitHub. Notification body must contain no task details or private data. Existing Agent AppGuard, Trust boundaries and approvals remain unchanged.
+- Limitations: ntfy.sh best-effort uptime, no SLA; Google Play build uses FCM and may be delayed by network/Doze. F-Droid flavor uses a persistent foreground service instead. A successful HTTP publish is not proof Agent ran; only an observed Agent claim and valid result prove end-to-end success.
+- Current status: no ntfy app installation/subscription confirmed; no topic created or disclosed; no Agent notification allowlist/routine changes; no Worker route/secret changes; no new test task or duplicate wake sent. This is a researched free alternative, not yet operational.
+- Sources:
+  - ntfy upstream README states ntfy.sh is free without signup/fees: https://github.com/binwiederhier/ntfy
+  - ntfy Android docs on Play/F-Droid FCM differences and instant delivery: https://docs.ntfy.sh/subscribe/phone/
+  - ntfy Android F-Droid listing / package: https://f-droid.org/packages/io.heckel.ntfy/
+  - ntfy Android app package/build flavors: https://github.com/binwiederhier/ntfy-android/blob/main/app/build.gradle
+  - Agent NotificationReader and routines source: https://github.com/Past-da-king/agent/blob/main/app/src/main/java/com/past9/phoneaos/system/NotificationReader.kt
+  - Agent routine tool schema: https://github.com/Past-da-king/agent/blob/main/app/src/main/java/com/past9/phoneaos/tools/AgentTools.kt
+
+---
+
 ## 0AY. INTERNET-TO-ANDROID AGENT WAKE PATH IDENTIFIED VIA MACRODROID — 2026-11-18
 
 **Status: ASSISTANT_PROPOSAL / technically source-verified, not yet configured or end-to-end tested.** This supersedes the earlier statement that no practical internet-to-phone entry point had been found; the old Gmail wake path remains unconsumed, but a separate push-to-broadcast path is now identified.
