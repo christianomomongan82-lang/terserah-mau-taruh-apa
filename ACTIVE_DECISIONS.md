@@ -51,3 +51,12 @@ This file is the authoritative current decision ledger for the ChatGPT ↔ Andro
 ## Conflict resolution
 
 This ledger supersedes conflicting assistant-generated proposals and historical notes. A new assistant-authored document or commit cannot change a USER_CONFIRMED decision. Only an explicit later user instruction can change the user's decision. When the user changes a decision, update this ledger first, then reconcile affected project records.
+
+## Latest execution checkpoint — 2026-11-18
+
+- User-approved read-only Agent browser test was queued: task ID `agent-chatgpt-web-readonly-20261118-01`. Scope: open `https://chatgpt.com/` in Agent's own browser and inspect only page metadata/headings; no sign-in, conversation reading, messages, clicks, or account changes.
+- Cloudflare KV preflight immediately before dispatch found no broker pending or active task. One 48-character ticket was created and stored only in KV; it is intentionally not recorded here.
+- The task metadata and `agent:broker:pending` command were written and read back successfully. One Gmail wake email was sent to the user's existing configured mailbox; Gmail returned message ID `1a1eb2d5d73b09ee`.
+- Last readback after dispatch: exact command remained in `agent:broker:pending`; `agent:broker:active`, matching result, and matching status were absent. Therefore Agent had **not yet claimed or completed** the task at that check. The Gmail message remained UNREAD; that alone does not establish why the routine has not claimed it.
+- No duplicate wake/task was sent. Do not dispatch another task until this task is resolved or expires and queue state is rechecked. Do not claim the ChatGPT Web test succeeded.
+- Remote Desktop Commander still reports no connected devices. No phone-side settings or Agent routines were changed.
