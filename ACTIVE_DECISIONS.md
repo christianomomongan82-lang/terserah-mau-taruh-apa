@@ -114,3 +114,14 @@ This ledger supersedes conflicting assistant-generated proposals and historical 
 - Latest broker readback after both tasks: pending absent; active absent; both matching result/status records present. No duplicate tasks remain queued.
 - **Current practical route:** use the already-working Agent browser profile, with a one-time user-controlled sign-in/takeover in Agent's Browser UI. After the user hands the browser back, ChatGPT can continue with read-only inspection via the existing bridge. Do not claim authenticated access until a fresh browser_read confirms it.
 - **Direct MCP status unchanged:** no remote tunnel or app-side code has been installed/deployed. Source servers bind to loopback. The current bridge is task-scoped dispatch/result relay, not native direct MCP.
+
+
+## Result checkpoint — Agent-connected Instagram profile read — 2026-11-18
+
+- User correction: the Instagram connection is already configured inside Agent. Do not confuse Agent's connected Instagram integration with Agent's separate browser profile; the earlier browser login screen was not evidence that the connected integration was signed out.
+- Dispatched one narrowly scoped read-only task: `instagram-connected-profile-readonly-20261118-01`. It explicitly required using the existing Agent Instagram connection (not browser/public website), reading only the authenticated account's own username, display name, and bio, and making no changes.
+- ChatGPT independently polled Cloudflare KV. Final readback: `agent:broker:pending` absent; `agent:broker:active` absent; matching status `complete`, attempt 1; matching result present. No user relay was needed.
+- Agent reported success using `INSTAGRAM_GET_USER_INFO` on authenticated account `me`: username `rapiusahatools`; display name `RapiUsaha | Tools UMKM`; bio was not returned by the connected profile tool.
+- No other accounts, posts, DMs, comments, or private messages were accessed. No login, connection, profile, or account changes were made.
+- **VERIFIED:** Agent's existing connected Instagram integration can read the authenticated account's own basic profile. This is the first direct evidence that the connected integration is active; the previous browser smoke test is a separate access path and must not be used to contradict it.
+- **OPEN:** profile bio retrieval is not yet confirmed; broader Instagram read/write capabilities are not yet tested. Continue with the user's requested work through Agent, inspect available connected tools and results, and keep all actions read-only unless the user explicitly approves a specific state-changing action.
